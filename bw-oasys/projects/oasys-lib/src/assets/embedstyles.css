@@ -1,0 +1,10 @@
+@import url('theme.css');
+
+:root {
+    --test-var-embed: 16px;
+}
+
+button {
+    background: black !important;
+    padding: var(--test-var-embed);
+}

@@ -7,13 +7,5 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  },
-  "exports": {
-    "./styles": {
-      "style": "./src/styles.css"
-    },
-    "./themes": {
-      "test": "./src/theme.css"
-    }
   }
 }
