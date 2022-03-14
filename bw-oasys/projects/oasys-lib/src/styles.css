@@ -1,3 +1,6 @@
+
+@import url('theme.css');
+
 :root {
     --test-var: blue;
 }
@@ -5,4 +8,5 @@
 .test-style {
     color: pink;
     background: var(--test-var);
+    padding: 16px;
 }

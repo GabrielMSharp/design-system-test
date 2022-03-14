@@ -1,0 +1,14 @@
+:root {
+    --test-var: black;
+}
+
+.test-style {
+    font-size: 40px;
+}
+
+button {
+    border: 0;
+    -webkit-appearance: none;
+    background: black;
+    color: white;
+}

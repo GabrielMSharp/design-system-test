@@ -6,9 +6,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
     <p class="test-style">
       oasys-lib works locally!!!!
     </p>
+    <button>Button</button>
   `,
   styleUrls: [
-    '../styles.css'
+    '../styles.css',
+    '../theme.css'
   ],
   encapsulation: ViewEncapsulation.None
 })
