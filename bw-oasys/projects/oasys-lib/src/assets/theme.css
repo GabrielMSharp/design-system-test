@@ -3,6 +3,7 @@
 
     --button-background: coral;
     --button-color: white;
+    --layout-inline-spacing-default: 8px;
 }
 
 .test-style {

@@ -1,3 +1,5 @@
 :root {
     --button-background: darkgrey;
+
+    --layout-inline-spacing-default: 16px;
 }

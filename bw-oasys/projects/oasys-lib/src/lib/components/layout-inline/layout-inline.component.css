@@ -7,8 +7,8 @@ lib-layout-inline {
 }
 
 .ui-layout-inline > * {
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: var(--layout-inline-spacing-default);
+    margin-right: var(--layout-inline-spacing-default);
 }
 
 .ui-layout-inline:first-child {
