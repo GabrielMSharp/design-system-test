@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { OasysLibComponent } from './oasys-lib.component';
+// import { OasysLibComponent } from './oasys-lib.component';
 import { ButtonComponent } from './components/button/button.component';
 import { LayoutBoxComponent } from './components/layout-box/layout-box.component';
 import { LayoutInlineComponent } from './components/layout-inline/layout-inline.component';
@@ -8,7 +8,7 @@ import { LayoutInlineComponent } from './components/layout-inline/layout-inline.
 
 @NgModule({
   declarations: [
-    OasysLibComponent,
+    // OasysLibComponent,
     ButtonComponent,
     LayoutBoxComponent,
     LayoutInlineComponent
@@ -16,7 +16,7 @@ import { LayoutInlineComponent } from './components/layout-inline/layout-inline.
   imports: [
   ],
   exports: [
-    OasysLibComponent,
+    // OasysLibComponent,
     ButtonComponent
   ]
 })
