@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'lib-oasys-lib',
   template: `
-    <p>
-      oasys-lib works!!!!
+    <p class="test-style">
+      oasys-lib works locally!!!!
     </p>
   `,
-  styles: [
-  ]
+  styleUrls: [
+    '../styles.css'
+  ],
+  encapsulation: ViewEncapsulation.None
 })
 export class OasysLibComponent implements OnInit {
 

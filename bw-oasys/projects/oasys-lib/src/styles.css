@@ -3,6 +3,6 @@
 }
 
 .test-style {
-    color: red;
+    color: pink;
     background: var(--test-var);
 }
