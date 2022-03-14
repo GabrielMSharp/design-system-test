@@ -1,13 +1,10 @@
 :root {
     --test-var: black;
+
+    --button-background: coral;
+    --button-color: white;
 }
 
 .test-style {
     font-size: 40px;
-}
-
-button {
-    
-    background: black;
-    color: white;
 }

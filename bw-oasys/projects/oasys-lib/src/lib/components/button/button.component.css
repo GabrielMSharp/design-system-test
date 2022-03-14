@@ -7,4 +7,8 @@ lib-button button {
     border: 0;
     -webkit-appearance: none;
     padding: 0;
+
+    /*Styles*/
+    background: var(--button-background);
+    color: var(--button-color);
 }
