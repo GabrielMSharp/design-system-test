@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'lib-oasys-lib',
   template: `
     <p>
-      oasys-lib works!
+      oasys-lib works!!!!
     </p>
   `,
   styles: [

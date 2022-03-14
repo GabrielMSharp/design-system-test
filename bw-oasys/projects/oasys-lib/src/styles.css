@@ -1,0 +1,8 @@
+:root {
+    --test-var: blue;
+}
+
+.test-style {
+    color: red;
+    background: var(--test-var);
+}
