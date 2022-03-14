@@ -6,7 +6,8 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": []
+    "types": [],
+    "angularCompilerOptions": 3
   },
   "exclude": [
     "src/test.ts",

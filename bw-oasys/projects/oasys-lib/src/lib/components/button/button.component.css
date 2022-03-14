@@ -1,0 +1,10 @@
+lib-button {
+    display: contents;
+}
+
+lib-button button {
+    /* Reset */
+    border: 0;
+    -webkit-appearance: none;
+    padding: 0;
+}

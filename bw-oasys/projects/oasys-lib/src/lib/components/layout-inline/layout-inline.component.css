@@ -1,0 +1,25 @@
+lib-layout-inline {
+    display: contents;
+}
+
+.ui-layout-inline {
+    display: inline-flex;
+}
+
+.ui-layout-inline > * {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.ui-layout-inline:first-child {
+    margin-left: 0;
+}
+
+.ui-layout-inline:last-child {
+    margin-right: 0;
+}
+
+.ui-layout-inline:only-child {
+    margin-left: 0;
+    margin-right: 0;
+}
