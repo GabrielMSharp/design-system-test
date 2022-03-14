@@ -4,7 +4,7 @@
     --test-var-embed: 16px;
 }
 
-button {
-    background: black !important;
+lib-button {
+    background: red !important;
     padding: var(--test-var-embed);
 }

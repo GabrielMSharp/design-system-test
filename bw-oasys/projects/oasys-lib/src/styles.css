@@ -6,5 +6,5 @@
 .test-style {
     color: pink;
     background: var(--test-var);
-    padding: 16px;
+    padding: var(--test-var-embed);
 }
