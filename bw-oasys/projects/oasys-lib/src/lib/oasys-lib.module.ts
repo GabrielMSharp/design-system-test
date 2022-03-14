@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { OasysLibComponent } from './oasys-lib.component';
+import { ButtonComponent } from './components/button/button.component';
 
 
 
 @NgModule({
   declarations: [
-    OasysLibComponent
+    OasysLibComponent,
+    ButtonComponent
   ],
   imports: [
   ],
   exports: [
-    OasysLibComponent
+    OasysLibComponent,
+    ButtonComponent
   ]
 })
 export class OasysLibModule { }
