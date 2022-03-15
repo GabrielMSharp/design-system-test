@@ -8,7 +8,10 @@ lib-button button {
     -webkit-appearance: none;
     padding: 0;
 
+    display: inline-flex;
+
     /*Styles*/
     background: var(--button-background);
     color: var(--button-color);
+    border-radius: var(--button-corner-radius);
 }
