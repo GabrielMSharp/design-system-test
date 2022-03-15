@@ -3,7 +3,7 @@ import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, Chan
 @Component({
   selector: 'lib-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css'],
+  styleUrls: ['./button.component.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
