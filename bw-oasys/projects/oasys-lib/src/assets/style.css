@@ -1,11 +1,3 @@
 @import url('theme.css');
-/* @import url('theme-bloomon.css'); */
 
-:root {
-    --test-var-embed: 16px;
-}
 
-lib-button {
-    background: red !important;
-    padding: var(--test-var-embed);
-}
