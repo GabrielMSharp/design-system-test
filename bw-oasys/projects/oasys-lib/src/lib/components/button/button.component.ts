@@ -12,13 +12,13 @@ export class ButtonComponent implements OnInit {
   @Input() buttonText: string = '';
   @Input() href: string = '';
 
-  @Output() buttonDidClick: EventEmitter<void> = new EventEmitter();
+  @Output() buttonClick: EventEmitter<void> = new EventEmitter();
 
   constructor() { }
 
   clickButton(): void {
     console.log('button was clicked');
-    this.buttonDidClick.emit();
+    this.buttonClick.emit();
   }
 
   ngOnInit(): void {

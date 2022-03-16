@@ -1,10 +1,11 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'lib-layout-inline',
   templateUrl: './layout-inline.component.html',
   styleUrls: ['./layout-inline.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LayoutInlineComponent implements OnInit {
 

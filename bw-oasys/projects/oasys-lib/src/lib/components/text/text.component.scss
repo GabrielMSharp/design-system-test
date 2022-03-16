@@ -1,0 +1,21 @@
+lib-text {
+    display: contents;
+}
+
+.ui-text {
+    display: block;
+}
+
+
+// Modifiers
+.ui-text { 
+    &.ui-text--align-left {
+        text-align: left;
+    }
+    &.ui-text--align-center {
+        text-align: center;
+    }
+    &.ui-text--align-right {
+        text-align: right;
+    }
+}

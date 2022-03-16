@@ -1,14 +1,4 @@
 :root {
-    /* --button-corner-radius: 999rem;
-    --button-background: #ffcfc0;
-    --button-color: black;
-    --layout-inline-spacing-default: 8px; */
-}
-
-/*  We would not define properties like this per brand
-    just for demo
-*/
-body.brand-bloomon {
     --button-corner-radius: 999rem;
     --button-background: #ffcfc0;
     --button-color: black;

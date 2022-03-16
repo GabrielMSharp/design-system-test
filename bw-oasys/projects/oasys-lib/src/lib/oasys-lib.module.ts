@@ -4,13 +4,17 @@ import { RouterModule } from '@angular/router';
 import { ButtonComponent } from './components/button/button.component';
 import { LayoutBoxComponent } from './components/layout-box/layout-box.component';
 import { LayoutInlineComponent } from './components/layout-inline/layout-inline.component';
+import { TextComponent } from './components/text/text.component';
+import { IconComponent } from './components/icon/icon.component';
 
 
 @NgModule({
   declarations: [
     ButtonComponent,
     LayoutBoxComponent,
-    LayoutInlineComponent
+    LayoutInlineComponent,
+    TextComponent,
+    IconComponent
   ],
   imports: [
     CommonModule,
