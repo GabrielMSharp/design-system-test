@@ -7,5 +7,11 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "scripts": {
+    "build-style-dictionary": "node ./style-dictionary/build.js --config ./test/config.json"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.7.0"
   }
 }

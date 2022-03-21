@@ -4,6 +4,8 @@ lib-text {
 
 .ui-text {
     display: block;
+    color: var(--color-base-red) !important;
+    font-size: var(--size-font-medium);
 }
 
 

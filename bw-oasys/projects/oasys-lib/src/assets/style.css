@@ -1,5 +1,9 @@
-@import url('theme.css');
+@import url('variables.css');
 
 @import url('theme.css');
+
+html {
+    font-size: 62.5%;
+}
 
 
