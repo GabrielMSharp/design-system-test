@@ -1,4 +1,4 @@
-console.log("RUNNING THINGS THING GNG GGG&**£&@&G£G@&£&@£&");
+console.log("Running Bloom & Wild token building");
 
 const StyleDictionaryPackage = require("style-dictionary");
 
@@ -13,15 +13,13 @@ function getStyleDictionaryConfig(brand) {
     platforms: {
       css: {
         transformGroup: "css",
-        buildPath: `build/css/`,
-
         files: [
           {
             destination: `../../../src/assets/${brand}/variables.css`,
             format: "css/variables",
             options: {
               showFileHeader: true,
-              outputReferences: true,
+              outputReferences: false,
             },
           },
         ],
@@ -34,15 +32,12 @@ console.log("Build started...");
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS
 
-// const StyleDictionary = require('style-dictionary').extend('config.json');
-// StyleDictionary.buildAllPlatforms();
 
 ["bloomandwild", "bloomon"].map(function (brand) {
     console.log("\n==============================================");
     console.log(`\nProcessing: [${brand}]`);
 
     const StyleDictionary = StyleDictionaryPackage
-    // .extend('config.json')
     .extend(getStyleDictionaryConfig(brand))
     ;
 

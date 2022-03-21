@@ -1,6 +1,8 @@
 {
     "color": {
-        "fuck": { "value": "lightgreen" }
+        "brand": {
+            "primary": { "value": "pink" }
+        }
     }
 }
   
