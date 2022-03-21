@@ -9,7 +9,7 @@
     "tslib": "^2.3.0"
   },
   "scripts": {
-    "build-style-dictionary": "node ./style-dictionary/build.js --config ./test/config.json"
+    "build-style-dictionary": "cd ./style-dictionary && node ./build.js"
   },
   "devDependencies": {
     "style-dictionary": "^3.7.0"
