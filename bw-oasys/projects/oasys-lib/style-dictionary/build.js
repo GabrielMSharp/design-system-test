@@ -15,7 +15,7 @@ function getStyleDictionaryConfig(brand) {
         transformGroup: "css",
         files: [
           {
-            destination: `../../../src/assets/${brand}/variables.css`,
+            destination: `./../src/assets/${brand}/variables.css`,
             format: "css/variables",
             options: {
               showFileHeader: true,
