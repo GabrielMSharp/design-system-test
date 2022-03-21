@@ -7,13 +7,13 @@ const StyleDictionaryPackage = require("style-dictionary");
 function getStyleDictionaryConfig(brand) {
   return {
     source: [
-        `tokens/brands/${brand}/*.json`,
-        `"tokens/**/*.json"`
+        `tokens/global/**/*.json`,
+        `tokens/${brand}/**/*.json`
     ],
     platforms: {
-      web: {
+      css: {
         transformGroup: "css",
-        buildPath: "build/css/",
+        buildPath: `build/css/`,
 
         files: [
           {
@@ -41,10 +41,10 @@ console.log("Build started...");
     console.log("\n==============================================");
     console.log(`\nProcessing: [${brand}]`);
 
-    const StyleDictionary = StyleDictionaryPackage.extend('config.json')
-    .extend(
-        getStyleDictionaryConfig(brand)
-    );
+    const StyleDictionary = StyleDictionaryPackage
+    // .extend('config.json')
+    .extend(getStyleDictionaryConfig(brand))
+    ;
 
     StyleDictionary.buildAllPlatforms();
 

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 21 Mar 2022 16:06:36 GMT
+ * Generated on Mon, 21 Mar 2022 16:22:51 GMT
  */
 
 :root {
@@ -12,9 +12,8 @@
   --color-base-gray-dark: #111111;
   --color-base-gray-medium: #999999;
   --color-base-gray-light: #cccccc;
-  --color-fuck: #90ee90;
   --size-font-base: var(--size-font-medium); /* the base size of the font */
   --color-font-tertiary: var(--color-base-gray-light);
   --color-font-secondary: var(--color-base-green);
-  --color-font-base: var(--color-fuck);
+  --color-font-base: var(--color-base-green);
 }
