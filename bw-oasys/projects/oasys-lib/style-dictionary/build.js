@@ -19,7 +19,7 @@ function getStyleDictionaryConfig(brand) {
             format: "css/variables",
             options: {
               showFileHeader: true,
-              outputReferences: false,
+              outputReferences: true,
             },
           },
         ],

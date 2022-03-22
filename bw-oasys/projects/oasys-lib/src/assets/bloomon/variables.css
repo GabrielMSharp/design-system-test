@@ -1,20 +1,34 @@
 /**
  * Do not edit directly
- * Generated on Mon, 21 Mar 2022 17:10:44 GMT
+ * Generated on Tue, 22 Mar 2022 12:04:37 GMT
  */
 
 :root {
-  --color-base-gray-light: #cccccc;
-  --color-base-gray-medium: #999999;
-  --color-base-gray-dark: #111111;
-  --color-base-red: #ffc0cb;
-  --color-base-green: #00ff00;
-  --color-font-base: #00ff00;
-  --color-font-secondary: #00ff00;
-  --color-font-tertiary: #cccccc;
-  --color-brand-primary: #ffc0cb;
-  --size-font-small: 0.75rem; /* the small size of the font */
-  --size-font-medium: 1.6rem; /* the medium size of the font */
   --size-font-large: 2.4rem; /* the large size of the font */
-  --size-font-base: 1.6rem; /* the base size of the font */
+  --size-font-medium: 1.6rem; /* the medium size of the font */
+  --size-font-small: 0.75rem; /* the small size of the font */
+  --color-palette-semantic-error: #c84116;
+  --color-palette-grey-75: #464646;
+  --color-palette-grey-60: #676767;
+  --color-palette-grey-50: #898989;
+  --color-palette-grey-40: #a8a8a8;
+  --color-palette-grey-30: #c6c6c6;
+  --color-palette-grey-20: #cdcdcd;
+  --color-palette-grey-10: #f7f7f7;
+  --color-palette-blush-pale: #fff8f4;
+  --color-palette-blush-beige: #f6e9dc;
+  --color-palette-blush-light: #f8d7be;
+  --color-palette-blush-lush: #ffcfc0;
+  --color-palette-blush-blush: #ff9f80;
+  --color-palette-blush-copper: #d89078;
+  --color-palette-yellow: #fff799;
+  --color-palette-white: #ffffff;
+  --color-palette-black: #464646;
+  --color-partners-trustpilot: #29b47c;
+  --color-partners-paypal: #ffc43a;
+  --color-partners-facebook: #485b94;
+  --size-font-base: var(--size-font-medium); /* the base size of the font */
+  --color-palette-semantic-warning: var(--color-palette-blush-blush);
+  --color-palette-semantic-success: var(--color-palette-yellow);
+  --color-test-yellow-kinda-thing: var(--color-palette-yellow); /* Yellow test */
 }

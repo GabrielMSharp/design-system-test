@@ -1,13 +1,12 @@
 {
   "color": {
-    "base": {
-      "gray": {
-        "light" : { "value": "#CCCCCC"},
-        "medium": { "value": "#999999" },
-        "dark"  : { "value": "#111111" }
-      },
-      "red": { "value": "{color.brand.primary}" },
-      "green": { "value": "#00FF00" }
+    "partners": {
+      "facebook": { "value": "#485b94" },
+      "paypal": { "value": "#ffc43a" },
+      "trustpilot": { "value": "#29b47c" }
+    },
+    "test": {
+      "yellow-kinda-thing": {"value": "{color.palette.yellow}", "comment": "Yellow test"}
     }
   }
 }

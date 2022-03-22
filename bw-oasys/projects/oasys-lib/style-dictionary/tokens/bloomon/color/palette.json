@@ -1,0 +1,68 @@
+{
+    "color": {
+        "palette": {
+            "black": {  
+                "value": "#464646"
+            },
+            "white": {
+                "value": "#ffffff"
+            },
+            "yellow": {         
+                "value": "#fff799"
+            },
+            "blush": {
+                "copper": {"value": "#d89078"},
+                "blush": {"value": "#ff9f80"},
+                "lush": {"value": "#ffcfc0"},
+                "light": {"value": "#f8d7be"},
+                "beige": {"value": "#f6e9dc"},
+                "pale": {"value": "#fff8f4"}
+            },
+            "grey": {
+                "75": {
+                    
+                    "value": "#464646"
+                },
+                "60": {
+                    
+                    "value": "#676767"
+                },
+                "50": {
+                    
+                    "value": "#898989"
+                },
+                "40": {
+                    
+                    "value": "#a8a8a8"
+                },
+                "30": {
+                    
+                    "value": "#c6c6c6"
+                },
+                "20": {
+                    
+                    "value": "#cdcdcd"
+                },
+                "10": {
+                    
+                    "value": "#f7f7f7"
+                }
+            },
+            "semantic": {
+                "success": {
+                    
+                    "value": "{color.palette.yellow}"
+                },
+                "warning": {
+                    
+                    "value": "{color.palette.blush.blush}"
+                },
+                "error": {
+                    
+                    "value": "#c84116"
+                }
+            }
+        }
+    }
+
+}
