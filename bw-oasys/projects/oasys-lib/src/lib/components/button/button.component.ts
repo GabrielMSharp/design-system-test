@@ -12,7 +12,7 @@ export class ButtonComponent implements OnInit {
   @Input() buttonText: string = '';
   @Input() href: string = '';
 
-  @Input() buttonType: 'primary'|'primary-2'|'secondary'|'secondary-2' = 'primary';
+  @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';
 
   @Output() buttonClick: EventEmitter<void> = new EventEmitter();
 

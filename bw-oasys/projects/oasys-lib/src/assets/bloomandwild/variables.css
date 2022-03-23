@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 23 Mar 2022 11:11:34 GMT
+ * Generated on Wed, 23 Mar 2022 12:48:06 GMT
  */
 
 :root {
@@ -24,6 +24,9 @@
   --button-color-primary-2-background: #447964;
   --button-color-primary-2-border: #447964;
   --button-color-primary-2-text: #ffffff;
+  --button-color-primary-3-background: #262626;
+  --button-color-primary-3-border: #262626;
+  --button-color-primary-3-text: #ffffff;
   --button-color-secondary-background: rgba(0, 0, 0, 0);
   --button-color-secondary-border: #262626;
   --button-color-secondary-text: #262626;

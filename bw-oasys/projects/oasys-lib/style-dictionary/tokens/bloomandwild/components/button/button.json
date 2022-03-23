@@ -11,6 +11,11 @@
         "border": {"value": "{color.tertiary.value}"},
         "text": {"value": "{color.global.text-on-dark}"}
       },
+      "primary-3": {
+        "background": {"value": "{button.color.primary.background.value}"},
+        "border": {"value": "{button.color.primary.border.value}"},
+        "text": {"value": "{button.color.primary.text.value}"}
+      },
       "secondary": {
         "background": {"value": "{color.global.transparent.value}"},
         "border": {"value": "{color.primary.value}"},

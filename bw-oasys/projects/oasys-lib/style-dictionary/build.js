@@ -22,8 +22,8 @@ function getStyleDictionaryConfig(brand) {
               outputReferences: false,
             },
             filter: (token) => {
-                console.log(token);
-                // return true;
+              console.log(token);
+              // return true;
               return token.name.indexOf('brand') === -1;
             }
           },
