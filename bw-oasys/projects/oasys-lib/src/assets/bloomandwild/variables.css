@@ -1,37 +1,17 @@
 /**
  * Do not edit directly
- * Generated on Tue, 22 Mar 2022 12:04:37 GMT
+ * Generated on Wed, 23 Mar 2022 10:14:57 GMT
  */
 
 :root {
-  --size-font-large: 2.4rem; /* the large size of the font */
-  --size-font-medium: 1.6rem; /* the medium size of the font */
-  --size-font-small: 0.75rem; /* the small size of the font */
-  --color-palette-semantic-error: #db4141;
-  --color-palette-semantic-warning: #f8bb40;
-  --color-palette-semantic-success: #add685;
-  --color-palette-grey-75: #4d4840;
-  --color-palette-grey-60: #726b60;
-  --color-palette-grey-50: #948b7e;
-  --color-palette-grey-40: #afaaa1;
-  --color-palette-grey-30: #cbc7c1;
-  --color-palette-grey-20: #e2e0dc;
-  --color-palette-grey-10: #f4f3f2;
-  --color-palette-pine-75: #2d5443;
-  --color-palette-pine-40: #8fc0ac;
-  --color-palette-pine-20: #e2eee9;
-  --color-palette-pine-10: #f0f6f4;
-  --color-palette-linen-75: #734d11;
-  --color-palette-linen-60: #b67b1b;
-  --color-palette-linen-40: #e8b767;
-  --color-palette-linen-20: #f9ecd7;
-  --color-palette-linen-10: #fcf5ea;
-  --color-palette-yellow: #fdf888;
-  --color-palette-white: #ffffff;
-  --color-palette-black: #464646;
-  --color-partners-trustpilot: #29b47c;
-  --color-partners-paypal: #ffc43a;
   --color-partners-facebook: #485b94;
-  --size-font-base: var(--size-font-medium); /* the base size of the font */
-  --color-test-yellow-kinda-thing: var(--color-palette-yellow); /* Yellow test */
+  --color-partners-paypal: #ffc43a;
+  --color-partners-trustpilot: #29b47c;
+  --color-primary: #464646;
+  --color-secondary: #ffffff;
+  --color-tertiary: #447964;
+  --size-font-small: 0.75rem; /* the small size of the font */
+  --size-font-medium: 1.6rem; /* the medium size of the font */
+  --size-font-large: 2.4rem; /* the large size of the font */
+  --size-font-base: 1.6rem; /* the base size of the font */
 }

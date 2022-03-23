@@ -19,11 +19,15 @@ function getStyleDictionaryConfig(brand) {
             format: "css/variables",
             options: {
               showFileHeader: true,
-              outputReferences: true,
+              outputReferences: false,
             },
+            filter: (token) => {
+                console.log(token);
+              return token.name.indexOf('brand') === -1;
+            }
           },
         ],
-      },
+      }
     },
   };
 }
@@ -37,9 +41,7 @@ console.log("Build started...");
     console.log("\n==============================================");
     console.log(`\nProcessing: [${brand}]`);
 
-    const StyleDictionary = StyleDictionaryPackage
-    .extend(getStyleDictionaryConfig(brand))
-    ;
+    const StyleDictionary = StyleDictionaryPackage.extend(getStyleDictionaryConfig(brand));
 
     StyleDictionary.buildAllPlatforms();
 
