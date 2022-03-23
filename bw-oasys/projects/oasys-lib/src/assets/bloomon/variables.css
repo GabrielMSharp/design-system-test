@@ -1,9 +1,13 @@
 /**
  * Do not edit directly
- * Generated on Wed, 23 Mar 2022 10:14:57 GMT
+ * Generated on Wed, 23 Mar 2022 11:11:34 GMT
  */
 
 :root {
+  --color-global-background: #ffffff;
+  --color-global-text: #464646;
+  --color-global-text-on-dark: #ffffff;
+  --color-global-transparent: rgba(0, 0, 0, 0);
   --color-partners-facebook: #485b94;
   --color-partners-paypal: #ffc43a;
   --color-partners-trustpilot: #29b47c;
@@ -14,4 +18,19 @@
   --size-font-medium: 1.6rem; /* the medium size of the font */
   --size-font-large: 2.4rem; /* the large size of the font */
   --size-font-base: 1.6rem; /* the base size of the font */
+  --button-color-primary-background: #464646;
+  --button-color-primary-border: #464646;
+  --button-color-primary-text: #ffffff;
+  --button-color-primary-2-background: #464646;
+  --button-color-primary-2-border: #464646;
+  --button-color-primary-2-text: #ffffff;
+  --button-color-primary-3-background: #fff799;
+  --button-color-primary-3-border: #fff799;
+  --button-color-primary-3-text: #464646;
+  --button-color-secondary-background: rgba(0, 0, 0, 0);
+  --button-color-secondary-border: #464646;
+  --button-color-secondary-text: #464646;
+  --button-color-secondary-2-background: rgba(0, 0, 0, 0);
+  --button-color-secondary-2-border: #464646;
+  --button-color-secondary-2-text: #464646;
 }

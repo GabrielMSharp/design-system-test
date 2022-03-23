@@ -1,0 +1,31 @@
+{
+  "button": {
+    "color": {
+      "primary": {
+        "background": {"value": "{color.primary.value}"},
+        "border": {"value": "{color.primary.value}"},
+        "text": {"value": "{color.global.text-on-dark}"}
+      },
+      "primary-2": {
+        "background": {"value": "{color.primary.value}"},
+        "border": {"value": "{color.primary.value}"},
+        "text": {"value": "{color.global.text-on-dark}"}
+      },
+      "primary-3": {
+        "background": {"value": "{color.tertiary.value}"},
+        "border": {"value": "{color.tertiary.value}"},
+        "text": {"value": "{color.global.text}"}
+      },
+      "secondary": {
+        "background": {"value": "{color.global.transparent.value}"},
+        "border": {"value": "{color.primary.value}"},
+        "text": {"value": "{color.primary.value}"}
+      },
+      "secondary-2": {
+        "background": {"value": "{color.global.transparent.value}"},
+        "border": {"value": "{color.primary.value}"},
+        "text": {"value": "{color.primary.value}"}
+      }
+    }
+  }
+}

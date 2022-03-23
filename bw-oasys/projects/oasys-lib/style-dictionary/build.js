@@ -8,7 +8,7 @@ function getStyleDictionaryConfig(brand) {
   return {
     source: [
         `tokens/global/**/*.json`,
-        `tokens/${brand}/**/*.json`
+        `tokens/${brand}/**/**/*.json`
     ],
     platforms: {
       css: {
@@ -23,6 +23,7 @@ function getStyleDictionaryConfig(brand) {
             },
             filter: (token) => {
                 console.log(token);
+                // return true;
               return token.name.indexOf('brand') === -1;
             }
           },

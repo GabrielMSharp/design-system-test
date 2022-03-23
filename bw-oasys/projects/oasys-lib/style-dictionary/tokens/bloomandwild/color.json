@@ -11,10 +11,13 @@
       "value": "{brand.color.pine.60.value}"
     }
   },
+
+
+  
   "brand": {
     "color": {
       "black": {
-        "value": "#464646"
+        "value": "#262626"
       },
       "white": { "value": "#ffffff" },
       "lemon": { "value": "#fdf888" },

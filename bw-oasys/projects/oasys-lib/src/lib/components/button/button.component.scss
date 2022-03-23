@@ -1,3 +1,5 @@
+$buttonTypes: primary, primary-2, secondary, secondary-2;
+
 lib-button {
     display: contents;
 }
@@ -11,9 +13,19 @@ lib-button {
         display: inline-flex;
     
         /*Styles*/
-        background: var(--button-background);
-        color: var(--button-color);
         border-radius: var(--button-corner-radius);
+
+        @each $buttonType in $buttonTypes {
+            &.type-#{$buttonType} {
+                background-color: var(--button-color-#{$buttonType}-background);
+                border-color: var(--button-color-#{$buttonType}-border);
+                
+                color: var(--button-color-#{$buttonType}-text);
+                lib-text.ui-text {
+                    color: var(--button-color-#{$buttonType}-text);
+                }
+            }
+        }
     }
 }
 

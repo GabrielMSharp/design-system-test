@@ -1,5 +1,11 @@
 {
   "color": {
+    "global": {
+      "background": {"value": "{brand.color.white.value}"},
+      "text": {"value": "{brand.color.black.value}"},
+      "text-on-dark": {"value": "{brand.color.white.value}"},
+      "transparent": {"value": "transparent"}
+    },
     "partners": {
       "facebook": { "value": "#485b94" },
       "paypal": { "value": "#ffc43a" },
