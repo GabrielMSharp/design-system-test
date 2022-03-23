@@ -1,10 +1,16 @@
 $buttonTypes: primary, primary-2, secondary, secondary-2;
 
-lib-button {
-    display: contents;
+
+@mixin buttonColors($buttonType) {
+    background-color: var(--button-color-#{$buttonType}-background);
+    border-color: var(--button-color-#{$buttonType}-border);
+    color: var(--button-color-#{$buttonType}-text);
 }
 
+
 lib-button {
+    display: contents;
+
     button {
         /* Reset */
         border: 0;
@@ -14,16 +20,13 @@ lib-button {
     
         /*Styles*/
         border-radius: var(--button-corner-radius);
+        border: 2px solid transparent;
 
+
+        // Button Colors
         @each $buttonType in $buttonTypes {
             &.type-#{$buttonType} {
-                background-color: var(--button-color-#{$buttonType}-background);
-                border-color: var(--button-color-#{$buttonType}-border);
-                
-                color: var(--button-color-#{$buttonType}-text);
-                lib-text.ui-text {
-                    color: var(--button-color-#{$buttonType}-text);
-                }
+                @include buttonColors(($buttonType));
             }
         }
     }
