@@ -2,53 +2,51 @@
 {
   "color": {
     "primary": {
-      "value": "{brand.color.black.value}"
+      "value": "{brand.black.value}"
     },
     "secondary": {
-      "value": "{brand.color.white.value}"
+      "value": "{brand.white.value}"
     },
     "tertiary": {
-      "value": "{brand.color.pine.60.value}"
+      "value": "{brand.pine.60.value}"
     }
   },
 
 
   
   "brand": {
-    "color": {
-      "black": {
-        "value": "#262626"
-      },
-      "white": { "value": "#ffffff" },
-      "lemon": { "value": "#fdf888" },
-      "linen": {
-        "75": { "value": "#734d11" },
-        "60": { "value": "#b67b1b" },
-        "40": { "value": "#e8b767" },
-        "20": { "value": "#f9ecd7" },
-        "10": { "value": "#fcf5ea" }
-      },
-      "pine": {
-        "75": { "value": "#2d5443" },
-        "60": { "value": "#447964" },
-        "40": { "value": "#8fc0ac" },
-        "20": { "value": "#e2eee9" },
-        "10": { "value": "#f0f6f4" }
-      },
-      "grey": {
-        "75": { "value": "#4d4840" },
-        "60": { "value": "#726b60" },
-        "50": { "value": "#948b7e" },
-        "40": { "value": "#afaaa1" },
-        "30": { "value": "#cbc7c1" },
-        "20": { "value": "#e2e0dc" },
-        "10": { "value": "#f4f3f2" }
-      },
-      "semantic": {
-        "success": { "value": "#add685" },
-        "warning": { "value": "#f8bb40" },
-        "error": { "value": "#db4141" }
-      }
+    "black": {
+      "value": "#262626"
+    },
+    "white": { "value": "#ffffff" },
+    "lemon": { "value": "#fdf888" },
+    "linen": {
+      "75": { "value": "#734d11" },
+      "60": { "value": "#b67b1b" },
+      "40": { "value": "#e8b767" },
+      "20": { "value": "#f9ecd7" },
+      "10": { "value": "#fcf5ea" }
+    },
+    "pine": {
+      "75": { "value": "#2d5443" },
+      "60": { "value": "#447964" },
+      "40": { "value": "#8fc0ac" },
+      "20": { "value": "#e2eee9" },
+      "10": { "value": "#f0f6f4" }
+    },
+    "grey": {
+      "75": { "value": "#4d4840" },
+      "60": { "value": "#726b60" },
+      "50": { "value": "#948b7e" },
+      "40": { "value": "#afaaa1" },
+      "30": { "value": "#cbc7c1" },
+      "20": { "value": "#e2e0dc" },
+      "10": { "value": "#f4f3f2" }
+    },
+    "semantic": {
+      "success": { "value": "#add685" },
+      "warning": { "value": "#f8bb40" },
+      "error": { "value": "#db4141" }
     }
   }
 }
