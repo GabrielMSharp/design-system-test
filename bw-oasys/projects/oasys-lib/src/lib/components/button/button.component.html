@@ -1,10 +1,8 @@
 
-<button (click)="clickButton()" [routerLink]="href || null" [ngClass]="buttonTypeClass">
-    <lib-layout-box>
-        <lib-layout-inline>
-            <span>★</span>
-            <lib-text>{{buttonText}}</lib-text>
-        </lib-layout-inline>
-    </lib-layout-box>
+<button libLayoutBox [padding]="buttonSize"  (click)="clickButton()" [routerLink]="href || null" [ngClass]="buttonTypeClass">
+    <lib-layout-inline>
+        <span>★</span>
+        <lib-text>{{buttonText}}</lib-text>
+    </lib-layout-inline>
 </button>
 

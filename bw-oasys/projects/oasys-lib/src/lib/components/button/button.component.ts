@@ -10,6 +10,7 @@ import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, Chan
 export class ButtonComponent implements OnInit {
 
   @Input() buttonText: string = '';
+  @Input() buttonSize: 'small'|'large' = 'large';
   @Input() href: string = '';
 
   @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';
