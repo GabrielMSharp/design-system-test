@@ -12,10 +12,13 @@ $buttonSizes: large, small;
 @mixin buttonSize($buttonSize) {
     $paddingX: var(--button-size-#{$buttonSize}-padding-x);
     
-    $calculatedHeight: calc(var(--button-size-#{$buttonSize}-height) / 2);
-    $calculatedLineHeight: calc(var(--button-size-#{$buttonSize}-line-height) / 2);
     $borderWidth: var(--button-size-#{$buttonSize}-border-width);
-    $paddingY: calc($calculatedHeight - $calculatedLineHeight - $borderWidth);
+    $lineHeight: var(--button-size-#{$buttonSize}-line-height);
+    
+    $calculatedHeight: calc(var(--button-size-#{$buttonSize}-height) / 2);
+    $calculatedLineHeight: calc($lineHeight / 2);
+    $calculatedBorderWidth: calc($borderWidth / 2);
+    $paddingY: calc($calculatedHeight - $calculatedLineHeight - $calculatedBorderWidth);
 
     padding-top: $paddingY;
     padding-right: $paddingX;
@@ -25,7 +28,7 @@ $buttonSizes: large, small;
 
     .ui-text {
         text-transform: var(--button-size-#{$buttonSize}-text-transform);
-        line-height: $calculatedLineHeight;
+        line-height: $lineHeight;
     }
 }
 
