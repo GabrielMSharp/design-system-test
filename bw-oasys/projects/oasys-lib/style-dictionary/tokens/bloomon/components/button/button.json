@@ -38,7 +38,7 @@
       "small" : {
         "padding-x": {"value": "{size.spacing.small.value}"},
         "height": {"value": "{size.spacing.large.value}"},
-        "border-width": {"value": "{size.spacing.5xsmall.value}",
+        "border-width": {"value": "{size.spacing.5xsmall.value}"},
         "line-height": {"value": "1.6rem"},
         "text-transform": {"value": "none"}
       }
