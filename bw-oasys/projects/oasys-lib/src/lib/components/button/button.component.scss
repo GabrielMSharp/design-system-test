@@ -1,10 +1,32 @@
 $buttonTypes: primary, primary-2, primary-3, secondary, secondary-2;
 
+$buttonSizes: large, small;
+
 
 @mixin buttonColors($buttonType) {
     background-color: var(--button-color-#{$buttonType}-background);
     border-color: var(--button-color-#{$buttonType}-border);
     color: var(--button-color-#{$buttonType}-text);
+}
+
+@mixin buttonSize($buttonSize) {
+    $paddingX: var(--button-size-#{$buttonSize}-padding-x);
+    
+    $calculatedHeight: calc(var(--button-size-#{$buttonSize}-height) / 2);
+    $calculatedLineHeight: calc(var(--button-size-#{$buttonSize}-line-height) / 2);
+    $borderWidth: var(--button-size-#{$buttonSize}-border-width);
+    $paddingY: calc($calculatedHeight - $calculatedLineHeight - $borderWidth);
+
+    padding-top: $paddingY;
+    padding-right: $paddingX;
+    padding-bottom: $paddingY;
+    padding-left: $paddingX;
+    border-width: $borderWidth;
+
+    .ui-text {
+        text-transform: var(--button-size-#{$buttonSize}-text-transform);
+        line-height: $calculatedLineHeight;
+    }
 }
 
 
@@ -17,16 +39,23 @@ lib-button {
         -webkit-appearance: none;
         padding: 0;
         display: inline-flex;
-    
-        /*Styles*/
-        border-radius: var(--button-corner-radius);
-        border: 2px solid transparent;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
 
 
         // Button Colors
         @each $buttonType in $buttonTypes {
             &.type-#{$buttonType} {
                 @include buttonColors(($buttonType));
+            }
+        }
+        
+        // Button Sizes
+        @each $buttonSize in $buttonSizes {
+            &.size-#{$buttonSize} {
+                @include buttonSize(($buttonSize));
             }
         }
     }

@@ -26,6 +26,22 @@
         "border": {"value": "{color.tertiary.value}"},
         "text": {"value": "{color.tertiary.value}"}
       }
+    },
+    "size" : {
+      "large": {
+        "padding-x": {"value": "{size.spacing.default.value}"},
+        "height": {"value": "{size.spacing.2xlarge.value}"},
+        "border-width": {"value": "{size.spacing.4xsmall.value}"},
+        "line-height": {"value": "1.6rem"},
+        "text-transform": {"value": "uppercase"}
+      },
+      "small" : {
+        "padding-x": {"value": "{size.spacing.small.value}"},
+        "height": {"value": "{size.spacing.large.value}"},
+        "border-width": {"value": "{size.spacing.4xsmall.value}"},
+        "line-height": {"value": "1.6rem"},
+        "text-transform": {"value": "none"}
+      }
     }
   }
 }

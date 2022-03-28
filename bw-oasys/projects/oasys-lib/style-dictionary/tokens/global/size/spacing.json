@@ -1,0 +1,39 @@
+{
+  "size": {
+      "spacing": {
+        "5xsmall" : {
+          "value": "0.1"
+        },
+        "4xsmall" : {
+          "value": "0.2"
+        },
+        "3xsmall": {
+          "value": "0.4"
+        },
+        "2xsmall" : {
+          "value": "0.8"
+        },
+        "xsmall" : {
+          "value": "1.2"
+        },
+        "small" : {
+          "value": "1.6"
+        },
+        "default" : {
+          "value": "2.4"
+        },
+        "large" : {
+          "value": "3.2"
+        },
+        "xlarge" : {
+          "value": "4.0"
+        },
+        "2xlarge" : {
+          "value": "4.8"
+        },
+        "3xlarge" : {
+          "value": "5.6"
+        }
+      }
+  }
+}

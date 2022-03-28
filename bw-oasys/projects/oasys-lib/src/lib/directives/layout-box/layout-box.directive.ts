@@ -16,7 +16,9 @@ export class LayoutBoxDirective implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.boxLayoutClasses = `ui-layout-box-${this.padding}`;
+    this.boxLayoutClasses = [
+      `ui-layout-box-${this.padding}`
+    ].join(' ');
   }
 
 }

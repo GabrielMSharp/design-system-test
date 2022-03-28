@@ -17,7 +17,7 @@ export class ButtonComponent implements OnInit {
 
   @Output() buttonClick: EventEmitter<void> = new EventEmitter();
 
-  buttonTypeClass: string = '';
+  buttonClasses: string = '';
 
   constructor() { }
 
@@ -27,7 +27,10 @@ export class ButtonComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.buttonTypeClass = `type-${this.buttonType}`;
+    this.buttonClasses = [
+      `type-${this.buttonType}`,
+      `size-${this.buttonSize}`
+    ].join(' ');
   }
 
 }

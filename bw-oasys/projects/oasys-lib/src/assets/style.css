@@ -1,15 +1,6 @@
+@import './layout.scss';
+
 html {
     font-size: 62.5%;
 }
 
-@import '_layout';
-
-
-.ui-layout-box-small {
-    padding: 8px;
-}
-
-
-.ui-layout-box-large {
-    padding: 16px;
-}
