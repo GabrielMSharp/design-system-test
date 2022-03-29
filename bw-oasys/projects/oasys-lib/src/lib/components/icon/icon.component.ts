@@ -9,10 +9,10 @@ import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy } 
 })
 export class IconComponent implements OnInit {
   @Input() iconSize: 'small'|'large' = 'large';
-  @Input() icon!: string;
-  @Input() width?: number;
-  @Input() height?: number;
-  @Input() class?: string;
+  @Input() iconName!: string;
+  @Input() iconWidth?: number;
+  @Input() iconHeight?: number;
+  @Input() iconClass?: string;
 
   size?: string;
   
@@ -20,9 +20,9 @@ export class IconComponent implements OnInit {
 
   ngOnInit(): void {
     this.size = window.getComputedStyle(document.documentElement).getPropertyValue(`--icon-size-${this.iconSize}`).trim();
-    if (!this.width || !this.height) {
-      this.width = parseInt(this.size, 10);
-      this.height = parseInt(this.size, 10);
+    if (!this.iconWidth || !this.iconHeight) {
+      this.iconWidth = parseInt(this.size, 10);
+      this.iconHeight = parseInt(this.size, 10);
     }
   }
 
