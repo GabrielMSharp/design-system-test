@@ -36,7 +36,7 @@ export class ButtonComponent implements OnInit {
       `type-${this.buttonType}`,
       `size-${this.buttonSize}`,
       `${this.buttonIcon ? 'button--has-icon': ''}`,
-      `${this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
+      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
       `${this.buttonText ? 'button--has-text' : this.buttonIcon ? 'button--icon--only': ''}`,
     ].join(' ');
   }

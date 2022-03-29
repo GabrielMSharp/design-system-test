@@ -19,12 +19,15 @@ $buttonSizes: large, small;
     $borderWidth: var(--button-size-#{$buttonSize}-border-width);
     $lineHeight: var(--button-size-#{$buttonSize}-line-height);
     
-    $calculatedHeight: calc(var(--button-size-#{$buttonSize}-height) / 2);
+    $buttonMinimumHeight: var(--button-size-#{$buttonSize}-height);
+    $calculatedHeight: calc($buttonMinimumHeight / 2);
     $calculatedLineHeight: calc($lineHeight / 2);
     $paddingY: calc($calculatedHeight - $calculatedLineHeight - $borderWidth);
 
     $paddingX--with-icon: calc($paddingX * 2);
 
+    min-height: $buttonMinimumHeight;
+    min-width: $buttonMinimumHeight;
     padding-top: $paddingY;
     padding-right: $paddingX;
     padding-bottom: $paddingY;
@@ -47,11 +50,14 @@ $buttonSizes: large, small;
         $IconOffset: calc($iconSize / 2 * -1);
         $inlineSpacing: var(--button-size-#{$buttonSize}-inline-spacing);
 
-        .lib-icon {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-        }
+        // &.button--icon--leading,
+        // &.button--icon--trailing {
+            .lib-icon {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        // }
 
         &.button--icon--leading {
             padding-left: $paddingX--with-icon;
@@ -74,9 +80,8 @@ $buttonSizes: large, small;
             padding-right: $paddingX;
             
             .lib-icon {
-                background: red;
-                // margin-left: $IconOffset;
-                // margin-right: $IconOffset;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
             }
         }
     

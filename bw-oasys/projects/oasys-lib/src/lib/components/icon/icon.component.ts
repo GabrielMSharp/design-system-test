@@ -19,7 +19,7 @@ export class IconComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.size = window.getComputedStyle(document.documentElement).getPropertyValue(`--icon-size-${this.iconSize}`);
+    this.size = window.getComputedStyle(document.documentElement).getPropertyValue(`--icon-size-${this.iconSize}`).trim();
     if (!this.width || !this.height) {
       this.width = parseInt(this.size, 10);
       this.height = parseInt(this.size, 10);
