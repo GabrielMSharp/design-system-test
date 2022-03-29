@@ -9,12 +9,16 @@ import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, Chan
 })
 export class ButtonComponent implements OnInit {
 
-  @Input() buttonText: string = '';
+  // Button Content
+  @Input() buttonText?: string;
+  @Input() buttonIcon?: 'pin'|'heart';
+
+  // Button Stylings
   @Input() buttonSize: 'small'|'large' = 'large';
-  @Input() href: string = '';
-
   @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';
-
+  
+  // Button Actions
+  @Input() href: string = '';
   @Output() buttonClick: EventEmitter<void> = new EventEmitter();
 
   buttonClasses: string = '';
@@ -29,7 +33,8 @@ export class ButtonComponent implements OnInit {
   ngOnInit(): void {
     this.buttonClasses = [
       `type-${this.buttonType}`,
-      `size-${this.buttonSize}`
+      `size-${this.buttonSize}`,
+      `${this.buttonIcon ? 'button--has-icon': ''}`
     ].join(' ');
   }
 

@@ -1,8 +1,10 @@
 
 <button (click)="clickButton()" [routerLink]="href || null" [ngClass]="buttonClasses">
     <lib-layout-inline>
-        <lib-icon icon="pin"></lib-icon>
-        <lib-text>{{buttonText}}</lib-text>
+        <lib-icon *ngIf="buttonIcon" [icon]="buttonIcon"></lib-icon>
+        <lib-text *ngIf="buttonText">
+            {{buttonText}}
+        </lib-text>
     </lib-layout-inline>
 </button>
 

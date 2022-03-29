@@ -7,6 +7,10 @@ $buttonSizes: large, small;
     background-color: var(--button-color-#{$buttonType}-background);
     border-color: var(--button-color-#{$buttonType}-border);
     color: var(--button-color-#{$buttonType}-text);
+
+    lib-icon svg {
+        fill: currentColor;
+    }
 }
 
 @mixin buttonSize($buttonSize) {
@@ -20,6 +24,8 @@ $buttonSizes: large, small;
     $calculatedBorderWidth: calc($borderWidth / 2);
     $paddingY: calc($calculatedHeight - $calculatedLineHeight - $calculatedBorderWidth);
 
+    $paddingX--with-icon: calc($paddingX * 2);
+
     padding-top: $paddingY;
     padding-right: $paddingX;
     padding-bottom: $paddingY;
@@ -29,6 +35,10 @@ $buttonSizes: large, small;
     .ui-text {
         text-transform: var(--button-size-#{$buttonSize}-text-transform);
         line-height: $lineHeight;
+    }
+
+    &.button--has-icon {
+        padding-left: $paddingX--with-icon;
     }
 }
 
