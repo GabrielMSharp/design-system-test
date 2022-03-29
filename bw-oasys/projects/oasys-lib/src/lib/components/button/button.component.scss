@@ -8,7 +8,7 @@ $buttonSizes: large, small;
     border-color: var(--button-color-#{$buttonType}-border);
     color: var(--button-color-#{$buttonType}-text);
 
-    lib-icon svg {
+    .lib-icon svg {
         fill: currentColor;
     }
 }
@@ -38,7 +38,46 @@ $buttonSizes: large, small;
     }
 
     &.button--has-icon {
-        padding-left: $paddingX--with-icon;
+        $iconSize: var(--button-size-#{$buttonSize}-icon-size);
+        $IconOffset: calc($iconSize / 2 * -1);
+        $inlineSpacing: var(--button-size-#{$buttonSize}-inline-spacing);
+
+        &.button--icon--leading {
+            padding-left: $paddingX--with-icon;
+
+            .lib-icon {
+                right: calc(100% + $inlineSpacing);
+            }
+        }
+
+        &.button--icon--trailing {
+            padding-right: $paddingX--with-icon;
+
+            .lib-icon {
+                left: calc(100% + $inlineSpacing);
+            }
+        }
+      
+        &.button--icon--only {
+            padding-left: $paddingX;
+            padding-right: $paddingX;
+            
+            .lib-icon {
+                background: red;
+                // margin-left: $IconOffset;
+                // margin-right: $IconOffset;
+            }
+        }
+        
+        .lib-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            svg {
+                width: $iconSize;
+            }
+        }
     }
 }
 

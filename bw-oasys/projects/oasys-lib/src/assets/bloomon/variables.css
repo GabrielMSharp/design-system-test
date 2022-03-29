@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 28 Mar 2022 16:44:17 GMT
+ * Generated on Tue, 29 Mar 2022 12:45:34 GMT
  */
 
 :root {
@@ -29,6 +29,8 @@
   --size-spacing-xlarge: 4rem;
   --size-spacing-2xlarge: 4.8rem;
   --size-spacing-3xlarge: 5.6rem;
+  --icon-size-small: 16;
+  --icon-size-large: 24;
   --button-color-primary-background: #464646;
   --button-color-primary-border: #464646;
   --button-color-primary-text: #ffffff;
@@ -49,9 +51,11 @@
   --button-size-large-border-width: 0.1rem;
   --button-size-large-line-height: 1.6rem;
   --button-size-large-text-transform: uppercase;
+  --button-size-large-inline-spacing: 0.8rem;
   --button-size-small-padding-x: 1.6rem;
   --button-size-small-height: 3.2rem;
   --button-size-small-border-width: 0.1rem;
   --button-size-small-line-height: 1.6rem;
   --button-size-small-text-transform: none;
+  --button-size-small-inline-spacing: 0.4rem;
 }

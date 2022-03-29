@@ -12,6 +12,7 @@ export class ButtonComponent implements OnInit {
   // Button Content
   @Input() buttonText?: string;
   @Input() buttonIcon?: 'pin'|'heart';
+  @Input() buttonIconPlacement?: 'leading'|'trailing' = 'leading';
 
   // Button Stylings
   @Input() buttonSize: 'small'|'large' = 'large';
@@ -34,7 +35,9 @@ export class ButtonComponent implements OnInit {
     this.buttonClasses = [
       `type-${this.buttonType}`,
       `size-${this.buttonSize}`,
-      `${this.buttonIcon ? 'button--has-icon': ''}`
+      `${this.buttonIcon ? 'button--has-icon': ''}`,
+      `${this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
+      `${this.buttonText ? 'button--has-text' : this.buttonIcon ? 'button--icon--only': ''}`,
     ].join(' ');
   }
 

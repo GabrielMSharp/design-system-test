@@ -8,19 +8,21 @@ import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy } 
   encapsulation: ViewEncapsulation.None
 })
 export class IconComponent implements OnInit {
-
-  constructor() { }
-
+  @Input() iconSize: 'small'|'large' = 'large';
   @Input() icon!: string;
   @Input() width?: number;
   @Input() height?: number;
-  @Input() size?: number = 24;
   @Input() class?: string;
 
+  size?: string;
+  
+  constructor() { }
+
   ngOnInit(): void {
+    this.size = window.getComputedStyle(document.documentElement).getPropertyValue(`--icon-size-${this.iconSize}`);
     if (!this.width || !this.height) {
-      this.width = this.size;
-      this.height = this.size;
+      this.width = parseInt(this.size, 10);
+      this.height = parseInt(this.size, 10);
     }
   }
 

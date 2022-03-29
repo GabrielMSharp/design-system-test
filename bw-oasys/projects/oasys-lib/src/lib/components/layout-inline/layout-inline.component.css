@@ -4,6 +4,7 @@ lib-layout-inline {
 
 .ui-layout-inline {
     display: inline-flex;
+    position: relative;
 }
 
 .ui-layout-inline > * {
