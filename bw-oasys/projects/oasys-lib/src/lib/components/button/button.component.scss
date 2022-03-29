@@ -31,6 +31,10 @@ $buttonSizes: large, small;
     padding-left: $paddingX;
     border-width: $borderWidth;
 
+    .lib-button-content {
+        position: relative;
+    }
+
     .ui-text {
         text-transform: var(--button-size-#{$buttonSize}-text-transform);
         line-height: $lineHeight;

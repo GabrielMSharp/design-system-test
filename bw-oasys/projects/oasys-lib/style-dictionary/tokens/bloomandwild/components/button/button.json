@@ -33,7 +33,7 @@
         "height": {"value": "{size.spacing.2xlarge.value}"},
         "border-width": {"value": "{size.spacing.4xsmall.value}"},
         "line-height": {"value": "1.6rem"},
-        "text-transform": {"value": "uppercase"},
+        "text-transform": {"value": "none"},
         "inline-spacing": {"value": "{size.spacing.2xsmall.value}"}
       },
       "small" : {

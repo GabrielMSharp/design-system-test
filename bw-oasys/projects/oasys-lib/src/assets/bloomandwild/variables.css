@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 29 Mar 2022 12:45:34 GMT
+ * Generated on Tue, 29 Mar 2022 15:05:19 GMT
  */
 
 :root {
@@ -50,7 +50,7 @@
   --button-size-large-height: 4.8rem;
   --button-size-large-border-width: 0.2rem;
   --button-size-large-line-height: 1.6rem;
-  --button-size-large-text-transform: uppercase;
+  --button-size-large-text-transform: none;
   --button-size-large-inline-spacing: 0.8rem;
   --button-size-small-padding-x: 1.6rem;
   --button-size-small-height: 3.2rem;
