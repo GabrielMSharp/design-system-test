@@ -1,7 +1,33 @@
+$iconContexts: leading, trailing, iconOnly;
+$iconSizes: large, small;
+
 lib-icon {
   display: contents;
 }
 
+@mixin iconSize($iconSize){
+  $iconPositionAdjustment: var(--icon-position-modifier-#{$iconSize});
+
+  &.icon-context-leading {
+    margin-left: #{$iconPositionAdjustment};
+  }
+
+  &.icon-context-trailing {
+    margin-right: #{$iconPositionAdjustment};
+  }
+  
+  &.icon-context-iconOnly {
+    margin-left: #{$iconPositionAdjustment};
+    margin-right: #{$iconPositionAdjustment};
+  }
+
+}
+
 .lib-icon {
   display: inline-flex;
+
+  // Icon Contexts
+  @each $iconSize in $iconSizes {
+    @include iconSize(($iconSize));
+  }
 }

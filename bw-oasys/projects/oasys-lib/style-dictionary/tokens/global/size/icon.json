@@ -4,6 +4,10 @@
     "size": {
       "small": { "value": "16"},
       "large": { "value": "24"}
+    },
+    "position-modifier": {
+      "small": { "value": "-4px"},
+      "large": { "value": "-8px"}
     }
   }
 

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
-import { IconNames } from '../icon/icon';
+import { Icon, IconNames, IconContext } from '../icon/icon';
 @Component({
   selector: 'lib-button',
   templateUrl: './button.component.html',
@@ -12,7 +12,7 @@ export class ButtonComponent implements OnInit {
   // Button Content
   @Input() buttonText?: string;
   @Input() buttonIcon?: IconNames;
-  @Input() buttonIconPlacement?: 'leading'|'trailing' = 'leading';
+  @Input() buttonIconPlacement: IconContext = 'leading';
 
   // Button Stylings
   @Input() buttonSize: 'small'|'large' = 'large';
@@ -23,6 +23,8 @@ export class ButtonComponent implements OnInit {
   @Output() buttonClick: EventEmitter<void> = new EventEmitter();
 
   buttonClasses: string = '';
+
+  iconContext: IconContext = 'none';
 
   constructor() { }
 
@@ -37,8 +39,13 @@ export class ButtonComponent implements OnInit {
       `size-${this.buttonSize}`,
       `${this.buttonIcon ? 'button--has-icon': ''}`,
       `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
-      `${this.buttonText ? 'button--has-text' : this.buttonIcon ? 'button--icon--only': ''}`,
+      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
     ].join(' ');
+
+    if(this.buttonIcon) {
+      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';
+
+    }
   }
 
 }

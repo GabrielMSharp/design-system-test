@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 29 Mar 2022 15:05:19 GMT
+ * Generated on Wed, 30 Mar 2022 13:33:08 GMT
  */
 
 :root {
@@ -31,6 +31,8 @@
   --size-spacing-3xlarge: 5.6rem;
   --icon-size-small: 16;
   --icon-size-large: 24;
+  --icon-position-modifier-small: -4px;
+  --icon-position-modifier-large: -8px;
   --button-color-primary-background: #464646;
   --button-color-primary-border: #464646;
   --button-color-primary-text: #ffffff;
