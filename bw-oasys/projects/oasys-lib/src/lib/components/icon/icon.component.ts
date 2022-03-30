@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
-
+import { IconNames } from './icon';
 @Component({
   selector: 'lib-icon',
   templateUrl: './icon.component.html',
@@ -9,7 +9,7 @@ import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy } 
 })
 export class IconComponent implements OnInit {
   @Input() iconSize: 'small'|'large' = 'large';
-  @Input() iconName!: string;
+  @Input() iconName!: IconNames;
   @Input() iconWidth?: number;
   @Input() iconHeight?: number;
   @Input() iconClass?: string;

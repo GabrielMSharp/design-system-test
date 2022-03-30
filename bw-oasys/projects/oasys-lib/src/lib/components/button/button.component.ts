@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
-
+import { IconNames } from '../icon/icon';
 @Component({
   selector: 'lib-button',
   templateUrl: './button.component.html',
@@ -11,7 +11,7 @@ export class ButtonComponent implements OnInit {
 
   // Button Content
   @Input() buttonText?: string;
-  @Input() buttonIcon?: 'pin'|'heart';
+  @Input() buttonIcon?: IconNames;
   @Input() buttonIconPlacement?: 'leading'|'trailing' = 'leading';
 
   // Button Stylings
