@@ -34,6 +34,7 @@ $buttonSizes: large, small;
     padding-right: $paddingX;
     padding-bottom: $paddingY;
     padding-left: $paddingX;
+    
     border-width: $borderWidth;
 
     .lib-button-content {
@@ -47,19 +48,14 @@ $buttonSizes: large, small;
 
     &.button--has-icon {
         
-        
         $iconSize: var(--button-size-#{$buttonSize}-icon-size);
-        $IconOffset: calc($iconSize / 2 * -1);
         $inlineSpacing: var(--button-size-#{$buttonSize}-inline-spacing);
 
-        // &.button--icon--leading,
-        // &.button--icon--trailing {
-            .lib-icon {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-        // }
+        .lib-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
 
         &.button--icon--leading {
             padding-left: $paddingX--with-icon;
