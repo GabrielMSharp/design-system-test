@@ -1,7 +1,8 @@
 import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import { TokenService } from '../../services/token.service';
 import { IconNames, IconContext } from './icon';
 @Component({
-  selector: 'lib-icon',
+  selector: 'oasys-icon',
   templateUrl: './icon.component.html',
   styleUrls: ['./icon.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -19,10 +20,10 @@ export class IconComponent implements OnInit {
   size?: string;
   iconPlacementClass?: string;
   
-  constructor() { }
+  constructor(private tokenService: TokenService) { }
 
   ngOnInit(): void {
-    this.size = window.getComputedStyle(document.documentElement).getPropertyValue(`--icon-size-${this.iconSize}`).trim();
+    this.size = this.tokenService.getTokenValue(`--icon-size-${this.iconSize}`);;
     this.iconPlacementClass = `icon-context-${this.iconContext}`;
     if (!this.iconWidth || !this.iconHeight) {
       this.iconWidth = parseInt(this.size, 10);

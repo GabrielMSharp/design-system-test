@@ -1,9 +1,10 @@
 import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
+import { TokenService } from '../../services/token.service';
 import { IconNames, IconContext } from '../icon/icon';
 import { TextTransform } from '../text/text';
 
 @Component({
-  selector: 'lib-button',
+  selector: 'oasys-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   encapsulation: ViewEncapsulation.None,
@@ -26,9 +27,9 @@ export class ButtonComponent implements OnInit {
 
   buttonClasses: string = '';
   iconContext: IconContext = 'none';
-  textTransform?: TextTransform;
+  textTransform!: TextTransform;
 
-  constructor() { }
+  constructor(private tokenService: TokenService) { }
 
   clickButton(): void {
     console.log('button was clicked');
@@ -47,6 +48,10 @@ export class ButtonComponent implements OnInit {
     if(this.buttonIcon) {
       this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';
     }
+
+    this.textTransform = this.tokenService.getTokenValue(
+      `--button-size-${this.buttonSize}-text-transform`
+    ) as TextTransform;
   }
 
 }

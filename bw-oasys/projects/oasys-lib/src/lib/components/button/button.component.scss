@@ -47,12 +47,13 @@ $buttonSizes: large, small;
             display: flex;
             align-items: center;
         }
+
+        .ui-text {
+            line-height: $lineHeight;
+        }
     }
 
-    .ui-text {
-        text-transform: var(--button-size-#{$buttonSize}-text-transform);
-        line-height: $lineHeight;
-    }
+    
 
     &.button--has-icon {
         &.button--icon--trailing {
@@ -63,19 +64,11 @@ $buttonSizes: large, small;
         &.button--icon--only {
             max-width: calc($buttonMinimumHeight - $borderWidth);
         }
-
-        .ui-text {
-            text-transform: var(--button-size-#{$buttonSize}-text-transform);
-            line-height: $lineHeight;
-
-        }
     }
 }
 
 
-lib-button {
-    display: contents;
-
+oasys-button {
     button {
         /* Reset */
         border: 0;
@@ -101,6 +94,7 @@ lib-button {
                 @include buttonSize(($buttonSize));
             }
         }
+
     }
 }
 

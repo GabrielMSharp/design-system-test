@@ -1,9 +1,6 @@
 $iconContexts: leading, trailing, iconOnly;
 $iconSizes: large, small;
 
-lib-icon {
-  display: contents;
-}
 
 @mixin iconSize($iconSize){
   $iconPositionAdjustment: var(--icon-position-modifier-#{$iconSize});

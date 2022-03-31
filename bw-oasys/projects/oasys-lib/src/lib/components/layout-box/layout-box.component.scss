@@ -1,0 +1,23 @@
+$layout-box-sizes: 'xsmall', 'small', 'default', 'large';
+
+// :host {
+
+
+  .ui-layout-box-xsmall {
+    padding: var(--size-spacing-xsmall);
+  }
+
+  .ui-layout-box-small {
+    padding: var(--size-spacing-small);
+  }
+
+  .ui-layout-box-default {
+    padding: var(--size-spacing-default);
+  }
+
+  .ui-layout-box-large {
+    padding: var(--size-spacing-large);
+  }
+
+
+// }

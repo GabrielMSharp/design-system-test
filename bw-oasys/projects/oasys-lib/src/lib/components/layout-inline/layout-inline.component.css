@@ -1,7 +1,3 @@
-lib-layout-inline {
-    display: contents;
-}
-
 .ui-layout-inline {
     display: inline-flex;
     position: relative;

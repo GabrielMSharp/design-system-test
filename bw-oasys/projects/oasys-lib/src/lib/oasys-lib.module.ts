@@ -5,7 +5,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { LayoutInlineComponent } from './components/layout-inline/layout-inline.component';
 import { TextComponent } from './components/text/text.component';
 import { IconComponent } from './components/icon/icon.component';
-import { LayoutBoxDirective } from './directives/layout-box/layout-box.directive';
+import { LayoutBoxComponent } from './components/layout-box/layout-box.component';
+import { WindowService } from './services/window.service';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { LayoutBoxDirective } from './directives/layout-box/layout-box.directive
     LayoutInlineComponent,
     TextComponent,
     IconComponent,
-    LayoutBoxDirective
+    LayoutBoxComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +23,11 @@ import { LayoutBoxDirective } from './directives/layout-box/layout-box.directive
   ],
   exports: [
     ButtonComponent,
-    TextComponent
+    TextComponent,
+    LayoutBoxComponent
+  ],
+  providers: [
+    WindowService
   ]
 })
 export class OasysLibModule { }
