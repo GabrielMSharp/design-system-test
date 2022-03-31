@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 31 Mar 2022 14:13:01 GMT
+ * Generated on Thu, 31 Mar 2022 15:26:13 GMT
  */
 
 :root {
@@ -13,7 +13,7 @@
   --color-partners-trustpilot: #29b47c;
   --color-primary: #464646;
   --color-secondary: #ffffff;
-  --color-tertiary: #fff799;
+  --color-tertiary: #fff799 hello mum;
   --size-font-small: 0.75rem; /* the small size of the font */
   --size-font-medium: 1.6rem; /* the medium size of the font */
   --size-font-large: 2.4rem; /* the large size of the font */
@@ -39,8 +39,8 @@
   --button-color-primary-2-background: #464646;
   --button-color-primary-2-border: #464646;
   --button-color-primary-2-text: #ffffff;
-  --button-color-primary-3-background: #fff799;
-  --button-color-primary-3-border: #fff799;
+  --button-color-primary-3-background: #fff799 hello mum;
+  --button-color-primary-3-border: #fff799 hello mum;
   --button-color-primary-3-text: #464646;
   --button-color-secondary-background: rgba(0, 0, 0, 0);
   --button-color-secondary-border: #464646;
