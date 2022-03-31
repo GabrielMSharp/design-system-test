@@ -1,0 +1,24 @@
+/* ---------------------
+Bloomon font family defintions
+--------------------- */
+
+@font-face {
+  font-family: 'Patron';
+  src: url('./fonts/Patron-Regular.woff2') format('woff2'),
+      url('./fonts/Patron-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Patron';
+  src: url('./fonts/Patron-Thin.woff2') format('woff2'),
+      url('./fonts/Patron-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+

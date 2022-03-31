@@ -1,0 +1,34 @@
+
+//Headline
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: url('./fonts/TiemposHeadlineWeb-Bold.woff2') format('woff2'),
+      url('./fonts/TiemposHeadlineWeb-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+// Body
+
+@font-face {
+  font-family: 'NeueHaasUnica';
+  src: url('./fonts/NeueHaasUnicaW05-Medium.woff2') format('woff2'),
+      url('./fonts/NeueHaasUnicaW05-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NeueHaasUnica';
+  src: url('./fonts/NeueHaasUnicaW05-Regular.woff2') format('woff2'),
+      url('./fonts/NeueHaasUnicaW05-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+

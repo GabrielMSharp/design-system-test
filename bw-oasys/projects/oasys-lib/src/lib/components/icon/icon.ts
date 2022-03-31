@@ -5,8 +5,3 @@ export type IconNames =
 ;
 
 export type IconContext = 'leading' | 'trailing' | 'iconOnly' | 'none';
-
-export interface Icon {
-  iconName: IconNames;
-  iconContext: IconContext;
-}

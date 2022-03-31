@@ -1,5 +1,7 @@
 import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
-import { Icon, IconNames, IconContext } from '../icon/icon';
+import { IconNames, IconContext } from '../icon/icon';
+import { TextTransform } from '../text/text';
+
 @Component({
   selector: 'lib-button',
   templateUrl: './button.component.html',
@@ -23,8 +25,8 @@ export class ButtonComponent implements OnInit {
   @Output() buttonClick: EventEmitter<void> = new EventEmitter();
 
   buttonClasses: string = '';
-
   iconContext: IconContext = 'none';
+  textTransform?: TextTransform;
 
   constructor() { }
 
@@ -44,7 +46,6 @@ export class ButtonComponent implements OnInit {
 
     if(this.buttonIcon) {
       this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';
-
     }
   }
 

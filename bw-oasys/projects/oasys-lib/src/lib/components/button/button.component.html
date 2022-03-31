@@ -2,7 +2,7 @@
 <button (click)="clickButton()" [routerLink]="href || null" [ngClass]="buttonClasses">
     <div class="lib-button-content">
         <lib-icon *ngIf="buttonIcon" [iconName]="buttonIcon" [iconSize]="buttonSize" [iconClass]="'buttonIcon'" [iconContext]="iconContext"></lib-icon>
-        <lib-text *ngIf="buttonText">{{buttonText}}</lib-text>
+        <lib-text [textWeight]="buttonSize === 'large' ? 'bold' : 'normal'" *ngIf="buttonText">{{buttonText}}</lib-text>
     </div>
 </button>
 

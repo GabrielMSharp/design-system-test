@@ -21,7 +21,8 @@ import { LayoutBoxDirective } from './directives/layout-box/layout-box.directive
     RouterModule
   ],
   exports: [
-    ButtonComponent
+    ButtonComponent,
+    TextComponent
   ]
 })
 export class OasysLibModule { }

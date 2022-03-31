@@ -3,9 +3,20 @@ lib-text {
 }
 
 .ui-text {
-    display: block;
-    // color: var(--color-base-red);
-    font-size: var(--size-font-medium);
+    font-size: var(--size-font-base);
+    
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-normal);
+    
+    &.ui-text--weight-medium {
+        // font-family: PatronRegular;
+        font-weight: var(--font-weight-medium);
+    }
+    
+    &.ui-text--weight-bold {
+        // font-family: PatronRegular;
+        font-weight: var(--font-weight-bold);
+    }
 }
 
 

@@ -1,0 +1,21 @@
+
+{
+  "font": {
+    "family": {
+      "headline": {
+        "value": "'Patron', Arial, Helvetica, sans-serif"
+      },
+      "headline-second": {
+        "value": "{font.family.headline.value}"
+      },
+      "body": {
+        "value": "{font.family.headline.value}"
+      }
+    },
+    "weight": {
+      "normal": {"value": "100"},
+      "medium": {"value": "normal"},
+      "bold": {"value": "{font.weight.medium.value}"}
+    }
+  }
+}

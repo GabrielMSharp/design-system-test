@@ -9,15 +9,18 @@ import { ChangeDetectionStrategy, Component, Input, OnInit, ViewEncapsulation } 
 })
 export class TextComponent implements OnInit {
 
-  @Input() align: 'left'|'center'|'right' = 'left';
+  @Input() textAlign: 'left' | 'center' | 'right' = 'left';
+  @Input() textWeight: 'normal' | 'medium' | 'bold' = 'normal';
 
-  uiTextClasses: string[] = [
-    `ui-text--align-${this.align}`
-  ]
+  uiTextClasses: string[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.uiTextClasses = [
+      `ui-text--align-${this.textAlign}`,
+      `ui-text--weight-${this.textWeight}`
+    ]
   }
 
 }

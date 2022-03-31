@@ -63,6 +63,12 @@ $buttonSizes: large, small;
         &.button--icon--only {
             max-width: calc($buttonMinimumHeight - $borderWidth);
         }
+
+        .ui-text {
+            text-transform: var(--button-size-#{$buttonSize}-text-transform);
+            line-height: $lineHeight;
+
+        }
     }
 }
 
