@@ -1,0 +1,18 @@
+{
+  "dest": "./projects/oasys-lib/src/assets/bloomandwild/svgspritetest",
+  "shape": {
+      "id": {
+        "generator": "%s"
+      }
+  },
+  "transform": [],
+  "svg": {
+      "namespaceIDs": false
+  },
+  "mode": {
+      "symbol": {
+          "sprite": "icons.svg",
+          "inline": true
+      }
+  }
+}
