@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "svg": "svgo -f ./projects/oasys-lib/svgo -o ./projects/oasys-lib/svgo/min",
+    "oasys": "ng build && npm run svgo"
   },
   "private": true,
   "dependencies": {
