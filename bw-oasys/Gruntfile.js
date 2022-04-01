@@ -1,28 +1,43 @@
 'use strict';
 
-var baseDir  = 'svg/base/dir',   // <-- Set to your SVG base directory
-svgGlob      = '**/*.svg',       // <-- Glob to match your SVG files
-outDir       = 'output/dir',     // <-- Main output directory
-config       = {
-    "dest": "./projects/oasys-lib/src/assets/bloomandwild/svgspritetest",
-    "transform": [],
-    // "shape": {
-    //     "id": {
-    //         // "generator": function(name) {     return path.basename(name.split(path.sep).join(this.separator), '.svg'); }
-    //     }
-    // },
-    "svg": {
-        "namespaceIDs": false
-    },
-    "mode": {
-        "symbol": {
-            "sprite": "icons.svg",
-            "inline": true
-        }
-    }
-};
-
 module.exports = function(grunt) {
+
+    const svgoBrandDirectories = {
+      'bloomandwild': './projects/oasys-lib/svgo/bloomandwild/min',
+      'bloomon': './projects/oasys-lib/svgo/bloomon/min',
+    }
+    
+    const outputBrandDirectories = {
+      'bloomandwild': './projects/oasys-lib/src/assets/bloomandwild/',
+      'bloomon': './projects/oasys-lib/src/assets/bloomon/',
+    }
+    
+    const brand = grunt.option('brand') || 'bloomandwild';
+    
+    console.log('Generating SVG sprite for brand: ', brand)
+
+    const baseDir  = svgoBrandDirectories[brand];
+    const svgGlob      = '**/*.svg';
+    const outDir       = outputBrandDirectories[brand]
+    const config       = {
+        "dest": outDir,
+        "transform": [],
+        "shape": {
+          id: {
+              "generator": "icon-%s"
+          }
+        },
+        "svg": {
+            "namespaceIDs": false
+        },
+        "mode": {
+            "symbol": {
+                "dest": "icons",
+                "sprite": "icons.svg",
+                "inline": false
+            }
+        }
+    };
 
     // Project configuration
     grunt.initConfig({

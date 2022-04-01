@@ -42,7 +42,7 @@ $buttonSizes: large, small;
         align-items: center;
         gap: var(--size-button-#{$buttonSize}-inline-spacing); 
 
-        .lib-icon {
+        .ui-icon {
             max-height: $lineHeight;
             display: flex;
             align-items: center;

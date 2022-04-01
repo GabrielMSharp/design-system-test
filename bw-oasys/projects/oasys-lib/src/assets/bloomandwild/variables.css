@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 31 Mar 2022 16:01:06 GMT
+ * Generated on Fri, 01 Apr 2022 10:47:28 GMT
  */
 
 :root {
@@ -29,16 +29,6 @@
   --color-button-secondary-2-background: rgba(0, 0, 0, 0);
   --color-button-secondary-2-border: #447964;
   --color-button-secondary-2-text: #447964;
-  --color-size-button-large-padding-x: 2.4rem;
-  --color-size-button-large-height: 4.8rem;
-  --color-size-button-large-border-width: 0.2rem;
-  --color-size-button-large-line-height: #000000;
-  --color-size-button-large-inline-spacing: 0.8rem;
-  --color-size-button-small-padding-x: 1.6rem;
-  --color-size-button-small-height: 3.2rem;
-  --color-size-button-small-border-width: 0.2rem;
-  --color-size-button-small-line-height: #000000;
-  --color-size-button-small-inline-spacing: 0.4rem;
   --size-font-body-1: 2rem;
   --size-font-body-2: 1.8rem;
   --size-font-body-3: 1.6rem;
@@ -60,6 +50,16 @@
   --size-unit-xlarge: 4rem;
   --size-unit-2xlarge: 4.8rem;
   --size-unit-3xlarge: 5.6rem;
+  --size-button-large-padding-x: 2.4rem;
+  --size-button-large-height: 4.8rem;
+  --size-button-large-border-width: 0.2rem;
+  --size-button-large-line-height: 1.6rem;
+  --size-button-large-inline-spacing: 0.8rem;
+  --size-button-small-padding-x: 1.6rem;
+  --size-button-small-height: 3.2rem;
+  --size-button-small-border-width: 0.2rem;
+  --size-button-small-line-height: 1.6rem;
+  --size-button-small-inline-spacing: 0.4rem;
   --font-family-headline: 'TiemposHeadline', Georgia, serif;
   --font-family-headline-secondary: 'NeueHaasUnica', Arial, Helvetica, sans-serif;
   --font-family-body: 'NeueHaasUnica', Arial, Helvetica, sans-serif;
