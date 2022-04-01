@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 31 Mar 2022 15:26:13 GMT
+ * Generated on Thu, 31 Mar 2022 16:01:06 GMT
  */
 
 :root {
@@ -14,52 +14,52 @@
   --color-primary: #262626;
   --color-secondary: #ffffff;
   --color-tertiary: #447964;
-  --size-font-small: 0.75rem; /* the small size of the font */
-  --size-font-medium: 1.6rem; /* the medium size of the font */
-  --size-font-large: 2.4rem; /* the large size of the font */
-  --size-font-base: 1.6rem; /* the base size of the font */
-  --size-spacing-5xsmall: 0.1rem;
-  --size-spacing-4xsmall: 0.2rem;
-  --size-spacing-3xsmall: 0.4rem;
-  --size-spacing-2xsmall: 0.8rem;
-  --size-spacing-xsmall: 1.2rem;
-  --size-spacing-small: 1.6rem;
-  --size-spacing-default: 2.4rem;
-  --size-spacing-large: 3.2rem;
-  --size-spacing-xlarge: 4rem;
-  --size-spacing-2xlarge: 4.8rem;
-  --size-spacing-3xlarge: 5.6rem;
-  --icon-size-small: 16;
-  --icon-size-large: 24;
-  --icon-position-modifier-small: -4px;
-  --icon-position-modifier-large: -8px;
-  --button-color-primary-background: #262626;
-  --button-color-primary-border: #262626;
-  --button-color-primary-text: #ffffff;
-  --button-color-primary-2-background: #447964;
-  --button-color-primary-2-border: #447964;
-  --button-color-primary-2-text: #ffffff;
-  --button-color-primary-3-background: #262626;
-  --button-color-primary-3-border: #262626;
-  --button-color-primary-3-text: #ffffff;
-  --button-color-secondary-background: rgba(0, 0, 0, 0);
-  --button-color-secondary-border: #262626;
-  --button-color-secondary-text: #262626;
-  --button-color-secondary-2-background: rgba(0, 0, 0, 0);
-  --button-color-secondary-2-border: #447964;
-  --button-color-secondary-2-text: #447964;
-  --button-size-large-padding-x: 2.4rem;
-  --button-size-large-height: 4.8rem;
-  --button-size-large-border-width: 0.2rem;
-  --button-size-large-line-height: 1.6rem;
-  --button-size-large-text-transform: none;
-  --button-size-large-inline-spacing: 0.8rem;
-  --button-size-small-padding-x: 1.6rem;
-  --button-size-small-height: 3.2rem;
-  --button-size-small-border-width: 0.2rem;
-  --button-size-small-line-height: 1.6rem;
-  --button-size-small-text-transform: none;
-  --button-size-small-inline-spacing: 0.4rem;
+  --color-button-primary-background: #262626;
+  --color-button-primary-border: #262626;
+  --color-button-primary-text: #ffffff;
+  --color-button-primary-2-background: #447964;
+  --color-button-primary-2-border: #447964;
+  --color-button-primary-2-text: #ffffff;
+  --color-button-primary-3-background: #262626;
+  --color-button-primary-3-border: #262626;
+  --color-button-primary-3-text: #ffffff;
+  --color-button-secondary-background: rgba(0, 0, 0, 0);
+  --color-button-secondary-border: #262626;
+  --color-button-secondary-text: #262626;
+  --color-button-secondary-2-background: rgba(0, 0, 0, 0);
+  --color-button-secondary-2-border: #447964;
+  --color-button-secondary-2-text: #447964;
+  --color-size-button-large-padding-x: 2.4rem;
+  --color-size-button-large-height: 4.8rem;
+  --color-size-button-large-border-width: 0.2rem;
+  --color-size-button-large-line-height: #000000;
+  --color-size-button-large-inline-spacing: 0.8rem;
+  --color-size-button-small-padding-x: 1.6rem;
+  --color-size-button-small-height: 3.2rem;
+  --color-size-button-small-border-width: 0.2rem;
+  --color-size-button-small-line-height: #000000;
+  --color-size-button-small-inline-spacing: 0.4rem;
+  --size-font-body-1: 2rem;
+  --size-font-body-2: 1.8rem;
+  --size-font-body-3: 1.6rem;
+  --size-font-body-4: 1.4rem;
+  --size-font-body-5: 1.2rem;
+  --size-font-base: 1.6rem;
+  --size-icon-small: 1.6rem;
+  --size-icon-large: 2.4rem;
+  --size-icon-position-modifier-small: -0.4rem;
+  --size-icon-position-modifier-large: -0.8rem;
+  --size-unit-5xsmall: 0.1rem;
+  --size-unit-4xsmall: 0.2rem;
+  --size-unit-3xsmall: 0.4rem;
+  --size-unit-2xsmall: 0.8rem;
+  --size-unit-xsmall: 1.2rem;
+  --size-unit-small: 1.6rem;
+  --size-unit-default: 2.4rem;
+  --size-unit-large: 3.2rem;
+  --size-unit-xlarge: 4rem;
+  --size-unit-2xlarge: 4.8rem;
+  --size-unit-3xlarge: 5.6rem;
   --font-family-headline: 'TiemposHeadline', Georgia, serif;
   --font-family-headline-secondary: 'NeueHaasUnica', Arial, Helvetica, sans-serif;
   --font-family-body: 'NeueHaasUnica', Arial, Helvetica, sans-serif;

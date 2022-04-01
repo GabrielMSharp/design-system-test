@@ -4,9 +4,9 @@ $buttonSizes: large, small;
 
 
 @mixin buttonColors($buttonType) {
-    background-color: var(--button-color-#{$buttonType}-background);
-    border-color: var(--button-color-#{$buttonType}-border);
-    color: var(--button-color-#{$buttonType}-text);
+    background-color: var(--color-button-#{$buttonType}-background);
+    border-color: var(--color-button-#{$buttonType}-border);
+    color: var(--color-button-#{$buttonType}-text);
 
     .buttonIcon {
         fill: currentColor;
@@ -14,16 +14,16 @@ $buttonSizes: large, small;
 }
 
 @mixin buttonSize($buttonSize) {
-    $borderWidth: var(--button-size-#{$buttonSize}-border-width);
-    $lineHeight: var(--button-size-#{$buttonSize}-line-height);
-    $buttonMinimumHeight: var(--button-size-#{$buttonSize}-height);
+    $borderWidth: var(--size-button-#{$buttonSize}-border-width);
+    $lineHeight: var(--size-button-#{$buttonSize}-line-height);
+    $buttonMinimumHeight: var(--size-button-#{$buttonSize}-height);
     
     
     $_calculatedHeight: calc($buttonMinimumHeight / 2);
     $_calculatedLineHeight: calc($lineHeight / 2);
     
 
-    $paddingX: var(--button-size-#{$buttonSize}-padding-x);
+    $paddingX: var(--size-button-#{$buttonSize}-padding-x);
     $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);
 
     $paddingX--with-icon: calc($paddingX * 2);
@@ -40,7 +40,7 @@ $buttonSizes: large, small;
     .lib-button-content {
         display: flex;
         align-items: center;
-        gap: var(--button-size-#{$buttonSize}-inline-spacing); 
+        gap: var(--size-button-#{$buttonSize}-inline-spacing); 
 
         .lib-icon {
             max-height: $lineHeight;
@@ -68,7 +68,7 @@ $buttonSizes: large, small;
 }
 
 
-oasys-button {
+ui-button {
     button {
         /* Reset */
         border: 0;
@@ -94,6 +94,8 @@ oasys-button {
                 @include buttonSize(($buttonSize));
             }
         }
+
+        background: black;
 
     }
 }

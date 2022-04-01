@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/oasys-lib",
       "sourceRoot": "projects/oasys-lib/src",
-      "prefix": "oasys",
+      "prefix": "ui",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"

@@ -4,7 +4,7 @@ import { IconNames, IconContext } from '../icon/icon';
 import { TextTransform } from '../text/text';
 
 @Component({
-  selector: 'oasys-button',
+  selector:'ui-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   encapsulation: ViewEncapsulation.None,
@@ -50,7 +50,7 @@ export class ButtonComponent implements OnInit {
     }
 
     this.textTransform = this.tokenService.getTokenValue(
-      `--button-size-${this.buttonSize}-text-transform`
+      `--style-button-${this.buttonSize}-text-transform`
     ) as TextTransform;
   }
 

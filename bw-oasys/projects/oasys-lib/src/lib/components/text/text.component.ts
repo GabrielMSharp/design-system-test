@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input, OnInit, ViewEncapsulation } 
 import { TextTransform } from './text';
 
 @Component({
-  selector: 'oasys-text',
+  selector:'ui-text',
   templateUrl: './text.component.html',
   styleUrls: ['./text.component.scss'],
   encapsulation: ViewEncapsulation.None,

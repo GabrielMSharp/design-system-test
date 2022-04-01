@@ -1,17 +1,17 @@
 $layout-box-sizes: 'xsmall', 'small', 'default', 'large';
 
 .ui-layout-box-xsmall {
-  padding: var(--size-spacing-xsmall);
+  padding: var(--size-unit-xsmall);
 }
 
 .ui-layout-box-small {
-  padding: var(--size-spacing-small);
+  padding: var(--size-unit-small);
 }
 
 .ui-layout-box-default {
-  padding: var(--size-spacing-default);
+  padding: var(--size-unit-default);
 }
 
 .ui-layout-box-large {
-  padding: var(--size-spacing-large);
+  padding: var(--size-unit-large);
 }

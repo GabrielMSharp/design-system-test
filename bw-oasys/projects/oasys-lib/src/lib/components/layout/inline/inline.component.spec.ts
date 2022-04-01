@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayoutInlineComponent } from './layout-inline.component';
+import { LayoutInlineComponent } from './inline.component';
 
 describe('LayoutInlineComponent', () => {
   let component: LayoutInlineComponent;

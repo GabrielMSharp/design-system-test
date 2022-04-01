@@ -1,6 +1,6 @@
 {
   "size": {
-      "spacing": {
+      "unit": {
         "5xsmall" : {
           "value": "0.1"
         },

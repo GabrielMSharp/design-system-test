@@ -1,8 +1,8 @@
 
 <button (click)="clickButton()" [routerLink]="href || null" [ngClass]="buttonClasses">
     <div class="lib-button-content">
-        <oasys-icon *ngIf="buttonIcon" [iconName]="buttonIcon" [iconSize]="buttonSize" [iconClass]="'buttonIcon'" [iconContext]="iconContext"></oasys-icon>
-        <oasys-text *ngIf="buttonText" [textTransform]="textTransform">{{buttonText}}</oasys-text>
+        <ui-icon *ngIf="buttonIcon" [iconName]="buttonIcon" [iconSize]="buttonSize" [iconClass]="'buttonIcon'" [iconContext]="iconContext"></ui-icon>
+        <ui-text *ngIf="buttonText" [textTransform]="textTransform">{{buttonText}}</ui-text>
     </div>
 </button>
 

@@ -3,12 +3,12 @@ import { Input } from '@angular/core';
 import { Component} from '@angular/core';
 
 @Component({
-  selector: 'oasys-layout-box',
+  selector:'ui-box',
   template: '<ng-content></ng-content>',
   host: {
         '[class]' : 'boxLayoutClasses'
       },
-  styleUrls: ['./layout-box.component.scss'],
+  styleUrls: ['./box.component.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })

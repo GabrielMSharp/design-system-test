@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 31 Mar 2022 15:26:13 GMT
+ * Generated on Thu, 31 Mar 2022 16:01:07 GMT
  */
 
 :root {
@@ -13,53 +13,54 @@
   --color-partners-trustpilot: #29b47c;
   --color-primary: #464646;
   --color-secondary: #ffffff;
-  --color-tertiary: #fff799 hello mum;
-  --size-font-small: 0.75rem; /* the small size of the font */
-  --size-font-medium: 1.6rem; /* the medium size of the font */
-  --size-font-large: 2.4rem; /* the large size of the font */
-  --size-font-base: 1.6rem; /* the base size of the font */
-  --size-spacing-5xsmall: 0.1rem;
-  --size-spacing-4xsmall: 0.2rem;
-  --size-spacing-3xsmall: 0.4rem;
-  --size-spacing-2xsmall: 0.8rem;
-  --size-spacing-xsmall: 1.2rem;
-  --size-spacing-small: 1.6rem;
-  --size-spacing-default: 2.4rem;
-  --size-spacing-large: 3.2rem;
-  --size-spacing-xlarge: 4rem;
-  --size-spacing-2xlarge: 4.8rem;
-  --size-spacing-3xlarge: 5.6rem;
-  --icon-size-small: 16;
-  --icon-size-large: 24;
-  --icon-position-modifier-small: -4px;
-  --icon-position-modifier-large: -8px;
-  --button-color-primary-background: #464646;
-  --button-color-primary-border: #464646;
-  --button-color-primary-text: #ffffff;
-  --button-color-primary-2-background: #464646;
-  --button-color-primary-2-border: #464646;
-  --button-color-primary-2-text: #ffffff;
-  --button-color-primary-3-background: #fff799 hello mum;
-  --button-color-primary-3-border: #fff799 hello mum;
-  --button-color-primary-3-text: #464646;
-  --button-color-secondary-background: rgba(0, 0, 0, 0);
-  --button-color-secondary-border: #464646;
-  --button-color-secondary-text: #464646;
-  --button-color-secondary-2-background: rgba(0, 0, 0, 0);
-  --button-color-secondary-2-border: #464646;
-  --button-color-secondary-2-text: #464646;
-  --button-size-large-padding-x: 2.4rem;
-  --button-size-large-height: 4.8rem;
-  --button-size-large-border-width: 0.1rem;
-  --button-size-large-line-height: 1.6rem;
-  --button-size-large-text-transform: uppercase;
-  --button-size-large-inline-spacing: 0.8rem;
-  --button-size-small-padding-x: 1.6rem;
-  --button-size-small-height: 3.2rem;
-  --button-size-small-border-width: 0.1rem;
-  --button-size-small-line-height: 1.6rem;
-  --button-size-small-text-transform: none;
-  --button-size-small-inline-spacing: 0.4rem;
+  --color-tertiary: #fff799;
+  --color-button-primary-background: #464646;
+  --color-button-primary-border: #464646;
+  --color-button-primary-text: #ffffff;
+  --color-button-primary-2-background: #464646;
+  --color-button-primary-2-border: #464646;
+  --color-button-primary-2-text: #ffffff;
+  --color-button-primary-3-background: #fff799;
+  --color-button-primary-3-border: #fff799;
+  --color-button-primary-3-text: #464646;
+  --color-button-secondary-background: rgba(0, 0, 0, 0);
+  --color-button-secondary-border: #464646;
+  --color-button-secondary-text: #464646;
+  --color-button-secondary-2-background: rgba(0, 0, 0, 0);
+  --color-button-secondary-2-border: #464646;
+  --color-button-secondary-2-text: #464646;
+  --size-font-body-1: 2rem;
+  --size-font-body-2: 1.8rem;
+  --size-font-body-3: 1.6rem;
+  --size-font-body-4: 1.4rem;
+  --size-font-body-5: 1.2rem;
+  --size-font-base: 1.6rem;
+  --size-icon-small: 1.6rem;
+  --size-icon-large: 2.4rem;
+  --size-icon-position-modifier-small: -0.4rem;
+  --size-icon-position-modifier-large: -0.8rem;
+  --size-unit-5xsmall: 0.1rem;
+  --size-unit-4xsmall: 0.2rem;
+  --size-unit-3xsmall: 0.4rem;
+  --size-unit-2xsmall: 0.8rem;
+  --size-unit-xsmall: 1.2rem;
+  --size-unit-small: 1.6rem;
+  --size-unit-default: 2.4rem;
+  --size-unit-large: 3.2rem;
+  --size-unit-xlarge: 4rem;
+  --size-unit-2xlarge: 4.8rem;
+  --size-unit-3xlarge: 5.6rem;
+  --size-button-large-padding-x: 2.4rem;
+  --size-button-large-height: 4.8rem;
+  --size-button-large-border-width: 0.1rem;
+  --size-button-large-line-height: 1.6rem;
+  --size-button-large-inline-spacing: 0.8rem;
+  --size-button-small-padding-x: 1.6rem;
+  --size-button-small-height: 3.2rem;
+  --size-button-small-border-width: 0.1rem;
+  --size-button-small-line-height: 1.6rem;
+  --size-button-small-inline-spacing: 0.4rem;
+  --style-button-large-text-transform: uppercase;
   --font-family-headline: 'Patron', Arial, Helvetica, sans-serif;
   --font-family-headline-second: 'Patron', Arial, Helvetica, sans-serif;
   --font-family-body: 'Patron', Arial, Helvetica, sans-serif;

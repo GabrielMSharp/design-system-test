@@ -1,8 +1,9 @@
 import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 import { TokenService } from '../../services/token.service';
+import { WindowService } from '../../services/window.service';
 import { IconNames, IconContext } from './icon';
 @Component({
-  selector: 'oasys-icon',
+  selector:'ui-icon',
   templateUrl: './icon.component.html',
   styleUrls: ['./icon.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -20,14 +21,20 @@ export class IconComponent implements OnInit {
   size?: string;
   iconPlacementClass?: string;
   
-  constructor(private tokenService: TokenService) { }
+  constructor(private tokenService: TokenService, private windowRef: WindowService) { }
+
+  convertRemToPixels(remString: string): number {    
+    const remNumber = parseFloat(remString.replace('rem', ''));
+    return remNumber * parseFloat(getComputedStyle(this.windowRef.nativeWindow.document.documentElement).fontSize);
+  }
 
   ngOnInit(): void {
-    this.size = this.tokenService.getTokenValue(`--icon-size-${this.iconSize}`);;
+    this.size = this.tokenService.getTokenValue(`--size-icon-${this.iconSize}`);;
     this.iconPlacementClass = `icon-context-${this.iconContext}`;
     if (!this.iconWidth || !this.iconHeight) {
-      this.iconWidth = parseInt(this.size, 10);
-      this.iconHeight = parseInt(this.size, 10);
+      const sizeInPixels = this.convertRemToPixels(this.size);
+      this.iconWidth = sizeInPixels;
+      this.iconHeight = sizeInPixels;
     }
   }
 
