@@ -37,7 +37,7 @@ $buttonSizes: large, small;
     
     border-width: $borderWidth;
 
-    .lib-button-content {
+    .button-content {
         display: flex;
         align-items: center;
         gap: var(--size-button-#{$buttonSize}-inline-spacing); 
@@ -94,8 +94,6 @@ ui-button {
                 @include buttonSize(($buttonSize));
             }
         }
-
-        background: black;
 
     }
 }

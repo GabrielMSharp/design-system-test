@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     
     const brand = grunt.option('brand') || 'bloomandwild';
     
-    console.log('Generating SVG sprite for brand: ', brand)
+    console.log('Generating SVG sprite for ', brand)
 
     const baseDir  = svgoBrandDirectories[brand];
     const svgGlob      = '**/*.svg';
