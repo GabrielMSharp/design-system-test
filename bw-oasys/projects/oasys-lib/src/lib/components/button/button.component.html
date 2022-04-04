@@ -1,8 +1,8 @@
 
 <button (click)="clickButton()" [routerLink]="href || null" [ngClass]="buttonClasses">
-    <div class="button-content">
+    <ui-box paddingX="default" class="button-content">
         <ui-icon *ngIf="buttonIcon" [iconName]="buttonIcon" [iconSize]="buttonSize" [iconClass]="'buttonIcon'" [iconContext]="iconContext"></ui-icon>
         <ui-text *ngIf="buttonText" [textTransform]="textTransform">{{buttonText}}</ui-text>
-    </div>
+    </ui-box>
 </button>
 

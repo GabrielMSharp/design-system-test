@@ -1,17 +1,40 @@
 $layout-box-sizes: 'xsmall', 'small', 'default', 'large';
 
-.ui-layout-box-xsmall {
-  padding: var(--size-unit-xsmall);
+$layout-box-axis: 'y', 'x';
+
+// Box Sizes
+@each $layout-box-size in $layout-box-sizes {
+  .ui-layout-box-#{$layout-box-size} { 
+    padding:  var(--size-unit-#{$layout-box-size});
+  }
 }
 
-.ui-layout-box-small {
-  padding: var(--size-unit-small);
+// Axis Sizes
+@each $layout-box-size in $layout-box-sizes {
+  .ui-layout-box-y-#{$layout-box-size} { 
+    padding-top: var(--size-unit-#{$layout-box-size});
+    padding-bottom: var(--size-unit-#{$layout-box-size});
+  }
+  .ui-layout-box-x-#{$layout-box-size} { 
+    padding-left: var(--size-unit-#{$layout-box-size});
+    padding-right: var(--size-unit-#{$layout-box-size});
+  }
 }
 
-.ui-layout-box-default {
-  padding: var(--size-unit-default);
+// Top, right, bottom, left spacing
+@each $layout-box-size in $layout-box-sizes {
+  .ui-layout-box-top-#{$layout-box-size} { 
+    padding-top: var(--size-unit-#{$layout-box-size});
+  }
+  .ui-layout-box-right-#{$layout-box-size} { 
+    padding-right: var(--size-unit-#{$layout-box-size});
+  }
+  .ui-layout-box-bottom-#{$layout-box-size} { 
+    padding-bottom: var(--size-unit-#{$layout-box-size});
+  }
+  .ui-layout-box-left-#{$layout-box-size} { 
+    padding-left: var(--size-unit-#{$layout-box-size});
+  }
 }
 
-.ui-layout-box-large {
-  padding: var(--size-unit-large);
-}
+
