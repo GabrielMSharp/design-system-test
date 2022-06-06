@@ -28,6 +28,9 @@ import { WindowService } from './services/window.service';
   ],
   providers: [
     WindowService
+  ],
+  entryComponents: [
+    ButtonComponent
   ]
 })
 export class OasysLibModule { }
