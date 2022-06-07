@@ -1,13 +1,13 @@
 {
-  "extends": "../projects/oasys-lib/tsconfig.lib.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "paths": {
-      "oasys-lib": ["projects/oasys-lib/src/public-api"]
-    },
     "types": [
       "node"
     ],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "oasys-lib": ["../projects/oasys-lib/src/public-api"]
+    }
   },
   "exclude": [
     "../src/test.ts",

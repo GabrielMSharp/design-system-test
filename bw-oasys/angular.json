@@ -36,6 +36,20 @@
             "tsConfig": "projects/oasys-lib/tsconfig.spec.json",
             "karmaConfig": "projects/oasys-lib/karma.conf.js"
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "browserTarget": "oasys-lib:build",
+            "port": 4400
+            
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "browserTarget": "oasys-lib:build"
+          }
         }
       }
     }
