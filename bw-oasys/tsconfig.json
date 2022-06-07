@@ -1,11 +1,11 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "allowJs": true,
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -16,12 +16,7 @@
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
-    "paths": {
-      "oasys-lib": [
-        "dist/oasys-lib/oasys-lib",
-        "dist/oasys-lib"
-      ]
-    },
+
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
@@ -31,10 +26,7 @@
     ]
   },
   "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true,
-    "defaultEncapsulation": 3
+    "defaultEncapsulation": 3,
+    "enableIvy": true,
   }
 }

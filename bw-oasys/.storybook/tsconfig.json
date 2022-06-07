@@ -6,7 +6,7 @@
     ],
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "oasys-lib": ["../projects/oasys-lib/src/public-api"]
+      "@oasys-design-system": ["./projects/oasys-lib/src/public-api"]
     }
   },
   "exclude": [
