@@ -24,10 +24,14 @@ import { WindowService } from './services/window.service';
   exports: [
     ButtonComponent,
     TextComponent,
+    LayoutBoxComponent,
+    TextComponent,
+
     LayoutBoxComponent
   ],
   providers: [
     WindowService
-  ]
+  ],
+  entryComponents: [ButtonComponent]
 })
 export class OasysLibModule { }

@@ -123,7 +123,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-9b3e85c652d5cc34c69d50e1a5f1436b3f700ed45e4aa3f15b0ecf063c20ea7afe1cc4aea631068f8c0a134a0f3d12a7d1ae169b2257d0cfa58615272e4df07e",
+            "id": "component-ButtonComponent-ff39d873eff20310a494088a3ddd0dfdad52592009b628c2f74da719460f5b0769268b2cd042b828bd0cefbdd6ca6fbd2d43da0bbfb77811fc63f831b3ecf786",
             "file": "projects/oasys-lib/src/lib/components/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -142,7 +142,16 @@
                 "./button.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "buttonText",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [
@@ -164,7 +173,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit {\n\n  // // Button Content\n  // @Input() buttonText?: string;\n  // @Input() buttonIcon?: IconNames;\n  // @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // // Button Stylings\n  // @Input() buttonSize: 'small'|'large' = 'large';\n  // @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';\n  \n  // // Button Actions\n  // @Input() href: string = '';\n  // @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  // buttonClasses: string = '';\n  // iconContext: IconContext = 'none';\n  // textTransform!: TextTransform;\n\n  // constructor(private tokenService: TokenService) { }\n\n  // clickButton(): void {\n  //   console.log('button was clicked');\n  //   this.buttonClick.emit();\n  // }\n\n  ngOnInit(): void {\n  //   this.buttonClasses = [\n  //     `type-${this.buttonType}`,\n  //     `size-${this.buttonSize}`,\n  //     `${this.buttonIcon ? 'button--has-icon': ''}`,\n  //     `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n  //     `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n  //   ].join(' ');\n\n  //   if(this.buttonIcon) {\n  //     this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n  //   }\n\n  //   this.textTransform = this.tokenService.getTokenValue(\n  //     `--style-button-${this.buttonSize}-text-transform`\n  //   ) as TextTransform;\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit {\n\n  // // Button Content\n  @Input() buttonText?: string;\n  // @Input() buttonIcon?: IconNames;\n  // @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // // Button Stylings\n  // @Input() buttonSize: 'small'|'large' = 'large';\n  // @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';\n  \n  // // Button Actions\n  // @Input() href: string = '';\n  // @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  // buttonClasses: string = '';\n  // iconContext: IconContext = 'none';\n  // textTransform!: TextTransform;\n\n  // constructor(private tokenService: TokenService) { }\n\n  // clickButton(): void {\n  //   console.log('button was clicked');\n  //   this.buttonClick.emit();\n  // }\n\n  ngOnInit(): void {\n  //   this.buttonClasses = [\n  //     `type-${this.buttonType}`,\n  //     `size-${this.buttonSize}`,\n  //     `${this.buttonIcon ? 'button--has-icon': ''}`,\n  //     `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n  //     `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n  //   ].join(' ');\n\n  //   if(this.buttonIcon) {\n  //     this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n  //   }\n\n  //   this.textTransform = this.tokenService.getTokenValue(\n  //     `--style-button-${this.buttonSize}-text-transform`\n  //   ) as TextTransform;\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -176,7 +185,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<!-- \n<button (click)=\"clickButton()\" [routerLink]=\"href || null\" [ngClass]=\"buttonClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText\" [textTransform]=\"textTransform\">{{buttonText}}</ui-text>\n    </div>\n</button>\n -->\n<button>Button Works</button>"
+            "templateData": "<!-- \n<button (click)=\"clickButton()\" [routerLink]=\"href || null\" [ngClass]=\"buttonClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText\" [textTransform]=\"textTransform\">{{buttonText}}</ui-text>\n    </div>\n</button>\n -->\n<button>{{buttonText}}</button>"
         },
         {
             "name": "IconComponent",
@@ -630,13 +639,13 @@
     "modules": [
         {
             "name": "OasysLibModule",
-            "id": "module-OasysLibModule-bf9e08ea1d737108c47e611eb91b895612760fe2aa40d1e7507d80d223cb302591f44c4f55c3d065a694ad9c339c4936662e4fa81c3bc4056a94209c818235db",
+            "id": "module-OasysLibModule-b0ae5596114b0ba2f6180b0a5afce189f923a569cb5f686497e501399c57da3393e9cab7ac8412754152122f880ed46c5b1866ed7afdee0c17e3d4e3bb6699ab",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/oasys-lib/src/lib/oasys-lib.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport { ButtonComponent } from './components/button/button.component';\nimport { LayoutInlineComponent } from './components/layout/inline/inline.component';\nimport { TextComponent } from './components/text/text.component';\nimport { IconComponent } from './components/icon/icon.component';\nimport { LayoutBoxComponent } from './components/layout/box/box.component';\nimport { WindowService } from './services/window.service';\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    LayoutInlineComponent,\n    TextComponent,\n    IconComponent,\n    LayoutBoxComponent\n  ],\n  imports: [\n    CommonModule,\n    RouterModule\n  ],\n  exports: [\n    ButtonComponent,\n    TextComponent,\n    LayoutBoxComponent\n  ],\n  providers: [\n    WindowService\n  ]\n})\nexport class OasysLibModule { }\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport { ButtonComponent } from './components/button/button.component';\nimport { LayoutInlineComponent } from './components/layout/inline/inline.component';\nimport { TextComponent } from './components/text/text.component';\nimport { IconComponent } from './components/icon/icon.component';\nimport { LayoutBoxComponent } from './components/layout/box/box.component';\nimport { WindowService } from './services/window.service';\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    LayoutInlineComponent,\n    TextComponent,\n    IconComponent,\n    LayoutBoxComponent\n  ],\n  imports: [\n    CommonModule,\n    RouterModule\n  ],\n  exports: [\n    ButtonComponent,\n    TextComponent,\n    LayoutBoxComponent,\n    TextComponent,\n\n    LayoutBoxComponent\n  ],\n  providers: [\n    WindowService\n  ],\n  entryComponents: [ButtonComponent]\n})\nexport class OasysLibModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -680,6 +689,12 @@
                             "name": "LayoutBoxComponent"
                         },
                         {
+                            "name": "LayoutBoxComponent"
+                        },
+                        {
+                            "name": "TextComponent"
+                        },
+                        {
                             "name": "TextComponent"
                         }
                     ]
@@ -708,24 +723,14 @@
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
             },
             {
-                "name": "Large",
+                "name": "Primarybutton",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "stories/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "defaultValue": "() => ({\n  props: { buttonText: 'Label' },\n})"
             },
             {
                 "name": "require",
@@ -735,36 +740,6 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
-            },
-            {
-                "name": "Secondary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Small",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
             }
         ],
         "functions": [
@@ -851,54 +826,14 @@
             ],
             "stories/Button.stories.ts": [
                 {
-                    "name": "Large",
+                    "name": "Primarybutton",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "stories/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Secondary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Small",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+                    "defaultValue": "() => ({\n  props: { buttonText: 'Label' },\n})"
                 }
             ]
         },
@@ -982,7 +917,7 @@
                 "linktype": "component",
                 "name": "ButtonComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -1083,47 +1018,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Large",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Primary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Secondary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Small",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
+                "name": "Primarybutton",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
