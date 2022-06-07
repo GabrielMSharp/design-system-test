@@ -1,15 +1,18 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
-import { Story, Meta } from '@storybook/angular/types-6-0';
-import { ButtonComponent } from '@oasys-design-system';
+import { Meta, moduleMetadata } from '@storybook/angular';
+import { ButtonComponent } from './button.component';
+// import { ButtonComponent } from './fakebutton.component';
 
 // More on default export: https://storybook.js.org/docs/angular/writing-stories/introduction#default-export
 export default {
   title: 'Example/Button',
   component: ButtonComponent,
   // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  decorators: [
+    moduleMetadata({
+      declarations: [ButtonComponent]
+    })
+  ]
 } as Meta;
 
 export const Primarybutton = () => ({

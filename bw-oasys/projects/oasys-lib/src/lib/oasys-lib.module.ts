@@ -12,10 +12,10 @@ import { WindowService } from './services/window.service';
 @NgModule({
   declarations: [
     ButtonComponent,
-    LayoutInlineComponent,
-    TextComponent,
-    IconComponent,
-    LayoutBoxComponent
+    // LayoutInlineComponent,
+    // TextComponent,
+    // IconComponent,
+    // LayoutBoxComponent
   ],
   imports: [
     CommonModule,
@@ -23,15 +23,13 @@ import { WindowService } from './services/window.service';
   ],
   exports: [
     ButtonComponent,
-    TextComponent,
-    LayoutBoxComponent,
-    TextComponent,
-
-    LayoutBoxComponent
+    // TextComponent,
+    // LayoutBoxComponent,
+    // TextComponent,
+    // LayoutBoxComponent
   ],
   providers: [
     WindowService
-  ],
-  entryComponents: [ButtonComponent]
+  ]
 })
 export class OasysLibModule { }

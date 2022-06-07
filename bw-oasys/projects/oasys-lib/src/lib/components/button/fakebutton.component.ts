@@ -1,19 +1,19 @@
 import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
-// import { TokenService } from '../../services/token.service';
-// import { IconNames, IconContext } from '../icon/icon';
-// import { TextTransform } from '../text/text';
+import { TokenService } from '../../services/token.service';
+import { IconNames, IconContext } from '../icon/icon';
+import { TextTransform } from '../text/text';
 
 @Component({
   selector:'ui-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss']
+  styleUrls: ['./button.component.scss'],
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ButtonComponent implements OnInit {
 
-  buttonText: string = 'fff'
-
   // // Button Content
-  // @Input() buttonText?: string;
+  @Input() buttonText?: string;
   // @Input() buttonIcon?: IconNames;
   // @Input() buttonIconPlacement: IconContext = 'leading';
 
