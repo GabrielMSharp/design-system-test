@@ -5,6 +5,7 @@
       "node"
     ],
     "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
     "paths": {
       "@oasys-design-system": ["./projects/oasys-lib/src/public-api"]
     }

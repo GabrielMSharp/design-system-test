@@ -1,49 +1,24 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
-import { Meta, moduleMetadata } from '@storybook/angular';
+import { Story, Meta, moduleMetadata } from '@storybook/angular';
 import { ButtonComponent } from './button.component';
-// import { ButtonComponent } from './fakebutton.component';
+import { FakeComponent } from './fakebutton.component';
 
-// More on default export: https://storybook.js.org/docs/angular/writing-stories/introduction#default-export
 export default {
   title: 'Example/Button',
-  component: ButtonComponent,
-  // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
+  component: FakeComponent,
   decorators: [
     moduleMetadata({
-      declarations: [ButtonComponent]
+      declarations: [FakeComponent]
     })
   ]
 } as Meta;
 
-export const Primarybutton = () => ({
-  props: { buttonText: 'Label' },
+const Template: Story<FakeComponent> = (args: FakeComponent) => ({
+  props: args,
 });
 
-// More on component templates: https://storybook.js.org/docs/angular/writing-stories/introduction#using-args
-// const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
-//   props: args,
-// });
-
-// export const Primary = Template.bind({});
-// // More on args: https://storybook.js.org/docs/angular/writing-stories/args
-// Primary.args = {
-//   // primary: true,
-//   // label: 'Button',
-// };
-
-// export const Secondary = Template.bind({});
-// Secondary.args = {
-  
-// };
-
-// export const Large = Template.bind({});
-// Large.args = {
-//   // size: 'large',
-//   // label: 'Button',
-// };
-
-// export const Small = Template.bind({});
-// Small.args = {
-//   // size: 'small',
-//   // label: 'Button',
-// };
+export const Primary = Template.bind({});
+Primary.args = {
+  buttonType: 'primary',
+  buttonText: 'Default',
+};

@@ -2,7 +2,7 @@ import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, Chan
 
 @Component({
   selector:'ui-test',
-  template: '<p>Test</p>',
+  template: '<p>Test Works</p>',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
