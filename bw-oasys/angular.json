@@ -17,8 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/oasys-lib/ng-package.json",
-            "preserveSymlinks": true
+            "project": "projects/oasys-lib/ng-package.json"
           },
           "configurations": {
             "production": {
@@ -69,5 +68,8 @@
       }
     }
   },
-  "defaultProject": "oasys-lib"
+  "defaultProject": "oasys-lib",
+  "cli": {
+    "analytics": "3e405894-c3dc-46c0-b8a2-9bf9b692c407"
+  }
 }
