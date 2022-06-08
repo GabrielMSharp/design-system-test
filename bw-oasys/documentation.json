@@ -432,37 +432,6 @@
             "templateData": "<!-- \n<button (click)=\"clickButton()\" [routerLink]=\"href || null\" [ngClass]=\"buttonClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText\" [textTransform]=\"textTransform\">{{buttonText}}</ui-text>\n    </div>\n</button>\n -->\n<button>{{buttonText}}</button>"
         },
         {
-            "name": "FakeComponent",
-            "id": "component-FakeComponent-1f3ba8e9db4fc8ceb92c55d3c5932071b68640aedbf2123e246e0ef631b027fc14079ce0963ada4de17c40065b23f0aff39b0444cc95edbd82a9ca5013242f5b",
-            "file": "projects/oasys-lib/src/lib/components/button/fakebutton.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "test",
-            "styleUrls": [],
-            "styles": [],
-            "template": "<p>Test</p>",
-            "templateUrl": [],
-            "viewProviders": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component} from '@angular/core';\n\n@Component({\n  selector:'test',\n  template: '<p>Test</p>',\n})\nexport class FakeComponent {\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": "",
-            "stylesData": ""
-        },
-        {
             "name": "IconComponent",
             "id": "component-IconComponent-0335154a9a0967c1bd489da06eed231bf5c6d3b2a6343957e439702275b7a3a6f1e076bf6a7f6757013bd9710afd9d1adc13f25994fc616feea702429304e933",
             "file": "projects/oasys-lib/src/lib/components/icon/icon.component.ts",
@@ -1024,7 +993,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Another.stories.ts",
+                "file": "stories/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1073,7 +1042,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Another.stories.ts",
+                "file": "stories/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ButtonComponent>",
@@ -1096,8 +1065,8 @@
                 "file": "projects/oasys-lib/src/lib/components/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<FakeComponent>",
-                "defaultValue": "(args: FakeComponent) => ({\n  props: args,\n})"
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
             }
         ],
         "functions": [
@@ -1182,12 +1151,12 @@
                     "type": "literal type"
                 }
             ],
-            "stories/Another.stories.ts": [
+            "stories/Button.stories.ts": [
                 {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/Another.stories.ts",
+                    "file": "stories/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -1197,7 +1166,7 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/Another.stories.ts",
+                    "file": "stories/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
@@ -1244,8 +1213,8 @@
                     "file": "projects/oasys-lib/src/lib/components/button/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<FakeComponent>",
-                    "defaultValue": "(args: FakeComponent) => ({\n  props: args,\n})"
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
                 }
             ],
             "stories/Test.stories.ts": [
@@ -1365,15 +1334,6 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/oasys-lib/src/lib/components/button/fakebutton.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "FakeComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "projects/oasys-lib/src/lib/components/icon/icon.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1467,7 +1427,7 @@
                 "status": "low"
             },
             {
-                "filePath": "stories/Another.stories.ts",
+                "filePath": "stories/Button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1477,7 +1437,7 @@
                 "status": "low"
             },
             {
-                "filePath": "stories/Another.stories.ts",
+                "filePath": "stories/Button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
