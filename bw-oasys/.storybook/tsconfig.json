@@ -18,7 +18,8 @@
   "include": [
     "../src/**/*",
     "../projects/**/*",
-    "../stories/**/*"
+    "../stories/**/*",
+    "../components/**/*",
   ],
   "files": [
     "./typings.d.ts"

@@ -123,8 +123,8 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-eeea0199d064792b0f5518028cf1076e4c117479bff0ffa14d8101b7d3801e5016937206868b124646b113cfce2dd1dffaf3f9721ae6f2b82d04e886d7c6da17",
-            "file": "projects/oasys-lib/src/lib/components/button/button.component.ts",
+            "id": "component-ButtonComponent-472ef3a5a22e18bb9b5e0abddecc97a884f72911a4ba4a28875715c105202df5d4b1fb1817905501c9cbc80066427ae697d2dcac0e97e31dc2c903054d97d770",
+            "file": "components/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
                 "ViewEncapsulation.None"
@@ -266,7 +266,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit {\n\n  // // Button Content\n  @Input() buttonText?: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: 'small'|'large' = 'large';\n  @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';\n  \n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  buttonClasses: string = '';\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  ngOnInit(): void {\n    this.buttonClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ].join(' ');\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';\nimport { TokenService } from '../../projects/oasys-lib/src/lib/services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit {\n\n  // // Button Content\n  @Input() buttonText?: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: 'small'|'large' = 'large';\n  @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';\n  \n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  buttonClasses: string = '';\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  ngOnInit(): void {\n    this.buttonClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ].join(' ');\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -307,50 +307,24 @@
             "templateData": "<!-- \n<button (click)=\"clickButton()\" [routerLink]=\"href || null\" [ngClass]=\"buttonClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText\" [textTransform]=\"textTransform\">{{buttonText}}</ui-text>\n    </div>\n</button>\n -->\n<button>{{buttonText}}</button>"
         },
         {
-            "name": "ButtonComponent",
-            "id": "component-ButtonComponent-ff39d873eff20310a494088a3ddd0dfdad52592009b628c2f74da719460f5b0769268b2cd042b828bd0cefbdd6ca6fbd2d43da0bbfb77811fc63f831b3ecf786-1",
-            "file": "projects/oasys-lib/src/lib/components/button/fakebutton.component.ts",
-            "changeDetection": "ChangeDetectionStrategy.OnPush",
-            "encapsulation": [
-                "ViewEncapsulation.None"
-            ],
+            "name": "FakeComponent",
+            "id": "component-FakeComponent-1f3ba8e9db4fc8ceb92c55d3c5932071b68640aedbf2123e246e0ef631b027fc14079ce0963ada4de17c40065b23f0aff39b0444cc95edbd82a9ca5013242f5b",
+            "file": "components/button/fakebutton.component.ts",
+            "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "ui-button",
-            "styleUrls": [
-                "./button.component.scss"
-            ],
+            "selector": "test",
+            "styleUrls": [],
             "styles": [],
-            "templateUrl": [
-                "./button.component.html"
-            ],
+            "template": "<p>Test</p>",
+            "templateUrl": [],
             "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "buttonText",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 16,
-                    "type": "string",
-                    "decorators": []
-                }
-            ],
+            "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 39,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -358,27 +332,15 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit {\n\n  // // Button Content\n  @Input() buttonText?: string;\n  // @Input() buttonIcon?: IconNames;\n  // @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // // Button Stylings\n  // @Input() buttonSize: 'small'|'large' = 'large';\n  // @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';\n  \n  // // Button Actions\n  // @Input() href: string = '';\n  // @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  // buttonClasses: string = '';\n  // iconContext: IconContext = 'none';\n  // textTransform!: TextTransform;\n\n  // constructor(private tokenService: TokenService) { }\n\n  // clickButton(): void {\n  //   console.log('button was clicked');\n  //   this.buttonClick.emit();\n  // }\n\n  ngOnInit(): void {\n  //   this.buttonClasses = [\n  //     `type-${this.buttonType}`,\n  //     `size-${this.buttonSize}`,\n  //     `${this.buttonIcon ? 'button--has-icon': ''}`,\n  //     `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n  //     `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n  //   ].join(' ');\n\n  //   if(this.buttonIcon) {\n  //     this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n  //   }\n\n  //   this.textTransform = this.tokenService.getTokenValue(\n  //     `--style-button-${this.buttonSize}-text-transform`\n  //   ) as TextTransform;\n  }\n\n}\n",
+            "sourceCode": "import { Component} from '@angular/core';\n\n@Component({\n  selector:'test',\n  template: '<p>Test</p>',\n})\nexport class FakeComponent {\n}\n",
             "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "$buttonTypes: primary, primary-2, primary-3, secondary, secondary-2;\n\n$buttonSizes: large, small;\n\n\n@mixin buttonColors($buttonType) {\n    background-color: var(--color-button-#{$buttonType}-background);\n    border-color: var(--color-button-#{$buttonType}-border);\n    color: var(--color-button-#{$buttonType}-text);\n\n    .buttonIcon {\n        fill: currentColor;\n    }\n}\n\n@mixin buttonSize($buttonSize) {\n    $borderWidth: var(--size-button-#{$buttonSize}-border-width);\n    $lineHeight: var(--size-button-#{$buttonSize}-line-height);\n    $buttonMinimumHeight: var(--size-button-#{$buttonSize}-height);\n    \n    \n    $_calculatedHeight: calc($buttonMinimumHeight / 2);\n    $_calculatedLineHeight: calc($lineHeight / 2);\n    \n\n    $paddingX: var(--size-button-#{$buttonSize}-padding-x);\n    $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);\n\n    $paddingX--with-icon: calc($paddingX * 2);\n\n    min-height: $buttonMinimumHeight;\n    min-width: $buttonMinimumHeight;\n    padding-top: $paddingY;\n    padding-right: $paddingX;\n    padding-bottom: $paddingY;\n    padding-left: $paddingX;\n    \n    border-width: $borderWidth;\n\n    .button-content {\n        display: flex;\n        align-items: center;\n        gap: var(--size-button-#{$buttonSize}-inline-spacing); \n\n        .ui-icon {\n            max-height: $lineHeight;\n            display: flex;\n            align-items: center;\n        }\n\n        .ui-text {\n            line-height: $lineHeight;\n        }\n    }\n\n    \n\n    &.button--has-icon {\n        &.button--icon--trailing {\n            .lib-button-content {\n                flex-direction: row-reverse;\n            }\n        }\n        &.button--icon--only {\n            max-width: calc($buttonMinimumHeight - $borderWidth);\n        }\n    }\n}\n\n\nui-button {\n    button {\n        /* Reset */\n        border: 0;\n        -webkit-appearance: none;\n        padding: 0;\n        display: inline-flex;\n        text-align: center;\n        justify-content: center;\n        align-items: center;\n        border-style: solid;\n\n\n        // Button Colors\n        @each $buttonType in $buttonTypes {\n            &.type-#{$buttonType} {\n                @include buttonColors(($buttonType));\n            }\n        }\n        \n        // Button Sizes\n        @each $buttonSize in $buttonSizes {\n            &.size-#{$buttonSize} {\n                @include buttonSize(($buttonSize));\n            }\n        }\n\n    }\n}\n\n",
-                    "styleUrl": "./button.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "implements": [
-                "OnInit"
-            ],
-            "isDuplicate": true,
-            "duplicateId": 1,
-            "duplicateName": "ButtonComponent-1",
-            "templateData": "<!-- \n<button (click)=\"clickButton()\" [routerLink]=\"href || null\" [ngClass]=\"buttonClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText\" [textTransform]=\"textTransform\">{{buttonText}}</ui-text>\n    </div>\n</button>\n -->\n<button>{{buttonText}}</button>"
+            "styleUrlsData": "",
+            "stylesData": ""
         },
         {
             "name": "IconComponent",
-            "id": "component-IconComponent-0335154a9a0967c1bd489da06eed231bf5c6d3b2a6343957e439702275b7a3a6f1e076bf6a7f6757013bd9710afd9d1adc13f25994fc616feea702429304e933",
-            "file": "projects/oasys-lib/src/lib/components/icon/icon.component.ts",
+            "id": "component-IconComponent-144546bdf3714fcd7b1a18012af95f95bcb8a075bb5092dc879922dc3ce8a97d88d4af6ede03c55e7744c9fce0964d97651fe15eac5e961cfc23b90f70140308",
+            "file": "components/icon/icon.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
                 "ViewEncapsulation.None"
@@ -516,7 +478,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { WindowService } from '../../services/window.service';\nimport { IconNames, IconContext } from './icon';\n@Component({\n  selector:'ui-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  encapsulation: ViewEncapsulation.None\n})\nexport class IconComponent implements OnInit {\n  @Input() iconSize: 'small'|'large' = 'large';\n  @Input() iconName!: IconNames;\n  @Input() iconContext: IconContext = 'none';\n  \n  @Input() iconWidth?: number;\n  @Input() iconHeight?: number;\n  @Input() iconClass?: string;\n\n  size?: string;\n  iconPlacementClass?: string;\n  \n  constructor(private tokenService: TokenService, private windowRef: WindowService) { }\n\n  convertRemToPixels(remString: string): number {    \n    const remNumber = parseFloat(remString.replace('rem', ''));\n    return remNumber * parseFloat(getComputedStyle(this.windowRef.nativeWindow.document.documentElement).fontSize);\n  }\n\n  ngOnInit(): void {\n    this.size = this.tokenService.getTokenValue(`--size-icon-${this.iconSize}`);;\n    this.iconPlacementClass = `icon-context-${this.iconContext}`;\n    if (!this.iconWidth || !this.iconHeight) {\n      const sizeInPixels = this.convertRemToPixels(this.size);\n      this.iconWidth = sizeInPixels;\n      this.iconHeight = sizeInPixels;\n    }\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';\nimport { TokenService } from '../../projects/oasys-lib/src/lib/services/token.service';\nimport { WindowService } from '../../projects/oasys-lib/src/lib/services/window.service';\nimport { IconNames, IconContext } from './icon';\n@Component({\n  selector:'ui-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  encapsulation: ViewEncapsulation.None\n})\nexport class IconComponent implements OnInit {\n  @Input() iconSize: 'small'|'large' = 'large';\n  @Input() iconName!: IconNames;\n  @Input() iconContext: IconContext = 'none';\n  \n  @Input() iconWidth?: number;\n  @Input() iconHeight?: number;\n  @Input() iconClass?: string;\n\n  size?: string;\n  iconPlacementClass?: string;\n  \n  constructor(private tokenService: TokenService, private windowRef: WindowService) { }\n\n  convertRemToPixels(remString: string): number {    \n    const remNumber = parseFloat(remString.replace('rem', ''));\n    return remNumber * parseFloat(getComputedStyle(this.windowRef.nativeWindow.document.documentElement).fontSize);\n  }\n\n  ngOnInit(): void {\n    this.size = this.tokenService.getTokenValue(`--size-icon-${this.iconSize}`);;\n    this.iconPlacementClass = `icon-context-${this.iconContext}`;\n    if (!this.iconWidth || !this.iconHeight) {\n      const sizeInPixels = this.convertRemToPixels(this.size);\n      this.iconWidth = sizeInPixels;\n      this.iconHeight = sizeInPixels;\n    }\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -574,7 +536,7 @@
         {
             "name": "LayoutBoxComponent",
             "id": "component-LayoutBoxComponent-3824cb5af46fb0f3554aedfa43278e918f80846af7e7c1292c7591296e60ab844b7c67d9b6f85fdbfd9fa25df4c86a1ead3775e7a1d0cef08bbab6703b17adad",
-            "file": "projects/oasys-lib/src/lib/components/layout/box/box.component.ts",
+            "file": "components/layout/box/box.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
                 "ViewEncapsulation.None"
@@ -658,7 +620,7 @@
         {
             "name": "LayoutInlineComponent",
             "id": "component-LayoutInlineComponent-9c6d7dbe5d9d9280d68e160733917e78391a3ea0f17dbd0897b13c0ca00be68551dace44ec2aebed03b099163cf2bca2c1af4551a620436f7ba9a40753ebf7f9",
-            "file": "projects/oasys-lib/src/lib/components/layout/inline/inline.component.ts",
+            "file": "components/layout/inline/inline.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
                 "ViewEncapsulation.None"
@@ -722,7 +684,7 @@
         },
         {
             "name": "TestComponent",
-            "id": "component-TestComponent-e6b9bfc1e39ba3836c8ba1ca51973be70f46294c82aec15e4e025a1a83805825ad8949f54bf57c69959c7f00900161042fdde476f5423099219c8f146b64fcdf",
+            "id": "component-TestComponent-fc43a49d502addcd93083199f34152de354192f4cb7632793ccb229abff7c4c7584a40b888d39c27eb9c549cce344d83b1c0b7ff604b1c72f1e77fddec885ecc",
             "file": "stories/test.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -735,7 +697,7 @@
             "selector": "ui-test",
             "styleUrls": [],
             "styles": [],
-            "template": "<p>Test</p>",
+            "template": "<p>Test Works</p>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [],
@@ -760,7 +722,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';\n\n@Component({\n  selector:'ui-test',\n  template: '<p>Test</p>',\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class TestComponent implements OnInit {\n\n  ngOnInit(): void {\n\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';\n\n@Component({\n  selector:'ui-test',\n  template: '<p>Test Works</p>',\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class TestComponent implements OnInit {\n\n  ngOnInit(): void {\n\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -771,7 +733,7 @@
         {
             "name": "TextComponent",
             "id": "component-TextComponent-1887c706c5b461d2a7ea09aa7f6fa9435e6c1c7941b3be506b6140032fa3389a08c727d759fc36297668f8d07fd22310a3812b0baa5972e7ffba0d9d050d7043",
-            "file": "projects/oasys-lib/src/lib/components/text/text.component.ts",
+            "file": "components/text/text.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
                 "ViewEncapsulation.None"
@@ -875,13 +837,13 @@
     "modules": [
         {
             "name": "OasysLibModule",
-            "id": "module-OasysLibModule-eb0507499dc176fc0529f03be196dff2af296623172953e91f39b918fb163de5ee9bf5aa60135577d17e0dfdfbf51b04fc9b6b72a70939370daa607fe129b3bb",
+            "id": "module-OasysLibModule-e61817fbf8277cd027de6a2ca867452caec32976bc1ae3ebf0702176c52af4b6a9a4730cf7bc717e9868a1aff289d5dbf0f3830862ac2ac9ce2f8095e9a2f3b7",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/oasys-lib/src/lib/oasys-lib.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport { ButtonComponent } from './components/button/button.component';\nimport { LayoutInlineComponent } from './components/layout/inline/inline.component';\nimport { TextComponent } from './components/text/text.component';\nimport { IconComponent } from './components/icon/icon.component';\nimport { LayoutBoxComponent } from './components/layout/box/box.component';\nimport { WindowService } from './services/window.service';\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    // LayoutInlineComponent,\n    // TextComponent,\n    // IconComponent,\n    // LayoutBoxComponent\n  ],\n  imports: [\n    CommonModule,\n    RouterModule\n  ],\n  exports: [\n    ButtonComponent,\n    // TextComponent,\n    // LayoutBoxComponent,\n    // TextComponent,\n    // LayoutBoxComponent\n  ],\n  providers: [\n    WindowService\n  ]\n})\nexport class OasysLibModule { }\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport { ButtonComponent } from '../../../../components/button/button.component';\nimport { LayoutInlineComponent } from '../../../../components/layout/inline/inline.component';\nimport { TextComponent } from '../../../../components/text/text.component';\nimport { IconComponent } from '../../../../components/icon/icon.component';\nimport { LayoutBoxComponent } from '../../../../components/layout/box/box.component';\nimport { WindowService } from './services/window.service';\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    // LayoutInlineComponent,\n    // TextComponent,\n    // IconComponent,\n    // LayoutBoxComponent\n  ],\n  imports: [\n    CommonModule,\n    RouterModule\n  ],\n  exports: [\n    ButtonComponent,\n    // TextComponent,\n    // LayoutBoxComponent,\n    // TextComponent,\n    // LayoutBoxComponent\n  ],\n  providers: [\n    WindowService\n  ]\n})\nexport class OasysLibModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -938,7 +900,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/oasys-lib/src/lib/components/button/Button.stories.ts",
+                "file": "components/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -955,16 +917,6 @@
                 "defaultValue": "() => ({\n  \n})"
             },
             {
-                "name": "Primarybutton",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/oasys-lib/src/lib/components/button/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "() => ({\n  props: { buttonText: 'Label' },\n})"
-            },
-            {
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -977,11 +929,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/oasys-lib/src/lib/components/button/Button.stories.ts",
+                "file": "components/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+                "type": "Story<FakeComponent>",
+                "defaultValue": "(args: FakeComponent) => ({\n  props: args,\n})"
             }
         ],
         "functions": [
@@ -1003,7 +955,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "\"xsmall\" | \"small\" | \"medium\" | \"large\" | \"default\"",
-                "file": "projects/oasys-lib/src/lib/components/layout/box/box.component.ts",
+                "file": "components/layout/box/box.component.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1014,7 +966,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "\"leading\" | \"trailing\" | \"iconOnly\" | \"none\"",
-                "file": "projects/oasys-lib/src/lib/components/icon/icon.ts",
+                "file": "components/icon/icon.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1025,7 +977,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "\"pin\" | \"heart\" | \"basket\"",
-                "file": "projects/oasys-lib/src/lib/components/icon/icon.ts",
+                "file": "components/icon/icon.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1036,7 +988,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "\"none\" | \"uppercase\" | \"lowercase\" | \"capitalize\"",
-                "file": "projects/oasys-lib/src/lib/components/text/text.ts",
+                "file": "components/text/text.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1066,36 +1018,26 @@
                     "type": "literal type"
                 }
             ],
-            "projects/oasys-lib/src/lib/components/button/Button.stories.ts": [
+            "components/button/Button.stories.ts": [
                 {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/oasys-lib/src/lib/components/button/Button.stories.ts",
+                    "file": "components/button/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "Primarybutton",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/oasys-lib/src/lib/components/button/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "() => ({\n  props: { buttonText: 'Label' },\n})"
-                },
-                {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/oasys-lib/src/lib/components/button/Button.stories.ts",
+                    "file": "components/button/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+                    "type": "Story<FakeComponent>",
+                    "defaultValue": "(args: FakeComponent) => ({\n  props: args,\n})"
                 }
             ],
             "stories/Test.stories.ts": [
@@ -1128,26 +1070,26 @@
         },
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "projects/oasys-lib/src/lib/components/layout/box/box.component.ts": [
+            "components/layout/box/box.component.ts": [
                 {
                     "name": "BoxPaddings",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "\"xsmall\" | \"small\" | \"medium\" | \"large\" | \"default\"",
-                    "file": "projects/oasys-lib/src/lib/components/layout/box/box.component.ts",
+                    "file": "components/layout/box/box.component.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 186
                 }
             ],
-            "projects/oasys-lib/src/lib/components/icon/icon.ts": [
+            "components/icon/icon.ts": [
                 {
                     "name": "IconContext",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "\"leading\" | \"trailing\" | \"iconOnly\" | \"none\"",
-                    "file": "projects/oasys-lib/src/lib/components/icon/icon.ts",
+                    "file": "components/icon/icon.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1158,20 +1100,20 @@
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "\"pin\" | \"heart\" | \"basket\"",
-                    "file": "projects/oasys-lib/src/lib/components/icon/icon.ts",
+                    "file": "components/icon/icon.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 186
                 }
             ],
-            "projects/oasys-lib/src/lib/components/text/text.ts": [
+            "components/text/text.ts": [
                 {
                     "name": "TextTransform",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "\"none\" | \"uppercase\" | \"lowercase\" | \"capitalize\"",
-                    "file": "projects/oasys-lib/src/lib/components/text/text.ts",
+                    "file": "components/text/text.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1186,7 +1128,7 @@
         "status": "low",
         "files": [
             {
-                "filePath": "projects/oasys-lib/src/lib/components/button/Button.stories.ts",
+                "filePath": "components/button/Button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1196,17 +1138,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/oasys-lib/src/lib/components/button/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Primarybutton",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/oasys-lib/src/lib/components/button/Button.stories.ts",
+                "filePath": "components/button/Button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1216,7 +1148,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/oasys-lib/src/lib/components/button/button.component.ts",
+                "filePath": "components/button/button.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonComponent",
@@ -1225,16 +1157,16 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/oasys-lib/src/lib/components/button/fakebutton.component.ts",
+                "filePath": "components/button/fakebutton.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "ButtonComponent",
+                "name": "FakeComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "projects/oasys-lib/src/lib/components/icon/icon.component.ts",
+                "filePath": "components/icon/icon.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "IconComponent",
@@ -1243,7 +1175,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/oasys-lib/src/lib/components/layout/box/box.component.ts",
+                "filePath": "components/layout/box/box.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "LayoutBoxComponent",
@@ -1252,7 +1184,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/oasys-lib/src/lib/components/layout/inline/inline.component.ts",
+                "filePath": "components/layout/inline/inline.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "LayoutInlineComponent",
@@ -1261,7 +1193,7 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/oasys-lib/src/lib/components/text/text.component.ts",
+                "filePath": "components/text/text.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "TextComponent",

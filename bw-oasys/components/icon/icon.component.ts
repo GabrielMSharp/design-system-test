@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
-import { TokenService } from '../../services/token.service';
-import { WindowService } from '../../services/window.service';
+import { TokenService } from '../../projects/oasys-lib/src/lib/services/token.service';
+import { WindowService } from '../../projects/oasys-lib/src/lib/services/window.service';
 import { IconNames, IconContext } from './icon';
 @Component({
   selector:'ui-icon',

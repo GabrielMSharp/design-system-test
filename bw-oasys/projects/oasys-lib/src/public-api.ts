@@ -5,6 +5,6 @@
 
 export * from './lib/oasys-lib.module';
 
-export * from './lib/components/button/button.component';
-export * from './lib/components/text/text.component';
-export * from './lib/components/layout/box/box.component';
+export * from '../../../components/button/button.component';
+export * from '../../../components/text/text.component';
+export * from '../../../components/layout/box/box.component';

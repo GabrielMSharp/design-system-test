@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
-import { TokenService } from '../../services/token.service';
+import { TokenService } from '../../projects/oasys-lib/src/lib/services/token.service';
 import { IconNames, IconContext } from '../icon/icon';
 import { TextTransform } from '../text/text';
 

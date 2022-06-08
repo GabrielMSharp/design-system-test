@@ -1,19 +1,19 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import { Story, Meta, moduleMetadata } from '@storybook/angular';
 import { ButtonComponent } from './button.component';
-import { FakeComponent } from './fakebutton.component';
+// import { FakeComponent } from './fakebutton.component';
 
 export default {
   title: 'Example/Button',
-  component: FakeComponent,
+  component: ButtonComponent,
   decorators: [
     moduleMetadata({
-      declarations: [FakeComponent]
+      declarations: [ButtonComponent]
     })
   ]
 } as Meta;
 
-const Template: Story<FakeComponent> = (args: FakeComponent) => ({
+const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
   props: args,
 });
 
