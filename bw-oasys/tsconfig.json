@@ -24,8 +24,8 @@
       "dom"
     ],
     "paths": {
-      "oasys-lib/*": [
-        "dist/oasys-lib/oasys-lib/*",
+      "oasys-lib": [
+        "dist/oasys-lib/oasys-lib",
         "dist/oasys-lib"
       ]
     }

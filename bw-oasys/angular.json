@@ -42,7 +42,6 @@
           "options": {
             "browserTarget": "oasys-lib:build",
             "port": 4400
-            
           }
         },
         "build-storybook": {

@@ -1,14 +1,17 @@
-// also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import { Story, Meta, moduleMetadata } from '@storybook/angular';
-import { ButtonComponent } from 'oasys-lib';
-
+import { TextComponent } from 'projects/oasys-lib/src/public-api';
+import { ButtonComponent } from '../projects/oasys-lib/src/lib/components/button/button.component';
+import { RouterTestingModule } from '@angular/router/testing';
 export default {
-  title: 'Example/ButtonTwo',
+  title: 'Example/Button',
   component: ButtonComponent,
   decorators: [
-    moduleMetadata({
-      declarations: [ButtonComponent]
+    moduleMetadata({ 
+      imports: [RouterTestingModule],
     })
+  ],
+  subcomponents: [
+    TextComponent
   ]
 } as Meta;
 
