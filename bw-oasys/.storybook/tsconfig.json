@@ -7,7 +7,7 @@
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
     "paths": {
-      "@oasys-design-system": ["./projects/oasys-lib/src/public-api"]
+      "oasys-lib": ["./projects/oasys-lib/src/public-api"]
     }
   },
   "exclude": [
