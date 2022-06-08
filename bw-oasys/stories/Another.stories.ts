@@ -1,6 +1,6 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import { Story, Meta, moduleMetadata } from '@storybook/angular';
-import { ButtonComponent } from '@oasys-design-system';
+import { ButtonComponent } from 'oasys-lib/button';
 
 export default {
   title: 'Example/ButtonTwo',

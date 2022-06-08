@@ -22,7 +22,16 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "oasys-lib/*": [
+        "projects/oasys-lib/*",
+        "projects/oasys-lib"
+      ],
+      "oasys-lib/button": [
+        "project/oasys-lib/src/lib/components/button"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "defaultEncapsulation": 3,

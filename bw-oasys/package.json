@@ -24,6 +24,7 @@
     "@angular/router": "~13.2.0",
     "grunt": "^1.4.1",
     "grunt-svg-sprite": "^1.5.0",
+    "ng-samurai": "^3.0.0",
     "rxjs": "~7.5.0",
     "svg-sprite": "^1.5.4",
     "svgo": "^2.8.0",
