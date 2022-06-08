@@ -931,13 +931,13 @@
     "modules": [
         {
             "name": "OasysLibModule",
-            "id": "module-OasysLibModule-576716915e271354afc7d0fb0178c56e7261b9711c1bd42f8e3c3ba30a24f2d8abb7e5dd7af40ec64db6153c8a8a8375aa24ec21a830000e8c8b6d1de06d3add",
+            "id": "module-OasysLibModule-087c7eef5a0cd76d4accc8d21fd3ff353a8b943f0427ec6ed6ebea29495e2fa566805f40c72444ef7fe5b15003543a2a4b5dd26a28877b1c39cba02fde41ff2f",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/oasys-lib/src/lib/oasys-lib.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport { ButtonComponent } from './components/button/button.component';\nimport { LayoutInlineComponent } from './components/layout/inline/inline.component';\nimport { TextComponent } from './components/text/text.component';\nimport { IconComponent } from './components/icon/icon.component';\nimport { LayoutBoxComponent } from './components/layout/box/box.component';\nimport { WindowService } from './services/window.service';\nimport { TestComponent } from 'stories/test.component';\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    TestComponent,\n    // LayoutInlineComponent,\n    // TextComponent,\n    // IconComponent,\n    // LayoutBoxComponent\n  ],\n  imports: [\n    CommonModule,\n    RouterModule\n  ],\n  exports: [\n    ButtonComponent,\n    // TextComponent,\n    // LayoutBoxComponent,\n    // TextComponent,\n    // LayoutBoxComponent\n  ],\n  providers: [\n    WindowService\n  ]\n})\nexport class OasysLibModule { }\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport { ButtonComponent } from './components/button/button.component';\nimport { LayoutInlineComponent } from './components/layout/inline/inline.component';\nimport { TextComponent } from './components/text/text.component';\nimport { IconComponent } from './components/icon/icon.component';\nimport { LayoutBoxComponent } from './components/layout/box/box.component';\nimport { WindowService } from './services/window.service';\nimport { TestComponent } from 'stories/test.component';\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    LayoutInlineComponent,\n    TextComponent,\n    IconComponent,\n    LayoutBoxComponent\n  ],\n  imports: [\n    CommonModule,\n    RouterModule\n  ],\n  exports: [\n    ButtonComponent,\n    TextComponent,\n    LayoutBoxComponent,\n    TextComponent,\n    LayoutBoxComponent\n  ],\n  providers: [\n    WindowService\n  ]\n})\nexport class OasysLibModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -954,7 +954,16 @@
                             "name": "ButtonComponent"
                         },
                         {
-                            "name": "TestComponent"
+                            "name": "IconComponent"
+                        },
+                        {
+                            "name": "LayoutBoxComponent"
+                        },
+                        {
+                            "name": "LayoutInlineComponent"
+                        },
+                        {
+                            "name": "TextComponent"
                         }
                     ]
                 },
@@ -964,7 +973,20 @@
                 },
                 {
                     "type": "exports",
-                    "elements": []
+                    "elements": [
+                        {
+                            "name": "LayoutBoxComponent"
+                        },
+                        {
+                            "name": "LayoutBoxComponent"
+                        },
+                        {
+                            "name": "TextComponent"
+                        },
+                        {
+                            "name": "TextComponent"
+                        }
+                    ]
                 },
                 {
                     "type": "bootstrap",

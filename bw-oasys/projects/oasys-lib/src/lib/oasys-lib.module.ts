@@ -13,11 +13,10 @@ import { TestComponent } from 'stories/test.component';
 @NgModule({
   declarations: [
     ButtonComponent,
-    TestComponent,
-    // LayoutInlineComponent,
-    // TextComponent,
-    // IconComponent,
-    // LayoutBoxComponent
+    LayoutInlineComponent,
+    TextComponent,
+    IconComponent,
+    LayoutBoxComponent
   ],
   imports: [
     CommonModule,
@@ -25,10 +24,10 @@ import { TestComponent } from 'stories/test.component';
   ],
   exports: [
     ButtonComponent,
-    // TextComponent,
-    // LayoutBoxComponent,
-    // TextComponent,
-    // LayoutBoxComponent
+    TextComponent,
+    LayoutBoxComponent,
+    TextComponent,
+    LayoutBoxComponent
   ],
   providers: [
     WindowService

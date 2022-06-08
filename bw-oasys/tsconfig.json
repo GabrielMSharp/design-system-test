@@ -22,11 +22,17 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "oasys-lib": [
+        "dist/oasys-lib/oasys-lib",
+        "dist/oasys-lib"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "defaultEncapsulation": 3,
-    "enableIvy": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    
   }
 }
