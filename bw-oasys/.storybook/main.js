@@ -12,5 +12,6 @@ module.exports = {
   "framework": "@storybook/angular",
   "core": {
     "builder": "@storybook/builder-webpack5"
-  }
+  },
+  "staticDirs": ['../projects/oasys-lib/src/assets', '../projects/oasys-lib/src/assets/bloomon/icons'],
 }

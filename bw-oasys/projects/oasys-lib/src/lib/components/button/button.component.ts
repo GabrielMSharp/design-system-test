@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges } from '@angular/core';
 import { TokenService } from '../../services/token.service';
 import { IconNames, IconContext } from '../icon/icon';
 import { TextTransform } from '../text/text';
@@ -10,7 +10,7 @@ import { TextTransform } from '../text/text';
   encapsulation: ViewEncapsulation.None,
   // changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponent implements OnInit, OnChanges {
 
   // // Button Content
   @Input() buttonText?: string;
@@ -25,11 +25,13 @@ export class ButtonComponent implements OnInit {
   @Input() href: string = '';
   @Output() buttonClick: EventEmitter<void> = new EventEmitter();
 
-  buttonClasses: string = '';
+  uiButtonClasses: string[] = [''];
   iconContext: IconContext = 'none';
   textTransform!: TextTransform;
 
-  constructor(private tokenService: TokenService) { }
+  somethingCrazy;
+
+  constructor(private tokenService: TokenService, private changeDetection: ChangeDetectorRef) { }
 
   clickButton(): void {
     console.log('button was clicked');
@@ -37,13 +39,13 @@ export class ButtonComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.buttonClasses = [
+    this.uiButtonClasses = [
       `type-${this.buttonType}`,
       `size-${this.buttonSize}`,
       `${this.buttonIcon ? 'button--has-icon': ''}`,
       `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
       `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
-    ].join(' ');
+    ];
 
     if(this.buttonIcon) {
       this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';
@@ -52,6 +54,10 @@ export class ButtonComponent implements OnInit {
     this.textTransform = this.tokenService.getTokenValue(
       `--style-button-${this.buttonSize}-text-transform`
     ) as TextTransform;
+  }
+
+  ngOnChanges(): void {
+    this.ngOnInit();
   }
 
 }

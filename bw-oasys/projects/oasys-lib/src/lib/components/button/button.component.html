@@ -1,7 +1,10 @@
-
-<button (click)="clickButton()" [routerLink]="href || null" [ngClass]="buttonClasses">
+<button (click)="clickButton()" 
+        [routerLink]="href || null" 
+        [ngClass]="uiButtonClasses">
     <div class="button-content">
         <ui-icon *ngIf="buttonIcon" [iconName]="buttonIcon" [iconSize]="buttonSize" [iconClass]="'buttonIcon'" [iconContext]="iconContext"></ui-icon>
-        <ui-text *ngIf="buttonText" [textTransform]="textTransform">{{buttonText}}</ui-text>
+        <ui-text *ngIf="buttonText" [textTransform]="textTransform">
+            {{buttonText}}
+        </ui-text>
     </div>
 </button>

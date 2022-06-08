@@ -48,6 +48,7 @@
           "builder": "@storybook/angular:build-storybook",
           "options": {
             "browserTarget": "oasys-lib:build"
+
           }
         }
       }
