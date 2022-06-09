@@ -11,16 +11,5 @@ export const parameters = {
     },
   },
   docs: { inlineStories: true },
-  layout: 'centered',
-  previewTabs: {
-    docs: {
-      hidden: false
-    },
-    canvas: {
-      title: 'Playground',
-      hidden: false,
-    },
-  },
-  viewmode: 'docs'
+  layout: 'centered'
 }
-  

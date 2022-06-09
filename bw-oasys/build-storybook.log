@@ -21,544 +21,544 @@ Node.js version : v17.3.1
 
 Operating system : macOS Monterey
 
-[15:44:59] No configuration file found, switching to CLI flags.
-[15:44:59] Using tsconfig file : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/tsconfig.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/Gruntfile.js
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/README.md
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.editorconfig
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.gitignore
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/angular.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/build-storybook.log
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/documentation.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/package-lock.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/package.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/svgo.config.js
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/tsconfig.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.vscode/extensions.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.vscode/launch.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.vscode/tasks.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.storybook/main.js
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.storybook/preview-head.html
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.storybook/preview.js
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.storybook/tsconfig.json
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.storybook/typings.d.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Button.stories.mdx
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Button.stories.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Introduction.stories.mdx
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Text.stories.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/_OasysComponents.module.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/README.md
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/oasys-lib.d.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/package.json
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/public-api.d.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/README.md
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/karma.conf.js
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/ng-package.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/.browserslistrc
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/package.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/package-lock.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/tsconfig.lib.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/tsconfig.spec.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/tsconfig.lib.prod.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/code-brackets.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/colors.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/comments.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/direction.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/flow.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/plugin.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/repo.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/stackalt.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/oasys-lib.mjs
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/public-api.mjs
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/oasys-lib.module.d.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/fesm2020/oasys-lib.mjs
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/fesm2020/oasys-lib.mjs.map
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/fesm2015/oasys-lib.mjs
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/fesm2015/oasys-lib.mjs.map
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/style-dictionary/README.md
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/public-api.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/test.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/README.md
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/build.js
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/config.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/oasys-lib.module.mjs
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/015fd7c3a696cc1178138d6fc32c347b.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/02803b5cb18ea275fdfbdd9cade6d889.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/043b7c58dc6e1633a152b7b756f88973.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/052ac46ebfc6087b047f03b3408624bb.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/05765437c2dc98f1e1b590d15619a542.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/0aef55d791437411c6e67f8434affc94.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/00510bbd71812e829ad44272f9b72b56.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/0cc0e6817a8059596d689a259562da01.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/0ee047e13371be05de875a79ad5e58fc.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/10bb8383965ffdd125ff808b7b8f53c6.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1262240fe9453290d9ac17264faf5aa8.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/12c0541846473db21932b762ce97b0e1.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/12f971d36a7bdba0cb0c4d382b2af9a0.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1ac30ecc23049c3981fbefedb7cbe41d.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1bf1849bd17b84468f0d013bef27a834.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1d16e9f0896e405eb1efe90945db276d.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1c925b40b87363a70884404d4c0868ab.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1d76559ca5bd51e72bfeeb052e50f416.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1e5619c993a3b848310bcc21259f6a97.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1f2b2c35f1b6e0f9321ebccf3611637e.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1ebdf414cfb881bd89ee209e8c08ea53.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1f7ad3d319349b53173e9a064ed7e207.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1fe582e37580bdaf233a79a78165b560.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1ec8ddcf98de8562417191c109e31a69.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/224cd32575ca4e856f4e764464062ea3.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/22a5f0a057db33845063fa6d5d914478.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/251b4b960a9866db8a6ff10e570ed911.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/260350ae80a4170f7f803973c7056a80.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/23369cab3d1ca4ab6fc86ae0059b11ce.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/290ab69f2baa2bb9b14f8a091753542b.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/299e0446f2f904dfb663e5ff1f461d9a.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/266e06fceda9b712d624d7fa96e1c576.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/29eb3ca5b5eb7b1a967cf8f4abc08559.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/2ad2c84bfd5cdb1cf6b9307e2e8bd80b.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/305443bf66eaa12f28d6f4cc43a26193.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/2f8d699e437ac9545afb31816824e2e8.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/2b41764c04233d4e423d352d97ba7675.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/336aae14486e04253794757b5caab7bc.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/34c001ba18fd00432a9774b97185fe99.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3647191fcc7752f0d4549d0221bfbf30.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/36b03cb8d7ef72e15bb33b533d9d27ba.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/36f7f733bec0d10c28ef2b2d73202a34.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/375b6b6479beee5ebbb49204ca5e0188.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/37dea6157415ecde1f78bb54d248b524.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/38b3fa63549bb5a1ea954f9734f9306c.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/38bae8eb9e7c55cc7fbb32045043300d.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/38af52ccd7bc90aecddb8aca6b7b11c1.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/396653e1676ffc409392c29a1563cd9a.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3ba5ce6f607816ab1ce54842566d2f36.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3c4140be2822c484abe7c4279474c0f4.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3d3d82690b8a2fc503c546a0074cf7ad.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3dac998094f0bbc5b3a23bb28df0bf3e.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3df007aea9157dc6251ce4810c9ae041.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3f138cbcb0c06e6c98e70d03f65647aa.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3f1991ed9b19ce1b46e45da1135efbaa.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/46bc67f2799b08cba376c225bfcda11c.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/485c2c984b2494e7b6c2b7d09cd4d6f6.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/4b5a146a49051afbdf89a8f1ce5df81e.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/4fbb8a6b4c267a3a2987818b87293c56.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/49f13d32cf0a138f1e38ef67a8b2f46b.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/517696630c3b8308d513da51406f2f50.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5173602e2480192bb0ee00e22f336b9b.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/51c65535dd5a89816548ff78021ec955.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/524301b7f0eaf7295cf439e886f53645.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5566a11f2c681422cdcd625554d34a0c.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/55e4cce4ea9556dc6325f236ca047782.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5657e78affcdb2b07643e9abd6460a1a.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/59670aeb74ae7ca9e67fcd6448dcadbe.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5b72977346889568b7d4f7ded2cf5221.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5d1e4f0e1f7fe80edb69fbd92d193715.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5ea19872f35ef045393e752599e777c6.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5f22bfed78a4e7f99a979cdc66be2b92.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5f30f4902d169e8a80f8d027c8565ba1.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/60239cbf86b51ccc310ba88eb05fb7c1.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/61f0cf9957c62c400d137186cf9a436f.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/62fc62d778d3ae15c7f00cbc2cd80af6.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/63c9114aa0eb55d5f85c460ca86b50d8.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/64c1bbd5551ac4207c9edab532603719.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/651e92348b2a2c434519ebfbcab57202.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/66d25dbb0b4ced756bb5280a3a3f16a9.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/664098d8446117f9ad874360be2025e8.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/66fa328ca104eb49372e89782c460abb.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/67c62ee28298a6b91db2898621f9082d.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/69cd959a6f88b76c639ef5cea7fff0d7.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/67d6092429377a48ef3aa4db5099ab4c.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/6da01550dc21f2af9650777126d78605.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/69f94611e8422f91e61eebb05d930434.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/751aa5be5ed7ff5fe1b2ef60b319e586.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/732f01d06ab3bccab99c669b7513e647.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/757d7a1acebe664437ead809f6e41c55.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/755750b35fe38b178a75362e1fe4bb0c.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/762f4f538d3c0ef2421fb11cf4c54a3f.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/76b75fe5fffbf6ad5b132b78d3545f0a.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/7972db5e5f435fc31d4cd8a795f72d24.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/77a66f604454c48110bb13cd47cfff07.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/79ebb118864c9369dd1455dd96ae041e.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/7af888eaa084ecdf1b56cd297efcb210.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/7e9d50a181c9d5b9e1b6ca2b888eb2e0.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/7b6545e90c34a8cf0a7c8867cd695b05.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/7f65c6bd162a2315365160d1a25ea9e4.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8025b26982b35541e3b7f936d04411a4.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/80f9b340d68e3e48f050d92d37fec51b.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8199622d7b96c2c241d9fd8934a45efe.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/85b9e51323c2a14bd0860747ad943e6f.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/86fc783f1820596183a397d5d3452b9d.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/882b1752de9a2d14f693e44af85c2a9b.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/88895d4d94bdca28f22c87ed4bff941a.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8cefd4214146f4436e2e284e7bf57dd4.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8d5181a8c415352a2ebc0646feecc836.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8e71fae668a67625c398e1beca435ea2.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/90f67d9d19ff7d48b28c2071dbd9d7d4.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8f4c9805a0747f906eb5c1fa6a2b5cc5.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9103ffa05f142139448b97ee9d6d02e0.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/916a2edc84adf43222daccf46c9d865f.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/91ec1e7a49111b3782695340573846d3.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/921b63c3a7de307785bf29c54ac0a371.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9228f069bdb12c9a8ccc3f804e7da8bd.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/93b0ae960e4277976f54413bde8380c2.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/96e88b8bc2e15fea5c6ba379396e7163.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/96d048ac998762f7040d0420165b39c3.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/99b0aa2066c9cfdecde3996f14748406.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9b53229145ba6f7fbcd953d0c71c1aab.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9bc9a27d932092ded6b61548dbbe25ee.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9f32c8d814fd4f9d6b28a07ba45ccefa.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a28fb8514d32161ca6c29d9a48194d76.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9fb20b24605ba30dc18d71c41c4ea0df.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a3ed0bf30fd94f7574fa07ab4fbe2ff2.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a570ef1053de80b401ab786ee90f81d8.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a5a6933339a23ac2700f978d9930d97d.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a5fb02c0e0ff27e18930cc1e64a540d8.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a5918d0a6d0b19ee276c2bfff93dd523.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a7c0336e28e7276e8982278cbc3dfaac.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a88941872d94e439044ea62f180df95b.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a96cacbddfc7822ee88cf6535db7989c.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/ab56370a01cce307b1ed5f0a1aa47d7e.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/ab5a4dae687e789bc4b6052f5dae716f.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/abc566d55ec23c7e58c2d0970de292e1.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/adb31cb64001b370070295381ed815ac.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/af62958e239c9f04729a838118951686.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/b29820bd9dc393805bb6f82708862838.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/acea4cd6fe37a6d42f2c91826efb317f.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/b322cc2e2c82879bc56ddc57b9b35ab4.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/b58bfeeade2e04448d43c78a5283afb2.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/b4f21317642f9a7004c64f429fb80254.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/b6d66cb1a12c86494469b4b44999beb0.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/bbe712e5d9b6614a95d0890dc37d8ccf.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/bc1e47e400d31c54ae55b4229d829b8d.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/bc9ea11b6a63a333a720a5d591554a2f.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/bd7b6f01b10d10f5cc68c8afb491f322.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/c76f8d358dcb5f16266c35994fd023bc.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/c7c660beca6dad0028ea9d43763c41a0.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/c47dc3bfc0db0ac063770a78dc2b237c.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/cbc77536be7d3735f45f4075ee631048.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/ce5246a888511c537400d77e966a32d3.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/c9170afdc71d5abf17903042167a316d.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d12b48db24d9dcd2d59d4f97cbec8b98.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d13e542b002187ec79d23f5ca31091b8.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d270e7493ca8573641d60f1652b93994.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d14c27bd11b830bbd8a31e360842d87a.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d2710c5f51f9294610364c20a65ef295.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d74c43671c2d2962c48832364c7a8120.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d9fd2ea1d58dba0ef74ff31e11e510f9.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/da9ff1ac2679d582882d7d310d116e94.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/dbc6b67cb977586164735f83393c222e.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/dc2b12c165e50b2d8f38e5878cdcd144.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/dc627d3b969e53cc125a8071d3a150a8.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e1698910acf843332a96468bbfbdd5a6.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e2114bfc822d543830f469c5c901d50a.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e2c00569bba43aa27756b052099ddde8.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e2d84943c005c372ceeda627b65aedc6.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e38e9192da5f9f2ac0fad1c923477e24.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e86c171f8cf47a78e07076d2639f7213.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e8b8f29d2b4e013aecaf609841b4216c.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/eb3607f8df6ae3d29efe635ba946e508.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/ecd71a88336376f830a3a033537cdfc0.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e9d38988bcd7fb8f1c0d2d7d7c748736.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f0f42ba1071e80a950b69f8d19803f30.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f4cd5daa479a63123f722f0e769f0400.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f5caea4fb616767ae1726dd75a77c956.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f9425c6e5d5c7d30e901c6baed85c32b.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f9eb557b1e26dabcf022b4e2a6d08338.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f9f6301a698ca50e386e672dd9438be4.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/fb42c6db0112e24e6cd0533dc8dd80c5.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/fb8003920c0874476622ba754c0345d5.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/fc46dc3afa44adea6ef8fcd88724c655.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/ff933f3356c3c11091f99110bc1b7585.json
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/services/token.service.d.ts
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/services/window.service.d.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/layout.scss
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/style.css
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/style.css
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/layout.scss
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/oasys-lib.module.ts
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/oasys-lib.service.spec.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/oasys-lib.service.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/basket-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/basket-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/heart-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/heart-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/pin-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/pin-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/basket-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/basket-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/heart-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/heart-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/pin-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/pin-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/angular-webpack/a196b0d73d69cb5b742afd2e604e59222e880453/0.pack
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/angular-webpack/a196b0d73d69cb5b742afd2e604e59222e880453/index.pack
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/angular-webpack/a196b0d73d69cb5b742afd2e604e59222e880453/index.pack.old
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/angular-webpack/a196b0d73d69cb5b742afd2e604e59222e880453/1.pack
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/services/token.service.mjs
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/services/window.service.mjs
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/button/button.component.d.ts
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/icon/icon.component.d.ts
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/icon/icon.d.ts
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/text/text.component.d.ts
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/text/text.d.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/styles.scss
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/variables.css
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/styles.scss
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/variables.css
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/variables.css
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/styles.scss
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/styles.scss
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/variables.css
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/services/token.service.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/services/window.service.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomon/color.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomon/font.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomandwild/color.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomandwild/font.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/basket-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/heart-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/heart-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/pin-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/pin-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/basket-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/basket-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/heart-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/heart-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/pin-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/pin-24.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/basket-16.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/button/button.component.mjs
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/icon/icon.component.mjs
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/icon/icon.mjs
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/text/text.component.mjs
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/text/text.mjs
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/layout/box/box.component.d.ts
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/layout/inline/inline.component.d.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Medium.woff
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Medium.woff2
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Regular.woff
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Regular.woff2
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/TiemposHeadlineWeb-Bold.woff
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/TiemposHeadlineWeb-Bold.woff2
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/icons/icons.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/fonts/Patron-Regular.woff
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/fonts/Patron-Thin.woff
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/fonts/Patron-Thin.woff2
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/icons/icons.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/fonts/Patron-Regular.woff2
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Medium.woff2
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Regular.woff
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Regular.woff2
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Medium.woff
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/TiemposHeadlineWeb-Bold.woff
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/icons/icons.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/fonts/.DS_Store
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/TiemposHeadlineWeb-Bold.woff2
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/fonts/Patron-Regular.woff
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/fonts/Patron-Regular.woff2
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/fonts/Patron-Thin.woff2
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/icons/icons.svg
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/fonts/Patron-Thin.woff
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/button/button.component.html
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/button/button.component.spec.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/button/button.component.scss
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/button/button.component.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.component.html
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.component.scss
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.component.spec.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.component.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.component.html
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.component.scss
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.component.spec.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.component.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/global/color/base.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/global/size/icon.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/global/size/font.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/global/size/spacing.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/02/bc/78150af54ff992e62bf3877d12470b0a1005efce7fe7dbc68b54e9e8d753
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/0d/83/318b8246182bf875b34b5ee593bc843004554ef257229ce459aa50b282fe
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/35/0d/6941062c9694da5bd3cddd1779cfd8316350319ef11ed4e8797821786227
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/53/a9/e773bebeba6460a16cb672781d0a61fb495090668dc3f570b449c5ea1a08
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/7e/2a/6e68f2d1fbfb8408af71498c39ea0e7a8bebe31ed482bd1add478c4239d4
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/5d/4c/fdb672778552d822fbee823b40485c29c68f1b6e693b370e663144aaf64c
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/a0/47/05d66b7230d755753c0fe4bf6576ecdfab7a60a3c89ed231d5d3e55df117
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/a4/d7/e295271f7b0518e0faf775fb7b42e99355160382a3669a6d2935530ab593
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/90/3b/71e187d75cf29044481f4e465277ae4cba0d8b584a002d8e28c210e3942f
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/b8/0f/c7ea9594dbf9df69cbd331c396097fe29f1f697203a111c84917bf63a174
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/ba/89/14ceada9e645399871c34010928988283f0d1015d2bf92fbc8efe5e03aef
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/e1/42/7c093c5d8776da6a9fd4153f3ff1c44a75d9c98d45c5ff0a1bd741f2fd00
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/d7/9c/699d506160d8de1ddc1014eff0da48a64e0a141e4527a6a82945026b52b3
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/f2/10/598318665d0da2c01f44b469134f4ac9d798ab0f344b8ca9bedaeac46c88
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/ed/5e/4fcdeab30ff4fd54a156e4506674b293a379340cf7a664465088eb756f08
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/layout/box/box.component.mjs
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/layout/inline/inline.component.mjs
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/box/box.component.scss
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/box/box.component.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/inline/inline.component.html
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/inline/inline.component.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomon/components/button/button.json
-[15:44:59] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/inline/inline.component.spec.ts
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomandwild/components/button/button.json
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/01/68/032ea57aa0352cd93925d092c1c306055e9a00d0b181a92b13569c3b52e908f08053f32bd1e74eca97cf16e4f133cccb1f3cbae9b56a3e4b7cc519aae7a3
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/13/e4/a878395dc47ac608f745805678819d6345c0e54566613af86e70a5d312bde1ad862c168c1a70bd22693f3a49acaada7a7a13b9fd96bdbc76ff3c40ac703a
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/inline/inline.component.css
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/26/8c/986835c4164209296775d893bd2c8ff866f21e86bea571ed517fff59604a87342a1a4ce8b850945c7b52cf250e9ba76fc349e2bd7e679f71b66f44c29804
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/03/77/2f4d7a901959d673b0fbd520cff7ce400dcc93d09e276b7267a81e556962a658d98174afb51afd61f04c07058621d36fe0fb36a9a5ee0ff0a59eb069539e
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/22/cb/ba3ad047ac7f4b13ccf5c2e7e4cc1f3b1cbca5e3616029e4346b8b3b22cabfdd21d6d64e9d936110303240740ad79744f2190e7c224469934fc9c42cb658
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/29/9a/e43c5b6752ad457f9cc8ec6c317c09489efa6a8d381a95993a9362292d750f0b51a7f330b491ce35dec68a3545bbaf1d46484ed10fb6316cdf63f9bc999e
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/0b/1c/a60649bb6cf82794e46e49d10ff65ad74f0a434966d993d8df64e45878564d272659f04ff99e08ec6061069dc016b775f489e80b2cd5ad9b2328a5a1b742
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/2e/af/0dcdf1bf32597439c94c4aca710b5aaf3315f24dface16bf7e0e6006291b1d6d70c9999019f8a250f25c940e9ab582e22439e29e08e54fe5d8473ba34304
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/30/11/2c82cf2f6f78b521bcdc2a4de6990cb8259377d6444297da280d7c2ad07023115149d417a7db4cd9dd4e6031bb4d5b1cb586ab56501f1d6e7ea3b0dcff31
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/42/fb/f47e4e3a4fb2419c54075d23fe1323c9c186145897911635255b336ae13c6cb4d2a5d19877b78cbd28db9a379a0f761083f2cc04b24b87aa8d89ef428ed6
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/43/41/fcbb8ad7075941eeb41c892dd0b72e9e19081ccc2026c5afc9bd9cd453f62a5f54b87e205ada50649830f6428d7a53732aa710063cc2dfab842c88ca5b37
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/43/79/ce86eabb88926de7c2582ae4f651f7a89467bac8e6188031a79ad130b6172c9b33f272a639a17cc0e20e2fbbe8755cae5dc280075ada15d2fcf48bf99e9e
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/4a/59/7795586b57934cf6f8979a6746fe3e08507f2924be21b7aeee01ef605c7bfef2eb91151b52060ec95ac90b306789843aa0719d025dda2f61f858a05a7b34
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/4e/f8/70126cf9947a1f33ec52ca58ec31d3530e272b62f718b034dc191f0a9100870071c10d8ae45dacc5c00484ab7a187ed97a7603b5d2df65bd612a5f363ffc
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/4b/27/75fa5f52bb8b765f87f0435a386991ba4f287c6f8fd758d8a21fbab65a4007062ecb08bbf5229dd423768705b7e84352c45cdf231da36ad336a989405263
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/5b/13/d9b83f7b71f84eff942d4dff880307b9dcbd2c7871f5ca4e990e1ee8e96391ad3fafd44a49889f4545d1e62bd23a0fb726e25be962a99d74802731676490
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/71/07/530d780d932f4a9e0b37bc418cafbc7cf869ecf2a281fab66f748756efedc851fc4efe80b22ec3f2c78ed12f8b578f95e434b7a6d07ed2c82d12c9562025
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/53/f1/598515ea7717ffe8e871c60a14e07e64c87c674940c6e135de55ae483ee5d092c8855a8f8daa04db65f923aec929c335aa67bdbe72fbb0359d107f60618b
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/71/f5/d2ab41dfaf26e70b7fcd8b9a186644889b9b2162a7f8c124ba6bcb22ac311e9772fdf857b019d360901b925bf07d00d1bb05a219895bb77f7ebc4237a34e
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/73/20/f974f16fa3bf2de4513c0d297e5babaeb348f99cca32817ad8244fb40d422afd2ad0135999d74fb2b1c244d11dbde0d2b51a13c19b1f4b08fd6c538523fc
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/79/39/0539ab00ddd94161f9befd7caf072531053e6a454e54fb6fef2d2d18f3230f177cb9f11ca588840944a2d6f2ff651cb4974c86e976960734d65275c308f1
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/87/61/e5f9439b4a6e3ed47081e5c8ee615b4eddae862d87becca99c04984fa66147d31e2dd9c1c5889d67c833c01712e410fc71785e6c13f1a182af6a911c76e7
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/81/bb/ba105c9d89ac458d7e50694ec88fb93cf34f528b407df8d1b3ed79b04f9bfb7ab4815da458cbd860dc3bfd9fddeeb5b48b92a5e5b169286de82d1023024d
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/9f/bf/c55f42a342ae11dc325b15881374981122d2c06fe771d58ba8d67eaf7fe2a499ee64ddd30c591f88656f0f13edb3358a7dbbad72d008b2cc2e1a36d15b55
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/82/f0/bcd22b6c2cd2de957ad947a94a82e03debcdf1af117e5a151f41f48b41fd7e819ae539dd6496f27df6e690797c20ef01b78f24c28f7f26046ab6ea8bba5d
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/a4/cd/3ee60d01f3cef6aa1a88252785818570ed19b61222f586d38b135cbe2f983eb335b114533ba781366521694bd25b4bb6ef5c549e3a43d4ff32d8f820af86
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/a5/bd/46e21827a1069676d7e23ee9f1c887821997176ed2d149c8a396a19d17f48886279d0674d17493e2592993ce0e930108f2ba78963ba73cce2051141fe5e7
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/c1/24/f5ff15026630532f85263f13ed7e9c403fb04b7cee924000373cd3a5df681ab2c2757d26d142033d8a4e250e28a1797f995304fa85e0c1b36081b08ffc7d
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/c9/ef/d7b862580ab2ba76c0e591ea27ed427abf7a0674ce56f2db20fccab5bf06a2e4d433ba5a45b76a79f9e840c63dcd592dca4732ebce5f14e73b0b2b803108
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/bb/94/c27c938c2842f47664b35377b134851d5f50bddc9a40da71af4a26864c7ba12c81b044dd5b8a3a4aed7a145dfee156e7c78d6e4d05ce47ecb2a1639b1043
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/ca/e3/258d2479c986fad2af22e0397fdd6fbc3ac26af946ee1738fbfb1dc6b84d1e92e7bcf5db9ca0169a67ed16f86041101459c33402242822f955043093819c
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/cf/8d/f80e697e56661da4abf8f063d10a266daafe4adcca778522924ef10a2d15bce8fa284396207064acb8773ad1f42f07cc9519c85b27830b986130414f8c8d
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/ce/1f/219221617c96d426d5f410a936666756b6078d19a1116d5979ac19b6c0c6992104f2fff29ae8070e50344edbc82e09cabb5292e365213f1becc00f59c1d4
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/e2/05/257f9be7782c41dc4016a45a1d34b0a5ba31f387cd5c7fd34b9411961e67da5b7d7936f6a95157e81b68a6d2511351f6c8a8fe550a42272bf367554725c8
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/da/99/fabf6e3df90447b3e6ed90365289bf35aeaf3832c0c39c080b5370ac5cad32f0620549724fbb748a71e7a35bc1fd0fa5171e4ab8a4b66f95249dc957ab81
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/e8/b1/42d8cdb3dc4452087b1f00010382c4b4a8c07b61dd8548953990d892e5d713e3bc54c14447c582fdc17da220f5ac1a5cae8a839374b34cf24a82cbc5a20a
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/c3/de/a8b90ea74372f68e3f5829c14ca6215e827b69673168d9f3a7352f44fc39c2ebec4dc9dfa1cea092d2b652223ee2be729bde3450e90a92faacfd4fe1bd4e
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/f1/1f/a35fac5ceff5a9500dfb097889262e418cd3e617edd5c5ba75e43d506d032bb7dedf73279cfe7b7c3c49bfbee5f5810a5d05a6b92dc3f77f98ab75e60888
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/fe/51/62a183226a7b5c94cab67fb62a28fc6fa1d5de92f50763031a04e34328cd3f3e3d48771fe59f14dae9f7091415400323c1ca27d0614d199bc799292fb72b
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/1c/ce/b1629e405934a6f9f7fd820587c3a50df609101ba6d4e8356830bf3892e0e6c89fe6b6db2af3e9fd835ec695c221b8607fcf3772820d108c1e593be76c9f
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/fe/d5/baf2f7378f8d2fa00b1ad18d3557c47e803ce544025c5f59568eb5e7aabac1f206594619f1c1fc4bbf6fe15e10730037e34ccfc25cffb20a8033b2b6f778
-[15:44:59] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/f1/50/503502c37078e6f77c118c634bba252a72a1dbb5828324f5f52ac0a2b8f84de51883cda7e32a9d16261956e0bccb33832fb01f0ed09fa04a0536f4b8b9cc
-[15:44:59] Searching package.json file
-[15:44:59] package.json file found
-[15:44:59] Processing package.json dependencies
-[15:44:59] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
-[15:44:59] README.md file found
-[15:44:59] Error during /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/CHANGELOG read
-[15:44:59] Continuing without CHANGELOG.md file
-[15:44:59] Error during /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/CONTRIBUTING read
-[15:44:59] Continuing without CONTRIBUTING.md file
-[15:44:59] Error during /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/LICENSE read
-[15:44:59] Continuing without LICENSE.md file
-[15:44:59] Error during /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/TODO read
-[15:44:59] Continuing without TODO.md file
-[15:44:59] Get dependencies data
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Button.stories.ts
-[15:44:59] found          : actionsData
-[15:44:59] found          : Template
-[15:44:59] found          : Primary
-[15:44:59] found          : Primary2
-[15:44:59] found          : Primary3
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Text.stories.ts
-[15:44:59] found          : Template
-[15:44:59] found          : Text
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/_OasysComponents.module.ts
-[15:44:59] found          : OasysComponents
-[15:44:59] found          : OasysComponentsModule
-[15:44:59]                : - imports:
-[15:44:59]                : 	- CommonModule
-[15:44:59]                : - exports:
-[15:44:59]                : 	- OasysComponents
-[15:44:59]                : - declarations:
-[15:44:59]                : 	- OasysComponents
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/public-api.ts
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/test.ts
-[15:44:59] found          : require
-[15:44:59] found          : context
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/oasys-lib.module.ts
-[15:44:59] found          : OasysLibModule
-[15:44:59]                : - imports:
-[15:44:59]                : 	- CommonModule
-[15:44:59]                : 	- RouterModule
-[15:44:59]                : - exports:
-[15:44:59]                : 	- ButtonComponent
-[15:44:59]                : 	- TextComponent
-[15:44:59]                : 	- LayoutBoxComponent
-[15:44:59]                : - declarations:
-[15:44:59]                : 	- ButtonComponent
-[15:44:59]                : 	- LayoutInlineComponent
-[15:44:59]                : 	- TextComponent
-[15:44:59]                : 	- IconComponent
-[15:44:59]                : 	- LayoutBoxComponent
-[15:44:59]                : - providers:
-[15:44:59]                : 	- WindowService
-[15:44:59]                : 	- { provide: APP_BASE_HREF, useValue:  }
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/oasys-lib.service.ts
-[15:44:59] found          : OasysLibService
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/services/token.service.ts
-[15:44:59] found          : TokenService
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/services/window.service.ts
-[15:44:59] found          : _window
-[15:44:59] found          : WindowService
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/button/button.component.ts
-[15:44:59] found          : ButtonComponent
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.component.ts
-[15:44:59] found          : IconComponent
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.ts
-[15:44:59] found          : IconNames
-[15:44:59] found          : IconContext
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.ts
-[15:44:59] found          : TextTransform
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.component.ts
-[15:44:59] found          : TextComponent
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/box/box.component.ts
-[15:44:59] found          : LayoutBoxComponent
-[15:44:59] found          : BoxPaddings
-[15:44:59] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/inline/inline.component.ts
-[15:44:59] found          : LayoutInlineComponent
-[15:44:59] -------------------
-[15:44:59] Project statistics 
-[15:44:59] - files      : 413
-[15:44:59] - module     : 2
-[15:44:59] - component  : 5
-[15:44:59] - injectable : 3
-[15:44:59] -------------------
-[15:44:59] Prepare components
-[15:44:59]  ButtonComponent has a templateUrl, include it
-[15:44:59]  ButtonComponent has styleUrls, include them
-[15:44:59]  IconComponent has a templateUrl, include it
-[15:44:59]  IconComponent has styleUrls, include them
-[15:44:59]  LayoutBoxComponent has styleUrls, include them
-[15:44:59]  LayoutInlineComponent has a templateUrl, include it
-[15:44:59]  LayoutInlineComponent has styleUrls, include them
-[15:44:59]  TextComponent has a templateUrl, include it
-[15:44:59]  TextComponent has styleUrls, include them
-[15:44:59] Prepare modules
-[15:44:59] Prepare injectables
-[15:44:59] Prepare miscellaneous
-[15:44:59] Process documentation coverage report
-[15:44:59] Generating documentation in export format json
-[15:44:59] Documentation generated in ./ in 0.291 seconds
+[15:46:55] No configuration file found, switching to CLI flags.
+[15:46:55] Using tsconfig file : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/tsconfig.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.editorconfig
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.gitignore
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/Gruntfile.js
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/README.md
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/angular.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/build-storybook.log
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/documentation.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/package-lock.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/package.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/svgo.config.js
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/tsconfig.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.vscode/extensions.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.vscode/launch.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.vscode/tasks.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.storybook/main.js
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.storybook/preview-head.html
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.storybook/preview.js
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.storybook/tsconfig.json
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.storybook/typings.d.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Button.stories.mdx
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Button.stories.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Introduction.stories.mdx
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Text.stories.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/_OasysComponents.module.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/README.md
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/oasys-lib.d.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/package.json
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/public-api.d.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/.browserslistrc
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/README.md
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/karma.conf.js
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/ng-package.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/package-lock.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/package.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/tsconfig.lib.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/tsconfig.lib.prod.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/tsconfig.spec.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/code-brackets.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/colors.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/direction.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/comments.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/flow.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/repo.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/plugin.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/assets/stackalt.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/oasys-lib.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/public-api.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/fesm2015/oasys-lib.mjs.map
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/fesm2015/oasys-lib.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/fesm2020/oasys-lib.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/fesm2020/oasys-lib.mjs.map
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/oasys-lib.module.d.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/style-dictionary/README.md
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/public-api.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/test.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/README.md
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/build.js
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/config.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/oasys-lib.module.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/00510bbd71812e829ad44272f9b72b56.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/015fd7c3a696cc1178138d6fc32c347b.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/02803b5cb18ea275fdfbdd9cade6d889.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/043b7c58dc6e1633a152b7b756f88973.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/052ac46ebfc6087b047f03b3408624bb.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/05765437c2dc98f1e1b590d15619a542.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/0aef55d791437411c6e67f8434affc94.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/0cc0e6817a8059596d689a259562da01.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/0ee047e13371be05de875a79ad5e58fc.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/10bb8383965ffdd125ff808b7b8f53c6.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1262240fe9453290d9ac17264faf5aa8.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/12c0541846473db21932b762ce97b0e1.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/12f971d36a7bdba0cb0c4d382b2af9a0.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1ac30ecc23049c3981fbefedb7cbe41d.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1bf1849bd17b84468f0d013bef27a834.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1c925b40b87363a70884404d4c0868ab.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1d16e9f0896e405eb1efe90945db276d.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1d76559ca5bd51e72bfeeb052e50f416.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1e5619c993a3b848310bcc21259f6a97.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1ebdf414cfb881bd89ee209e8c08ea53.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1ec8ddcf98de8562417191c109e31a69.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1f7ad3d319349b53173e9a064ed7e207.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1f2b2c35f1b6e0f9321ebccf3611637e.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/1fe582e37580bdaf233a79a78165b560.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/22a5f0a057db33845063fa6d5d914478.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/224cd32575ca4e856f4e764464062ea3.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/23369cab3d1ca4ab6fc86ae0059b11ce.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/251b4b960a9866db8a6ff10e570ed911.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/260350ae80a4170f7f803973c7056a80.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/266e06fceda9b712d624d7fa96e1c576.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/290ab69f2baa2bb9b14f8a091753542b.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/299e0446f2f904dfb663e5ff1f461d9a.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/29eb3ca5b5eb7b1a967cf8f4abc08559.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/2ad2c84bfd5cdb1cf6b9307e2e8bd80b.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/2b41764c04233d4e423d352d97ba7675.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/2f8d699e437ac9545afb31816824e2e8.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/305443bf66eaa12f28d6f4cc43a26193.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/34c001ba18fd00432a9774b97185fe99.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/336aae14486e04253794757b5caab7bc.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3647191fcc7752f0d4549d0221bfbf30.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/36b03cb8d7ef72e15bb33b533d9d27ba.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/36f7f733bec0d10c28ef2b2d73202a34.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/375b6b6479beee5ebbb49204ca5e0188.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/37dea6157415ecde1f78bb54d248b524.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/38af52ccd7bc90aecddb8aca6b7b11c1.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/38b3fa63549bb5a1ea954f9734f9306c.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/38bae8eb9e7c55cc7fbb32045043300d.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/396653e1676ffc409392c29a1563cd9a.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3ba5ce6f607816ab1ce54842566d2f36.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3c4140be2822c484abe7c4279474c0f4.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3d3d82690b8a2fc503c546a0074cf7ad.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3dac998094f0bbc5b3a23bb28df0bf3e.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3df007aea9157dc6251ce4810c9ae041.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3f138cbcb0c06e6c98e70d03f65647aa.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/3f1991ed9b19ce1b46e45da1135efbaa.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/46bc67f2799b08cba376c225bfcda11c.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/485c2c984b2494e7b6c2b7d09cd4d6f6.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/49f13d32cf0a138f1e38ef67a8b2f46b.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/4fbb8a6b4c267a3a2987818b87293c56.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/4b5a146a49051afbdf89a8f1ce5df81e.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5173602e2480192bb0ee00e22f336b9b.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/517696630c3b8308d513da51406f2f50.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/51c65535dd5a89816548ff78021ec955.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/524301b7f0eaf7295cf439e886f53645.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5566a11f2c681422cdcd625554d34a0c.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/55e4cce4ea9556dc6325f236ca047782.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5657e78affcdb2b07643e9abd6460a1a.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5b72977346889568b7d4f7ded2cf5221.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/59670aeb74ae7ca9e67fcd6448dcadbe.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5d1e4f0e1f7fe80edb69fbd92d193715.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5ea19872f35ef045393e752599e777c6.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5f22bfed78a4e7f99a979cdc66be2b92.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/5f30f4902d169e8a80f8d027c8565ba1.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/60239cbf86b51ccc310ba88eb05fb7c1.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/61f0cf9957c62c400d137186cf9a436f.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/62fc62d778d3ae15c7f00cbc2cd80af6.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/63c9114aa0eb55d5f85c460ca86b50d8.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/651e92348b2a2c434519ebfbcab57202.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/64c1bbd5551ac4207c9edab532603719.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/664098d8446117f9ad874360be2025e8.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/66fa328ca104eb49372e89782c460abb.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/67c62ee28298a6b91db2898621f9082d.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/66d25dbb0b4ced756bb5280a3a3f16a9.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/69cd959a6f88b76c639ef5cea7fff0d7.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/67d6092429377a48ef3aa4db5099ab4c.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/69f94611e8422f91e61eebb05d930434.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/6da01550dc21f2af9650777126d78605.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/732f01d06ab3bccab99c669b7513e647.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/751aa5be5ed7ff5fe1b2ef60b319e586.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/762f4f538d3c0ef2421fb11cf4c54a3f.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/757d7a1acebe664437ead809f6e41c55.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/76b75fe5fffbf6ad5b132b78d3545f0a.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/755750b35fe38b178a75362e1fe4bb0c.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/77a66f604454c48110bb13cd47cfff07.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/79ebb118864c9369dd1455dd96ae041e.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/7af888eaa084ecdf1b56cd297efcb210.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/7972db5e5f435fc31d4cd8a795f72d24.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/7b6545e90c34a8cf0a7c8867cd695b05.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/7e9d50a181c9d5b9e1b6ca2b888eb2e0.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/7f65c6bd162a2315365160d1a25ea9e4.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8025b26982b35541e3b7f936d04411a4.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/80f9b340d68e3e48f050d92d37fec51b.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8199622d7b96c2c241d9fd8934a45efe.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/85b9e51323c2a14bd0860747ad943e6f.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/86fc783f1820596183a397d5d3452b9d.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/882b1752de9a2d14f693e44af85c2a9b.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/88895d4d94bdca28f22c87ed4bff941a.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8cefd4214146f4436e2e284e7bf57dd4.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8e71fae668a67625c398e1beca435ea2.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8d5181a8c415352a2ebc0646feecc836.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/916a2edc84adf43222daccf46c9d865f.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9103ffa05f142139448b97ee9d6d02e0.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/90f67d9d19ff7d48b28c2071dbd9d7d4.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/91ec1e7a49111b3782695340573846d3.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/8f4c9805a0747f906eb5c1fa6a2b5cc5.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/921b63c3a7de307785bf29c54ac0a371.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/93b0ae960e4277976f54413bde8380c2.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9228f069bdb12c9a8ccc3f804e7da8bd.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/96e88b8bc2e15fea5c6ba379396e7163.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/96d048ac998762f7040d0420165b39c3.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/99b0aa2066c9cfdecde3996f14748406.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9b53229145ba6f7fbcd953d0c71c1aab.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9f32c8d814fd4f9d6b28a07ba45ccefa.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9fb20b24605ba30dc18d71c41c4ea0df.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/9bc9a27d932092ded6b61548dbbe25ee.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a28fb8514d32161ca6c29d9a48194d76.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a5918d0a6d0b19ee276c2bfff93dd523.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a570ef1053de80b401ab786ee90f81d8.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a3ed0bf30fd94f7574fa07ab4fbe2ff2.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a5a6933339a23ac2700f978d9930d97d.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a5fb02c0e0ff27e18930cc1e64a540d8.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a88941872d94e439044ea62f180df95b.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/ab56370a01cce307b1ed5f0a1aa47d7e.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a96cacbddfc7822ee88cf6535db7989c.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/a7c0336e28e7276e8982278cbc3dfaac.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/ab5a4dae687e789bc4b6052f5dae716f.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/acea4cd6fe37a6d42f2c91826efb317f.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/adb31cb64001b370070295381ed815ac.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/abc566d55ec23c7e58c2d0970de292e1.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/af62958e239c9f04729a838118951686.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/b29820bd9dc393805bb6f82708862838.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/b322cc2e2c82879bc56ddc57b9b35ab4.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/b58bfeeade2e04448d43c78a5283afb2.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/b4f21317642f9a7004c64f429fb80254.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/b6d66cb1a12c86494469b4b44999beb0.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/bbe712e5d9b6614a95d0890dc37d8ccf.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/bd7b6f01b10d10f5cc68c8afb491f322.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/bc9ea11b6a63a333a720a5d591554a2f.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/bc1e47e400d31c54ae55b4229d829b8d.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/c47dc3bfc0db0ac063770a78dc2b237c.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/c76f8d358dcb5f16266c35994fd023bc.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/c7c660beca6dad0028ea9d43763c41a0.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/ce5246a888511c537400d77e966a32d3.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/c9170afdc71d5abf17903042167a316d.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d12b48db24d9dcd2d59d4f97cbec8b98.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/cbc77536be7d3735f45f4075ee631048.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d13e542b002187ec79d23f5ca31091b8.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d14c27bd11b830bbd8a31e360842d87a.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d270e7493ca8573641d60f1652b93994.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d74c43671c2d2962c48832364c7a8120.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d9fd2ea1d58dba0ef74ff31e11e510f9.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/da9ff1ac2679d582882d7d310d116e94.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/d2710c5f51f9294610364c20a65ef295.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/dbc6b67cb977586164735f83393c222e.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/dc2b12c165e50b2d8f38e5878cdcd144.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/dc627d3b969e53cc125a8071d3a150a8.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e1698910acf843332a96468bbfbdd5a6.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e2114bfc822d543830f469c5c901d50a.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e2c00569bba43aa27756b052099ddde8.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e2d84943c005c372ceeda627b65aedc6.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e86c171f8cf47a78e07076d2639f7213.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e38e9192da5f9f2ac0fad1c923477e24.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e8b8f29d2b4e013aecaf609841b4216c.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/e9d38988bcd7fb8f1c0d2d7d7c748736.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/eb3607f8df6ae3d29efe635ba946e508.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/ecd71a88336376f830a3a033537cdfc0.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f0f42ba1071e80a950b69f8d19803f30.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f4cd5daa479a63123f722f0e769f0400.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f5caea4fb616767ae1726dd75a77c956.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f9425c6e5d5c7d30e901c6baed85c32b.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f9f6301a698ca50e386e672dd9438be4.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/f9eb557b1e26dabcf022b4e2a6d08338.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/fb42c6db0112e24e6cd0533dc8dd80c5.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/fb8003920c0874476622ba754c0345d5.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/fc46dc3afa44adea6ef8fcd88724c655.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/babel-webpack/ff933f3356c3c11091f99110bc1b7585.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/layout.scss
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/style.css
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/services/token.service.d.ts
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/services/window.service.d.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/layout.scss
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/style.css
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/oasys-lib.service.spec.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/oasys-lib.service.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/basket-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/basket-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/heart-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/heart-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/pin-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/oasys-lib.module.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/pin-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/basket-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/heart-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/heart-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/basket-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/pin-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/pin-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/services/token.service.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/services/window.service.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/angular-webpack/a196b0d73d69cb5b742afd2e604e59222e880453/1.pack
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/angular-webpack/a196b0d73d69cb5b742afd2e604e59222e880453/index.pack
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/angular-webpack/a196b0d73d69cb5b742afd2e604e59222e880453/0.pack
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/angular-webpack/a196b0d73d69cb5b742afd2e604e59222e880453/index.pack.old
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/button/button.component.d.ts
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/icon/icon.component.d.ts
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/icon/icon.d.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/styles.scss
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/variables.css
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/text/text.component.d.ts
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/text/text.d.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/styles.scss
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/variables.css
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/variables.css
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/styles.scss
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/styles.scss
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/variables.css
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/services/token.service.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/services/window.service.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/basket-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/basket-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/heart-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/pin-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/heart-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomandwild/min/pin-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/basket-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/basket-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/heart-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/heart-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/pin-16.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/svgo/bloomon/min/pin-24.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomandwild/color.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomandwild/font.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/button/button.component.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomon/color.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/icon/icon.component.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/icon/icon.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomon/font.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/text/text.component.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/text/text.mjs
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/layout/box/box.component.d.ts
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/lib/components/layout/inline/inline.component.d.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Medium.woff
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Medium.woff2
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Regular.woff
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Regular.woff2
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/TiemposHeadlineWeb-Bold.woff
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/fonts/TiemposHeadlineWeb-Bold.woff2
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomandwild/icons/icons.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/fonts/Patron-Regular.woff
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/fonts/Patron-Regular.woff2
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/fonts/Patron-Thin.woff
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/fonts/Patron-Thin.woff2
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/src/assets/bloomon/icons/icons.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Medium.woff2
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Medium.woff
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Regular.woff
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/NeueHaasUnicaW05-Regular.woff2
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/TiemposHeadlineWeb-Bold.woff2
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/fonts/TiemposHeadlineWeb-Bold.woff
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/fonts/.DS_Store
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomandwild/icons/icons.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/fonts/Patron-Regular.woff
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/fonts/Patron-Regular.woff2
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/fonts/Patron-Thin.woff
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/fonts/Patron-Thin.woff2
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/icons/icons.svg
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/button/button.component.html
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/button/button.component.scss
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/button/button.component.spec.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/button/button.component.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.component.html
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.component.scss
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.component.spec.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.component.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.component.html
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.component.ts
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.component.spec.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.component.scss
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/layout/inline/inline.component.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/dist/oasys-lib/esm2020/lib/components/layout/box/box.component.mjs
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/global/color/base.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/global/size/font.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/global/size/icon.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/global/size/spacing.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/02/bc/78150af54ff992e62bf3877d12470b0a1005efce7fe7dbc68b54e9e8d753
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/53/a9/e773bebeba6460a16cb672781d0a61fb495090668dc3f570b449c5ea1a08
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/35/0d/6941062c9694da5bd3cddd1779cfd8316350319ef11ed4e8797821786227
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/0d/83/318b8246182bf875b34b5ee593bc843004554ef257229ce459aa50b282fe
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/7e/2a/6e68f2d1fbfb8408af71498c39ea0e7a8bebe31ed482bd1add478c4239d4
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/5d/4c/fdb672778552d822fbee823b40485c29c68f1b6e693b370e663144aaf64c
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/a0/47/05d66b7230d755753c0fe4bf6576ecdfab7a60a3c89ed231d5d3e55df117
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/90/3b/71e187d75cf29044481f4e465277ae4cba0d8b584a002d8e28c210e3942f
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/b8/0f/c7ea9594dbf9df69cbd331c396097fe29f1f697203a111c84917bf63a174
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/a4/d7/e295271f7b0518e0faf775fb7b42e99355160382a3669a6d2935530ab593
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/d7/9c/699d506160d8de1ddc1014eff0da48a64e0a141e4527a6a82945026b52b3
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/ba/89/14ceada9e645399871c34010928988283f0d1015d2bf92fbc8efe5e03aef
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/e1/42/7c093c5d8776da6a9fd4153f3ff1c44a75d9c98d45c5ff0a1bd741f2fd00
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/ed/5e/4fcdeab30ff4fd54a156e4506674b293a379340cf7a664465088eb756f08
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/index-v5/f2/10/598318665d0da2c01f44b469134f4ac9d798ab0f344b8ca9bedaeac46c88
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/box/box.component.scss
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/box/box.component.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/inline/inline.component.css
+[15:46:55] Ignoring       : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/inline/inline.component.spec.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/inline/inline.component.html
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/inline/inline.component.ts
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomandwild/components/button/button.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/style-dictionary/tokens/bloomon/components/button/button.json
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/01/68/032ea57aa0352cd93925d092c1c306055e9a00d0b181a92b13569c3b52e908f08053f32bd1e74eca97cf16e4f133cccb1f3cbae9b56a3e4b7cc519aae7a3
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/0b/1c/a60649bb6cf82794e46e49d10ff65ad74f0a434966d993d8df64e45878564d272659f04ff99e08ec6061069dc016b775f489e80b2cd5ad9b2328a5a1b742
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/22/cb/ba3ad047ac7f4b13ccf5c2e7e4cc1f3b1cbca5e3616029e4346b8b3b22cabfdd21d6d64e9d936110303240740ad79744f2190e7c224469934fc9c42cb658
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/13/e4/a878395dc47ac608f745805678819d6345c0e54566613af86e70a5d312bde1ad862c168c1a70bd22693f3a49acaada7a7a13b9fd96bdbc76ff3c40ac703a
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/1c/ce/b1629e405934a6f9f7fd820587c3a50df609101ba6d4e8356830bf3892e0e6c89fe6b6db2af3e9fd835ec695c221b8607fcf3772820d108c1e593be76c9f
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/03/77/2f4d7a901959d673b0fbd520cff7ce400dcc93d09e276b7267a81e556962a658d98174afb51afd61f04c07058621d36fe0fb36a9a5ee0ff0a59eb069539e
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/26/8c/986835c4164209296775d893bd2c8ff866f21e86bea571ed517fff59604a87342a1a4ce8b850945c7b52cf250e9ba76fc349e2bd7e679f71b66f44c29804
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/2e/af/0dcdf1bf32597439c94c4aca710b5aaf3315f24dface16bf7e0e6006291b1d6d70c9999019f8a250f25c940e9ab582e22439e29e08e54fe5d8473ba34304
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/43/41/fcbb8ad7075941eeb41c892dd0b72e9e19081ccc2026c5afc9bd9cd453f62a5f54b87e205ada50649830f6428d7a53732aa710063cc2dfab842c88ca5b37
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/4e/f8/70126cf9947a1f33ec52ca58ec31d3530e272b62f718b034dc191f0a9100870071c10d8ae45dacc5c00484ab7a187ed97a7603b5d2df65bd612a5f363ffc
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/29/9a/e43c5b6752ad457f9cc8ec6c317c09489efa6a8d381a95993a9362292d750f0b51a7f330b491ce35dec68a3545bbaf1d46484ed10fb6316cdf63f9bc999e
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/43/79/ce86eabb88926de7c2582ae4f651f7a89467bac8e6188031a79ad130b6172c9b33f272a639a17cc0e20e2fbbe8755cae5dc280075ada15d2fcf48bf99e9e
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/30/11/2c82cf2f6f78b521bcdc2a4de6990cb8259377d6444297da280d7c2ad07023115149d417a7db4cd9dd4e6031bb4d5b1cb586ab56501f1d6e7ea3b0dcff31
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/42/fb/f47e4e3a4fb2419c54075d23fe1323c9c186145897911635255b336ae13c6cb4d2a5d19877b78cbd28db9a379a0f761083f2cc04b24b87aa8d89ef428ed6
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/4a/59/7795586b57934cf6f8979a6746fe3e08507f2924be21b7aeee01ef605c7bfef2eb91151b52060ec95ac90b306789843aa0719d025dda2f61f858a05a7b34
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/5b/13/d9b83f7b71f84eff942d4dff880307b9dcbd2c7871f5ca4e990e1ee8e96391ad3fafd44a49889f4545d1e62bd23a0fb726e25be962a99d74802731676490
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/53/f1/598515ea7717ffe8e871c60a14e07e64c87c674940c6e135de55ae483ee5d092c8855a8f8daa04db65f923aec929c335aa67bdbe72fbb0359d107f60618b
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/4b/27/75fa5f52bb8b765f87f0435a386991ba4f287c6f8fd758d8a21fbab65a4007062ecb08bbf5229dd423768705b7e84352c45cdf231da36ad336a989405263
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/71/f5/d2ab41dfaf26e70b7fcd8b9a186644889b9b2162a7f8c124ba6bcb22ac311e9772fdf857b019d360901b925bf07d00d1bb05a219895bb77f7ebc4237a34e
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/71/07/530d780d932f4a9e0b37bc418cafbc7cf869ecf2a281fab66f748756efedc851fc4efe80b22ec3f2c78ed12f8b578f95e434b7a6d07ed2c82d12c9562025
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/79/39/0539ab00ddd94161f9befd7caf072531053e6a454e54fb6fef2d2d18f3230f177cb9f11ca588840944a2d6f2ff651cb4974c86e976960734d65275c308f1
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/73/20/f974f16fa3bf2de4513c0d297e5babaeb348f99cca32817ad8244fb40d422afd2ad0135999d74fb2b1c244d11dbde0d2b51a13c19b1f4b08fd6c538523fc
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/87/61/e5f9439b4a6e3ed47081e5c8ee615b4eddae862d87becca99c04984fa66147d31e2dd9c1c5889d67c833c01712e410fc71785e6c13f1a182af6a911c76e7
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/81/bb/ba105c9d89ac458d7e50694ec88fb93cf34f528b407df8d1b3ed79b04f9bfb7ab4815da458cbd860dc3bfd9fddeeb5b48b92a5e5b169286de82d1023024d
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/9f/bf/c55f42a342ae11dc325b15881374981122d2c06fe771d58ba8d67eaf7fe2a499ee64ddd30c591f88656f0f13edb3358a7dbbad72d008b2cc2e1a36d15b55
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/a5/bd/46e21827a1069676d7e23ee9f1c887821997176ed2d149c8a396a19d17f48886279d0674d17493e2592993ce0e930108f2ba78963ba73cce2051141fe5e7
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/a4/cd/3ee60d01f3cef6aa1a88252785818570ed19b61222f586d38b135cbe2f983eb335b114533ba781366521694bd25b4bb6ef5c549e3a43d4ff32d8f820af86
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/82/f0/bcd22b6c2cd2de957ad947a94a82e03debcdf1af117e5a151f41f48b41fd7e819ae539dd6496f27df6e690797c20ef01b78f24c28f7f26046ab6ea8bba5d
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/bb/94/c27c938c2842f47664b35377b134851d5f50bddc9a40da71af4a26864c7ba12c81b044dd5b8a3a4aed7a145dfee156e7c78d6e4d05ce47ecb2a1639b1043
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/c3/de/a8b90ea74372f68e3f5829c14ca6215e827b69673168d9f3a7352f44fc39c2ebec4dc9dfa1cea092d2b652223ee2be729bde3450e90a92faacfd4fe1bd4e
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/c1/24/f5ff15026630532f85263f13ed7e9c403fb04b7cee924000373cd3a5df681ab2c2757d26d142033d8a4e250e28a1797f995304fa85e0c1b36081b08ffc7d
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/c9/ef/d7b862580ab2ba76c0e591ea27ed427abf7a0674ce56f2db20fccab5bf06a2e4d433ba5a45b76a79f9e840c63dcd592dca4732ebce5f14e73b0b2b803108
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/cf/8d/f80e697e56661da4abf8f063d10a266daafe4adcca778522924ef10a2d15bce8fa284396207064acb8773ad1f42f07cc9519c85b27830b986130414f8c8d
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/ca/e3/258d2479c986fad2af22e0397fdd6fbc3ac26af946ee1738fbfb1dc6b84d1e92e7bcf5db9ca0169a67ed16f86041101459c33402242822f955043093819c
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/ce/1f/219221617c96d426d5f410a936666756b6078d19a1116d5979ac19b6c0c6992104f2fff29ae8070e50344edbc82e09cabb5292e365213f1becc00f59c1d4
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/da/99/fabf6e3df90447b3e6ed90365289bf35aeaf3832c0c39c080b5370ac5cad32f0620549724fbb748a71e7a35bc1fd0fa5171e4ab8a4b66f95249dc957ab81
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/e2/05/257f9be7782c41dc4016a45a1d34b0a5ba31f387cd5c7fd34b9411961e67da5b7d7936f6a95157e81b68a6d2511351f6c8a8fe550a42272bf367554725c8
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/e8/b1/42d8cdb3dc4452087b1f00010382c4b4a8c07b61dd8548953990d892e5d713e3bc54c14447c582fdc17da220f5ac1a5cae8a839374b34cf24a82cbc5a20a
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/fe/51/62a183226a7b5c94cab67fb62a28fc6fa1d5de92f50763031a04e34328cd3f3e3d48771fe59f14dae9f7091415400323c1ca27d0614d199bc799292fb72b
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/fe/d5/baf2f7378f8d2fa00b1ad18d3557c47e803ce544025c5f59568eb5e7aabac1f206594619f1c1fc4bbf6fe15e10730037e34ccfc25cffb20a8033b2b6f778
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/f1/1f/a35fac5ceff5a9500dfb097889262e418cd3e617edd5c5ba75e43d506d032bb7dedf73279cfe7b7c3c49bfbee5f5810a5d05a6b92dc3f77f98ab75e60888
+[15:46:55] Including      : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/.angular/cache/13.2.5/ng-packagr/content-v2/sha512/f1/50/503502c37078e6f77c118c634bba252a72a1dbb5828324f5f52ac0a2b8f84de51883cda7e32a9d16261956e0bccb33832fb01f0ed09fa04a0536f4b8b9cc
+[15:46:55] Searching package.json file
+[15:46:55] package.json file found
+[15:46:55] Processing package.json dependencies
+[15:46:55] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[15:46:55] README.md file found
+[15:46:55] Error during /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/CHANGELOG read
+[15:46:55] Continuing without CHANGELOG.md file
+[15:46:55] Error during /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/CONTRIBUTING read
+[15:46:55] Continuing without CONTRIBUTING.md file
+[15:46:55] Error during /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/LICENSE read
+[15:46:55] Continuing without LICENSE.md file
+[15:46:55] Error during /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/TODO read
+[15:46:55] Continuing without TODO.md file
+[15:46:55] Get dependencies data
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Button.stories.ts
+[15:46:55] found          : actionsData
+[15:46:55] found          : Template
+[15:46:55] found          : Primary
+[15:46:55] found          : Primary2
+[15:46:55] found          : Primary3
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/Text.stories.ts
+[15:46:55] found          : Template
+[15:46:55] found          : Text
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/stories/_OasysComponents.module.ts
+[15:46:55] found          : OasysComponents
+[15:46:55] found          : OasysComponentsModule
+[15:46:55]                : - imports:
+[15:46:55]                : 	- CommonModule
+[15:46:55]                : - exports:
+[15:46:55]                : 	- OasysComponents
+[15:46:55]                : - declarations:
+[15:46:55]                : 	- OasysComponents
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/public-api.ts
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/test.ts
+[15:46:55] found          : require
+[15:46:55] found          : context
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/oasys-lib.service.ts
+[15:46:55] found          : OasysLibService
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/oasys-lib.module.ts
+[15:46:55] found          : OasysLibModule
+[15:46:55]                : - imports:
+[15:46:55]                : 	- CommonModule
+[15:46:55]                : 	- RouterModule
+[15:46:55]                : - exports:
+[15:46:55]                : 	- ButtonComponent
+[15:46:55]                : 	- TextComponent
+[15:46:55]                : 	- LayoutBoxComponent
+[15:46:55]                : - declarations:
+[15:46:55]                : 	- ButtonComponent
+[15:46:55]                : 	- LayoutInlineComponent
+[15:46:55]                : 	- TextComponent
+[15:46:55]                : 	- IconComponent
+[15:46:55]                : 	- LayoutBoxComponent
+[15:46:55]                : - providers:
+[15:46:55]                : 	- WindowService
+[15:46:55]                : 	- { provide: APP_BASE_HREF, useValue:  }
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/services/token.service.ts
+[15:46:55] found          : TokenService
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/services/window.service.ts
+[15:46:55] found          : _window
+[15:46:55] found          : WindowService
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/button/button.component.ts
+[15:46:55] found          : ButtonComponent
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.ts
+[15:46:55] found          : IconNames
+[15:46:55] found          : IconContext
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/icon/icon.component.ts
+[15:46:55] found          : IconComponent
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.component.ts
+[15:46:55] found          : TextComponent
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/text/text.ts
+[15:46:55] found          : TextTransform
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/box/box.component.ts
+[15:46:55] found          : LayoutBoxComponent
+[15:46:55] found          : BoxPaddings
+[15:46:55] parsing        : /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/lib/components/layout/inline/inline.component.ts
+[15:46:55] found          : LayoutInlineComponent
+[15:46:55] -------------------
+[15:46:55] Project statistics 
+[15:46:55] - files      : 413
+[15:46:55] - module     : 2
+[15:46:55] - component  : 5
+[15:46:55] - injectable : 3
+[15:46:55] -------------------
+[15:46:55] Prepare components
+[15:46:55]  ButtonComponent has a templateUrl, include it
+[15:46:55]  ButtonComponent has styleUrls, include them
+[15:46:55]  IconComponent has a templateUrl, include it
+[15:46:55]  IconComponent has styleUrls, include them
+[15:46:55]  LayoutBoxComponent has styleUrls, include them
+[15:46:55]  LayoutInlineComponent has a templateUrl, include it
+[15:46:55]  LayoutInlineComponent has styleUrls, include them
+[15:46:55]  TextComponent has a templateUrl, include it
+[15:46:55]  TextComponent has styleUrls, include them
+[15:46:55] Prepare modules
+[15:46:55] Prepare injectables
+[15:46:55] Prepare miscellaneous
+[15:46:55] Process documentation coverage report
+[15:46:55] Generating documentation in export format json
+[15:46:55] Documentation generated in ./ in 0.272 seconds
 info @storybook/angular v6.5.7
 info 
-info => Cleaning outputDir: /var/folders/8h/0qm8mq2n43q__rwnlh00y7m00000gn/T/chromatic--72125-Y2XNSkAVVE11
+info => Cleaning outputDir: /var/folders/8h/0qm8mq2n43q__rwnlh00y7m00000gn/T/chromatic--72447-6jvAibTCfHGJ
 info => Loading presets
-info => Copying static files: /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/icons at /var/folders/8h/0qm8mq2n43q__rwnlh00y7m00000gn/T/chromatic--72125-Y2XNSkAVVE11/assets/icons
+info => Copying static files: /Users/gabrielsharp/Sites/oasys-lib-test-2/bw-oasys/projects/oasys-lib/src/assets/bloomon/icons at /var/folders/8h/0qm8mq2n43q__rwnlh00y7m00000gn/T/chromatic--72447-6jvAibTCfHGJ/assets/icons
 info => Compiling manager..
 info => Compiling preview..
 info Addon-docs: using MDX1
@@ -695,32 +695,33 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 10% building import loader ./node_modules/babel-loader/lib/index.js
 <s> [webpack.Progress] 10% building 0/15 entries 3/15 dependencies 0/3 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/@storybook/mdx1-csf/loader.js
-<s> [webpack.Progress] 10% building 0/15 entries 83/99 dependencies 1/55 modules
+<s> [webpack.Progress] 10% building 0/15 entries 83/109 dependencies 1/55 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/@storybook/source-loader/dist/cjs/index.js
-<s> [webpack.Progress] 10% building 0/15 entries 129/224 dependencies 1/78 modules
-<s> [webpack.Progress] 13% building 1/15 entries 516/688 dependencies 48/186 modules
-<s> [webpack.Progress] 13% building 1/15 entries 1200/1289 dependencies 174/346 modules
-<s> [webpack.Progress] 13% building 1/15 entries 1664/1733 dependencies 200/438 modules
-<s> [webpack.Progress] 17% building 2/15 entries 1664/1733 dependencies 219/438 modules
+<s> [webpack.Progress] 10% building 0/15 entries 175/224 dependencies 1/111 modules
+<s> [webpack.Progress] 13% building 1/15 entries 471/627 dependencies 47/179 modules
+<s> [webpack.Progress] 13% building 1/15 entries 1200/1333 dependencies 169/341 modules
+<s> [webpack.Progress] 17% building 2/15 entries 1356/1552 dependencies 206/400 modules
+<s> [webpack.Progress] 17% building 2/15 entries 1969/2101 dependencies 249/600 modules
+<s> [webpack.Progress] 17% building 2/15 entries 2700/2881 dependencies 297/819 modules
 <s> [webpack.Progress] 17% building import loader ./node_modules/postcss-loader/dist/cjs.js
 <s> [webpack.Progress] 17% building import loader ./node_modules/resolve-url-loader/index.js
 <s> [webpack.Progress] 17% building import loader ./node_modules/sass-loader/dist/cjs.js
-<s> [webpack.Progress] 17% building 2/15 entries 2253/2270 dependencies 257/660 modules
-<s> [webpack.Progress] 17% building 2/15 entries 3000/3056 dependencies 311/889 modules
-<s> [webpack.Progress] 17% building 2/15 entries 3900/3936 dependencies 409/976 modules
-<s> [webpack.Progress] 19% building 2/15 entries 5023/5100 dependencies 834/1160 modules
-<s> [webpack.Progress] 24% building 2/15 entries 6361/6400 dependencies 1277/1473 modules
-<s> [webpack.Progress] 24% building 3/15 entries 6416/6442 dependencies 1362/1479 modules
-<s> [webpack.Progress] 24% building 4/15 entries 6416/6442 dependencies 1363/1479 modules
-<s> [webpack.Progress] 28% building 5/15 entries 6416/6442 dependencies 1364/1479 modules
-<s> [webpack.Progress] 32% building 6/15 entries 6416/6442 dependencies 1365/1479 modules
-<s> [webpack.Progress] 35% building 7/15 entries 6416/6442 dependencies 1366/1479 modules
-<s> [webpack.Progress] 39% building 8/15 entries 6416/6442 dependencies 1367/1479 modules
-<s> [webpack.Progress] 42% building 9/15 entries 6416/6442 dependencies 1368/1479 modules
-<s> [webpack.Progress] 46% building 10/15 entries 6416/6442 dependencies 1369/1479 modules
-<s> [webpack.Progress] 50% building 11/15 entries 6551/6570 dependencies 1426/1509 modules
-<s> [webpack.Progress] 54% building 12/15 entries 6722/6724 dependencies 1521/1565 modules
-<s> [webpack.Progress] 57% building 13/15 entries 6723/6724 dependencies 1536/1566 modules
+<s> [webpack.Progress] 17% building 2/15 entries 3326/3382 dependencies 334/902 modules
+<s> [webpack.Progress] 17% building 2/15 entries 3900/4006 dependencies 388/967 modules
+<s> [webpack.Progress] 20% building 2/15 entries 4998/5100 dependencies 916/1179 modules
+<s> [webpack.Progress] 23% building 2/15 entries 6100/6191 dependencies 1208/1424 modules
+<s> [webpack.Progress] 24% building 2/15 entries 6367/6400 dependencies 1310/1470 modules
+<s> [webpack.Progress] 25% building 3/15 entries 6501/6527 dependencies 1386/1491 modules
+<s> [webpack.Progress] 25% building 4/15 entries 6501/6527 dependencies 1387/1491 modules
+<s> [webpack.Progress] 28% building 5/15 entries 6501/6527 dependencies 1388/1491 modules
+<s> [webpack.Progress] 31% building 6/15 entries 6501/6527 dependencies 1389/1491 modules
+<s> [webpack.Progress] 35% building 7/15 entries 6501/6527 dependencies 1390/1491 modules
+<s> [webpack.Progress] 39% building 8/15 entries 6501/6527 dependencies 1391/1491 modules
+<s> [webpack.Progress] 43% building 9/15 entries 6501/6527 dependencies 1392/1491 modules
+<s> [webpack.Progress] 46% building 10/15 entries 6501/6527 dependencies 1393/1491 modules
+<s> [webpack.Progress] 50% building 11/15 entries 6588/6600 dependencies 1431/1514 modules
+<s> [webpack.Progress] 54% building 12/15 entries 6669/6683 dependencies 1498/1542 modules
+<s> [webpack.Progress] 57% building 13/15 entries 6723/6724 dependencies 1537/1566 modules
 <s> [webpack.Progress] 61% building 14/15 entries 6725/6725 dependencies 1562/1567 modules
 <s> [webpack.Progress] 65% building 15/15 entries 6725/6725 dependencies 1567/1567 modules
 <s> [webpack.Progress] 65% building
@@ -822,11 +823,11 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 92% sealing asset processing
 <s> [webpack.Progress] 92% sealing asset processing PersistentChildCompilerSingletonPlugin
 <s> [webpack.Progress] 92% sealing asset processing TerserPlugin
-info => Manager built (17 s)
+info => Manager built (16 s)
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.0c0dc3a0.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.0c0dc3a0.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.16ecda50.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.16ecda50.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.ece3eab2.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.ece3eab2.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 549.8ff64bb3.iframe.bundle.js generate SourceMap
@@ -931,4 +932,4 @@ WARN
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-info => Output directory: /var/folders/8h/0qm8mq2n43q__rwnlh00y7m00000gn/T/chromatic--72125-Y2XNSkAVVE11
+info => Output directory: /var/folders/8h/0qm8mq2n43q__rwnlh00y7m00000gn/T/chromatic--72447-6jvAibTCfHGJ
