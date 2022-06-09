@@ -13,7 +13,7 @@ import { TextTransform } from '../text/text';
 export class ButtonComponent implements OnInit, OnChanges {
 
   // // Button Content
-  @Input() buttonText?: string;
+  @Input() buttonText: string;
   @Input() buttonIcon?: IconNames;
   @Input() buttonIconPlacement: IconContext = 'leading';
 
@@ -29,9 +29,7 @@ export class ButtonComponent implements OnInit, OnChanges {
   iconContext: IconContext = 'none';
   textTransform!: TextTransform;
 
-  somethingCrazy;
-
-  constructor(private tokenService: TokenService, private changeDetection: ChangeDetectorRef) { }
+  constructor(private tokenService: TokenService) { }
 
   clickButton(): void {
     console.log('button was clicked');

@@ -3,7 +3,7 @@
         [ngClass]="uiButtonClasses">
     <div class="button-content">
         <ui-icon *ngIf="buttonIcon" [iconName]="buttonIcon" [iconSize]="buttonSize" [iconClass]="'buttonIcon'" [iconContext]="iconContext"></ui-icon>
-        <ui-text *ngIf="buttonText" [textTransform]="textTransform">
+        <ui-text *ngIf="buttonText && buttonIconPlacement !== 'iconOnly'" [textTransform]="textTransform">
             {{buttonText}}
         </ui-text>
     </div>

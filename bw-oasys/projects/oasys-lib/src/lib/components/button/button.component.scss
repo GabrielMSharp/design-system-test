@@ -59,7 +59,7 @@ $buttonSizes: large, small;
 
     &.button--has-icon {
         &.button--icon--trailing {
-            .lib-button-content {
+            .button-content {
                 flex-direction: row-reverse;
             }
         }
