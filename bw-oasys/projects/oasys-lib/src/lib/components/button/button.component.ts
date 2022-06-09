@@ -43,8 +43,8 @@ export class ButtonComponent implements OnInit, OnChanges {
       `type-${this.buttonType}`,
       `size-${this.buttonSize}`,
       `${this.buttonIcon ? 'button--has-icon': ''}`,
-      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
-      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
+        `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
+        `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
     ];
 
     if(this.buttonIcon) {
@@ -54,6 +54,7 @@ export class ButtonComponent implements OnInit, OnChanges {
     this.textTransform = this.tokenService.getTokenValue(
       `--style-button-${this.buttonSize}-text-transform`
     ) as TextTransform;
+
   }
 
   ngOnChanges(): void {

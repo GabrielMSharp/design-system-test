@@ -66,6 +66,7 @@ $buttonSizes: large, small;
         &.button--icon--only {
             max-width: calc($buttonMinimumHeight - $borderWidth);
         }
+
     }
 }
 
