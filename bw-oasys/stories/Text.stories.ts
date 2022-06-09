@@ -1,7 +1,7 @@
 import { Story, Meta, moduleMetadata } from '@storybook/angular';
 
 import { TextComponent } from 'projects/oasys-lib/src/public-api';
-import { OasysComponentsModule } from './OasysComponents.module';
+import { OasysComponentsModule } from './_OasysComponents.module';
 
 export default {
   title: 'Components/Text',

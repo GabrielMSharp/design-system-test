@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 
 import { ButtonComponent, TextComponent, IconComponent } from 'projects/oasys-lib/src/public-api';
 import { RouterTestingModule } from '@angular/router/testing';
-import { OasysComponentsModule } from './OasysComponents.module';
+import { OasysComponentsModule } from './_OasysComponents.module';
 
 export default {
   title: 'Components/Button',
