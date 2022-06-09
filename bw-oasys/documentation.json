@@ -123,7 +123,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-a11abf33279f9f7d9d40b06ac749325422e304ed8f6843abc19d5ff7a2050f1d4f5d9da3999794258b14f34bb17050c5a4488fcacc1878aede69ffe7fe98dcbb",
+            "id": "component-ButtonComponent-0f1f0b55ad48311af466c6e8822242539d3a38827fed47fca564e20c7a3ebbe8675090daab6bb926015a2fe3364778050b0fa680d45c9956348349a26568e279",
             "file": "projects/oasys-lib/src/lib/components/button/button.component.ts",
             "encapsulation": [
                 "ViewEncapsulation.None"
@@ -207,6 +207,16 @@
             ],
             "propertiesClass": [
                 {
+                    "name": "buttonClasses",
+                    "defaultValue": "['']",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                },
+                {
                     "name": "iconContext",
                     "defaultValue": "'none'",
                     "deprecated": false,
@@ -224,16 +234,6 @@
                     "optional": false,
                     "description": "",
                     "line": 30
-                },
-                {
-                    "name": "uiButtonClasses",
-                    "defaultValue": "['']",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string[]",
-                    "optional": false,
-                    "description": "",
-                    "line": 28
                 }
             ],
             "methodsClass": [
@@ -275,7 +275,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  // changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit, OnChanges {\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: 'small'|'large' = 'large';\n  @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';\n  \n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  uiButtonClasses: string[] = [''];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  ngOnInit(): void {\n    this.uiButtonClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ];\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n\n  }\n\n  ngOnChanges(): void {\n    this.ngOnInit();\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  // changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit, OnChanges {\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: 'small'|'large' = 'large';\n  @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  buttonClasses: string[] = [''];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  ngOnInit(): void {\n    this.buttonClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ];\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n\n  }\n\n  ngOnChanges(): void {\n    this.ngOnInit();\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -314,7 +314,7 @@
                 "OnInit",
                 "OnChanges"
             ],
-            "templateData": "<button (click)=\"clickButton()\" \n        [routerLink]=\"href || null\" \n        [ngClass]=\"uiButtonClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText && buttonIconPlacement !== 'iconOnly'\" [textTransform]=\"textTransform\">\n            {{buttonText}}\n        </ui-text>\n    </div>\n</button>\n"
+            "templateData": "<button (click)=\"clickButton()\"\n        [routerLink]=\"href || null\"\n        [ngClass]=\"buttonClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText && buttonIconPlacement !== 'iconOnly'\" [textTransform]=\"textTransform\">\n            {{buttonText}}\n        </ui-text>\n    </div>\n</button>\n"
         },
         {
             "name": "IconComponent",
