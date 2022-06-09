@@ -20,12 +20,12 @@ export class ButtonComponent implements OnInit, OnChanges {
   // Button Stylings
   @Input() buttonSize: 'small'|'large' = 'large';
   @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';
-  
+
   // Button Actions
   @Input() href: string = '';
   @Output() buttonClick: EventEmitter<void> = new EventEmitter();
 
-  uiButtonClasses: string[] = [''];
+  buttonClasses: string[] = [''];
   iconContext: IconContext = 'none';
   textTransform!: TextTransform;
 
@@ -37,7 +37,7 @@ export class ButtonComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
-    this.uiButtonClasses = [
+    this.buttonClasses = [
       `type-${this.buttonType}`,
       `size-${this.buttonSize}`,
       `${this.buttonIcon ? 'button--has-icon': ''}`,
