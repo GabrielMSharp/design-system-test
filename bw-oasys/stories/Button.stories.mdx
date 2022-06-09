@@ -1,7 +1,9 @@
 import { Story, Canvas, ArgsTable, Template } from "@storybook/addon-docs";
 import { ButtonComponent } from 'projects/oasys-lib/src/public-api';
 
-<!-- Custom-MDX-Documentation.mdx -->
+<!-- ButtonDocumentation.mdx -->
+
+<Meta title="Components/Button" component={ButtonComponent} />
 
 export const DocsTemplate = (args) => ({ props: args });
 
@@ -33,18 +35,18 @@ Buttons allow users to trigger an action or event with a single click. For examp
 If you included the title in the story's default export, use this approach.
 
 <Canvas>
-  <Story 
+  <Story
       id="components-button--primary"
       name="Name JHere"
-      args={{ 
+      args={{
         buttonSize: 'small'
       }}>
       {DocsTemplate.bind({})}
   </Story>
-  <Story 
+  <Story
       id="components-button--primary"
       name="Name JHere"
-      args={{ 
+      args={{
         buttonSize: 'large'
       }}>
       {DocsTemplate.bind({})}

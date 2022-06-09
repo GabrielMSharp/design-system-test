@@ -5,21 +5,21 @@ import { ButtonComponent } from 'projects/oasys-lib/src/public-api';
 import { RouterTestingModule } from '@angular/router/testing';
 import { OasysComponentsModule } from './_OasysComponents.module';
 
-import ButtonDocumentation from './ButtonDocumentation.mdx';
+// import ButtonDocumentation from './Button.stories.mdx';
 
 export default {
   title: 'Components/Button',
   component: ButtonComponent,
   decorators: [
-    moduleMetadata({ 
+    moduleMetadata({
       imports: [RouterTestingModule, OasysComponentsModule]
     })
   ],
-  parameters: {
-    docs : {
-      page: ButtonDocumentation
-    }
-  }
+  // parameters: {
+  //   docs : {
+  //     page: ButtonDocumentation
+  //   }
+  // }
 } as Meta;
 
 const actionsData = {
