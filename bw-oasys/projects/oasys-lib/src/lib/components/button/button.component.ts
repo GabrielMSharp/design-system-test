@@ -25,7 +25,7 @@ export class ButtonComponent implements OnInit, OnChanges {
   @Input() href: string = '';
   @Output() buttonClick: EventEmitter<void> = new EventEmitter();
 
-  buttonClasses: string[] = [''];
+  buttonClasses2: string = '';
   iconContext: IconContext = 'none';
   textTransform!: TextTransform;
 
@@ -37,13 +37,15 @@ export class ButtonComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
-    this.buttonClasses = [
+    this.buttonClasses2 = [
       `type-${this.buttonType}`,
       `size-${this.buttonSize}`,
       `${this.buttonIcon ? 'button--has-icon': ''}`,
       `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
       `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
-    ];
+    ].join(' ');
+
+    console.log('buttonClasses: ', this.buttonClasses2);
 
     if(this.buttonIcon) {
       this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';
