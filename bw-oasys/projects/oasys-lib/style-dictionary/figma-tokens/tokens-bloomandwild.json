@@ -1984,6 +1984,24 @@
         }
       }
     },
+    "color": {
+      "nice-one": {
+        "value": "#ff0000",
+        "filePath": "tokens/bloomandwild/semantic/color.json",
+        "isSource": true,
+        "original": {
+          "value": "#ff0000"
+        },
+        "attributes": {
+          "category": "color",
+          "type": "nice-one"
+        },
+        "path": {
+          "0": "color",
+          "1": "nice-one"
+        }
+      }
+    },
     "semantic": {
       "color": {
         "action": {
