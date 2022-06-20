@@ -1,14 +1,11 @@
 
 {
-  "size": {
-    "icon": {
-      "small": { "value": "{size.unit.small.value}"},
-      "large": { "value": "{size.unit.default.value}"}
-    },
-    "icon-position-modifier": {
-      "small": { "value": "-{size.unit.3xsmall.value}"},
-      "large": { "value": "-{size.unit.2xsmall.value}"}
+  "global": {
+    "size": {
+      "icon": {
+        "small": { "value": "{global.size.unit.6.value}"},
+        "large": { "value": "{global.size.unit.default.value}"}
+      }
     }
   }
-
 }

@@ -19,11 +19,11 @@ $buttonSizes: large, small;
     $borderWidth: var(--size-button-#{$buttonSize}-border-width);
     $lineHeight: var(--size-button-#{$buttonSize}-line-height);
     $buttonMinimumHeight: var(--size-button-#{$buttonSize}-height);
-    
-    
+
+
     $_calculatedHeight: calc($buttonMinimumHeight / 2);
     $_calculatedLineHeight: calc($lineHeight / 2);
-    
+
 
     $paddingX: var(--size-button-#{$buttonSize}-padding-x);
     $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);
@@ -36,13 +36,13 @@ $buttonSizes: large, small;
     padding-right: $paddingX;
     padding-bottom: $paddingY;
     padding-left: $paddingX;
-    
+
     border-width: $borderWidth;
 
     .button-content {
         display: flex;
         align-items: center;
-        gap: var(--size-button-#{$buttonSize}-inline-spacing); 
+        gap: var(--size-button-#{$buttonSize}-inline-spacing);
 
         .ui-icon {
             max-height: $lineHeight;
@@ -55,7 +55,7 @@ $buttonSizes: large, small;
         }
     }
 
-    
+
 
     &.button--has-icon {
         &.button--icon--trailing {
@@ -90,7 +90,7 @@ ui-button {
                 @include buttonColors(($buttonType));
             }
         }
-        
+
         // Button Sizes
         @each $buttonSize in $buttonSizes {
             &.size-#{$buttonSize} {

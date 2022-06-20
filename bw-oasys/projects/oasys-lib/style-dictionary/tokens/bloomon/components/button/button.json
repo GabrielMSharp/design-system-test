@@ -1,55 +1,57 @@
 {
-  "color": {
-    "button": {
-      "primary": {
-        "background": {"value": "{color.primary.value}"},
-        "border": {"value": "{color.primary.value}"},
-        "text": {"value": "{color.global.text-on-dark}"}
-      },
-      "primary-2": {
-        "background": {"value": "{color.primary.value}"},
-        "border": {"value": "{color.primary.value}"},
-        "text": {"value": "{color.global.text-on-dark}"}
-      },
-      "primary-3": {
-        "background": {"value": "{color.tertiary.value}"},
-        "border": {"value": "{color.tertiary.value}"},
-        "text": {"value": "{color.global.text}"}
-      },
-      "secondary": {
-        "background": {"value": "{color.global.transparent.value}"},
-        "border": {"value": "{color.primary.value}"},
-        "text": {"value": "{color.primary.value}"}
-      },
-      "secondary-2": {
-        "background": {"value": "{color.global.transparent.value}"},
-        "border": {"value": "{color.primary.value}"},
-        "text": {"value": "{color.primary.value}"}
+  "component": {
+    "color": {
+      "button": {
+        "primary": {
+          "background": { "value": "{semantic.color.action.primary.value}" },
+          "border": { "value": "{semantic.color.action.primary.value}" },
+          "text": { "value": "{semantic.color.text.body.on-dark.value}" }
+        },
+        "primary-2": {
+          "background": { "value": "{semantic.color.action.primary.value}" },
+          "border": { "value": "{semantic.color.action.primary.value}" },
+          "text": { "value": "{semantic.color.text.body.on-dark.value}" }
+        },
+        "primary-3": {
+          "background": { "value": "{semantic.color.action.tertiary.value}" },
+          "border": { "value": "{semantic.color.action.tertiary.value}" },
+          "text": { "value": "{semantic.color.text.body.value}" }
+        },
+        "secondary": {
+          "background": { "value": "{semantic.color.transparent.value}" },
+          "border": { "value": "{semantic.color.action.primary.value}" },
+          "text": { "value": "{semantic.color.action.primary.value}" }
+        },
+        "secondary-2": {
+          "background": { "value": "{semantic.color.transparent.value}" },
+          "border": { "value": "{semantic.color.action.primary.value}" },
+          "text": { "value": "{semantic.color.action.primary.value}" }
+        }
       }
-    }
-  },
-  "size" : {
-    "button": {
-      "large": {
-        "padding-x": {"value": "{size.unit.default.value}"},
-        "height": {"value": "{size.unit.2xlarge.value}"},
-        "border-width": {"value": "{size.unit.5xsmall.value}"},
-        "line-height": {"value": "1.6rem"},
-        "inline-spacing": {"value": "{size.unit.2xsmall.value}"}
-      },
-      "small" : {
-        "padding-x": {"value": "{size.unit.small.value}"},
-        "height": {"value": "{size.unit.large.value}"},
-        "border-width": {"value": "{size.unit.5xsmall.value}"},
-        "line-height": {"value": "1.6rem"},
-        "inline-spacing": {"value": "{size.unit.3xsmall.value}"}
+    },
+    "size": {
+      "button": {
+        "large": {
+          "padding-x": { "value": "{global.size.unit.default.value}" },
+          "height": { "value": "{global.size.unit.10.value}" },
+          "border-width": { "value": "{global.size.unit.1.value}" },
+          "line-height": { "value": "{global.size.unit.6.value}" },
+          "inline-spacing": { "value": "{global.size.unit.4.value}" }
+        },
+        "small": {
+          "padding-x": { "value": "{global.size.unit.6.value}" },
+          "height": { "value": "{global.size.unit.8.value}" },
+          "border-width": { "value": "{global.size.unit.1.value}" },
+          "line-height": { "value": "{global.size.unit.6.value}" },
+          "inline-spacing": { "value": "{global.size.unit.3.value}" }
+        }
       }
-    }
-  },
-  "style": {
-    "button": {
-      "large": {
-        "text-transform": {"value": "uppercase"}
+    },
+    "style": {
+      "button": {
+        "large": {
+          "text-transform": { "value": "uppercase" }
+        }
       }
     }
   }

@@ -1,0 +1,22 @@
+{
+  "semantic": {
+    "font": {
+      "family": {
+        "headline": {
+          "value": "'TiemposHeadline', Georgia, serif"
+        },
+        "headline-secondary": {
+          "value": "{semantic.font.family.body.value}"
+        },
+        "body": {
+          "value": "'NeueHaasUnica', Arial, Helvetica, sans-serif"
+        }
+      },
+      "weight": {
+        "normal": {"value": "normal"},
+        "medium": {"value": "500"},
+        "bold": {"value": "{semantic.font.weight.medium}"}
+      }
+    }
+  }
+}
