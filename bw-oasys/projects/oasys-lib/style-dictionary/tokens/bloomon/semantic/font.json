@@ -1,0 +1,23 @@
+
+{
+  "semantic": {
+    "font": {
+      "family": {
+        "headline": {
+          "value": "'Patron', Arial, Helvetica, sans-serif"
+        },
+        "headline-second": {
+          "value": "{semantic.font.family.headline.value}"
+        },
+        "body": {
+          "value": "{semantic.font.family.headline.value}"
+        }
+      },
+      "weight": {
+        "normal": {"value": "100"},
+        "medium": {"value": "normal"},
+        "bold": {"value": "{semantic.font.weight.medium.value}"}
+      }
+    }
+  }
+}

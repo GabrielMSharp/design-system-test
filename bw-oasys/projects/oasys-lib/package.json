@@ -12,6 +12,6 @@
     "build-style-dictionary": "cd ./style-dictionary && node ./build.js"
   },
   "devDependencies": {
-    "style-dictionary": "^3.7.0"
+    "style-dictionary": "^3.7.1"
   }
 }

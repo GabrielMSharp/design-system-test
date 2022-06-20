@@ -1,0 +1,65 @@
+{
+  "global": {
+    "color": {
+      "white": { "value": "#ffffff" },
+      "grey": {
+        "90": { "value": "#262626" },
+        "80": { "value": "#464646" },
+        "75": { "value": "#464646" },
+        "60": { "value": "#676767" },
+        "50": { "value": "#898989" },
+        "40": { "value": "#a8a8a8" },
+        "30": { "value": "#c6c6c6" },
+        "20": { "value": "#cdcdcd" },
+        "10": { "value": "#f7f7f7" }
+      },
+      "linen-grey": {
+        "75": { "value": "#4d4840" },
+        "60": { "value": "#726b60" },
+        "50": { "value": "#948b7e" },
+        "40": { "value": "#afaaa1" },
+        "30": { "value": "#cbc7c1" },
+        "20": { "value": "#e2e0dc" },
+        "10": { "value": "#f4f3f2" }
+      },
+      "yellow": {
+        "50": { "value": "#fdf888" },
+        "60": { "value": "#fff799" }
+      },
+      "linen": {
+        "75": { "value": "#734d11" },
+        "60": { "value": "#b67b1b" },
+        "40": { "value": "#e8b767" },
+        "20": { "value": "#f9ecd7" },
+        "10": { "value": "#fcf5ea" }
+      },
+      "pine": {
+        "75": { "value": "#2d5443" },
+        "60": { "value": "#447964" },
+        "40": { "value": "#8fc0ac" },
+        "20": { "value": "#e2eee9" },
+        "10": { "value": "#f0f6f4" }
+      },
+      "blush": {
+        "copper": { "value": "#d89078" },
+        "blush": { "value": "#ff9f80" },
+        "lush": { "value": "#ffcfc0" },
+        "light": { "value": "#f8d7be" },
+        "beige": { "value": "#f6e9dc" },
+        "pale": { "value": "#fff8f4" }
+      },
+      "semantic": {
+        "success": { "value": "#add685" },
+        "warning": { "value": "#f8bb40" },
+        "error": { "value": "#db4141" }
+      },
+      "red": { "value": "#DB4141" },
+      "orangered": { "value": "#C84116" },
+      "partners": {
+        "facebook": { "value": "#485b94" },
+        "paypal": { "value": "#ffc43a" },
+        "trustpilot": { "value": "#29b47c" }
+      }
+    }
+  }
+}
