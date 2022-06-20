@@ -3,51 +3,51 @@
     "color": {
       "button": {
         "primary": {
-          "background": { "value": "{semantic.color.action.primary.value}" },
-          "border": { "value": "{semantic.color.action.primary.value}" },
-          "text": { "value": "{semantic.color.text.body-on-dark.value}" }
+          "background": { "value": "{semantic.color.action.primary.value}", "type": "color"},
+          "border": { "value": "{semantic.color.action.primary.value}", "type": "color"},
+          "text": { "value": "{semantic.color.text.body-on-dark.value}", "type": "color" }
         },
         "secondary": {
-          "background": { "value": "{semantic.color.action.primary.value}" },
-          "border": { "value": "{semantic.color.action.primary.value}" },
-          "text": { "value": "{semantic.color.text.body-on-dark.value}" }
+          "background": { "value": "{semantic.color.action.primary.value}", "type": "color"},
+          "border": { "value": "{semantic.color.action.primary.value}", "type": "color"},
+          "text": { "value": "{semantic.color.text.body-on-dark.value}", "type": "color" }
         },
         "tertiary": {
-          "background": { "value": "{semantic.color.action.tertiary.value}" },
-          "border": { "value": "{semantic.color.action.tertiary.value}" },
-          "text": { "value": "{semantic.color.text.body.value}" }
+          "background": { "value": "{semantic.color.action.tertiary.value}", "type": "color"},
+          "border": { "value": "{semantic.color.action.tertiary.value}", "type": "color"},
+          "text": { "value": "{semantic.color.text.body.value}", "type": "color" }
         },
         "primary-inverse": {
-          "background": { "value": "{semantic.color.transparent.value}" },
-          "border": { "value": "{semantic.color.action.primary.value}" },
-          "text": { "value": "{semantic.color.action.primary.value}" }
+          "background": { "value": "{semantic.color.transparent.value}", "type": "color"},
+          "border": { "value": "{semantic.color.action.primary.value}", "type": "color"},
+          "text": { "value": "{semantic.color.action.primary.value}", "type": "color" }
         },
         "secondary-inverse": {
-          "background": { "value": "{semantic.color.transparent.value}" },
-          "border": { "value": "{semantic.color.action.primary.value}" },
-          "text": { "value": "{semantic.color.action.primary.value}" }
+          "background": { "value": "{semantic.color.transparent.value}", "type": "color"},
+          "border": { "value": "{semantic.color.action.primary.value}", "type": "color"},
+          "text": { "value": "{semantic.color.action.primary.value}", "type": "color" }
         },
         "tertiary-inverse": {
-          "background": { "value": "{semantic.color.transparent.value}" },
-          "border": { "value": "{semantic.color.action.primary.value}" },
-          "text": { "value": "{semantic.color.action.primary.value}" }
+          "background": { "value": "{semantic.color.transparent.value}", "type": "color"},
+          "border": { "value": "{semantic.color.action.primary.value}", "type": "color"},
+          "text": { "value": "{semantic.color.action.primary.value}", "type": "color" }
         }
       }
     },
     "size": {
       "button": {
         "large": {
-          "padding-x": { "value": "{global.size.unit.default.value}" },
-          "height": { "value": "{global.size.unit.10.value}" },
-          "border-width": { "value": "{global.size.unit.1.value}" },
-          "line-height": { "value": "{global.size.unit.6.value}" },
+          "padding-x": { "value": "{global.size.unit.default.value}"},
+          "height": { "value": "{global.size.unit.10.value}"},
+          "border-width": { "value": "{global.size.unit.1.value}"},
+          "line-height": { "value": "{global.size.unit.6.value}"},
           "inline-spacing": { "value": "{global.size.unit.4.value}" }
         },
         "small": {
-          "padding-x": { "value": "{global.size.unit.6.value}" },
-          "height": { "value": "{global.size.unit.8.value}" },
-          "border-width": { "value": "{global.size.unit.1.value}" },
-          "line-height": { "value": "{global.size.unit.6.value}" },
+          "padding-x": { "value": "{global.size.unit.6.value}"},
+          "height": { "value": "{global.size.unit.8.value}"},
+          "border-width": { "value": "{global.size.unit.1.value}"},
+          "line-height": { "value": "{global.size.unit.6.value}"},
           "inline-spacing": { "value": "{global.size.unit.3.value}" }
         }
       }
