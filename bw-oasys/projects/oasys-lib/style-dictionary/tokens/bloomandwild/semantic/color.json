@@ -18,9 +18,9 @@
       "background": { "value": "{global.color.white.value}" },
       "text": {
         "body": {
-          "value": "{global.color.grey.90.value}",
-          "on-dark": { "value": "{global.color.white.value}" }
-        }
+          "value": "{global.color.grey.90.value}"
+        },
+        "body-on-dark": { "value": "{global.color.white.value}" }
       },
       "transparent": { "value": "transparent" },
       "tone": {

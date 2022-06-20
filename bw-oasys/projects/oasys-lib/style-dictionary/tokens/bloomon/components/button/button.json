@@ -5,12 +5,12 @@
         "primary": {
           "background": { "value": "{semantic.color.action.primary.value}" },
           "border": { "value": "{semantic.color.action.primary.value}" },
-          "text": { "value": "{semantic.color.text.body.on-dark.value}" }
+          "text": { "value": "{semantic.color.text.body-on-dark.value}" }
         },
         "secondary": {
           "background": { "value": "{semantic.color.action.primary.value}" },
           "border": { "value": "{semantic.color.action.primary.value}" },
-          "text": { "value": "{semantic.color.text.body.on-dark.value}" }
+          "text": { "value": "{semantic.color.text.body-on-dark.value}" }
         },
         "tertiary": {
           "background": { "value": "{semantic.color.action.tertiary.value}" },

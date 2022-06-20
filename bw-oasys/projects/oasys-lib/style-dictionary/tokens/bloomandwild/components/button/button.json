@@ -5,12 +5,12 @@
         "primary": {
           "color": {"value": "{semantic.color.action.primary.value}"},
           "border": {"value": "{semantic.color.action.primary.value}"},
-          "text": {"value": "{semantic.color.text.body.on-dark.value}"}
+          "text": {"value": "{semantic.color.text.body-on-dark.value}"}
         },
         "secondary": {
           "color": {"value": "{semantic.color.action.tertiary.value}"},
           "border": {"value": "{semantic.color.action.tertiary.value}"},
-          "text": {"value": "{semantic.color.text.body.on-dark.value}"}
+          "text": {"value": "{semantic.color.text.body-on-dark.value}"}
         },
         "tertiary": {
           "color": {"value": "{semantic.color.action.primary.value}"},
