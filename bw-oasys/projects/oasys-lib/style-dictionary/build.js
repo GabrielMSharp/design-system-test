@@ -1,9 +1,25 @@
 console.log("Running Bloom & Wild token building");
 
-const { transform } = require('@divriots/style-dictionary-to-figma');
+// const { transform } = require('@divriots/style-dictionary-to-figma');
+// import { transform } from '@divriots/style-dictionary-to-figma';
+const { trimValue,  trimName,  useRefValue,  markTokenset } = require('@divriots/style-dictionary-to-figma');
 const StyleDictionaryPackage = require("style-dictionary");
 
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
+
+StyleDictionaryPackage.registerFormat({
+  name: 'figmaTokensPlugin',
+  formatter: ({ dictionary, platform, options, file }) => {
+    console.log(platform);
+    const brandedTokens = {}
+
+    brandedTokens[options.brand] = dictionary.tokens
+
+    // const transformedTokens = transform(brandedTokens);
+    const transformedTokens = markTokenset(trimName(trimValue(dictionary.tokens)));
+    return JSON.stringify(transformedTokens, null, 2);
+  },
+});
 
 function getStyleDictionaryConfig(brand) {
   return {
@@ -11,17 +27,6 @@ function getStyleDictionaryConfig(brand) {
         `tokens/global/**/*.json`,
         `tokens/${brand}/**/**/*.json`
     ],
-    format: {
-      figmaTokensPlugin: ({ dictionary }) => {
-
-        const brandedTokens = {}
-
-        brandedTokens[brand] = dictionary.tokens
-
-        const transformedTokens = transform(brandedTokens);
-        return JSON.stringify(transformedTokens, null, 2);
-      },
-    },
     platforms: {
       css: {
         transformGroup: "css",
@@ -35,13 +40,14 @@ function getStyleDictionaryConfig(brand) {
             },
             filter: (token) => {
               // console.log(token);
+              // return true;
               return token.name.indexOf('global') === -1;
             }
           },
         ],
       },
       json: {
-        transforms: ['attribute/cti', 'name/cti/pascal', 'size/remToPx', 'color/hex'],
+        transforms: ["attribute/cti", "name/cti/kebab", "color/hex", "size/remToPx"],
         buildPath: 'figma-tokens/',
         files: [
           {
@@ -49,7 +55,8 @@ function getStyleDictionaryConfig(brand) {
             format: 'figmaTokensPlugin',
             options: {
               outputReferences: true,
-              basePxFontSize: 16
+              basePxFontSize: '16',
+              brand: brand
             }
           },
         ],
@@ -63,7 +70,7 @@ console.log("Build started...");
 // PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS
 
 
-["bloomandwild", "bloomon"].map(function (brand) {
+["global", "bloomandwild", "bloomon"].map(function (brand) {
     console.log("\n==============================================");
     console.log(`\nProcessing: [${brand}]`);
 
