@@ -3,15 +3,15 @@
     "color": {
       "white": { "value": "#ffffff" },
       "grey": {
-        "90": { "value": "#262626" },
-        "80": { "value": "#464646" },
-        "75": { "value": "#464646" },
-        "60": { "value": "#676767" },
-        "50": { "value": "#898989" },
-        "40": { "value": "#a8a8a8" },
-        "30": { "value": "#c6c6c6" },
-        "20": { "value": "#cdcdcd" },
-        "10": { "value": "#f7f7f7" }
+        "90": { "value": "#262626", "type": "color" },
+        "80": { "value": "#464646", "type": "color" },
+        "75": { "value": "#464646", "type": "color" },
+        "60": { "value": "#676767", "type": "color" },
+        "50": { "value": "#898989", "type": "color" },
+        "40": { "value": "#a8a8a8", "type": "color" },
+        "30": { "value": "#c6c6c6", "type": "color" },
+        "20": { "value": "#cdcdcd", "type": "color" },
+        "10": { "value": "#f7f7f7", "type": "color" }
       },
       "linen-grey": {
         "75": { "value": "#4d4840" },
