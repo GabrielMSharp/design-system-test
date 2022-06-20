@@ -23,7 +23,6 @@ function getStyleDictionaryConfig(brand) {
             },
             filter: (token) => {
               console.log(token);
-              // return true;
               return token.name.indexOf('global') === -1;
             }
           },
