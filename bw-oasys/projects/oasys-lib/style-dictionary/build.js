@@ -1,5 +1,6 @@
 console.log("Running Bloom & Wild token building");
 
+const { transform } = require('@divriots/style-dictionary-to-figma');
 const StyleDictionaryPackage = require("style-dictionary");
 
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
@@ -10,6 +11,12 @@ function getStyleDictionaryConfig(brand) {
         `tokens/global/**/*.json`,
         `tokens/${brand}/**/**/*.json`
     ],
+    format: {
+      figmaTokensPlugin: ({ dictionary }) => {
+        const transformedTokens = transform(dictionary.tokens);
+        return JSON.stringify(transformedTokens, null, 2);
+      },
+    },
     platforms: {
       css: {
         transformGroup: "css",
@@ -27,7 +34,17 @@ function getStyleDictionaryConfig(brand) {
             }
           },
         ],
-      }
+      },
+      json: {
+        transformGroup: 'js',
+        buildPath: 'figma-tokens/',
+        files: [
+          {
+            destination: 'figmaTokensFormatted.json',
+            format: 'figmaTokensPlugin',
+          },
+        ],
+      },
     },
   };
 }
