@@ -44,12 +44,12 @@ Primary.args = {
 
 export const Primary2 = Template.bind({});
 Primary2.args = {
-  buttonType: 'primary-2',
+  buttonType: 'secondary',
   buttonText: 'Primary-2 CTA',
 };
 
 export const Primary3 = Template.bind({});
 Primary3.args = {
-  buttonType: 'primary-3',
+  buttonType: 'tertiary',
   buttonText: 'Primary-3 CTA',
 };

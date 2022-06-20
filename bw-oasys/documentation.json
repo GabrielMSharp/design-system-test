@@ -123,7 +123,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-5765d1ed9a112542c40d8c3ed6c053c1b5bd5919f804985e7626cbdf8f8b897a167c026ee20b265c53f25e3a8c94876c23ff74e7f20ba2623bada9d6f3aa3f35",
+            "id": "component-ButtonComponent-4b440d2f1217ecfb3680e60afa56983afe1af15d24d36bb690aa144ce46b10962833c477035dd587bf0f554acfb12c8d00716bf42bc8dcf7b25fb5605e4b9cbd",
             "file": "projects/oasys-lib/src/lib/components/button/button.component.ts",
             "encapsulation": [
                 "ViewEncapsulation.None"
@@ -207,11 +207,11 @@
             ],
             "propertiesClass": [
                 {
-                    "name": "buttonClasses",
-                    "defaultValue": "['']",
+                    "name": "buttonClasses2",
+                    "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "string[]",
+                    "type": "string",
                     "optional": false,
                     "description": "",
                     "line": 28
@@ -248,22 +248,22 @@
                     "deprecationMessage": ""
                 },
                 {
-                    "name": "ngAfterViewInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 39,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
                     "name": "ngOnChanges",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 58,
+                    "line": 60,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 39,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -275,11 +275,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  // changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements AfterViewInit, OnChanges {\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: 'small'|'large' = 'large';\n  @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  buttonClasses: string[] = [''];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  ngAfterViewInit(): void {\n    this.buttonClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ];\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n\n  }\n\n  ngOnChanges(): void {\n    this.ngAfterViewInit();\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  // changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit, OnChanges {\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: 'small'|'large' = 'large';\n  @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  buttonClasses2: string = '';\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  ngOnInit(): void {\n    this.buttonClasses2 = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ].join(' ');\n\n    console.log('buttonClasses: ', this.buttonClasses2);\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n\n  }\n\n  ngOnChanges(): void {\n    this.ngOnInit();\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import '../../../assets/bloomon/variables.css';\n\n$buttonTypes: primary, primary-2, primary-3, secondary, secondary-2;\n\n$buttonSizes: large, small;\n\n\n@mixin buttonColors($buttonType) {\n    background-color: var(--color-button-#{$buttonType}-background);\n    border-color: var(--color-button-#{$buttonType}-border);\n    color: var(--color-button-#{$buttonType}-text);\n\n    .buttonIcon {\n        fill: currentColor;\n    }\n}\n\n@mixin buttonSize($buttonSize) {\n    $borderWidth: var(--size-button-#{$buttonSize}-border-width);\n    $lineHeight: var(--size-button-#{$buttonSize}-line-height);\n    $buttonMinimumHeight: var(--size-button-#{$buttonSize}-height);\n    \n    \n    $_calculatedHeight: calc($buttonMinimumHeight / 2);\n    $_calculatedLineHeight: calc($lineHeight / 2);\n    \n\n    $paddingX: var(--size-button-#{$buttonSize}-padding-x);\n    $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);\n\n    $paddingX--with-icon: calc($paddingX * 2);\n\n    min-height: $buttonMinimumHeight;\n    min-width: $buttonMinimumHeight;\n    padding-top: $paddingY;\n    padding-right: $paddingX;\n    padding-bottom: $paddingY;\n    padding-left: $paddingX;\n    \n    border-width: $borderWidth;\n\n    .button-content {\n        display: flex;\n        align-items: center;\n        gap: var(--size-button-#{$buttonSize}-inline-spacing); \n\n        .ui-icon {\n            max-height: $lineHeight;\n            display: flex;\n            align-items: center;\n        }\n\n        .ui-text {\n            line-height: $lineHeight;\n        }\n    }\n\n    \n\n    &.button--has-icon {\n        &.button--icon--trailing {\n            .button-content {\n                flex-direction: row-reverse;\n            }\n        }\n        &.button--icon--only {\n            max-width: calc($buttonMinimumHeight - $borderWidth);\n        }\n\n    }\n}\n\n\nui-button {\n    button {\n        /* Reset */\n        border: 0;\n        -webkit-appearance: none;\n        padding: 0;\n        display: inline-flex;\n        text-align: center;\n        justify-content: center;\n        align-items: center;\n        border-style: solid;\n\n\n        // Button Colors\n        @each $buttonType in $buttonTypes {\n            &.type-#{$buttonType} {\n                @include buttonColors(($buttonType));\n            }\n        }\n        \n        // Button Sizes\n        @each $buttonSize in $buttonSizes {\n            &.size-#{$buttonSize} {\n                @include buttonSize(($buttonSize));\n            }\n        }\n\n    }\n}\n\n",
+                    "data": "@import '../../../assets/bloomon/variables.css';\n\n$buttonTypes: primary, primary-2, primary-3, secondary, secondary-2;\n\n$buttonSizes: large, small;\n\n\n@mixin buttonColors($buttonType) {\n    background-color: var(--component-color-button-#{$buttonType}-background);\n    border-color: var(--component-color-button-#{$buttonType}-border);\n    color: var(--component-color-button-#{$buttonType}-text);\n\n    .buttonIcon {\n        fill: currentColor;\n    }\n}\n\n@mixin buttonSize($buttonSize) {\n    $borderWidth: var(--component-size-button-#{$buttonSize}-border-width);\n    $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);\n    $buttonMinimumHeight: var(--component-size-button-#{$buttonSize}-height);\n\n\n    $_calculatedHeight: calc($buttonMinimumHeight / 2);\n    $_calculatedLineHeight: calc($lineHeight / 2);\n\n\n    $paddingX: var(--component-size-button-#{$buttonSize}-padding-x);\n    $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);\n\n    $paddingX--with-icon: calc($paddingX * 2);\n\n    min-height: $buttonMinimumHeight;\n    min-width: $buttonMinimumHeight;\n    padding-top: $paddingY;\n    padding-right: $paddingX;\n    padding-bottom: $paddingY;\n    padding-left: $paddingX;\n\n    border-width: $borderWidth;\n\n    .button-content {\n        display: flex;\n        align-items: center;\n        gap: var(--component-size-button-#{$buttonSize}-inline-spacing);\n\n        .ui-icon {\n            max-height: $lineHeight;\n            display: flex;\n            align-items: center;\n        }\n\n        .ui-text {\n            line-height: $lineHeight;\n        }\n    }\n\n\n\n    &.button--has-icon {\n        &.button--icon--trailing {\n            .button-content {\n                flex-direction: row-reverse;\n            }\n        }\n        &.button--icon--only {\n            max-width: calc($buttonMinimumHeight - $borderWidth);\n        }\n\n    }\n}\n\n\nui-button {\n    button {\n        /* Reset */\n        border: 0;\n        -webkit-appearance: none;\n        padding: 0;\n        display: inline-flex;\n        text-align: center;\n        justify-content: center;\n        align-items: center;\n        border-style: solid;\n\n\n        // Button Colors\n        @each $buttonType in $buttonTypes {\n            &.type-#{$buttonType} {\n                @include buttonColors(($buttonType));\n            }\n        }\n\n        // Button Sizes\n        @each $buttonSize in $buttonSizes {\n            &.size-#{$buttonSize} {\n                @include buttonSize(($buttonSize));\n            }\n        }\n\n    }\n}\n\n",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -311,10 +311,10 @@
                 ]
             },
             "implements": [
-                "AfterViewInit",
+                "OnInit",
                 "OnChanges"
             ],
-            "templateData": "<button (click)=\"clickButton()\"\n        [routerLink]=\"href || null\"\n        [ngClass]=\"buttonClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText && buttonIconPlacement !== 'iconOnly'\" [textTransform]=\"textTransform\">\n            {{buttonText}}\n        </ui-text>\n    </div>\n</button>\n"
+            "templateData": "<button (click)=\"clickButton()\"\n        [routerLink]=\"href || null\"\n        [ngClass]=\"buttonClasses2\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText && buttonIconPlacement !== 'iconOnly'\" [textTransform]=\"textTransform\">\n            {{buttonText}}\n        </ui-text>\n    </div>\n</button>\n"
         },
         {
             "name": "IconComponent",
@@ -968,7 +968,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    ...args,\n    buttonClick: actionsData.buttonClick\n  },\n})"
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: args\n  // props: {\n  //   ...args,\n    // buttonClick: actionsData.buttonClick,\n    // buttonClasses: 'hello' //args.buttonClasses\n  // },\n})"
             },
             {
                 "name": "Template",
@@ -1101,7 +1101,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    ...args,\n    buttonClick: actionsData.buttonClick\n  },\n})"
+                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args\n  // props: {\n  //   ...args,\n    // buttonClick: actionsData.buttonClick,\n    // buttonClasses: 'hello' //args.buttonClasses\n  // },\n})"
                 }
             ],
             "projects/oasys-lib/src/test.ts": [

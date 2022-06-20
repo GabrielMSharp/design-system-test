@@ -19,7 +19,7 @@ export class ButtonComponent implements OnInit, OnChanges {
 
   // Button Stylings
   @Input() buttonSize: 'small'|'large' = 'large';
-  @Input() buttonType: 'primary'|'primary-2'|'primary-3'|'secondary'|'secondary-2' = 'primary';
+  @Input() buttonType: 'primary'|'secondary'|'tertiary'|'primary-inverse'|'secondary-inverse'|'teriary-inverse' = 'primary';
 
   // Button Actions
   @Input() href: string = '';

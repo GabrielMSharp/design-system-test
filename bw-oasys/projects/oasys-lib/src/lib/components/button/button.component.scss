@@ -1,14 +1,14 @@
 @import '../../../assets/bloomon/variables.css';
 
-$buttonTypes: primary, primary-2, primary-3, secondary, secondary-2;
+$buttonTypes: primary, secondary, tertiary, primary-inverse, secondary-inverse, tertiary-inverse;
 
 $buttonSizes: large, small;
 
 
 @mixin buttonColors($buttonType) {
-    background-color: var(--color-button-#{$buttonType}-background);
-    border-color: var(--color-button-#{$buttonType}-border);
-    color: var(--color-button-#{$buttonType}-text);
+    background-color: var(--component-color-button-#{$buttonType}-background);
+    border-color: var(--component-color-button-#{$buttonType}-border);
+    color: var(--component-color-button-#{$buttonType}-text);
 
     .buttonIcon {
         fill: currentColor;
@@ -16,16 +16,16 @@ $buttonSizes: large, small;
 }
 
 @mixin buttonSize($buttonSize) {
-    $borderWidth: var(--size-button-#{$buttonSize}-border-width);
-    $lineHeight: var(--size-button-#{$buttonSize}-line-height);
-    $buttonMinimumHeight: var(--size-button-#{$buttonSize}-height);
+    $borderWidth: var(--component-size-button-#{$buttonSize}-border-width);
+    $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);
+    $buttonMinimumHeight: var(--component-size-button-#{$buttonSize}-height);
 
 
     $_calculatedHeight: calc($buttonMinimumHeight / 2);
     $_calculatedLineHeight: calc($lineHeight / 2);
 
 
-    $paddingX: var(--size-button-#{$buttonSize}-padding-x);
+    $paddingX: var(--component-size-button-#{$buttonSize}-padding-x);
     $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);
 
     $paddingX--with-icon: calc($paddingX * 2);
@@ -42,7 +42,7 @@ $buttonSizes: large, small;
     .button-content {
         display: flex;
         align-items: center;
-        gap: var(--size-button-#{$buttonSize}-inline-spacing);
+        gap: var(--component-size-button-#{$buttonSize}-inline-spacing);
 
         .ui-icon {
             max-height: $lineHeight;

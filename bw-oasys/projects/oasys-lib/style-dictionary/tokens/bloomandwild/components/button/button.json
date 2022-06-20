@@ -7,22 +7,27 @@
           "border": {"value": "{semantic.color.action.primary.value}"},
           "text": {"value": "{semantic.color.text.body.on-dark.value}"}
         },
-        "primary-2": {
+        "secondary": {
           "color": {"value": "{semantic.color.action.tertiary.value}"},
           "border": {"value": "{semantic.color.action.tertiary.value}"},
           "text": {"value": "{semantic.color.text.body.on-dark.value}"}
         },
-        "primary-3": {
+        "tertiary": {
           "color": {"value": "{semantic.color.action.primary.value}"},
           "border": {"value": "{component.color.button.primary.border.value}"},
           "text": {"value": "{component.color.button.primary.text.value}"}
         },
-        "secondary": {
+        "primary-inverse": {
           "color": {"value": "{semantic.color.transparent.value}"},
           "border": {"value": "{semantic.color.action.primary.value}"},
           "text": {"value": "{semantic.color.action.primary.value}"}
         },
-        "secondary-2": {
+        "secondary-inverse": {
+          "color": {"value": "{semantic.color.transparent.value}"},
+          "border": {"value": "{semantic.color.action.tertiary.value}"},
+          "text": {"value": "{semantic.color.action.tertiary.value}"}
+        },
+        "tertiary-inverse": {
           "color": {"value": "{semantic.color.transparent.value}"},
           "border": {"value": "{semantic.color.action.tertiary.value}"},
           "text": {"value": "{semantic.color.action.tertiary.value}"}
