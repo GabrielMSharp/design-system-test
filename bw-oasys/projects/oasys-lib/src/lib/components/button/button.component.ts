@@ -45,7 +45,7 @@ export class ButtonComponent implements OnInit, OnChanges {
       `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
     ].join(' ');
 
-    console.log('buttonClasses: ', this.buttonClasses2);
+    console.log('buttonClasses: ', this.buttonClasses);
 
     if(this.buttonIcon) {
       this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';
