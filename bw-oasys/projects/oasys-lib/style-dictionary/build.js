@@ -45,7 +45,7 @@ function getStyleDictionaryConfig(brand) {
         buildPath: 'figma-tokens/',
         files: [
           {
-            destination: `tokens-${brand}.json`,
+            destination: `tokens.json`,
             format: 'figmaTokensPlugin',
             options: {
               outputReferences: false,
