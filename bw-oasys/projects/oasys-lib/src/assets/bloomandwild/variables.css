@@ -1,14 +1,14 @@
 /**
  * Do not edit directly
- * Generated on Mon, 20 Jun 2022 11:02:51 GMT
+ * Generated on Mon, 20 Jun 2022 13:20:04 GMT
  */
 
 :root {
   --component-color-button-primary-color: #262626;
   --component-color-button-primary-border: #262626;
   --component-color-button-primary-text: #ffffff;
-  --component-color-button-primary-2-color: #447964;
-  --component-color-button-primary-2-border: #447964;
+  --component-color-button-primary-2-color: transparent;
+  --component-color-button-primary-2-border: transparent;
   --component-color-button-primary-2-text: #ffffff;
   --component-color-button-primary-3-color: #262626;
   --component-color-button-primary-3-border: #262626;
@@ -17,8 +17,8 @@
   --component-color-button-secondary-border: #262626;
   --component-color-button-secondary-text: #262626;
   --component-color-button-secondary-2-color: transparent;
-  --component-color-button-secondary-2-border: #447964;
-  --component-color-button-secondary-2-text: #447964;
+  --component-color-button-secondary-2-border: transparent;
+  --component-color-button-secondary-2-text: transparent;
   --component-size-button-large-padding-x: 1.6;
   --component-size-button-large-height: 4.8;
   --component-size-button-large-border-width: 0.2;
@@ -29,16 +29,15 @@
   --component-size-button-small-border-width: 0.2;
   --component-size-button-small-line-height: 1.6;
   --component-size-button-small-inline-spacing: 0.4;
-  --semantic-color-primary: #262626;
-  --semantic-color-secondary: #ffffff;
-  --semantic-color-tertiary: #447964;
+  --semantic-color-action-primary: #262626;
+  --semantic-color-action-secondary: #ffffff;
+  --semantic-color-action-tertiary: transparent;
   --semantic-color-background: #ffffff;
-  --semantic-color-text: #262626;
-  --semantic-color-text-on-dark: #ffffff;
+  --semantic-color-text-body: #262626;
   --semantic-color-transparent: transparent;
-  --semantic-color-success: #fdf888;
-  --semantic-color-warning: #ff9f80;
-  --semantic-color-error: #C84116;
+  --semantic-color-tone-success: #fdf888;
+  --semantic-color-tone-warning: #ff9f80;
+  --semantic-color-tone-error: #C84116;
   --semantic-font-family-headline: 'TiemposHeadline', Georgia, serif;
   --semantic-font-family-headline-secondary: 'NeueHaasUnica', Arial, Helvetica, sans-serif;
   --semantic-font-family-body: 'NeueHaasUnica', Arial, Helvetica, sans-serif;

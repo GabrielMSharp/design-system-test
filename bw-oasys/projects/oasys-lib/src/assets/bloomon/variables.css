@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 20 Jun 2022 11:02:51 GMT
+ * Generated on Mon, 20 Jun 2022 13:20:04 GMT
  */
 
 :root {
@@ -30,16 +30,15 @@
   --component-size-button-small-line-height: 1.6;
   --component-size-button-small-inline-spacing: 0.4;
   --component-style-button-large-text-transform: uppercase;
-  --semantic-color-primary: #464646;
-  --semantic-color-secondary: #ffffff;
-  --semantic-color-tertiary: #fdf888;
+  --semantic-color-action-primary: #464646;
+  --semantic-color-action-secondary: #ffffff;
+  --semantic-color-action-tertiary: #fdf888;
   --semantic-color-background: #ffffff;
-  --semantic-color-text: #464646;
-  --semantic-color-text-on-dark: #ffffff;
+  --semantic-color-text-body: #464646;
   --semantic-color-transparent: transparent;
-  --semantic-color-success: #fdf888;
-  --semantic-color-warning: #ff9f80;
-  --semantic-color-error: #C84116;
+  --semantic-color-tone-success: #fdf888;
+  --semantic-color-tone-warning: #ff9f80;
+  --semantic-color-tone-error: #C84116;
   --semantic-font-family-headline: 'Patron', Arial, Helvetica, sans-serif;
   --semantic-font-family-headline-second: 'Patron', Arial, Helvetica, sans-serif;
   --semantic-font-family-body: 'Patron', Arial, Helvetica, sans-serif;

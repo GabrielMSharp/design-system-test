@@ -3,29 +3,29 @@
     "color": {
       "button": {
         "primary": {
-          "background": { "value": "{semantic.color.primary.value}" },
-          "border": { "value": "{semantic.color.primary.value}" },
-          "text": { "value": "{semantic.color.text-on-dark}" }
+          "background": { "value": "{semantic.color.action.primary.value}" },
+          "border": { "value": "{semantic.color.action.primary.value}" },
+          "text": { "value": "{semantic.color.text.body.on-dark.value}" }
         },
         "primary-2": {
-          "background": { "value": "{semantic.color.primary.value}" },
-          "border": { "value": "{semantic.color.primary.value}" },
-          "text": { "value": "{semantic.color.text-on-dark}" }
+          "background": { "value": "{semantic.color.action.primary.value}" },
+          "border": { "value": "{semantic.color.action.primary.value}" },
+          "text": { "value": "{semantic.color.text.body.on-dark.value}" }
         },
         "primary-3": {
-          "background": { "value": "{semantic.color.tertiary.value}" },
-          "border": { "value": "{semantic.color.tertiary.value}" },
-          "text": { "value": "{semantic.color.text}" }
+          "background": { "value": "{semantic.color.action.tertiary.value}" },
+          "border": { "value": "{semantic.color.action.tertiary.value}" },
+          "text": { "value": "{semantic.color.text.body.value}" }
         },
         "secondary": {
           "background": { "value": "{semantic.color.transparent.value}" },
-          "border": { "value": "{semantic.color.primary.value}" },
-          "text": { "value": "{semantic.color.primary.value}" }
+          "border": { "value": "{semantic.color.action.primary.value}" },
+          "text": { "value": "{semantic.color.action.primary.value}" }
         },
         "secondary-2": {
           "background": { "value": "{semantic.color.transparent.value}" },
-          "border": { "value": "{semantic.color.primary.value}" },
-          "text": { "value": "{semantic.color.primary.value}" }
+          "border": { "value": "{semantic.color.action.primary.value}" },
+          "text": { "value": "{semantic.color.action.primary.value}" }
         }
       }
     },
