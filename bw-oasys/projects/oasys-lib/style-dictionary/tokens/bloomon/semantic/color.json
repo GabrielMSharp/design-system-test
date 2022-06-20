@@ -1,7 +1,6 @@
 {
   "semantic": {
     "color": {
-      "nice-one": {"value": "#ff0000", "type": "color"},
       "action": {
         "primary": {
           "value": "{global.color.grey.80.value}", "type": "color"
