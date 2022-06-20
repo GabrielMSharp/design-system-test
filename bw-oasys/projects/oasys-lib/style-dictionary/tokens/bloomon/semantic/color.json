@@ -1,6 +1,6 @@
 {
-  "nice-one": {"value": "#ff0000", "type": "color"},
   "semantic": {
+    "nice-one": {"value": "#ff0000", "type": "color"},
     "color": {
       "action": {
         "primary": {
