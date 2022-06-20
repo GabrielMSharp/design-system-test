@@ -13,7 +13,8 @@
           "value": "{global.color.yellow.50.value}"
         }
       },
-      "background": { "value": "{global.color.white.value}" },
+      "background": { "value": "{global.color.white.value}", "type": "color" },
+      "test-background": { "value": "pink", "type": "color" },
       "text": {
         "body": {
           "value": "{global.color.grey.80.value}"

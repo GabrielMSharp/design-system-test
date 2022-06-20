@@ -48,7 +48,7 @@ function getStyleDictionaryConfig(brand) {
             destination: `tokens.json`,
             format: 'figmaTokensPlugin',
             options: {
-              outputReferences: false,
+              outputReferences: true,
               basePxFontSize: 16
             }
           },
