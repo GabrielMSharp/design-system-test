@@ -40,7 +40,7 @@ function getStyleDictionaryConfig(brand) {
         buildPath: 'figma-tokens/',
         files: [
           {
-            destination: 'figmaTokensFormatted.json',
+            destination: 'tokens.json',
             format: 'figmaTokensPlugin',
           },
         ],
