@@ -1,5 +1,5 @@
 {
-  "bloomandwild": {
+  "bloomon": {
     "global": {
       "color": {
         "white": {
@@ -1346,9 +1346,9 @@
       "color": {
         "button": {
           "primary": {
-            "color": {
+            "background": {
               "value": "{semantic.color.action.primary}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.action.primary}"
@@ -1358,19 +1358,19 @@
                 "type": "color",
                 "item": "button",
                 "subitem": "primary",
-                "state": "color"
+                "state": "background"
               },
               "path": {
                 "0": "component",
                 "1": "color",
                 "2": "button",
                 "3": "primary",
-                "4": "color"
+                "4": "background"
               }
             },
             "border": {
               "value": "{semantic.color.action.primary}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.action.primary}"
@@ -1392,7 +1392,7 @@
             },
             "text": {
               "value": "{semantic.color.text.body-on-dark}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.text.body-on-dark}"
@@ -1414,34 +1414,34 @@
             }
           },
           "secondary": {
-            "color": {
-              "value": "{semantic.color.action.tertiary}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+            "background": {
+              "value": "{semantic.color.action.primary}",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}"
+                "value": "{semantic.color.action.primary}"
               },
               "attributes": {
                 "category": "component",
                 "type": "color",
                 "item": "button",
                 "subitem": "secondary",
-                "state": "color"
+                "state": "background"
               },
               "path": {
                 "0": "component",
                 "1": "color",
                 "2": "button",
                 "3": "secondary",
-                "4": "color"
+                "4": "background"
               }
             },
             "border": {
-              "value": "{semantic.color.action.tertiary}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "value": "{semantic.color.action.primary}",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}"
+                "value": "{semantic.color.action.primary}"
               },
               "attributes": {
                 "category": "component",
@@ -1460,7 +1460,7 @@
             },
             "text": {
               "value": "{semantic.color.text.body-on-dark}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.text.body-on-dark}"
@@ -1482,34 +1482,34 @@
             }
           },
           "tertiary": {
-            "color": {
-              "value": "{semantic.color.action.primary}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+            "background": {
+              "value": "{semantic.color.action.tertiary}",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.primary}"
+                "value": "{semantic.color.action.tertiary}"
               },
               "attributes": {
                 "category": "component",
                 "type": "color",
                 "item": "button",
                 "subitem": "tertiary",
-                "state": "color"
+                "state": "background"
               },
               "path": {
                 "0": "component",
                 "1": "color",
                 "2": "button",
                 "3": "tertiary",
-                "4": "color"
+                "4": "background"
               }
             },
             "border": {
-              "value": "{component.color.button.primary.border}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "value": "{semantic.color.action.tertiary}",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{component.color.button.primary.border}"
+                "value": "{semantic.color.action.tertiary}"
               },
               "attributes": {
                 "category": "component",
@@ -1527,11 +1527,11 @@
               }
             },
             "text": {
-              "value": "{component.color.button.primary.text}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "value": "{semantic.color.text.body}",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{component.color.button.primary.text}"
+                "value": "{semantic.color.text.body}"
               },
               "attributes": {
                 "category": "component",
@@ -1550,9 +1550,9 @@
             }
           },
           "primary-inverse": {
-            "color": {
+            "background": {
               "value": "{semantic.color.transparent}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.transparent}"
@@ -1562,19 +1562,19 @@
                 "type": "color",
                 "item": "button",
                 "subitem": "primary-inverse",
-                "state": "color"
+                "state": "background"
               },
               "path": {
                 "0": "component",
                 "1": "color",
                 "2": "button",
                 "3": "primary-inverse",
-                "4": "color"
+                "4": "background"
               }
             },
             "border": {
               "value": "{semantic.color.action.primary}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.action.primary}"
@@ -1596,7 +1596,7 @@
             },
             "text": {
               "value": "{semantic.color.action.primary}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.action.primary}"
@@ -1618,9 +1618,9 @@
             }
           },
           "secondary-inverse": {
-            "color": {
+            "background": {
               "value": "{semantic.color.transparent}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.transparent}"
@@ -1630,22 +1630,22 @@
                 "type": "color",
                 "item": "button",
                 "subitem": "secondary-inverse",
-                "state": "color"
+                "state": "background"
               },
               "path": {
                 "0": "component",
                 "1": "color",
                 "2": "button",
                 "3": "secondary-inverse",
-                "4": "color"
+                "4": "background"
               }
             },
             "border": {
-              "value": "{semantic.color.action.tertiary}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "value": "{semantic.color.action.primary}",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}"
+                "value": "{semantic.color.action.primary}"
               },
               "attributes": {
                 "category": "component",
@@ -1663,11 +1663,11 @@
               }
             },
             "text": {
-              "value": "{semantic.color.action.tertiary}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "value": "{semantic.color.action.primary}",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}"
+                "value": "{semantic.color.action.primary}"
               },
               "attributes": {
                 "category": "component",
@@ -1686,9 +1686,9 @@
             }
           },
           "tertiary-inverse": {
-            "color": {
+            "background": {
               "value": "{semantic.color.transparent}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.transparent}"
@@ -1698,22 +1698,22 @@
                 "type": "color",
                 "item": "button",
                 "subitem": "tertiary-inverse",
-                "state": "color"
+                "state": "background"
               },
               "path": {
                 "0": "component",
                 "1": "color",
                 "2": "button",
                 "3": "tertiary-inverse",
-                "4": "color"
+                "4": "background"
               }
             },
             "border": {
-              "value": "{semantic.color.action.tertiary}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "value": "{semantic.color.action.primary}",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}"
+                "value": "{semantic.color.action.primary}"
               },
               "attributes": {
                 "category": "component",
@@ -1731,11 +1731,11 @@
               }
             },
             "text": {
-              "value": "{semantic.color.action.tertiary}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "value": "{semantic.color.action.primary}",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}"
+                "value": "{semantic.color.action.primary}"
               },
               "attributes": {
                 "category": "component",
@@ -1760,7 +1760,7 @@
           "large": {
             "padding-x": {
               "value": "{global.size.unit.default}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.default}"
@@ -1782,7 +1782,7 @@
             },
             "height": {
               "value": "{global.size.unit.10}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.10}"
@@ -1803,11 +1803,11 @@
               }
             },
             "border-width": {
-              "value": "{global.size.unit.2}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "value": "{global.size.unit.1}",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.2}"
+                "value": "{global.size.unit.1}"
               },
               "attributes": {
                 "category": "component",
@@ -1826,7 +1826,7 @@
             },
             "line-height": {
               "value": "{global.size.unit.6}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.6}"
@@ -1848,7 +1848,7 @@
             },
             "inline-spacing": {
               "value": "{global.size.unit.4}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.4}"
@@ -1872,7 +1872,7 @@
           "small": {
             "padding-x": {
               "value": "{global.size.unit.6}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.6}"
@@ -1894,7 +1894,7 @@
             },
             "height": {
               "value": "{global.size.unit.8}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.8}"
@@ -1915,11 +1915,11 @@
               }
             },
             "border-width": {
-              "value": "{global.size.unit.2}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "value": "{global.size.unit.1}",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.2}"
+                "value": "{global.size.unit.1}"
               },
               "attributes": {
                 "category": "component",
@@ -1938,7 +1938,7 @@
             },
             "line-height": {
               "value": "{global.size.unit.6}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.6}"
@@ -1960,7 +1960,7 @@
             },
             "inline-spacing": {
               "value": "{global.size.unit.3}",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.3}"
@@ -1982,27 +1982,45 @@
             }
           }
         }
+      },
+      "style": {
+        "button": {
+          "large": {
+            "text-transform": {
+              "value": "uppercase",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "uppercase"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "style",
+                "item": "button",
+                "subitem": "large",
+                "state": "text-transform"
+              },
+              "path": {
+                "0": "component",
+                "1": "style",
+                "2": "button",
+                "3": "large",
+                "4": "text-transform"
+              }
+            }
+          }
+        }
       }
     },
     "semantic": {
       "color": {
         "action": {
           "primary": {
-            "value": "{global.color.grey.90}",
-            "inverse": {
-              "value": "#ffffff",
-              "filePath": "tokens/bloomandwild/semantic/color.json",
-              "isSource": true
-            },
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "value": "{global.color.grey.80}",
+            "filePath": "tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{global.color.grey.90}",
-              "inverse": {
-                "value": "{global.color.white}",
-                "filePath": "tokens/bloomandwild/semantic/color.json",
-                "isSource": true
-              }
+              "value": "{global.color.grey.80}"
             },
             "attributes": {
               "category": "semantic",
@@ -2019,20 +2037,10 @@
           },
           "secondary": {
             "value": "{global.color.white}",
-            "inverse": {
-              "value": "transparent",
-              "filePath": "tokens/bloomandwild/semantic/color.json",
-              "isSource": true
-            },
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "filePath": "tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{global.color.white}",
-              "inverse": {
-                "value": "{semantic.color.transparent}",
-                "filePath": "tokens/bloomandwild/semantic/color.json",
-                "isSource": true
-              }
+              "value": "{global.color.white}"
             },
             "attributes": {
               "category": "semantic",
@@ -2048,11 +2056,11 @@
             }
           },
           "tertiary": {
-            "value": "{semantic.color.transparent}",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "value": "{global.color.yellow.50}",
+            "filePath": "tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{semantic.color.transparent}"
+              "value": "{global.color.yellow.50}"
             },
             "attributes": {
               "category": "semantic",
@@ -2070,7 +2078,7 @@
         },
         "background": {
           "value": "{global.color.white}",
-          "filePath": "tokens/bloomandwild/semantic/color.json",
+          "filePath": "tokens/bloomon/semantic/color.json",
           "isSource": true,
           "original": {
             "value": "{global.color.white}"
@@ -2088,11 +2096,11 @@
         },
         "text": {
           "body": {
-            "value": "{global.color.grey.90}",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "value": "{global.color.grey.80}",
+            "filePath": "tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{global.color.grey.90}"
+              "value": "{global.color.grey.80}"
             },
             "attributes": {
               "category": "semantic",
@@ -2109,7 +2117,7 @@
           },
           "body-on-dark": {
             "value": "{global.color.white}",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "filePath": "tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
               "value": "{global.color.white}"
@@ -2130,7 +2138,7 @@
         },
         "transparent": {
           "value": "transparent",
-          "filePath": "tokens/bloomandwild/semantic/color.json",
+          "filePath": "tokens/bloomon/semantic/color.json",
           "isSource": true,
           "original": {
             "value": "transparent"
@@ -2149,7 +2157,7 @@
         "tone": {
           "success": {
             "value": "{global.color.yellow.50}",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "filePath": "tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
               "value": "{global.color.yellow.50}"
@@ -2169,7 +2177,7 @@
           },
           "warning": {
             "value": "{global.color.blush.blush}",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "filePath": "tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
               "value": "{global.color.blush.blush}"
@@ -2189,7 +2197,7 @@
           },
           "error": {
             "value": "{global.color.orangered}",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "filePath": "tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
               "value": "{global.color.orangered}"
@@ -2212,11 +2220,11 @@
       "font": {
         "family": {
           "headline": {
-            "value": "'TiemposHeadline', Georgia, serif",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+            "value": "'Patron', Arial, Helvetica, sans-serif",
+            "filePath": "tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
-              "value": "'TiemposHeadline', Georgia, serif"
+              "value": "'Patron', Arial, Helvetica, sans-serif"
             },
             "attributes": {
               "category": "semantic",
@@ -2231,32 +2239,32 @@
               "3": "headline"
             }
           },
-          "headline-secondary": {
-            "value": "{semantic.font.family.body}",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+          "headline-second": {
+            "value": "{semantic.font.family.headline}",
+            "filePath": "tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
-              "value": "{semantic.font.family.body}"
+              "value": "{semantic.font.family.headline}"
             },
             "attributes": {
               "category": "semantic",
               "type": "font",
               "item": "family",
-              "subitem": "headline-secondary"
+              "subitem": "headline-second"
             },
             "path": {
               "0": "semantic",
               "1": "font",
               "2": "family",
-              "3": "headline-secondary"
+              "3": "headline-second"
             }
           },
           "body": {
-            "value": "'NeueHaasUnica', Arial, Helvetica, sans-serif",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+            "value": "{semantic.font.family.headline}",
+            "filePath": "tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
-              "value": "'NeueHaasUnica', Arial, Helvetica, sans-serif"
+              "value": "{semantic.font.family.headline}"
             },
             "attributes": {
               "category": "semantic",
@@ -2274,11 +2282,11 @@
         },
         "weight": {
           "normal": {
-            "value": "normal",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+            "value": "100",
+            "filePath": "tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
-              "value": "normal"
+              "value": "100"
             },
             "attributes": {
               "category": "semantic",
@@ -2294,11 +2302,11 @@
             }
           },
           "medium": {
-            "value": "500",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+            "value": "normal",
+            "filePath": "tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
-              "value": "500"
+              "value": "normal"
             },
             "attributes": {
               "category": "semantic",
@@ -2315,7 +2323,7 @@
           },
           "bold": {
             "value": "{semantic.font.weight.medium}",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+            "filePath": "tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
               "value": "{semantic.font.weight.medium}"

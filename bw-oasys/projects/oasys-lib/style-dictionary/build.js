@@ -13,7 +13,12 @@ function getStyleDictionaryConfig(brand) {
     ],
     format: {
       figmaTokensPlugin: ({ dictionary }) => {
-        const transformedTokens = transform(dictionary.tokens);
+
+        const brandedTokens = {}
+
+        brandedTokens[brand] = dictionary.tokens
+
+        const transformedTokens = transform(brandedTokens);
         return JSON.stringify(transformedTokens, null, 2);
       },
     },
@@ -26,22 +31,26 @@ function getStyleDictionaryConfig(brand) {
             format: "css/variables",
             options: {
               showFileHeader: true,
-              outputReferences: false,
+              outputReferences: false
             },
             filter: (token) => {
-              console.log(token);
+              // console.log(token);
               return token.name.indexOf('global') === -1;
             }
           },
         ],
       },
       json: {
-        transformGroup: 'js',
+        transforms: ['attribute/cti', 'name/cti/pascal', 'size/remToPx', 'color/hex'],
         buildPath: 'figma-tokens/',
         files: [
           {
-            destination: 'tokens.json',
+            destination: `tokens-${brand}.json`,
             format: 'figmaTokensPlugin',
+            options: {
+              outputReferences: false,
+              basePxFontSize: 16
+            }
           },
         ],
       },
