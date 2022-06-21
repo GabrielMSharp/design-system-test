@@ -3,9 +3,9 @@
     "color": {
       "button": {
         "primary": {
-          "color": {"value": "{semantic.color.action.primary.value}", "type": "color", "name": "Primary Button Background"},
-          "border": {"value": "{semantic.color.action.primary.value}", "type": "color", "name": "Primary Button Border"},
-          "text": {"value": "{semantic.color.text.body-on-dark.value}", "type": "color", "name": "Primary Button Text"}
+          "color": {"value": "{semantic.color.action.primary.value}", "type": "color"},
+          "border": {"value": "{semantic.color.action.primary.value}", "type": "color"},
+          "text": {"value": "{semantic.color.text.body-on-dark.value}", "type": "color"}
         },
         "secondary": {
           "color": {"value": "{semantic.color.action.tertiary.value}", "type": "color"},
