@@ -1,0 +1,53 @@
+/**
+ * Do not edit directly
+ * Generated on Tue, 21 Jun 2022 09:58:24 GMT
+ */
+
+:root {
+  --component-color-button-primary-background: pink;
+  --component-color-button-primary-border: #464646;
+  --component-color-button-primary-text: #ffffff;
+  --component-color-button-secondary-background: #464646;
+  --component-color-button-secondary-border: #464646;
+  --component-color-button-secondary-text: #ffffff;
+  --component-color-button-tertiary-background: #fdf888;
+  --component-color-button-tertiary-border: #fdf888;
+  --component-color-button-tertiary-text: #464646;
+  --component-color-button-primary-inverse-background: transparent;
+  --component-color-button-primary-inverse-border: #464646;
+  --component-color-button-primary-inverse-text: #464646;
+  --component-color-button-secondary-inverse-background: transparent;
+  --component-color-button-secondary-inverse-border: #464646;
+  --component-color-button-secondary-inverse-text: #464646;
+  --component-color-button-tertiary-inverse-background: transparent;
+  --component-color-button-tertiary-inverse-border: #464646;
+  --component-color-button-tertiary-inverse-text: #464646;
+  --component-size-button-large-padding-x: 1.6rem;
+  --component-size-button-large-height: 4.8rem;
+  --component-size-button-large-border-width: 0.1rem;
+  --component-size-button-large-line-height: 1.6rem;
+  --component-size-button-large-inline-spacing: 0.8rem;
+  --component-size-button-small-padding-x: 1.6rem;
+  --component-size-button-small-height: 3.2rem;
+  --component-size-button-small-border-width: 0.1rem;
+  --component-size-button-small-line-height: 1.6rem;
+  --component-size-button-small-inline-spacing: 0.4rem;
+  --component-style-button-large-text-transform: uppercase;
+  --semantic-color-action-primary: #464646;
+  --semantic-color-action-secondary: #ffffff;
+  --semantic-color-action-tertiary: #fdf888;
+  --semantic-color-background: #ffffff;
+  --semantic-color-test-background: pink;
+  --semantic-color-text-body: #464646;
+  --semantic-color-text-body-on-dark: #ffffff;
+  --semantic-color-transparent: transparent;
+  --semantic-color-tone-success: #fdf888;
+  --semantic-color-tone-warning: #ff9f80;
+  --semantic-color-tone-error: #C84116;
+  --semantic-font-family-headline: 'Patron', Arial, Helvetica, sans-serif;
+  --semantic-font-family-headline-second: 'Patron', Arial, Helvetica, sans-serif;
+  --semantic-font-family-body: 'Patron', Arial, Helvetica, sans-serif;
+  --semantic-font-weight-normal: 100;
+  --semantic-font-weight-medium: normal;
+  --semantic-font-weight-bold: normal;
+}

@@ -52,10 +52,8 @@ function getStyleDictionaryConfig(brand) {
             },
             filter: (token) => {
               // console.log(token);
-              if(brand === 'bloomon') {
-                return false;
-              }
-              return true;
+
+
               return token.name.indexOf('global') === -1;
             }
           },
