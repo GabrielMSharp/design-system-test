@@ -130,8 +130,14 @@
     },
     "border-width": {
       "button": {
-        "value": "{global.size.unit.2.value}",
+        "value": "{semantic.border-width.emphasis.value}",
         "type": "borderWidth"
+      }
+    },
+    "border-radius": {
+      "button": {
+        "value": "{semantic.border-radius.none.value}",
+        "type": "borderRadius"
       }
     }
   }

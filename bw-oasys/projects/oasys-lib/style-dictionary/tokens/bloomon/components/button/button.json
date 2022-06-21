@@ -35,10 +35,6 @@
       }
     },
 
-
-
-
-
     "size": {
       "button": {
         "large": {
@@ -63,7 +59,10 @@
       }
     },
     "border-width" : {
-      "button": {"value": "{global.size.unit.1.value}", "type": "borderWidth"}
+      "button": {"value": "{semantic.border-width.default.value}", "type": "borderWidth"}
+    },
+    "border-radius": {
+      "button": {"value": "{semantic.border-radius.round.value}", "type": "borderRadius"}
     }
   }
 }
