@@ -51,9 +51,6 @@ function getStyleDictionaryConfig(brand) {
               outputReferences: false
             },
             filter: (token) => {
-              // console.log(token);
-
-
               return token.name.indexOf('global') === -1;
             }
           },
