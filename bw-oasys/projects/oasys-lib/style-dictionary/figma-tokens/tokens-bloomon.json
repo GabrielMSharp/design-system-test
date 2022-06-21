@@ -454,10 +454,12 @@
           "large": {
             "padding-x": {
               "value": "16px",
+              "type": "spacing",
               "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.default}"
+                "value": "{global.size.unit.default}",
+                "type": "spacing"
               },
               "attributes": {
                 "category": "component",
@@ -476,10 +478,12 @@
             },
             "height": {
               "value": "48px",
+              "type": "sizing",
               "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.10}"
+                "value": "{global.size.unit.10}",
+                "type": "sizing"
               },
               "attributes": {
                 "category": "component",
@@ -498,10 +502,12 @@
             },
             "border-width": {
               "value": "1px",
+              "type": "borderWidth",
               "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.1}"
+                "value": "{global.size.unit.1}",
+                "type": "borderWidth"
               },
               "attributes": {
                 "category": "component",
@@ -520,10 +526,12 @@
             },
             "line-height": {
               "value": "16px",
+              "type": "typography",
               "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.6}"
+                "value": "{global.size.unit.6}",
+                "type": "typography"
               },
               "attributes": {
                 "category": "component",
@@ -542,10 +550,12 @@
             },
             "inline-spacing": {
               "value": "8px",
+              "type": "spacing",
               "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.4}"
+                "value": "{global.size.unit.4}",
+                "type": "spacing"
               },
               "attributes": {
                 "category": "component",
@@ -566,10 +576,12 @@
           "small": {
             "padding-x": {
               "value": "16px",
+              "type": "spacing",
               "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.6}"
+                "value": "{global.size.unit.6}",
+                "type": "spacing"
               },
               "attributes": {
                 "category": "component",
@@ -588,10 +600,12 @@
             },
             "height": {
               "value": "32px",
+              "type": "sizing",
               "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.8}"
+                "value": "{global.size.unit.8}",
+                "type": "sizing"
               },
               "attributes": {
                 "category": "component",
@@ -610,10 +624,12 @@
             },
             "border-width": {
               "value": "1px",
+              "type": "borderWidth",
               "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.1}"
+                "value": "{global.size.unit.1}",
+                "type": "borderWidth"
               },
               "attributes": {
                 "category": "component",
@@ -632,10 +648,12 @@
             },
             "line-height": {
               "value": "16px",
+              "type": "typography",
               "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.6}"
+                "value": "{global.size.unit.6}",
+                "type": "typography"
               },
               "attributes": {
                 "category": "component",
@@ -654,10 +672,12 @@
             },
             "inline-spacing": {
               "value": "4px",
+              "type": "spacing",
               "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.3}"
+                "value": "{global.size.unit.3}",
+                "type": "spacing"
               },
               "attributes": {
                 "category": "component",
