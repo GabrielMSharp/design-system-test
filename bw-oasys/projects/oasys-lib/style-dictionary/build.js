@@ -21,7 +21,7 @@ StyleDictionaryPackage.registerFormat({
 
 StyleDictionaryPackage.registerFormat({
   name: 'figmaTokensPlugin',
-  formatter: ({ dictionary, platform, options, file }) => {
+  formatter: ({ dictionary, platform, options }) => {
     console.log(platform);
     const brandedTokens = {}
 
@@ -80,42 +80,23 @@ function getStyleDictionaryConfig(brand) {
           },
         ],
       },
-      figmaJsonBLOOMON: {
+      figmaJsonBranded: {
         transforms: ["attribute/cti", "name/cti/kebab", "color/hex", "size/remToPx"],
         buildPath: 'figma-tokens/',
         basePxFontSize: '10',
         files: [
           {
-            destination: `tokens-bloomon.json`,
+            destination: `tokens-${brand}.json`,
             format: 'figmaTokensPlugin',
             options: {
               outputReferences: true,
               brand: brand
             },
             filter: (token) => {
-              // BLOOMON TOKENS
-              // BLOOMON TOKENS
-              return brand === 'bloomon' && token.name.indexOf('global') === -1;
-            }
-          },
-        ],
-      },
-      figmaJsonBLOOMANDWILD: {
-        transforms: ["attribute/cti", "name/cti/kebab", "color/hex", "size/remToPx"],
-        buildPath: 'figma-tokens/',
-        basePxFontSize: '10',
-        files: [
-          {
-            destination: `tokens-bloomandwild.json`,
-            format: 'figmaTokensPlugin',
-            options: {
-              outputReferences: true,
-              brand: brand
-            },
-            filter: (token) => {
-              // BLOOM & WILD TOKENS
-              // BLOOM & WILD TOKENS
-              return brand === 'bloomandwild' && token.name.indexOf('global') === -1;
+              // BRAND SEMANTIC AND COMPONENT TOKENS ONLY
+              // BRAND SEMANTIC AND COMPONENT TOKENS ONLY
+              // BRAND SEMANTIC AND COMPONENT TOKENS ONLY
+              return token.name.indexOf('global') === -1;
             }
           },
         ],

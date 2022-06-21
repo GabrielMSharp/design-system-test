@@ -1,0 +1,2991 @@
+{
+  "globalTokens": {
+    "global": {
+      "color": {
+        "white": {
+          "value": "#ffffff",
+          "type": "color",
+          "filePath": "tokens/global/color/color.json",
+          "isSource": true,
+          "original": { "value": "#ffffff", "type": "color" },
+          "attributes": {
+            "category": "global",
+            "type": "color",
+            "item": "white"
+          },
+          "path": { "0": "global", "1": "color", "2": "white" }
+        },
+        "grey": {
+          "10": {
+            "value": "#f7f7f7",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#f7f7f7", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "grey",
+              "subitem": "10"
+            },
+            "path": { "0": "global", "1": "color", "2": "grey", "3": "10" }
+          },
+          "20": {
+            "value": "#cdcdcd",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#cdcdcd", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "grey",
+              "subitem": "20"
+            },
+            "path": { "0": "global", "1": "color", "2": "grey", "3": "20" }
+          },
+          "30": {
+            "value": "#c6c6c6",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#c6c6c6", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "grey",
+              "subitem": "30"
+            },
+            "path": { "0": "global", "1": "color", "2": "grey", "3": "30" }
+          },
+          "40": {
+            "value": "#a8a8a8",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#a8a8a8", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "grey",
+              "subitem": "40"
+            },
+            "path": { "0": "global", "1": "color", "2": "grey", "3": "40" }
+          },
+          "50": {
+            "value": "#898989",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#898989", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "grey",
+              "subitem": "50"
+            },
+            "path": { "0": "global", "1": "color", "2": "grey", "3": "50" }
+          },
+          "60": {
+            "value": "#676767",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#676767", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "grey",
+              "subitem": "60"
+            },
+            "path": { "0": "global", "1": "color", "2": "grey", "3": "60" }
+          },
+          "75": {
+            "value": "#464646",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#464646", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "grey",
+              "subitem": "75"
+            },
+            "path": { "0": "global", "1": "color", "2": "grey", "3": "75" }
+          },
+          "80": {
+            "value": "#464646",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#464646", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "grey",
+              "subitem": "80"
+            },
+            "path": { "0": "global", "1": "color", "2": "grey", "3": "80" }
+          },
+          "90": {
+            "value": "#262626",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#262626", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "grey",
+              "subitem": "90"
+            },
+            "path": { "0": "global", "1": "color", "2": "grey", "3": "90" }
+          }
+        },
+        "linen-grey": {
+          "10": {
+            "value": "#f4f3f2",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#f4f3f2", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen-grey",
+              "subitem": "10"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "linen-grey",
+              "3": "10"
+            }
+          },
+          "20": {
+            "value": "#e2e0dc",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#e2e0dc", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen-grey",
+              "subitem": "20"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "linen-grey",
+              "3": "20"
+            }
+          },
+          "30": {
+            "value": "#cbc7c1",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#cbc7c1", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen-grey",
+              "subitem": "30"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "linen-grey",
+              "3": "30"
+            }
+          },
+          "40": {
+            "value": "#afaaa1",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#afaaa1", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen-grey",
+              "subitem": "40"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "linen-grey",
+              "3": "40"
+            }
+          },
+          "50": {
+            "value": "#948b7e",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#948b7e", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen-grey",
+              "subitem": "50"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "linen-grey",
+              "3": "50"
+            }
+          },
+          "60": {
+            "value": "#726b60",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#726b60", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen-grey",
+              "subitem": "60"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "linen-grey",
+              "3": "60"
+            }
+          },
+          "75": {
+            "value": "#4d4840",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#4d4840", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen-grey",
+              "subitem": "75"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "linen-grey",
+              "3": "75"
+            }
+          }
+        },
+        "yellow": {
+          "50": {
+            "value": "#fdf888",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#fdf888", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "yellow",
+              "subitem": "50"
+            },
+            "path": { "0": "global", "1": "color", "2": "yellow", "3": "50" }
+          },
+          "60": {
+            "value": "#fff799",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#fff799", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "yellow",
+              "subitem": "60"
+            },
+            "path": { "0": "global", "1": "color", "2": "yellow", "3": "60" }
+          }
+        },
+        "linen": {
+          "10": {
+            "value": "#fcf5ea",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#fcf5ea", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen",
+              "subitem": "10"
+            },
+            "path": { "0": "global", "1": "color", "2": "linen", "3": "10" }
+          },
+          "20": {
+            "value": "#f9ecd7",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#f9ecd7", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen",
+              "subitem": "20"
+            },
+            "path": { "0": "global", "1": "color", "2": "linen", "3": "20" }
+          },
+          "40": {
+            "value": "#e8b767",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#e8b767", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen",
+              "subitem": "40"
+            },
+            "path": { "0": "global", "1": "color", "2": "linen", "3": "40" }
+          },
+          "60": {
+            "value": "#b67b1b",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#b67b1b", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen",
+              "subitem": "60"
+            },
+            "path": { "0": "global", "1": "color", "2": "linen", "3": "60" }
+          },
+          "75": {
+            "value": "#734d11",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#734d11", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "linen",
+              "subitem": "75"
+            },
+            "path": { "0": "global", "1": "color", "2": "linen", "3": "75" }
+          }
+        },
+        "pine": {
+          "10": {
+            "value": "#f0f6f4",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#f0f6f4", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "pine",
+              "subitem": "10"
+            },
+            "path": { "0": "global", "1": "color", "2": "pine", "3": "10" }
+          },
+          "20": {
+            "value": "#e2eee9",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#e2eee9", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "pine",
+              "subitem": "20"
+            },
+            "path": { "0": "global", "1": "color", "2": "pine", "3": "20" }
+          },
+          "40": {
+            "value": "#8fc0ac",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#8fc0ac", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "pine",
+              "subitem": "40"
+            },
+            "path": { "0": "global", "1": "color", "2": "pine", "3": "40" }
+          },
+          "60": {
+            "value": "#447964",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#447964", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "pine",
+              "subitem": "60"
+            },
+            "path": { "0": "global", "1": "color", "2": "pine", "3": "60" }
+          },
+          "75": {
+            "value": "#2d5443",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#2d5443", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "pine",
+              "subitem": "75"
+            },
+            "path": { "0": "global", "1": "color", "2": "pine", "3": "75" }
+          }
+        },
+        "blush": {
+          "copper": {
+            "value": "#d89078",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#d89078", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "blush",
+              "subitem": "copper"
+            },
+            "path": { "0": "global", "1": "color", "2": "blush", "3": "copper" }
+          },
+          "blush": {
+            "value": "#ff9f80",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#ff9f80", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "blush",
+              "subitem": "blush"
+            },
+            "path": { "0": "global", "1": "color", "2": "blush", "3": "blush" }
+          },
+          "lush": {
+            "value": "#ffcfc0",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#ffcfc0", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "blush",
+              "subitem": "lush"
+            },
+            "path": { "0": "global", "1": "color", "2": "blush", "3": "lush" }
+          },
+          "light": {
+            "value": "#f8d7be",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#f8d7be", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "blush",
+              "subitem": "light"
+            },
+            "path": { "0": "global", "1": "color", "2": "blush", "3": "light" }
+          },
+          "beige": {
+            "value": "#f6e9dc",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#f6e9dc", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "blush",
+              "subitem": "beige"
+            },
+            "path": { "0": "global", "1": "color", "2": "blush", "3": "beige" }
+          },
+          "pale": {
+            "value": "#fff8f4",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#fff8f4", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "blush",
+              "subitem": "pale"
+            },
+            "path": { "0": "global", "1": "color", "2": "blush", "3": "pale" }
+          }
+        },
+        "semantic": {
+          "success": {
+            "value": "#add685",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#add685", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "semantic",
+              "subitem": "success"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "semantic",
+              "3": "success"
+            }
+          },
+          "warning": {
+            "value": "#f8bb40",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#f8bb40", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "semantic",
+              "subitem": "warning"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "semantic",
+              "3": "warning"
+            }
+          },
+          "error": {
+            "value": "#db4141",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#db4141", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "semantic",
+              "subitem": "error"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "semantic",
+              "3": "error"
+            }
+          }
+        },
+        "red": {
+          "value": "#DB4141",
+          "type": "color",
+          "filePath": "tokens/global/color/color.json",
+          "isSource": true,
+          "original": { "value": "#DB4141", "type": "color" },
+          "attributes": {
+            "category": "global",
+            "type": "color",
+            "item": "red"
+          },
+          "path": { "0": "global", "1": "color", "2": "red" }
+        },
+        "orangered": {
+          "value": "#C84116",
+          "type": "color",
+          "filePath": "tokens/global/color/color.json",
+          "isSource": true,
+          "original": { "value": "#C84116", "type": "color" },
+          "attributes": {
+            "category": "global",
+            "type": "color",
+            "item": "orangered"
+          },
+          "path": { "0": "global", "1": "color", "2": "orangered" }
+        },
+        "partners": {
+          "facebook": {
+            "value": "#485b94",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#485b94", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "partners",
+              "subitem": "facebook"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "partners",
+              "3": "facebook"
+            }
+          },
+          "paypal": {
+            "value": "#ffc43a",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#ffc43a", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "partners",
+              "subitem": "paypal"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "partners",
+              "3": "paypal"
+            }
+          },
+          "trustpilot": {
+            "value": "#29b47c",
+            "type": "color",
+            "filePath": "tokens/global/color/color.json",
+            "isSource": true,
+            "original": { "value": "#29b47c", "type": "color" },
+            "attributes": {
+              "category": "global",
+              "type": "color",
+              "item": "partners",
+              "subitem": "trustpilot"
+            },
+            "path": {
+              "0": "global",
+              "1": "color",
+              "2": "partners",
+              "3": "trustpilot"
+            }
+          }
+        }
+      },
+      "size": {
+        "font": {
+          "body-1": {
+            "value": "2.0",
+            "filePath": "tokens/global/size/font.json",
+            "isSource": true,
+            "original": { "value": "2.0" },
+            "attributes": {
+              "category": "global",
+              "type": "size",
+              "item": "font",
+              "subitem": "body-1"
+            },
+            "path": { "0": "global", "1": "size", "2": "font", "3": "body-1" }
+          },
+          "body-2": {
+            "value": "1.8",
+            "filePath": "tokens/global/size/font.json",
+            "isSource": true,
+            "original": { "value": "1.8" },
+            "attributes": {
+              "category": "global",
+              "type": "size",
+              "item": "font",
+              "subitem": "body-2"
+            },
+            "path": { "0": "global", "1": "size", "2": "font", "3": "body-2" }
+          },
+          "body-3": {
+            "value": "1.6",
+            "filePath": "tokens/global/size/font.json",
+            "isSource": true,
+            "original": { "value": "1.6" },
+            "attributes": {
+              "category": "global",
+              "type": "size",
+              "item": "font",
+              "subitem": "body-3"
+            },
+            "path": { "0": "global", "1": "size", "2": "font", "3": "body-3" }
+          },
+          "body-4": {
+            "value": "1.4",
+            "filePath": "tokens/global/size/font.json",
+            "isSource": true,
+            "original": { "value": "1.4" },
+            "attributes": {
+              "category": "global",
+              "type": "size",
+              "item": "font",
+              "subitem": "body-4"
+            },
+            "path": { "0": "global", "1": "size", "2": "font", "3": "body-4" }
+          },
+          "body-5": {
+            "value": "1.2",
+            "filePath": "tokens/global/size/font.json",
+            "isSource": true,
+            "original": { "value": "1.2" },
+            "attributes": {
+              "category": "global",
+              "type": "size",
+              "item": "font",
+              "subitem": "body-5"
+            },
+            "path": { "0": "global", "1": "size", "2": "font", "3": "body-5" }
+          },
+          "base": {
+            "value": "1.6",
+            "filePath": "tokens/global/size/font.json",
+            "isSource": true,
+            "original": { "value": "{global.size.font.body-3}" },
+            "attributes": {
+              "category": "global",
+              "type": "size",
+              "item": "font",
+              "subitem": "base"
+            },
+            "path": { "0": "global", "1": "size", "2": "font", "3": "base" }
+          }
+        },
+        "icon": {
+          "small": {
+            "value": "16px",
+            "filePath": "tokens/global/size/icon.json",
+            "isSource": true,
+            "original": { "value": "{global.size.unit.6}" },
+            "attributes": {
+              "category": "global",
+              "type": "size",
+              "item": "icon",
+              "subitem": "small"
+            },
+            "path": { "0": "global", "1": "size", "2": "icon", "3": "small" }
+          },
+          "large": {
+            "value": "16px",
+            "filePath": "tokens/global/size/icon.json",
+            "isSource": true,
+            "original": { "value": "{global.size.unit.default}" },
+            "attributes": {
+              "category": "global",
+              "type": "size",
+              "item": "icon",
+              "subitem": "large"
+            },
+            "path": { "0": "global", "1": "size", "2": "icon", "3": "large" }
+          }
+        },
+        "unit": {
+          "1": {
+            "value": "1px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "1"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "0.1",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "1" }
+          },
+          "2": {
+            "value": "2px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "2"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "0.2",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "2" }
+          },
+          "3": {
+            "value": "4px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "3"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "0.4",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "3" }
+          },
+          "4": {
+            "value": "8px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "4"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "0.8",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "4" }
+          },
+          "5": {
+            "value": "12px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "5"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "1.2",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "5" }
+          },
+          "6": {
+            "value": "16px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "6"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "1.6",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "6" }
+          },
+          "7": {
+            "value": "24px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "7"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "2.4",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "7" }
+          },
+          "8": {
+            "value": "32px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "8"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "3.2",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "8" }
+          },
+          "9": {
+            "value": "40px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "9"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "4.0",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "9" }
+          },
+          "10": {
+            "value": "48px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "10"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "4.8",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "10" }
+          },
+          "11": {
+            "value": "56px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "11"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "5.6",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "11" }
+          },
+          "default": {
+            "value": "16px",
+            "attributes": {
+              "category": "size",
+              "type": "size",
+              "item": "unit",
+              "subitem": "default"
+            },
+            "type": "sizing",
+            "filePath": "tokens/global/size/spacing.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.size.unit.6}",
+              "attributes": { "category": "size" },
+              "type": "sizing"
+            },
+            "path": { "0": "global", "1": "size", "2": "unit", "3": "default" }
+          }
+        }
+      }
+    }
+  },
+  "bloomonTokens": {
+    "bloomon": {
+      "component": {
+        "color": {
+          "button": {
+            "primary": {
+              "background": {
+                "value": "pink",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "pink", "type": "color" },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary",
+                  "state": "background"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary",
+                  "4": "background"
+                }
+              },
+              "border": {
+                "value": "#464646",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "#ffffff",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.text.body-on-dark}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary",
+                  "4": "text"
+                }
+              }
+            },
+            "secondary": {
+              "background": {
+                "value": "#464646",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary",
+                  "state": "background"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary",
+                  "4": "background"
+                }
+              },
+              "border": {
+                "value": "#464646",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "#ffffff",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.text.body-on-dark}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary",
+                  "4": "text"
+                }
+              }
+            },
+            "tertiary": {
+              "background": {
+                "value": "#fdf888",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.tertiary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary",
+                  "state": "background"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary",
+                  "4": "background"
+                }
+              },
+              "border": {
+                "value": "#fdf888",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.tertiary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "#464646",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.text.body}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary",
+                  "4": "text"
+                }
+              }
+            },
+            "primary-inverse": {
+              "background": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.transparent}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary-inverse",
+                  "state": "background"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary-inverse",
+                  "4": "background"
+                }
+              },
+              "border": {
+                "value": "#464646",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary-inverse",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary-inverse",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "#464646",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary-inverse",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary-inverse",
+                  "4": "text"
+                }
+              }
+            },
+            "secondary-inverse": {
+              "background": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.transparent}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary-inverse",
+                  "state": "background"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary-inverse",
+                  "4": "background"
+                }
+              },
+              "border": {
+                "value": "#464646",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary-inverse",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary-inverse",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "#464646",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary-inverse",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary-inverse",
+                  "4": "text"
+                }
+              }
+            },
+            "tertiary-inverse": {
+              "background": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.transparent}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary-inverse",
+                  "state": "background"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary-inverse",
+                  "4": "background"
+                }
+              },
+              "border": {
+                "value": "#464646",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary-inverse",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary-inverse",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "#464646",
+                "type": "color",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary-inverse",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary-inverse",
+                  "4": "text"
+                }
+              }
+            }
+          }
+        },
+        "size": {
+          "button": {
+            "large": {
+              "padding-x": {
+                "value": "16px",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.default}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "large",
+                  "state": "padding-x"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "large",
+                  "4": "padding-x"
+                }
+              },
+              "height": {
+                "value": "48px",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.10}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "large",
+                  "state": "height"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "large",
+                  "4": "height"
+                }
+              },
+              "border-width": {
+                "value": "1px",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.1}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "large",
+                  "state": "border-width"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "large",
+                  "4": "border-width"
+                }
+              },
+              "line-height": {
+                "value": "16px",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.6}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "large",
+                  "state": "line-height"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "large",
+                  "4": "line-height"
+                }
+              },
+              "inline-spacing": {
+                "value": "8px",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.4}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "large",
+                  "state": "inline-spacing"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "large",
+                  "4": "inline-spacing"
+                }
+              }
+            },
+            "small": {
+              "padding-x": {
+                "value": "16px",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.6}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "small",
+                  "state": "padding-x"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "small",
+                  "4": "padding-x"
+                }
+              },
+              "height": {
+                "value": "32px",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.8}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "small",
+                  "state": "height"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "small",
+                  "4": "height"
+                }
+              },
+              "border-width": {
+                "value": "1px",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.1}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "small",
+                  "state": "border-width"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "small",
+                  "4": "border-width"
+                }
+              },
+              "line-height": {
+                "value": "16px",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.6}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "small",
+                  "state": "line-height"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "small",
+                  "4": "line-height"
+                }
+              },
+              "inline-spacing": {
+                "value": "4px",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.3}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "small",
+                  "state": "inline-spacing"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "small",
+                  "4": "inline-spacing"
+                }
+              }
+            }
+          }
+        },
+        "style": {
+          "button": {
+            "large": {
+              "text-transform": {
+                "value": "uppercase",
+                "filePath": "tokens/bloomon/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "uppercase" },
+                "attributes": {
+                  "category": "component",
+                  "type": "style",
+                  "item": "button",
+                  "subitem": "large",
+                  "state": "text-transform"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "style",
+                  "2": "button",
+                  "3": "large",
+                  "4": "text-transform"
+                }
+              }
+            }
+          }
+        }
+      },
+      "semantic": {
+        "color": {
+          "action": {
+            "primary": {
+              "value": "#464646",
+              "type": "color",
+              "filePath": "tokens/bloomon/semantic/color.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.color.grey.80}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "action",
+                "subitem": "primary"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "action",
+                "3": "primary"
+              }
+            },
+            "secondary": {
+              "value": "#ffffff",
+              "filePath": "tokens/bloomon/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.white}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "action",
+                "subitem": "secondary"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "action",
+                "3": "secondary"
+              }
+            },
+            "tertiary": {
+              "value": "#fdf888",
+              "filePath": "tokens/bloomon/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.yellow.50}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "action",
+                "subitem": "tertiary"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "action",
+                "3": "tertiary"
+              }
+            }
+          },
+          "background": {
+            "value": "#ffffff",
+            "type": "color",
+            "filePath": "tokens/bloomon/semantic/color.json",
+            "isSource": true,
+            "original": { "value": "{global.color.white}", "type": "color" },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "background"
+            },
+            "path": { "0": "semantic", "1": "color", "2": "background" }
+          },
+          "test-background": {
+            "value": "pink",
+            "type": "color",
+            "filePath": "tokens/bloomon/semantic/color.json",
+            "isSource": true,
+            "original": { "value": "pink", "type": "color" },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "test-background"
+            },
+            "path": { "0": "semantic", "1": "color", "2": "test-background" }
+          },
+          "text": {
+            "body": {
+              "value": "#464646",
+              "filePath": "tokens/bloomon/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.grey.80}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "text",
+                "subitem": "body"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "text",
+                "3": "body"
+              }
+            },
+            "body-on-dark": {
+              "value": "#ffffff",
+              "filePath": "tokens/bloomon/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.white}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "text",
+                "subitem": "body-on-dark"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "text",
+                "3": "body-on-dark"
+              }
+            }
+          },
+          "transparent": {
+            "value": "transparent",
+            "filePath": "tokens/bloomon/semantic/color.json",
+            "isSource": true,
+            "original": { "value": "transparent" },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "transparent"
+            },
+            "path": { "0": "semantic", "1": "color", "2": "transparent" }
+          },
+          "tone": {
+            "success": {
+              "value": "#fdf888",
+              "filePath": "tokens/bloomon/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.yellow.50}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "tone",
+                "subitem": "success"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "tone",
+                "3": "success"
+              }
+            },
+            "warning": {
+              "value": "#ff9f80",
+              "filePath": "tokens/bloomon/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.blush.blush}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "tone",
+                "subitem": "warning"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "tone",
+                "3": "warning"
+              }
+            },
+            "error": {
+              "value": "#C84116",
+              "filePath": "tokens/bloomon/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.orangered}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "tone",
+                "subitem": "error"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "tone",
+                "3": "error"
+              }
+            }
+          }
+        },
+        "font": {
+          "family": {
+            "headline": {
+              "value": "'Patron', Arial, Helvetica, sans-serif",
+              "filePath": "tokens/bloomon/semantic/font.json",
+              "isSource": true,
+              "original": { "value": "'Patron', Arial, Helvetica, sans-serif" },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "family",
+                "subitem": "headline"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "family",
+                "3": "headline"
+              }
+            },
+            "headline-second": {
+              "value": "'Patron', Arial, Helvetica, sans-serif",
+              "filePath": "tokens/bloomon/semantic/font.json",
+              "isSource": true,
+              "original": { "value": "{semantic.font.family.headline}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "family",
+                "subitem": "headline-second"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "family",
+                "3": "headline-second"
+              }
+            },
+            "body": {
+              "value": "'Patron', Arial, Helvetica, sans-serif",
+              "filePath": "tokens/bloomon/semantic/font.json",
+              "isSource": true,
+              "original": { "value": "{semantic.font.family.headline}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "family",
+                "subitem": "body"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "family",
+                "3": "body"
+              }
+            }
+          },
+          "weight": {
+            "normal": {
+              "value": "100",
+              "filePath": "tokens/bloomon/semantic/font.json",
+              "isSource": true,
+              "original": { "value": "100" },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "weight",
+                "subitem": "normal"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "weight",
+                "3": "normal"
+              }
+            },
+            "medium": {
+              "value": "normal",
+              "filePath": "tokens/bloomon/semantic/font.json",
+              "isSource": true,
+              "original": { "value": "normal" },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "weight",
+                "subitem": "medium"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "weight",
+                "3": "medium"
+              }
+            },
+            "bold": {
+              "value": "normal",
+              "filePath": "tokens/bloomon/semantic/font.json",
+              "isSource": true,
+              "original": { "value": "{semantic.font.weight.medium}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "weight",
+                "subitem": "bold"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "weight",
+                "3": "bold"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "bloomandwildTokens": {
+    "bloomandwild": {
+      "component": {
+        "color": {
+          "button": {
+            "primary": {
+              "color": {
+                "value": "#262626",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary",
+                  "state": "color"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary",
+                  "4": "color"
+                }
+              },
+              "border": {
+                "value": "#262626",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "#ffffff",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.text.body-on-dark}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary",
+                  "4": "text"
+                }
+              }
+            },
+            "secondary": {
+              "color": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.tertiary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary",
+                  "state": "color"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary",
+                  "4": "color"
+                }
+              },
+              "border": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.tertiary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "#ffffff",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.text.body-on-dark}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary",
+                  "4": "text"
+                }
+              }
+            },
+            "tertiary": {
+              "color": {
+                "value": "#262626",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary",
+                  "state": "color"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary",
+                  "4": "color"
+                }
+              },
+              "border": {
+                "value": "#262626",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{component.color.button.primary.border}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "#ffffff",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{component.color.button.primary.text}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary",
+                  "4": "text"
+                }
+              }
+            },
+            "primary-inverse": {
+              "color": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.transparent}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary-inverse",
+                  "state": "color"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary-inverse",
+                  "4": "color"
+                }
+              },
+              "border": {
+                "value": "#262626",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary-inverse",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary-inverse",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "#262626",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.primary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "primary-inverse",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "primary-inverse",
+                  "4": "text"
+                }
+              }
+            },
+            "secondary-inverse": {
+              "color": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.transparent}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary-inverse",
+                  "state": "color"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary-inverse",
+                  "4": "color"
+                }
+              },
+              "border": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.tertiary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary-inverse",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary-inverse",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.tertiary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "secondary-inverse",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "secondary-inverse",
+                  "4": "text"
+                }
+              }
+            },
+            "tertiary-inverse": {
+              "color": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.transparent}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary-inverse",
+                  "state": "color"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary-inverse",
+                  "4": "color"
+                }
+              },
+              "border": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.tertiary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary-inverse",
+                  "state": "border"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary-inverse",
+                  "4": "border"
+                }
+              },
+              "text": {
+                "value": "transparent",
+                "type": "color",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": {
+                  "value": "{semantic.color.action.tertiary}",
+                  "type": "color"
+                },
+                "attributes": {
+                  "category": "component",
+                  "type": "color",
+                  "item": "button",
+                  "subitem": "tertiary-inverse",
+                  "state": "text"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "color",
+                  "2": "button",
+                  "3": "tertiary-inverse",
+                  "4": "text"
+                }
+              }
+            }
+          }
+        },
+        "size": {
+          "button": {
+            "large": {
+              "padding-x": {
+                "value": "16px",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.default}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "large",
+                  "state": "padding-x"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "large",
+                  "4": "padding-x"
+                }
+              },
+              "height": {
+                "value": "48px",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.10}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "large",
+                  "state": "height"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "large",
+                  "4": "height"
+                }
+              },
+              "border-width": {
+                "value": "2px",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.2}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "large",
+                  "state": "border-width"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "large",
+                  "4": "border-width"
+                }
+              },
+              "line-height": {
+                "value": "16px",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.6}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "large",
+                  "state": "line-height"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "large",
+                  "4": "line-height"
+                }
+              },
+              "inline-spacing": {
+                "value": "8px",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.4}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "large",
+                  "state": "inline-spacing"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "large",
+                  "4": "inline-spacing"
+                }
+              }
+            },
+            "small": {
+              "padding-x": {
+                "value": "16px",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.6}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "small",
+                  "state": "padding-x"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "small",
+                  "4": "padding-x"
+                }
+              },
+              "height": {
+                "value": "32px",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.8}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "small",
+                  "state": "height"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "small",
+                  "4": "height"
+                }
+              },
+              "border-width": {
+                "value": "2px",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.2}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "small",
+                  "state": "border-width"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "small",
+                  "4": "border-width"
+                }
+              },
+              "line-height": {
+                "value": "16px",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.6}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "small",
+                  "state": "line-height"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "small",
+                  "4": "line-height"
+                }
+              },
+              "inline-spacing": {
+                "value": "4px",
+                "filePath": "tokens/bloomandwild/components/button/button.json",
+                "isSource": true,
+                "original": { "value": "{global.size.unit.3}" },
+                "attributes": {
+                  "category": "component",
+                  "type": "size",
+                  "item": "button",
+                  "subitem": "small",
+                  "state": "inline-spacing"
+                },
+                "path": {
+                  "0": "component",
+                  "1": "size",
+                  "2": "button",
+                  "3": "small",
+                  "4": "inline-spacing"
+                }
+              }
+            }
+          }
+        }
+      },
+      "semantic": {
+        "color": {
+          "action": {
+            "primary": {
+              "value": "#262626",
+              "inverse": {
+                "value": "#ffffff",
+                "filePath": "tokens/bloomandwild/semantic/color.json",
+                "isSource": true
+              },
+              "filePath": "tokens/bloomandwild/semantic/color.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.color.grey.90}",
+                "inverse": {
+                  "value": "{global.color.white}",
+                  "filePath": "tokens/bloomandwild/semantic/color.json",
+                  "isSource": true
+                }
+              },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "action",
+                "subitem": "primary"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "action",
+                "3": "primary"
+              }
+            },
+            "secondary": {
+              "value": "#ffffff",
+              "inverse": {
+                "value": "transparent",
+                "filePath": "tokens/bloomandwild/semantic/color.json",
+                "isSource": true
+              },
+              "filePath": "tokens/bloomandwild/semantic/color.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.color.white}",
+                "inverse": {
+                  "value": "{semantic.color.transparent}",
+                  "filePath": "tokens/bloomandwild/semantic/color.json",
+                  "isSource": true
+                }
+              },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "action",
+                "subitem": "secondary"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "action",
+                "3": "secondary"
+              }
+            },
+            "tertiary": {
+              "value": "transparent",
+              "filePath": "tokens/bloomandwild/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{semantic.color.transparent}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "action",
+                "subitem": "tertiary"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "action",
+                "3": "tertiary"
+              }
+            }
+          },
+          "background": {
+            "value": "#ffffff",
+            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "isSource": true,
+            "original": { "value": "{global.color.white}" },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "background"
+            },
+            "path": { "0": "semantic", "1": "color", "2": "background" }
+          },
+          "text": {
+            "body": {
+              "value": "#262626",
+              "filePath": "tokens/bloomandwild/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.grey.90}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "text",
+                "subitem": "body"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "text",
+                "3": "body"
+              }
+            },
+            "body-on-dark": {
+              "value": "#ffffff",
+              "filePath": "tokens/bloomandwild/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.white}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "text",
+                "subitem": "body-on-dark"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "text",
+                "3": "body-on-dark"
+              }
+            }
+          },
+          "transparent": {
+            "value": "transparent",
+            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "isSource": true,
+            "original": { "value": "transparent" },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "transparent"
+            },
+            "path": { "0": "semantic", "1": "color", "2": "transparent" }
+          },
+          "tone": {
+            "success": {
+              "value": "#fdf888",
+              "filePath": "tokens/bloomandwild/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.yellow.50}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "tone",
+                "subitem": "success"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "tone",
+                "3": "success"
+              }
+            },
+            "warning": {
+              "value": "#ff9f80",
+              "filePath": "tokens/bloomandwild/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.blush.blush}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "tone",
+                "subitem": "warning"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "tone",
+                "3": "warning"
+              }
+            },
+            "error": {
+              "value": "#C84116",
+              "filePath": "tokens/bloomandwild/semantic/color.json",
+              "isSource": true,
+              "original": { "value": "{global.color.orangered}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "color",
+                "item": "tone",
+                "subitem": "error"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "color",
+                "2": "tone",
+                "3": "error"
+              }
+            }
+          }
+        },
+        "font": {
+          "family": {
+            "headline": {
+              "value": "'TiemposHeadline', Georgia, serif",
+              "filePath": "tokens/bloomandwild/semantic/font.json",
+              "isSource": true,
+              "original": { "value": "'TiemposHeadline', Georgia, serif" },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "family",
+                "subitem": "headline"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "family",
+                "3": "headline"
+              }
+            },
+            "headline-secondary": {
+              "value": "'NeueHaasUnica', Arial, Helvetica, sans-serif",
+              "filePath": "tokens/bloomandwild/semantic/font.json",
+              "isSource": true,
+              "original": { "value": "{semantic.font.family.body}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "family",
+                "subitem": "headline-secondary"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "family",
+                "3": "headline-secondary"
+              }
+            },
+            "body": {
+              "value": "'NeueHaasUnica', Arial, Helvetica, sans-serif",
+              "filePath": "tokens/bloomandwild/semantic/font.json",
+              "isSource": true,
+              "original": {
+                "value": "'NeueHaasUnica', Arial, Helvetica, sans-serif"
+              },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "family",
+                "subitem": "body"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "family",
+                "3": "body"
+              }
+            }
+          },
+          "weight": {
+            "normal": {
+              "value": "normal",
+              "filePath": "tokens/bloomandwild/semantic/font.json",
+              "isSource": true,
+              "original": { "value": "normal" },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "weight",
+                "subitem": "normal"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "weight",
+                "3": "normal"
+              }
+            },
+            "medium": {
+              "value": "500",
+              "filePath": "tokens/bloomandwild/semantic/font.json",
+              "isSource": true,
+              "original": { "value": "500" },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "weight",
+                "subitem": "medium"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "weight",
+                "3": "medium"
+              }
+            },
+            "bold": {
+              "value": "500",
+              "filePath": "tokens/bloomandwild/semantic/font.json",
+              "isSource": true,
+              "original": { "value": "{semantic.font.weight.medium}" },
+              "attributes": {
+                "category": "semantic",
+                "type": "font",
+                "item": "weight",
+                "subitem": "bold"
+              },
+              "path": {
+                "0": "semantic",
+                "1": "font",
+                "2": "weight",
+                "3": "bold"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
