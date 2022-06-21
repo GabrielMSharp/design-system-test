@@ -29,7 +29,7 @@
           "value": "{global.color.blush.blush.value}"
         },
         "error": {
-          "value": "{global.color.orangered.value}"
+          "value": "{global.color.red.50.value}"
         }
       }
     }

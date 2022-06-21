@@ -880,7 +880,7 @@
             "filePath": "tokens/bloomandwild/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{global.color.orangered}"
+              "value": "{global.color.red.60}"
             },
             "attributes": {
               "category": "semantic",

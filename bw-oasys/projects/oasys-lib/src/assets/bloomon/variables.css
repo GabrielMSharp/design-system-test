@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 21 Jun 2022 14:17:59 GMT
+ * Generated on Tue, 21 Jun 2022 14:22:13 GMT
  */
 
 :root {
@@ -42,7 +42,7 @@
   --semantic-color-transparent: transparent;
   --semantic-color-tone-success: #fdf888;
   --semantic-color-tone-warning: #ff9f80;
-  --semantic-color-tone-error: #C84116;
+  --semantic-color-tone-error: #DB4141;
   --semantic-font-family-headline: 'Patron', Arial, Helvetica, sans-serif;
   --semantic-font-family-headline-second: 'Patron', Arial, Helvetica, sans-serif;
   --semantic-font-family-body: 'Patron', Arial, Helvetica, sans-serif;

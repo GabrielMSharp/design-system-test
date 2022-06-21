@@ -908,11 +908,11 @@
             }
           },
           "error": {
-            "value": "#C84116",
+            "value": "#DB4141",
             "filePath": "tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{global.color.orangered}"
+              "value": "{global.color.red.50}"
             },
             "attributes": {
               "category": "semantic",
