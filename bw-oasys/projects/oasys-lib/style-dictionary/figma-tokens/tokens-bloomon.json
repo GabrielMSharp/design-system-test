@@ -500,30 +500,6 @@
                 "4": "height"
               }
             },
-            "border-width": {
-              "value": "1px",
-              "type": "borderWidth",
-              "filePath": "tokens/bloomon/components/button/button.json",
-              "isSource": true,
-              "original": {
-                "value": "{global.size.unit.1}",
-                "type": "borderWidth"
-              },
-              "attributes": {
-                "category": "component",
-                "type": "size",
-                "item": "button",
-                "subitem": "large",
-                "state": "border-width"
-              },
-              "path": {
-                "0": "component",
-                "1": "size",
-                "2": "button",
-                "3": "large",
-                "4": "border-width"
-              }
-            },
             "line-height": {
               "value": "16px",
               "type": "typography",
@@ -622,30 +598,6 @@
                 "4": "height"
               }
             },
-            "border-width": {
-              "value": "1px",
-              "type": "borderWidth",
-              "filePath": "tokens/bloomon/components/button/button.json",
-              "isSource": true,
-              "original": {
-                "value": "{global.size.unit.1}",
-                "type": "borderWidth"
-              },
-              "attributes": {
-                "category": "component",
-                "type": "size",
-                "item": "button",
-                "subitem": "small",
-                "state": "border-width"
-              },
-              "path": {
-                "0": "component",
-                "1": "size",
-                "2": "button",
-                "3": "small",
-                "4": "border-width"
-              }
-            },
             "line-height": {
               "value": "16px",
               "type": "typography",
@@ -722,6 +674,28 @@
                 "4": "text-transform"
               }
             }
+          }
+        }
+      },
+      "border-width": {
+        "button": {
+          "value": "1px",
+          "type": "borderWidth",
+          "filePath": "tokens/bloomon/components/button/button.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.1}",
+            "type": "borderWidth"
+          },
+          "attributes": {
+            "category": "component",
+            "type": "border-width",
+            "item": "button"
+          },
+          "path": {
+            "0": "component",
+            "1": "border-width",
+            "2": "button"
           }
         }
       }
@@ -1078,6 +1052,124 @@
               "2": "weight",
               "3": "bold"
             }
+          }
+        }
+      },
+      "border-width": {
+        "default": {
+          "value": "1px",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.1}"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-width",
+            "item": "default"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-width",
+            "2": "default"
+          }
+        },
+        "emphasis": {
+          "value": "2px",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.2}"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-width",
+            "item": "emphasis"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-width",
+            "2": "emphasis"
+          }
+        },
+        "focus": {
+          "value": "8px",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.4}"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-width",
+            "item": "focus"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-width",
+            "2": "focus"
+          }
+        }
+      },
+      "border-radius": {
+        "none": {
+          "value": "0px",
+          "type": "border-radius",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.0}",
+            "type": "border-radius"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-radius",
+            "item": "none"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-radius",
+            "2": "none"
+          }
+        },
+        "soften-ui": {
+          "value": "2px",
+          "type": "border-radius",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.2}",
+            "type": "border-radius"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-radius",
+            "item": "soften-ui"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-radius",
+            "2": "soften-ui"
+          }
+        },
+        "round": {
+          "value": "24px",
+          "type": "border-radius",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.7}",
+            "type": "border-radius"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-radius",
+            "item": "round"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-radius",
+            "2": "round"
           }
         }
       }

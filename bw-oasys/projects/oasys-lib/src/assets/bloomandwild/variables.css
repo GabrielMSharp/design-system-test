@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 21 Jun 2022 10:41:13 GMT
+ * Generated on Tue, 21 Jun 2022 14:17:59 GMT
  */
 
 :root {
@@ -24,14 +24,13 @@
   --component-color-button-tertiary-inverse-text: transparent;
   --component-size-button-large-padding-x: 1.6rem;
   --component-size-button-large-height: 4.8rem;
-  --component-size-button-large-border-width: 0.2rem;
   --component-size-button-large-line-height: 1.6rem;
   --component-size-button-large-inline-spacing: 0.8rem;
   --component-size-button-small-padding-x: 1.6rem;
   --component-size-button-small-height: 3.2rem;
-  --component-size-button-small-border-width: 0.2rem;
   --component-size-button-small-line-height: 1.6rem;
   --component-size-button-small-inline-spacing: 0.4rem;
+  --component-border-width-button: 0.2rem;
   --semantic-color-action-primary: #262626;
   --semantic-color-action-secondary: #ffffff;
   --semantic-color-action-tertiary: transparent;
@@ -48,4 +47,10 @@
   --semantic-font-weight-normal: normal;
   --semantic-font-weight-medium: 500;
   --semantic-font-weight-bold: 500;
+  --semantic-border-width-default: 0.1rem;
+  --semantic-border-width-emphasis: 0.2rem;
+  --semantic-border-width-focus: 0.8rem;
+  --semantic-border-radius-none: 0rem;
+  --semantic-border-radius-soften-ui: 0.2rem;
+  --semantic-border-radius-round: 2.4rem;
 }

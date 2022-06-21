@@ -2,6 +2,11 @@
   "global": {
     "size": {
       "unit": {
+        "0": {
+          "value": "0",
+          "attributes": { "category": "size" },
+          "type": "sizing"
+        },
         "1": {
           "value": "0.1",
           "attributes": { "category": "size" },

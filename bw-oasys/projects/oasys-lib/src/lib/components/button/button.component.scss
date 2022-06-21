@@ -16,7 +16,7 @@ $buttonSizes: large, small;
 }
 
 @mixin buttonSize($buttonSize) {
-    $borderWidth: var(--component-size-button-#{$buttonSize}-border-width);
+    $borderWidth: var(--component-border-width-button);
     $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);
     $buttonMinimumHeight: var(--component-size-button-#{$buttonSize}-height);
 

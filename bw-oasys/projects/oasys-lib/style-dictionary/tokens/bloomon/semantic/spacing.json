@@ -1,0 +1,14 @@
+{
+  "semantic": {
+    "border-width": {
+      "default": { "value": "{global.size.unit.1.value}" },
+      "emphasis": { "value": "{global.size.unit.2.value}" },
+      "focus": { "value": "{global.size.unit.4.value}" }
+    },
+    "border-radius": {
+      "none": { "value": "{global.size.unit.0.value}","type": "border-radius"  },
+      "soften-ui": { "value": "{global.size.unit.2.value}","type": "border-radius"  },
+      "round": { "value": "{global.size.unit.7.value}","type": "border-radius"  }
+    }
+  }
+}
