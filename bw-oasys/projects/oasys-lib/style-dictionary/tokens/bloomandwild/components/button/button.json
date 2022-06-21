@@ -130,13 +130,13 @@
     },
     "border-width": {
       "button": {
-        "value": "{semantic.border-width.emphasis.value}",
+        "value": "{semantic.border-width.default.value}",
         "type": "borderWidth"
       }
     },
     "border-radius": {
       "button": {
-        "value": "{semantic.border-radius.none.value}",
+        "value": "{semantic.border-radius.soften-ui.value}",
         "type": "borderRadius"
       }
     }
