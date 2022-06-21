@@ -5,62 +5,62 @@
         "1": {
           "value": "0.1",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         },
         "2": {
           "value": "0.2",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         },
         "3": {
           "value": "0.4",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         },
         "4": {
           "value": "0.8",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         },
         "5": {
           "value": "1.2",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         },
         "6": {
           "value": "1.6",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         },
         "7": {
           "value": "2.4",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         },
         "8": {
           "value": "3.2",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         },
         "9": {
           "value": "4.0",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         },
         "10": {
           "value": "4.8",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         },
         "11": {
           "value": "5.6",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         },
         "default": {
           "value": "{global.size.unit.6}",
           "attributes": { "category": "size" },
-          "type": "spacing"
+          "type": "sizing"
         }
       }
     }
