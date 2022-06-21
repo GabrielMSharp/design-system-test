@@ -1026,12 +1026,12 @@
       "border-width": {
         "default": {
           "value": "1px",
-          "type": "border-width",
+          "type": "borderWidth",
           "filePath": "tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.1}",
-            "type": "border-width"
+            "type": "borderWidth"
           },
           "attributes": {
             "category": "semantic",
@@ -1046,12 +1046,12 @@
         },
         "emphasis": {
           "value": "2px",
-          "type": "border-width",
+          "type": "borderWidth",
           "filePath": "tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.2}",
-            "type": "border-width"
+            "type": "borderWidth"
           },
           "attributes": {
             "category": "semantic",
@@ -1066,12 +1066,12 @@
         },
         "focus": {
           "value": "8px",
-          "type": "border-width",
+          "type": "borderWidth",
           "filePath": "tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.4}",
-            "type": "border-width"
+            "type": "borderWidth"
           },
           "attributes": {
             "category": "semantic",
@@ -1088,12 +1088,12 @@
       "border-radius": {
         "none": {
           "value": "0px",
-          "type": "border-radius",
+          "type": "borderRadius",
           "filePath": "tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.0}",
-            "type": "border-radius"
+            "type": "borderRadius"
           },
           "attributes": {
             "category": "semantic",
@@ -1108,12 +1108,12 @@
         },
         "soften-ui": {
           "value": "2px",
-          "type": "border-radius",
+          "type": "borderRadius",
           "filePath": "tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.2}",
-            "type": "border-radius"
+            "type": "borderRadius"
           },
           "attributes": {
             "category": "semantic",
@@ -1128,12 +1128,12 @@
         },
         "round": {
           "value": "24px",
-          "type": "border-radius",
+          "type": "borderRadius",
           "filePath": "tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.7}",
-            "type": "border-radius"
+            "type": "borderRadius"
           },
           "attributes": {
             "category": "semantic",

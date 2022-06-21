@@ -1,14 +1,14 @@
 {
   "semantic": {
     "border-width": {
-      "default": { "value": "{global.size.unit.1.value}", "type": "border-width" },
-      "emphasis": { "value": "{global.size.unit.2.value}", "type": "border-width" },
-      "focus": { "value": "{global.size.unit.4.value}", "type": "border-width" }
+      "default": { "value": "{global.size.unit.1.value}", "type": "borderWidth" },
+      "emphasis": { "value": "{global.size.unit.2.value}", "type": "borderWidth" },
+      "focus": { "value": "{global.size.unit.4.value}", "type": "borderWidth" }
     },
     "border-radius": {
-      "none": { "value": "{global.size.unit.0.value}", "type": "border-radius"  },
-      "soften-ui": { "value": "{global.size.unit.2.value}", "type": "border-radius"  },
-      "round": { "value": "{global.size.unit.7.value}", "type": "border-radius"  }
+      "none": { "value": "{global.size.unit.0.value}", "type": "borderRadius"  },
+      "soften-ui": { "value": "{global.size.unit.2.value}", "type": "borderRadius"  },
+      "round": { "value": "{global.size.unit.7.value}", "type": "borderRadius"  }
     }
   }
 }
