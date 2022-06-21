@@ -10,16 +10,16 @@ console.log("Merge token files for Figma...");
 // ["bloomandwild", "bloomon"].map(function (brand) {
     console.log("\n==============================================");
 
-    const globalTokens = JSON.parse(fs.readFileSync("figma-tokens/tokens.json"));
-    const bloomonTokens = JSON.parse(fs.readFileSync("figma-tokens/tokens-bloomon.json"));
-    const bloomandwildTokens = JSON.parse(fs.readFileSync("figma-tokens/tokens-bloomandwild.json"));
+    const globalTokens = JSON.parse(fs.readFileSync("figma-tokens/tokens.json"))['global'];
+    const bloomonTokens = JSON.parse(fs.readFileSync("figma-tokens/tokens-bloomon.json"))['bloomon'];
+    const bloomandwildTokens = JSON.parse(fs.readFileSync("figma-tokens/tokens-bloomandwild.json"))['bloomandwild'];
 
     const mergedTokens = {
-      globalTokens,
-      bloomonTokens,
-      bloomandwildTokens
+      'global': globalTokens,
+      'bloomon': bloomonTokens,
+      'bloomandwild': bloomandwildTokens
     }
-    fs.writeFileSync('figma-tokens/tokens.json', JSON.stringify(mergedTokens), 'utf8');
+    fs.writeFileSync('figma-tokens/tokens.json', JSON.stringify(mergedTokens, null, 2), 'utf8');
     // , function(err, file) {
       // console.log(tokens.toString());
     // });
