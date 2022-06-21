@@ -7,13 +7,14 @@
             "color": {
               "value": "#262626",
               "type": "color",
+              "name": "component-color-button-primary-color",
               "filePath": "tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.action.primary}",
-                "type": "color"
+                "type": "color",
+                "name": "Primary Button Background"
               },
-              "name": "component-color-button-primary-color",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -32,13 +33,14 @@
             "border": {
               "value": "#262626",
               "type": "color",
+              "name": "component-color-button-primary-border",
               "filePath": "tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.action.primary}",
-                "type": "color"
+                "type": "color",
+                "name": "Primary Button Border"
               },
-              "name": "component-color-button-primary-border",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -57,13 +59,14 @@
             "text": {
               "value": "#ffffff",
               "type": "color",
+              "name": "component-color-button-primary-text",
               "filePath": "tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.text.body-on-dark}",
-                "type": "color"
+                "type": "color",
+                "name": "Primary Button Text"
               },
-              "name": "component-color-button-primary-text",
               "attributes": {
                 "category": "component",
                 "type": "color",
