@@ -40,7 +40,7 @@ function getStyleDictionaryConfig(brand) {
             },
             filter: (token) => {
               // console.log(token);
-              // return true;
+              return true;
               return token.name.indexOf('global') === -1;
             }
           },
@@ -49,13 +49,13 @@ function getStyleDictionaryConfig(brand) {
       json: {
         transforms: ["attribute/cti", "name/cti/kebab", "color/hex", "size/remToPx"],
         buildPath: 'figma-tokens/',
+        basePxFontSize: '10',
         files: [
           {
             destination: `tokens.json`,
             format: 'figmaTokensPlugin',
             options: {
               outputReferences: true,
-              basePxFontSize: '16',
               brand: brand
             }
           },
