@@ -13,6 +13,7 @@
                 "value": "pink",
                 "type": "color"
               },
+              "name": "component-color-button-primary-background",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -37,6 +38,7 @@
                 "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
+              "name": "component-color-button-primary-border",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -61,6 +63,7 @@
                 "value": "{semantic.color.text.body-on-dark}",
                 "type": "color"
               },
+              "name": "component-color-button-primary-text",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -87,6 +90,7 @@
                 "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
+              "name": "component-color-button-secondary-background",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -111,6 +115,7 @@
                 "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
+              "name": "component-color-button-secondary-border",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -135,6 +140,7 @@
                 "value": "{semantic.color.text.body-on-dark}",
                 "type": "color"
               },
+              "name": "component-color-button-secondary-text",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -161,6 +167,7 @@
                 "value": "{semantic.color.action.tertiary}",
                 "type": "color"
               },
+              "name": "component-color-button-tertiary-background",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -185,6 +192,7 @@
                 "value": "{semantic.color.action.tertiary}",
                 "type": "color"
               },
+              "name": "component-color-button-tertiary-border",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -209,6 +217,7 @@
                 "value": "{semantic.color.text.body}",
                 "type": "color"
               },
+              "name": "component-color-button-tertiary-text",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -235,6 +244,7 @@
                 "value": "{semantic.color.transparent}",
                 "type": "color"
               },
+              "name": "component-color-button-primary-inverse-background",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -259,6 +269,7 @@
                 "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
+              "name": "component-color-button-primary-inverse-border",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -283,6 +294,7 @@
                 "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
+              "name": "component-color-button-primary-inverse-text",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -309,6 +321,7 @@
                 "value": "{semantic.color.transparent}",
                 "type": "color"
               },
+              "name": "component-color-button-secondary-inverse-background",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -333,6 +346,7 @@
                 "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
+              "name": "component-color-button-secondary-inverse-border",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -357,6 +371,7 @@
                 "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
+              "name": "component-color-button-secondary-inverse-text",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -383,6 +398,7 @@
                 "value": "{semantic.color.transparent}",
                 "type": "color"
               },
+              "name": "component-color-button-tertiary-inverse-background",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -407,6 +423,7 @@
                 "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
+              "name": "component-color-button-tertiary-inverse-border",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -431,6 +448,7 @@
                 "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
+              "name": "component-color-button-tertiary-inverse-text",
               "attributes": {
                 "category": "component",
                 "type": "color",
@@ -461,6 +479,7 @@
                 "value": "{global.size.unit.default}",
                 "type": "spacing"
               },
+              "name": "component-size-button-large-padding-x",
               "attributes": {
                 "category": "component",
                 "type": "size",
@@ -485,6 +504,7 @@
                 "value": "{global.size.unit.10}",
                 "type": "sizing"
               },
+              "name": "component-size-button-large-height",
               "attributes": {
                 "category": "component",
                 "type": "size",
@@ -509,6 +529,7 @@
                 "value": "{global.size.unit.1}",
                 "type": "borderWidth"
               },
+              "name": "component-size-button-large-border-width",
               "attributes": {
                 "category": "component",
                 "type": "size",
@@ -533,6 +554,7 @@
                 "value": "{global.size.unit.6}",
                 "type": "typography"
               },
+              "name": "component-size-button-large-line-height",
               "attributes": {
                 "category": "component",
                 "type": "size",
@@ -557,6 +579,7 @@
                 "value": "{global.size.unit.4}",
                 "type": "spacing"
               },
+              "name": "component-size-button-large-inline-spacing",
               "attributes": {
                 "category": "component",
                 "type": "size",
@@ -583,6 +606,7 @@
                 "value": "{global.size.unit.6}",
                 "type": "spacing"
               },
+              "name": "component-size-button-small-padding-x",
               "attributes": {
                 "category": "component",
                 "type": "size",
@@ -607,6 +631,7 @@
                 "value": "{global.size.unit.8}",
                 "type": "sizing"
               },
+              "name": "component-size-button-small-height",
               "attributes": {
                 "category": "component",
                 "type": "size",
@@ -631,6 +656,7 @@
                 "value": "{global.size.unit.1}",
                 "type": "borderWidth"
               },
+              "name": "component-size-button-small-border-width",
               "attributes": {
                 "category": "component",
                 "type": "size",
@@ -655,6 +681,7 @@
                 "value": "{global.size.unit.6}",
                 "type": "typography"
               },
+              "name": "component-size-button-small-line-height",
               "attributes": {
                 "category": "component",
                 "type": "size",
@@ -679,6 +706,7 @@
                 "value": "{global.size.unit.3}",
                 "type": "spacing"
               },
+              "name": "component-size-button-small-inline-spacing",
               "attributes": {
                 "category": "component",
                 "type": "size",
@@ -707,6 +735,7 @@
               "original": {
                 "value": "uppercase"
               },
+              "name": "component-style-button-large-text-transform",
               "attributes": {
                 "category": "component",
                 "type": "style",
@@ -738,6 +767,7 @@
               "value": "{global.color.grey.80}",
               "type": "color"
             },
+            "name": "semantic-color-action-primary",
             "attributes": {
               "category": "semantic",
               "type": "color",
@@ -758,6 +788,7 @@
             "original": {
               "value": "{global.color.white}"
             },
+            "name": "semantic-color-action-secondary",
             "attributes": {
               "category": "semantic",
               "type": "color",
@@ -778,6 +809,7 @@
             "original": {
               "value": "{global.color.yellow.50}"
             },
+            "name": "semantic-color-action-tertiary",
             "attributes": {
               "category": "semantic",
               "type": "color",
@@ -801,6 +833,7 @@
             "value": "{global.color.white}",
             "type": "color"
           },
+          "name": "semantic-color-background",
           "attributes": {
             "category": "semantic",
             "type": "color",
@@ -821,6 +854,7 @@
             "value": "pink",
             "type": "color"
           },
+          "name": "semantic-color-test-background",
           "attributes": {
             "category": "semantic",
             "type": "color",
@@ -840,6 +874,7 @@
             "original": {
               "value": "{global.color.grey.80}"
             },
+            "name": "semantic-color-text-body",
             "attributes": {
               "category": "semantic",
               "type": "color",
@@ -860,6 +895,7 @@
             "original": {
               "value": "{global.color.white}"
             },
+            "name": "semantic-color-text-body-on-dark",
             "attributes": {
               "category": "semantic",
               "type": "color",
@@ -881,6 +917,7 @@
           "original": {
             "value": "transparent"
           },
+          "name": "semantic-color-transparent",
           "attributes": {
             "category": "semantic",
             "type": "color",
@@ -900,6 +937,7 @@
             "original": {
               "value": "{global.color.yellow.50}"
             },
+            "name": "semantic-color-tone-success",
             "attributes": {
               "category": "semantic",
               "type": "color",
@@ -920,6 +958,7 @@
             "original": {
               "value": "{global.color.blush.blush}"
             },
+            "name": "semantic-color-tone-warning",
             "attributes": {
               "category": "semantic",
               "type": "color",
@@ -940,6 +979,7 @@
             "original": {
               "value": "{global.color.orangered}"
             },
+            "name": "semantic-color-tone-error",
             "attributes": {
               "category": "semantic",
               "type": "color",
@@ -964,6 +1004,7 @@
             "original": {
               "value": "'Patron', Arial, Helvetica, sans-serif"
             },
+            "name": "semantic-font-family-headline",
             "attributes": {
               "category": "semantic",
               "type": "font",
@@ -984,6 +1025,7 @@
             "original": {
               "value": "{semantic.font.family.headline}"
             },
+            "name": "semantic-font-family-headline-second",
             "attributes": {
               "category": "semantic",
               "type": "font",
@@ -1004,6 +1046,7 @@
             "original": {
               "value": "{semantic.font.family.headline}"
             },
+            "name": "semantic-font-family-body",
             "attributes": {
               "category": "semantic",
               "type": "font",
@@ -1026,6 +1069,7 @@
             "original": {
               "value": "100"
             },
+            "name": "semantic-font-weight-normal",
             "attributes": {
               "category": "semantic",
               "type": "font",
@@ -1046,6 +1090,7 @@
             "original": {
               "value": "normal"
             },
+            "name": "semantic-font-weight-medium",
             "attributes": {
               "category": "semantic",
               "type": "font",
@@ -1066,6 +1111,7 @@
             "original": {
               "value": "{semantic.font.weight.medium}"
             },
+            "name": "semantic-font-weight-bold",
             "attributes": {
               "category": "semantic",
               "type": "font",

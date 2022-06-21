@@ -14,7 +14,7 @@ StyleDictionaryPackage.registerFormat({
     const globalTokens = {}
     globalTokens['global'] = dictionary.tokens
 
-    const transformedTokens = markTokenset(trimName(trimValue(dictionary.tokens)));
+    const transformedTokens = markTokenset(trimValue(dictionary.tokens));
     return JSON.stringify(transformedTokens, null, 2);
   },
 });
@@ -28,7 +28,7 @@ StyleDictionaryPackage.registerFormat({
     brandedTokens[options.brand] = dictionary.tokens
 
     // const transformedTokens = transform(brandedTokens);
-    const transformedTokens = markTokenset(trimName(trimValue(brandedTokens)));
+    const transformedTokens = markTokenset(trimValue(brandedTokens));
     return JSON.stringify(transformedTokens, null, 2);
   },
 });
