@@ -65,7 +65,7 @@ function getStyleDictionaryConfig(brand) {
             destination: `tokens.json`,
             format: 'figmaTokensPluginGlobal',
             options: {
-              outputReferences: true,
+              outputReferences: false,
               brand: brand
             },
             filter: (token) => {
@@ -84,7 +84,7 @@ function getStyleDictionaryConfig(brand) {
             destination: `tokens-${brand}.json`,
             format: 'figmaTokensPlugin',
             options: {
-              outputReferences: true,
+              outputReferences: false,
               brand: brand
             },
             filter: (token) => {
