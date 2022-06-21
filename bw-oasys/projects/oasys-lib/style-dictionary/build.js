@@ -8,6 +8,18 @@ const StyleDictionaryPackage = require("style-dictionary");
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 
 StyleDictionaryPackage.registerFormat({
+  name: 'figmaTokensPluginGlobal',
+  formatter: ({ dictionary }) => {
+
+    const globalTokens = {}
+    globalTokens['global'] = dictionary.tokens
+
+    const transformedTokens = markTokenset(trimName(trimValue(dictionary.tokens)));
+    return JSON.stringify(transformedTokens, null, 2);
+  },
+});
+
+StyleDictionaryPackage.registerFormat({
   name: 'figmaTokensPlugin',
   formatter: ({ dictionary, platform, options, file }) => {
     console.log(platform);
@@ -40,23 +52,70 @@ function getStyleDictionaryConfig(brand) {
             },
             filter: (token) => {
               // console.log(token);
+              if(brand === 'bloomon') {
+                return false;
+              }
               return true;
               return token.name.indexOf('global') === -1;
             }
           },
         ],
       },
-      json: {
+      figmaJsonGlobal: {
         transforms: ["attribute/cti", "name/cti/kebab", "color/hex", "size/remToPx"],
         buildPath: 'figma-tokens/',
         basePxFontSize: '10',
         files: [
           {
             destination: `tokens.json`,
+            format: 'figmaTokensPluginGlobal',
+            options: {
+              outputReferences: true,
+              brand: brand
+            },
+            filter: (token) => {
+              // Only output global tokens here
+              return token.name.indexOf('global') !== -1;
+            }
+          },
+        ],
+      },
+      figmaJsonBLOOMON: {
+        transforms: ["attribute/cti", "name/cti/kebab", "color/hex", "size/remToPx"],
+        buildPath: 'figma-tokens/',
+        basePxFontSize: '10',
+        files: [
+          {
+            destination: `tokens-bloomon.json`,
             format: 'figmaTokensPlugin',
             options: {
               outputReferences: true,
               brand: brand
+            },
+            filter: (token) => {
+              // BLOOMON TOKENS
+              // BLOOMON TOKENS
+              return brand === 'bloomon' && token.name.indexOf('global') === -1;
+            }
+          },
+        ],
+      },
+      figmaJsonBLOOMANDWILD: {
+        transforms: ["attribute/cti", "name/cti/kebab", "color/hex", "size/remToPx"],
+        buildPath: 'figma-tokens/',
+        basePxFontSize: '10',
+        files: [
+          {
+            destination: `tokens-bloomandwild.json`,
+            format: 'figmaTokensPlugin',
+            options: {
+              outputReferences: true,
+              brand: brand
+            },
+            filter: (token) => {
+              // BLOOM & WILD TOKENS
+              // BLOOM & WILD TOKENS
+              return brand === 'bloomandwild' && token.name.indexOf('global') === -1;
             }
           },
         ],
@@ -70,7 +129,7 @@ console.log("Build started...");
 // PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS
 
 
-["global", "bloomandwild", "bloomon"].map(function (brand) {
+["bloomandwild", "bloomon"].map(function (brand) {
     console.log("\n==============================================");
     console.log(`\nProcessing: [${brand}]`);
 
