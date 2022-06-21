@@ -3,7 +3,7 @@
     "color": {
       "action": {
         "primary": {
-          "value": "{global.color.grey.80.value}"
+          "value": "{global.color.grey.80.value}", "type": "color"
         },
         "secondary": {
           "value": "{global.color.white.value}"
@@ -12,7 +12,8 @@
           "value": "{global.color.yellow.50.value}"
         }
       },
-      "background": { "value": "{global.color.white.value}" },
+      "background": { "value": "{global.color.white.value}", "type": "color" },
+      "test-background": { "value": "pink", "type": "color" },
       "text": {
         "body": {
           "value": "{global.color.grey.80.value}"
@@ -28,7 +29,7 @@
           "value": "{global.color.blush.blush.value}"
         },
         "error": {
-          "value": "{global.color.orangered.value}"
+          "value": "{global.color.red.50.value}"
         }
       }
     }

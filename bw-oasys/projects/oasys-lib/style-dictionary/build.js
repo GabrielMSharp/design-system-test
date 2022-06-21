@@ -1,9 +1,37 @@
 console.log("Running Bloom & Wild token building");
 
-const { transform } = require('@divriots/style-dictionary-to-figma');
+// const { transform } = require('@divriots/style-dictionary-to-figma');
+// import { transform } from '@divriots/style-dictionary-to-figma';
+const { trimValue,  trimName,  useRefValue,  markTokenset } = require('@divriots/style-dictionary-to-figma');
 const StyleDictionaryPackage = require("style-dictionary");
 
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
+
+StyleDictionaryPackage.registerFormat({
+  name: 'figmaTokensPluginGlobal',
+  formatter: ({ dictionary }) => {
+
+    const globalTokens = {}
+    globalTokens['global'] = dictionary.tokens
+
+    const transformedTokens = markTokenset(trimName(trimValue(dictionary.tokens)));
+    return JSON.stringify(transformedTokens, null, 2);
+  },
+});
+
+StyleDictionaryPackage.registerFormat({
+  name: 'figmaTokensPlugin',
+  formatter: ({ dictionary, platform, options }) => {
+    console.log(platform);
+    const brandedTokens = {}
+
+    brandedTokens[options.brand] = dictionary.tokens
+
+    // const transformedTokens = transform(brandedTokens);
+    const transformedTokens = markTokenset(trimName(trimValue(brandedTokens)));
+    return JSON.stringify(transformedTokens, null, 2);
+  },
+});
 
 function getStyleDictionaryConfig(brand) {
   return {
@@ -11,12 +39,6 @@ function getStyleDictionaryConfig(brand) {
         `tokens/global/**/*.json`,
         `tokens/${brand}/**/**/*.json`
     ],
-    format: {
-      figmaTokensPlugin: ({ dictionary }) => {
-        const transformedTokens = transform(dictionary.tokens);
-        return JSON.stringify(transformedTokens, null, 2);
-      },
-    },
     platforms: {
       css: {
         transformGroup: "css",
@@ -26,22 +48,51 @@ function getStyleDictionaryConfig(brand) {
             format: "css/variables",
             options: {
               showFileHeader: true,
-              outputReferences: false,
+              outputReferences: false
             },
             filter: (token) => {
-              console.log(token);
               return token.name.indexOf('global') === -1;
             }
           },
         ],
       },
-      json: {
-        transformGroup: 'js',
+      figmaJsonGlobal: {
+        transforms: ["attribute/cti", "name/cti/kebab", "color/hex", "size/remToPx"],
         buildPath: 'figma-tokens/',
+        basePxFontSize: '10',
         files: [
           {
-            destination: 'figmaTokensFormatted.json',
+            destination: `tokens.json`,
+            format: 'figmaTokensPluginGlobal',
+            options: {
+              outputReferences: true,
+              brand: brand
+            },
+            filter: (token) => {
+              // Only output global tokens here
+              return token.name.indexOf('global') !== -1;
+            }
+          },
+        ],
+      },
+      figmaJsonBranded: {
+        transforms: ["attribute/cti", "name/cti/kebab", "color/hex", "size/remToPx"],
+        buildPath: 'figma-tokens/',
+        basePxFontSize: '10',
+        files: [
+          {
+            destination: `tokens-${brand}.json`,
             format: 'figmaTokensPlugin',
+            options: {
+              outputReferences: true,
+              brand: brand
+            },
+            filter: (token) => {
+              // BRAND SEMANTIC AND COMPONENT TOKENS ONLY
+              // BRAND SEMANTIC AND COMPONENT TOKENS ONLY
+              // BRAND SEMANTIC AND COMPONENT TOKENS ONLY
+              return token.name.indexOf('global') === -1;
+            }
           },
         ],
       },

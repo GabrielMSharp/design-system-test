@@ -1,0 +1,70 @@
+/**
+ * Do not edit directly
+ * Generated on Tue, 21 Jun 2022 09:10:32 GMT
+ */
+
+:root {
+  --global-color-white: #ffffff;
+  --global-color-grey-10: #f7f7f7;
+  --global-color-grey-20: #cdcdcd;
+  --global-color-grey-30: #c6c6c6;
+  --global-color-grey-40: #a8a8a8;
+  --global-color-grey-50: #898989;
+  --global-color-grey-60: #676767;
+  --global-color-grey-75: #464646;
+  --global-color-grey-80: #464646;
+  --global-color-grey-90: #262626;
+  --global-color-linen-grey-10: #f4f3f2;
+  --global-color-linen-grey-20: #e2e0dc;
+  --global-color-linen-grey-30: #cbc7c1;
+  --global-color-linen-grey-40: #afaaa1;
+  --global-color-linen-grey-50: #948b7e;
+  --global-color-linen-grey-60: #726b60;
+  --global-color-linen-grey-75: #4d4840;
+  --global-color-yellow-50: #fdf888;
+  --global-color-yellow-60: #fff799;
+  --global-color-linen-10: #fcf5ea;
+  --global-color-linen-20: #f9ecd7;
+  --global-color-linen-40: #e8b767;
+  --global-color-linen-60: #b67b1b;
+  --global-color-linen-75: #734d11;
+  --global-color-pine-10: #f0f6f4;
+  --global-color-pine-20: #e2eee9;
+  --global-color-pine-40: #8fc0ac;
+  --global-color-pine-60: #447964;
+  --global-color-pine-75: #2d5443;
+  --global-color-blush-copper: #d89078;
+  --global-color-blush-blush: #ff9f80;
+  --global-color-blush-lush: #ffcfc0;
+  --global-color-blush-light: #f8d7be;
+  --global-color-blush-beige: #f6e9dc;
+  --global-color-blush-pale: #fff8f4;
+  --global-color-semantic-success: #add685;
+  --global-color-semantic-warning: #f8bb40;
+  --global-color-semantic-error: #db4141;
+  --global-color-red: #DB4141;
+  --global-color-orangered: #C84116;
+  --global-color-partners-facebook: #485b94;
+  --global-color-partners-paypal: #ffc43a;
+  --global-color-partners-trustpilot: #29b47c;
+  --global-size-font-body-1: 2.0;
+  --global-size-font-body-2: 1.8;
+  --global-size-font-body-3: 1.6;
+  --global-size-font-body-4: 1.4;
+  --global-size-font-body-5: 1.2;
+  --global-size-font-base: 1.6;
+  --global-size-icon-small: 1.6rem;
+  --global-size-icon-large: 1.6rem;
+  --global-size-unit-1: 0.1rem;
+  --global-size-unit-2: 0.2rem;
+  --global-size-unit-3: 0.4rem;
+  --global-size-unit-4: 0.8rem;
+  --global-size-unit-5: 1.2rem;
+  --global-size-unit-6: 1.6rem;
+  --global-size-unit-7: 2.4rem;
+  --global-size-unit-8: 3.2rem;
+  --global-size-unit-9: 4rem;
+  --global-size-unit-10: 4.8rem;
+  --global-size-unit-11: 5.6rem;
+  --global-size-unit-default: 1.6rem;
+}

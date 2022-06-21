@@ -33,6 +33,7 @@
   "angularCompilerOptions": {
     "defaultEncapsulation": 3,
     "emitDecoratorMetadata": true,
-    
+    "optimization": false
+
   }
 }

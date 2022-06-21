@@ -1,0 +1,1184 @@
+{
+  "bloomon": {
+    "component": {
+      "color": {
+        "button": {
+          "primary": {
+            "background": {
+              "value": "pink",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "pink",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "primary",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "primary",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#464646",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "primary",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "primary",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#ffffff",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.text.body-on-dark}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "primary",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "primary",
+                "4": "text"
+              }
+            }
+          },
+          "secondary": {
+            "background": {
+              "value": "#464646",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "secondary",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "secondary",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#464646",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "secondary",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "secondary",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#ffffff",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.text.body-on-dark}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "secondary",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "secondary",
+                "4": "text"
+              }
+            }
+          },
+          "tertiary": {
+            "background": {
+              "value": "#fdf888",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.tertiary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "tertiary",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "tertiary",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#fdf888",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.tertiary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "tertiary",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "tertiary",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#464646",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.text.body}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "tertiary",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "tertiary",
+                "4": "text"
+              }
+            }
+          },
+          "primary-inverse": {
+            "background": {
+              "value": "transparent",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.transparent}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "primary-inverse",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "primary-inverse",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#464646",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "primary-inverse",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "primary-inverse",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#464646",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "primary-inverse",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "primary-inverse",
+                "4": "text"
+              }
+            }
+          },
+          "secondary-inverse": {
+            "background": {
+              "value": "transparent",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.transparent}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "secondary-inverse",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "secondary-inverse",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#464646",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "secondary-inverse",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "secondary-inverse",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#464646",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "secondary-inverse",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "secondary-inverse",
+                "4": "text"
+              }
+            }
+          },
+          "tertiary-inverse": {
+            "background": {
+              "value": "transparent",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.transparent}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "tertiary-inverse",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "tertiary-inverse",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#464646",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "tertiary-inverse",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "tertiary-inverse",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#464646",
+              "type": "color",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "tertiary-inverse",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "tertiary-inverse",
+                "4": "text"
+              }
+            }
+          }
+        }
+      },
+      "size": {
+        "button": {
+          "large": {
+            "padding-x": {
+              "value": "16px",
+              "type": "spacing",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.default}",
+                "type": "spacing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "large",
+                "state": "padding-x"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "large",
+                "4": "padding-x"
+              }
+            },
+            "height": {
+              "value": "48px",
+              "type": "sizing",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.10}",
+                "type": "sizing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "large",
+                "state": "height"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "large",
+                "4": "height"
+              }
+            },
+            "line-height": {
+              "value": "16px",
+              "type": "typography",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.6}",
+                "type": "typography"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "large",
+                "state": "line-height"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "large",
+                "4": "line-height"
+              }
+            },
+            "inline-spacing": {
+              "value": "8px",
+              "type": "spacing",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.4}",
+                "type": "spacing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "large",
+                "state": "inline-spacing"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "large",
+                "4": "inline-spacing"
+              }
+            }
+          },
+          "small": {
+            "padding-x": {
+              "value": "16px",
+              "type": "spacing",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.6}",
+                "type": "spacing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "small",
+                "state": "padding-x"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "small",
+                "4": "padding-x"
+              }
+            },
+            "height": {
+              "value": "32px",
+              "type": "sizing",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.8}",
+                "type": "sizing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "small",
+                "state": "height"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "small",
+                "4": "height"
+              }
+            },
+            "line-height": {
+              "value": "16px",
+              "type": "typography",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.6}",
+                "type": "typography"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "small",
+                "state": "line-height"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "small",
+                "4": "line-height"
+              }
+            },
+            "inline-spacing": {
+              "value": "4px",
+              "type": "spacing",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.3}",
+                "type": "spacing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "small",
+                "state": "inline-spacing"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "small",
+                "4": "inline-spacing"
+              }
+            }
+          }
+        }
+      },
+      "style": {
+        "button": {
+          "large": {
+            "text-transform": {
+              "value": "uppercase",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "uppercase"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "style",
+                "item": "button",
+                "subitem": "large",
+                "state": "text-transform"
+              },
+              "path": {
+                "0": "component",
+                "1": "style",
+                "2": "button",
+                "3": "large",
+                "4": "text-transform"
+              }
+            }
+          }
+        }
+      },
+      "border-width": {
+        "button": {
+          "value": "1px",
+          "type": "borderWidth",
+          "filePath": "tokens/bloomon/components/button/button.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.1}",
+            "type": "borderWidth"
+          },
+          "attributes": {
+            "category": "component",
+            "type": "border-width",
+            "item": "button"
+          },
+          "path": {
+            "0": "component",
+            "1": "border-width",
+            "2": "button"
+          }
+        }
+      }
+    },
+    "semantic": {
+      "color": {
+        "action": {
+          "primary": {
+            "value": "#464646",
+            "type": "color",
+            "filePath": "tokens/bloomon/semantic/color.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.color.grey.80}",
+              "type": "color"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "action",
+              "subitem": "primary"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "color",
+              "2": "action",
+              "3": "primary"
+            }
+          },
+          "secondary": {
+            "value": "#ffffff",
+            "filePath": "tokens/bloomon/semantic/color.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.color.white}"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "action",
+              "subitem": "secondary"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "color",
+              "2": "action",
+              "3": "secondary"
+            }
+          },
+          "tertiary": {
+            "value": "#fdf888",
+            "filePath": "tokens/bloomon/semantic/color.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.color.yellow.50}"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "action",
+              "subitem": "tertiary"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "color",
+              "2": "action",
+              "3": "tertiary"
+            }
+          }
+        },
+        "background": {
+          "value": "#ffffff",
+          "type": "color",
+          "filePath": "tokens/bloomon/semantic/color.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.color.white}",
+            "type": "color"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "color",
+            "item": "background"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "color",
+            "2": "background"
+          }
+        },
+        "test-background": {
+          "value": "pink",
+          "type": "color",
+          "filePath": "tokens/bloomon/semantic/color.json",
+          "isSource": true,
+          "original": {
+            "value": "pink",
+            "type": "color"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "color",
+            "item": "test-background"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "color",
+            "2": "test-background"
+          }
+        },
+        "text": {
+          "body": {
+            "value": "#464646",
+            "filePath": "tokens/bloomon/semantic/color.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.color.grey.80}"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "text",
+              "subitem": "body"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "color",
+              "2": "text",
+              "3": "body"
+            }
+          },
+          "body-on-dark": {
+            "value": "#ffffff",
+            "filePath": "tokens/bloomon/semantic/color.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.color.white}"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "text",
+              "subitem": "body-on-dark"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "color",
+              "2": "text",
+              "3": "body-on-dark"
+            }
+          }
+        },
+        "transparent": {
+          "value": "transparent",
+          "filePath": "tokens/bloomon/semantic/color.json",
+          "isSource": true,
+          "original": {
+            "value": "transparent"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "color",
+            "item": "transparent"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "color",
+            "2": "transparent"
+          }
+        },
+        "tone": {
+          "success": {
+            "value": "#fdf888",
+            "filePath": "tokens/bloomon/semantic/color.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.color.yellow.50}"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "tone",
+              "subitem": "success"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "color",
+              "2": "tone",
+              "3": "success"
+            }
+          },
+          "warning": {
+            "value": "#ff9f80",
+            "filePath": "tokens/bloomon/semantic/color.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.color.blush.blush}"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "tone",
+              "subitem": "warning"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "color",
+              "2": "tone",
+              "3": "warning"
+            }
+          },
+          "error": {
+            "value": "#DB4141",
+            "filePath": "tokens/bloomon/semantic/color.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.color.red.50}"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "tone",
+              "subitem": "error"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "color",
+              "2": "tone",
+              "3": "error"
+            }
+          }
+        }
+      },
+      "font": {
+        "family": {
+          "headline": {
+            "value": "'Patron', Arial, Helvetica, sans-serif",
+            "filePath": "tokens/bloomon/semantic/font.json",
+            "isSource": true,
+            "original": {
+              "value": "'Patron', Arial, Helvetica, sans-serif"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "font",
+              "item": "family",
+              "subitem": "headline"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "font",
+              "2": "family",
+              "3": "headline"
+            }
+          },
+          "headline-second": {
+            "value": "'Patron', Arial, Helvetica, sans-serif",
+            "filePath": "tokens/bloomon/semantic/font.json",
+            "isSource": true,
+            "original": {
+              "value": "{semantic.font.family.headline}"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "font",
+              "item": "family",
+              "subitem": "headline-second"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "font",
+              "2": "family",
+              "3": "headline-second"
+            }
+          },
+          "body": {
+            "value": "'Patron', Arial, Helvetica, sans-serif",
+            "filePath": "tokens/bloomon/semantic/font.json",
+            "isSource": true,
+            "original": {
+              "value": "{semantic.font.family.headline}"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "font",
+              "item": "family",
+              "subitem": "body"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "font",
+              "2": "family",
+              "3": "body"
+            }
+          }
+        },
+        "weight": {
+          "normal": {
+            "value": "100",
+            "filePath": "tokens/bloomon/semantic/font.json",
+            "isSource": true,
+            "original": {
+              "value": "100"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "font",
+              "item": "weight",
+              "subitem": "normal"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "font",
+              "2": "weight",
+              "3": "normal"
+            }
+          },
+          "medium": {
+            "value": "normal",
+            "filePath": "tokens/bloomon/semantic/font.json",
+            "isSource": true,
+            "original": {
+              "value": "normal"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "font",
+              "item": "weight",
+              "subitem": "medium"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "font",
+              "2": "weight",
+              "3": "medium"
+            }
+          },
+          "bold": {
+            "value": "normal",
+            "filePath": "tokens/bloomon/semantic/font.json",
+            "isSource": true,
+            "original": {
+              "value": "{semantic.font.weight.medium}"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "font",
+              "item": "weight",
+              "subitem": "bold"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "font",
+              "2": "weight",
+              "3": "bold"
+            }
+          }
+        }
+      },
+      "border-width": {
+        "default": {
+          "value": "1px",
+          "type": "borderWidth",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.1}",
+            "type": "borderWidth"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-width",
+            "item": "default"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-width",
+            "2": "default"
+          }
+        },
+        "emphasis": {
+          "value": "2px",
+          "type": "borderWidth",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.2}",
+            "type": "borderWidth"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-width",
+            "item": "emphasis"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-width",
+            "2": "emphasis"
+          }
+        },
+        "focus": {
+          "value": "8px",
+          "type": "borderWidth",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.4}",
+            "type": "borderWidth"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-width",
+            "item": "focus"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-width",
+            "2": "focus"
+          }
+        }
+      },
+      "border-radius": {
+        "none": {
+          "value": "0px",
+          "type": "borderRadius",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.0}",
+            "type": "borderRadius"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-radius",
+            "item": "none"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-radius",
+            "2": "none"
+          }
+        },
+        "soften-ui": {
+          "value": "2px",
+          "type": "borderRadius",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.2}",
+            "type": "borderRadius"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-radius",
+            "item": "soften-ui"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-radius",
+            "2": "soften-ui"
+          }
+        },
+        "round": {
+          "value": "24px",
+          "type": "borderRadius",
+          "filePath": "tokens/bloomon/semantic/spacing.json",
+          "isSource": true,
+          "original": {
+            "value": "{global.size.unit.7}",
+            "type": "borderRadius"
+          },
+          "attributes": {
+            "category": "semantic",
+            "type": "border-radius",
+            "item": "round"
+          },
+          "path": {
+            "0": "semantic",
+            "1": "border-radius",
+            "2": "round"
+          }
+        }
+      }
+    }
+  }
+}

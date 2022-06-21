@@ -1,64 +1,61 @@
 {
   "global": {
     "color": {
-      "white": { "value": "#ffffff" },
+      "white": { "value": "#ffffff", "type": "color", "type": "color" },
       "grey": {
-        "90": { "value": "#262626" },
-        "80": { "value": "#464646" },
-        "75": { "value": "#464646" },
-        "60": { "value": "#676767" },
-        "50": { "value": "#898989" },
-        "40": { "value": "#a8a8a8" },
-        "30": { "value": "#c6c6c6" },
-        "20": { "value": "#cdcdcd" },
-        "10": { "value": "#f7f7f7" }
+        "90": { "value": "#262626", "type": "color" },
+        "80": { "value": "#464646", "type": "color" },
+        "75": { "value": "#464646", "type": "color" },
+        "60": { "value": "#676767", "type": "color" },
+        "50": { "value": "#898989", "type": "color" },
+        "40": { "value": "#a8a8a8", "type": "color" },
+        "30": { "value": "#c6c6c6", "type": "color" },
+        "20": { "value": "#cdcdcd", "type": "color" },
+        "10": { "value": "#f7f7f7", "type": "color" }
       },
       "linen-grey": {
-        "75": { "value": "#4d4840" },
-        "60": { "value": "#726b60" },
-        "50": { "value": "#948b7e" },
-        "40": { "value": "#afaaa1" },
-        "30": { "value": "#cbc7c1" },
-        "20": { "value": "#e2e0dc" },
-        "10": { "value": "#f4f3f2" }
+        "75": { "value": "#4d4840", "type": "color" },
+        "60": { "value": "#726b60", "type": "color" },
+        "50": { "value": "#948b7e", "type": "color" },
+        "40": { "value": "#afaaa1", "type": "color" },
+        "30": { "value": "#cbc7c1", "type": "color" },
+        "20": { "value": "#e2e0dc", "type": "color" },
+        "10": { "value": "#f4f3f2", "type": "color" }
       },
       "yellow": {
-        "50": { "value": "#fdf888" },
-        "60": { "value": "#fff799" }
+        "50": { "value": "#fdf888", "type": "color" },
+        "60": { "value": "#fff799", "type": "color" }
       },
       "linen": {
-        "75": { "value": "#734d11" },
-        "60": { "value": "#b67b1b" },
-        "40": { "value": "#e8b767" },
-        "20": { "value": "#f9ecd7" },
-        "10": { "value": "#fcf5ea" }
+        "75": { "value": "#734d11", "type": "color" },
+        "60": { "value": "#b67b1b", "type": "color" },
+        "40": { "value": "#e8b767", "type": "color" },
+        "20": { "value": "#f9ecd7", "type": "color" },
+        "10": { "value": "#fcf5ea", "type": "color" }
       },
       "pine": {
-        "75": { "value": "#2d5443" },
-        "60": { "value": "#447964" },
-        "40": { "value": "#8fc0ac" },
-        "20": { "value": "#e2eee9" },
-        "10": { "value": "#f0f6f4" }
+        "75": { "value": "#2d5443", "type": "color" },
+        "60": { "value": "#447964", "type": "color" },
+        "40": { "value": "#8fc0ac", "type": "color" },
+        "20": { "value": "#e2eee9", "type": "color" },
+        "10": { "value": "#f0f6f4", "type": "color" }
       },
       "blush": {
-        "copper": { "value": "#d89078" },
-        "blush": { "value": "#ff9f80" },
-        "lush": { "value": "#ffcfc0" },
-        "light": { "value": "#f8d7be" },
-        "beige": { "value": "#f6e9dc" },
-        "pale": { "value": "#fff8f4" }
+        "copper": { "value": "#d89078", "type": "color" },
+        "blush": { "value": "#ff9f80", "type": "color" },
+        "lush": { "value": "#ffcfc0", "type": "color" },
+        "light": { "value": "#f8d7be", "type": "color" },
+        "beige": { "value": "#f6e9dc", "type": "color" },
+        "pale": { "value": "#fff8f4", "type": "color" }
       },
-      "semantic": {
-        "success": { "value": "#add685" },
-        "warning": { "value": "#f8bb40" },
-        "error": { "value": "#db4141" }
+      "red": {
+        "50": { "value": "#DB4141", "type": "color" },
+        "60": { "value": "#C84116", "type": "color" }
       },
-      "red": { "value": "#DB4141" },
-      "orangered": { "value": "#C84116" },
       "partners": {
-        "facebook": { "value": "#485b94" },
-        "paypal": { "value": "#ffc43a" },
-        "trustpilot": { "value": "#29b47c" }
+        "facebook": { "value": "#485b94", "type": "color" },
+        "paypal": { "value": "#ffc43a", "type": "color" },
+        "trustpilot": { "value": "#29b47c", "type": "color" }
       }
     }
   }

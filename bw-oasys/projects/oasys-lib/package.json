@@ -9,7 +9,7 @@
     "tslib": "^2.3.0"
   },
   "scripts": {
-    "build-style-dictionary": "cd ./style-dictionary && node ./build.js"
+    "build-style-dictionary": "cd ./style-dictionary && node ./build.js && node ./merge-tokens.js"
   },
   "devDependencies": {
     "style-dictionary": "^3.7.1"

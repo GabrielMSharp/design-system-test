@@ -3,22 +3,28 @@
     "size": {
       "font": {
         "body-1" : {
-          "value": "2.0"
+          "value": "2.0",
+          "type": "font-size"
         },
         "body-2": {
-          "value": "1.8"
+          "value": "1.8",
+          "type": "font-size"
         },
         "body-3" : {
-          "value": "1.6"
+          "value": "1.6",
+          "type": "font-size"
         },
         "body-4"  : {
-          "value": "1.4"
+          "value": "1.4",
+          "type": "font-size"
         },
         "body-5"  : {
-          "value": "1.2"
+          "value": "1.2",
+          "type": "font-size"
         },
         "base"  : {
-          "value": "{global.size.font.body-3.value}"
+          "value": "{global.size.font.body-3.value}",
+          "type": "font-size"
         }
       }
     }
