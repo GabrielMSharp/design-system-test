@@ -39,7 +39,7 @@
         "large": {
           "padding-x": {"value": "{global.size.unit.default.value}"},
           "height": {"value": "{global.size.unit.10.value}"},
-          "border-width": {"value": "{global.size.unit.2.value}", "type": "borderWidth"},
+          "border-width": {"value": "{global.size.unit.2.value}", "type": "border width"},
           "line-height": {"value": "{global.size.unit.6.value}"},
           "inline-spacing": {"value": "{global.size.unit.4.value}"}
         },
