@@ -52,11 +52,6 @@
         "50": { "value": "#DB4141", "type": "color" },
         "60": { "value": "#C84116", "type": "color" }
       },
-      "semantic": {
-        "success": { "value": "#add685", "type": "color" },
-        "warning": { "value": "#f8bb40", "type": "color" },
-        "error": { "value": "{global.color.red.50.value}", "type": "color" }
-      },
       "partners": {
         "facebook": { "value": "#485b94", "type": "color" },
         "paypal": { "value": "#ffc43a", "type": "color" },
