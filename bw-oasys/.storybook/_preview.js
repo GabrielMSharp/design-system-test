@@ -10,6 +10,6 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  docs: { inlineStories: false },
+  docs: { inlineStories: true },
   layout: 'centered'
 }

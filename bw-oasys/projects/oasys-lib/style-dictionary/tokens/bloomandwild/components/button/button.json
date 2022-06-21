@@ -13,9 +13,9 @@
           "text": {"value": "{semantic.color.text.body-on-dark.value}", "type": "color"}
         },
         "tertiary": {
-          "color": {"value": "{semantic.color.action.primary.value}", "type": "color"},
-          "border": {"value": "{component.color.button.primary.border.value}", "type": "color"},
-          "text": {"value": "{component.color.button.primary.text.value}", "type": "color"}
+          "color": {"value": "{semantic.color.transparent.value}", "type": "color"},
+          "border": {"value": "{component.color.transparent.value}", "type": "color"},
+          "text": {"value": "{component.color.text.body.value}", "type": "color"}
         },
         "primary-inverse": {
           "color": {"value": "{semantic.color.transparent.value}", "type": "color"},
