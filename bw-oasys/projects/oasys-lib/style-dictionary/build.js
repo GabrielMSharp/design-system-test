@@ -4,6 +4,7 @@ console.log("Running Bloom & Wild token building");
 // import { transform } from '@divriots/style-dictionary-to-figma';
 const { trimValue,  trimName,  useRefValue,  markTokenset } = require('@divriots/style-dictionary-to-figma');
 const StyleDictionaryPackage = require("style-dictionary");
+const { fileHeader, formattedVariables } = StyleDictionaryPackage.formatHelpers;
 
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 
@@ -19,15 +20,26 @@ StyleDictionaryPackage.registerFormat({
   },
 });
 
+
+StyleDictionaryPackage.registerFormat({
+  name: 'css/variables-themed',
+  formatter: function({dictionary, file, options}) {
+    const { outputReferences, brand } = options;
+    return fileHeader({file}) +
+      `:root .${brand} {\n` +
+      formattedVariables({format: 'css', dictionary, outputReferences}) +
+      '\n}\n';
+  }
+});
+
 StyleDictionaryPackage.registerFormat({
   name: 'figmaTokensPlugin',
   formatter: ({ dictionary, platform, options }) => {
-    console.log(platform);
+    // console.log(platform);
     const brandedTokens = {}
 
     brandedTokens[options.brand] = dictionary.tokens
 
-    // const transformedTokens = transform(brandedTokens);
     const transformedTokens = markTokenset(trimName(trimValue(brandedTokens)));
     return JSON.stringify(transformedTokens, null, 2);
   },
@@ -45,8 +57,9 @@ function getStyleDictionaryConfig(brand) {
         files: [
           {
             destination: `./../src/assets/${brand}/variables.css`,
-            format: "css/variables",
+            format: "css/variables-themed",
             options: {
+              brand,
               showFileHeader: true,
               outputReferences: false
             },
