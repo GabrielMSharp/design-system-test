@@ -684,7 +684,7 @@
           "filePath": "tokens/bloomon/components/button/button.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.1}",
+            "value": "{semantic.border-width.default}",
             "type": "borderWidth"
           },
           "attributes": {
@@ -695,6 +695,28 @@
           "path": {
             "0": "component",
             "1": "border-width",
+            "2": "button"
+          }
+        }
+      },
+      "border-radius": {
+        "button": {
+          "value": "24px",
+          "type": "borderRadius",
+          "filePath": "tokens/bloomon/components/button/button.json",
+          "isSource": true,
+          "original": {
+            "value": "{semantic.border-radius.round}",
+            "type": "borderRadius"
+          },
+          "attributes": {
+            "category": "component",
+            "type": "border-radius",
+            "item": "button"
+          },
+          "path": {
+            "0": "component",
+            "1": "border-radius",
             "2": "button"
           }
         }

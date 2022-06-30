@@ -655,29 +655,49 @@
               }
             }
           }
-        },
-        "border-width": {
-          "button": {
-            "value": "2px",
-            "type": "borderWidth",
-            "filePath": "tokens/bloomandwild/components/button/button.json",
-            "isSource": true,
-            "original": {
-              "value": "{global.size.unit.2}",
-              "type": "borderWidth"
-            },
-            "attributes": {
-              "category": "component",
-              "type": "color",
-              "item": "border-width",
-              "subitem": "button"
-            },
-            "path": {
-              "0": "component",
-              "1": "color",
-              "2": "border-width",
-              "3": "button"
-            }
+        }
+      },
+      "border-width": {
+        "button": {
+          "value": "1px",
+          "type": "borderWidth",
+          "filePath": "tokens/bloomandwild/components/button/button.json",
+          "isSource": true,
+          "original": {
+            "value": "{semantic.border-width.default}",
+            "type": "borderWidth"
+          },
+          "attributes": {
+            "category": "component",
+            "type": "border-width",
+            "item": "button"
+          },
+          "path": {
+            "0": "component",
+            "1": "border-width",
+            "2": "button"
+          }
+        }
+      },
+      "border-radius": {
+        "button": {
+          "value": "2px",
+          "type": "borderRadius",
+          "filePath": "tokens/bloomandwild/components/button/button.json",
+          "isSource": true,
+          "original": {
+            "value": "{semantic.border-radius.soften-ui}",
+            "type": "borderRadius"
+          },
+          "attributes": {
+            "category": "component",
+            "type": "border-radius",
+            "item": "button"
+          },
+          "path": {
+            "0": "component",
+            "1": "border-radius",
+            "2": "button"
           }
         }
       }

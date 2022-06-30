@@ -1,9 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Tue, 21 Jun 2022 14:49:08 GMT
+ * Generated on Thu, 30 Jun 2022 15:16:10 GMT
  */
 
-:root {
+:root .bloomon {
   --component-color-button-primary-background: pink;
   --component-color-button-primary-border: #464646;
   --component-color-button-primary-text: #ffffff;
@@ -32,6 +32,7 @@
   --component-size-button-small-inline-spacing: 0.4rem;
   --component-style-button-large-text-transform: uppercase;
   --component-border-width-button: 0.1rem;
+  --component-border-radius-button: 2.4rem;
   --semantic-color-action-primary: #464646;
   --semantic-color-action-secondary: #ffffff;
   --semantic-color-action-tertiary: #fdf888;

@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Running Storybook
+
+To run storybook use the command `ng run my-default-project:storybook` make sure you are running it from the `bw-oasys` folder (`cd bw-oasys`)
+
+## Running Style dictionary
+
+Run style dictionary to take all token json files from the /style-dictionary/tokens folder and package them for relevant platforms (ie. css + figma tokens)
+To run style dictionary use the command `npm run build-style-dictionary` make sure you are running it from the `oasys-lib` folder (`cd bw-oasys/projects/oasys-lib`)

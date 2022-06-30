@@ -126,12 +126,18 @@
             }
           }
         }
-      },
-      "border-width": {
-        "button": {
-          "value": "{global.size.unit.2.value}",
-          "type": "borderWidth"
-        }
+      }
+    },
+    "border-width": {
+      "button": {
+        "value": "{semantic.border-width.default.value}",
+        "type": "borderWidth"
+      }
+    },
+    "border-radius": {
+      "button": {
+        "value": "{semantic.border-radius.soften-ui.value}",
+        "type": "borderRadius"
       }
     }
   }
