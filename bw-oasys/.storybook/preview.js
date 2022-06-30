@@ -11,5 +11,12 @@ export const parameters = {
     },
   },
   docs: { inlineStories: true },
-  layout: 'centered'
+  layout: 'centered',
+  themes: {
+    default: 'bloomon',
+    list: [
+      { name: 'bloomon', class: 'bloomon', color: '#00aced' },
+      { name: 'Bloom & Wild', class: 'bloomandwild', color: '#3b5998' }
+    ],
+  }
 }

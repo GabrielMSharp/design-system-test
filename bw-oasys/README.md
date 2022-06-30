@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Running Storybook
 
-To run storybook use the command `ng run my-default-project:storybook` make sure you are running it from the `bw-oasys` folder (`cd bw-oasys`)
+To run storybook use the command `ng run oasys-lib:storybook` make sure you are running it from the `bw-oasys` folder (`cd bw-oasys`)
 
 ## Running Style dictionary
 

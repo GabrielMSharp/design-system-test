@@ -964,21 +964,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Text.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TextComponent>",
-                "defaultValue": "(args: TextComponent) => ({\n  props: args,\n  template: `<ui-text>{{ ngContent }}</ui-text>`\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "stories/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ButtonComponent>",
                 "defaultValue": "(args: ButtonComponent) => ({\n  props: args\n  // props: {\n  //   ...args,\n    // buttonClick: actionsData.buttonClick,\n    // buttonClasses: 'hello' //args.buttonClasses\n  // },\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Text.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<TextComponent>",
+                "defaultValue": "(args: TextComponent) => ({\n  props: args,\n  template: `<ui-text>{{ ngContent }}</ui-text>`\n})"
             },
             {
                 "name": "Text",
