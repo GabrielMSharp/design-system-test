@@ -339,7 +339,7 @@
         },
         {
             "name": "IconComponent",
-            "id": "component-IconComponent-a510014815207fa3767f209f10cdd507040ca5766dbb16f1c289d3388c35012b4e945cdf1b9ba74985cba42bd6e56684d8fb40e2daaf9855a25251daa7fe1daf",
+            "id": "component-IconComponent-58efc39220381814d8ebf509b0ad013820f36f6b887f7a03ac240e78698b95beb73c08fa069f399025c3b6525bb93878cee3fde506de411e2ce31710d03c667e",
             "file": "projects/oasys-lib/src/lib/components/icon/icon.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -461,12 +461,22 @@
                     ]
                 },
                 {
-                    "name": "ngOnInit",
+                    "name": "ngOnChanges",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 35,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -478,7 +488,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { WindowService } from '../../services/window.service';\nimport { IconNames, IconContext } from './icon';\n@Component({\n  selector:'ui-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  encapsulation: ViewEncapsulation.None\n})\nexport class IconComponent implements OnInit {\n  @Input() iconSize: 'small'|'large' = 'large';\n  @Input() iconName!: IconNames;\n  @Input() iconContext: IconContext = 'none';\n\n  @Input() iconWidth?: number;\n  @Input() iconHeight?: number;\n  @Input() iconClass?: string;\n\n  size?: string;\n  iconPlacementClass?: string;\n\n  constructor(private tokenService: TokenService, private windowRef: WindowService) { }\n\n  convertRemToPixels(remString: string): number {\n    const remNumber = parseFloat(remString.replace('rem', ''));\n    return remNumber * parseFloat(getComputedStyle(this.windowRef.nativeWindow.document.documentElement).fontSize);\n  }\n\n  ngOnInit(): void {\n    this.size = this.tokenService.getTokenValue(`--global-size-icon-${this.iconSize}`);;\n    this.iconPlacementClass = `icon-context-${this.iconContext}`;\n    if (!this.iconWidth || !this.iconHeight) {\n      const sizeInPixels = this.convertRemToPixels(this.size);\n      this.iconWidth = sizeInPixels;\n      this.iconHeight = sizeInPixels;\n    }\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy, OnChanges } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { WindowService } from '../../services/window.service';\nimport { IconNames, IconContext } from './icon';\n@Component({\n  selector:'ui-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  encapsulation: ViewEncapsulation.None\n})\nexport class IconComponent implements OnInit, OnChanges {\n  @Input() iconSize: 'small'|'large' = 'large';\n  @Input() iconName!: IconNames;\n  @Input() iconContext: IconContext = 'none';\n\n  @Input() iconWidth?: number;\n  @Input() iconHeight?: number;\n  @Input() iconClass?: string;\n\n  size?: string;\n  iconPlacementClass?: string;\n\n  constructor(private tokenService: TokenService, private windowRef: WindowService) { }\n\n  convertRemToPixels(remString: string): number {\n    const remNumber = parseFloat(remString.replace('rem', ''));\n    return remNumber * parseFloat(getComputedStyle(this.windowRef.nativeWindow.document.documentElement).fontSize);\n  }\n\n  ngOnChanges(): void {\n    this.ngOnInit();\n  }\n\n  ngOnInit(): void {\n    this.size = this.tokenService.getTokenValue(`--global-size-icon-${this.iconSize}`);;\n    this.iconPlacementClass = `icon-context-${this.iconContext}`;\n    const sizeInPixels = this.convertRemToPixels(this.size);\n    this.iconWidth = sizeInPixels;\n    this.iconHeight = sizeInPixels;\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -529,7 +539,8 @@
                 ]
             },
             "implements": [
-                "OnInit"
+                "OnInit",
+                "OnChanges"
             ],
             "templateData": "<div class=\"ui-icon {{iconPlacementClass}}\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" attr.width=\"{{iconWidth}}px\" attr.height=\"{{iconHeight}}px\" attr.class=\"{{iconClass}}\">\n    <use attr.xlink:href=\"./assets/icons/icons.svg#icon-{{iconName}}-{{iconWidth}}\"></use>\n  </svg>\n</div>\n"
         },
@@ -1270,7 +1281,7 @@
                 "linktype": "component",
                 "name": "IconComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/12",
+                "coverageCount": "0/13",
                 "status": "low"
             },
             {
