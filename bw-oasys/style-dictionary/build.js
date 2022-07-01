@@ -48,15 +48,15 @@ StyleDictionaryPackage.registerFormat({
 function getStyleDictionaryConfig(brand) {
   return {
     source: [
-        `tokens/global/**/*.json`,
-        `tokens/${brand}/**/**/*.json`
+        `./style-dictionary/tokens/global/**/*.json`,
+        `./style-dictionary/tokens/${brand}/**/**/*.json`
     ],
     platforms: {
       css: {
         transformGroup: "css",
         files: [
           {
-            destination: `./../src/assets/${brand}/variables.css`,
+            destination: `./projects/oasys-lib/src/assets/${brand}/variables.css`,
             format: "css/variables-themed",
             options: {
               brand,
@@ -71,7 +71,7 @@ function getStyleDictionaryConfig(brand) {
       },
       figmaJsonGlobal: {
         transforms: ["attribute/cti", "name/cti/kebab", "color/hex", "size/remToPx"],
-        buildPath: 'figma-tokens/',
+        buildPath: './style-dictionary/figma-tokens/',
         basePxFontSize: '10',
         files: [
           {
@@ -90,7 +90,7 @@ function getStyleDictionaryConfig(brand) {
       },
       figmaJsonBranded: {
         transforms: ["attribute/cti", "name/cti/kebab", "color/hex", "size/remToPx"],
-        buildPath: 'figma-tokens/',
+        buildPath: './style-dictionary/figma-tokens/',
         basePxFontSize: '10',
         files: [
           {

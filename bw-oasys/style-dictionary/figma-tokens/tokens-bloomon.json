@@ -1,13 +1,13 @@
 {
-  "bloomandwild": {
+  "bloomon": {
     "component": {
       "color": {
         "button": {
           "primary": {
             "background": {
-              "value": "#262626",
+              "value": "#464646",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.action.primary}",
@@ -29,9 +29,9 @@
               }
             },
             "border": {
-              "value": "#262626",
+              "value": "#464646",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.action.primary}",
@@ -55,7 +55,7 @@
             "text": {
               "value": "#ffffff",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.text.body-on-dark}",
@@ -79,12 +79,12 @@
           },
           "secondary": {
             "background": {
-              "value": "transparent",
+              "value": "#464646",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}",
+                "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
               "attributes": {
@@ -103,12 +103,12 @@
               }
             },
             "border": {
-              "value": "transparent",
+              "value": "#464646",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}",
+                "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
               "attributes": {
@@ -129,7 +129,7 @@
             "text": {
               "value": "#ffffff",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.text.body-on-dark}",
@@ -153,12 +153,12 @@
           },
           "tertiary": {
             "background": {
-              "value": "transparent",
+              "value": "#fdf888",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.transparent}",
+                "value": "{semantic.color.action.tertiary}",
                 "type": "color"
               },
               "attributes": {
@@ -177,12 +177,12 @@
               }
             },
             "border": {
-              "value": "transparent",
+              "value": "#fdf888",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.transparent}",
+                "value": "{semantic.color.action.tertiary}",
                 "type": "color"
               },
               "attributes": {
@@ -201,9 +201,9 @@
               }
             },
             "text": {
-              "value": "#262626",
+              "value": "#464646",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.text.body}",
@@ -229,7 +229,7 @@
             "background": {
               "value": "transparent",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.transparent}",
@@ -251,9 +251,9 @@
               }
             },
             "border": {
-              "value": "#262626",
+              "value": "#464646",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.action.primary}",
@@ -275,9 +275,9 @@
               }
             },
             "text": {
-              "value": "#262626",
+              "value": "#464646",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.action.primary}",
@@ -303,7 +303,7 @@
             "background": {
               "value": "transparent",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.transparent}",
@@ -325,12 +325,12 @@
               }
             },
             "border": {
-              "value": "transparent",
+              "value": "#464646",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}",
+                "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
               "attributes": {
@@ -349,12 +349,12 @@
               }
             },
             "text": {
-              "value": "transparent",
+              "value": "#464646",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}",
+                "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
               "attributes": {
@@ -377,7 +377,7 @@
             "background": {
               "value": "transparent",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{semantic.color.transparent}",
@@ -399,12 +399,12 @@
               }
             },
             "border": {
-              "value": "transparent",
+              "value": "#464646",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.transparent}",
+                "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
               "attributes": {
@@ -423,12 +423,12 @@
               }
             },
             "text": {
-              "value": "#ffffff",
+              "value": "#464646",
               "type": "color",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.text.body-on-dark}",
+                "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
               "attributes": {
@@ -455,7 +455,7 @@
             "padding-x": {
               "value": "16px",
               "type": "spacing",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.default}",
@@ -479,7 +479,7 @@
             "height": {
               "value": "48px",
               "type": "sizing",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.10}",
@@ -503,7 +503,7 @@
             "line-height": {
               "value": "16px",
               "type": "typography",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.6}",
@@ -527,7 +527,7 @@
             "inline-spacing": {
               "value": "8px",
               "type": "spacing",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.4}",
@@ -553,7 +553,7 @@
             "padding-x": {
               "value": "16px",
               "type": "spacing",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.6}",
@@ -577,7 +577,7 @@
             "height": {
               "value": "32px",
               "type": "sizing",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.8}",
@@ -601,7 +601,7 @@
             "line-height": {
               "value": "16px",
               "type": "typography",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.6}",
@@ -625,7 +625,7 @@
             "inline-spacing": {
               "value": "4px",
               "type": "spacing",
-              "filePath": "tokens/bloomandwild/components/button/button.json",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.unit.3}",
@@ -653,7 +653,7 @@
         "button": {
           "value": "1px",
           "type": "borderWidth",
-          "filePath": "tokens/bloomandwild/components/button/button.json",
+          "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
           "isSource": true,
           "original": {
             "value": "{semantic.border-width.default}",
@@ -673,12 +673,12 @@
       },
       "border-radius": {
         "button": {
-          "value": "2px",
+          "value": "24px",
           "type": "borderRadius",
-          "filePath": "tokens/bloomandwild/components/button/button.json",
+          "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
           "isSource": true,
           "original": {
-            "value": "{semantic.border-radius.soften-ui}",
+            "value": "{semantic.border-radius.round}",
             "type": "borderRadius"
           },
           "attributes": {
@@ -692,27 +692,47 @@
             "2": "button"
           }
         }
+      },
+      "style": {
+        "button": {
+          "large": {
+            "text-transform": {
+              "value": "uppercase",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "uppercase"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "style",
+                "item": "button",
+                "subitem": "large",
+                "state": "text-transform"
+              },
+              "path": {
+                "0": "component",
+                "1": "style",
+                "2": "button",
+                "3": "large",
+                "4": "text-transform"
+              }
+            }
+          }
+        }
       }
     },
     "semantic": {
       "color": {
         "action": {
           "primary": {
-            "value": "#262626",
-            "inverse": {
-              "value": "#ffffff",
-              "filePath": "tokens/bloomandwild/semantic/color.json",
-              "isSource": true
-            },
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "value": "#464646",
+            "type": "color",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{global.color.grey.90}",
-              "inverse": {
-                "value": "{global.color.white}",
-                "filePath": "tokens/bloomandwild/semantic/color.json",
-                "isSource": true
-              }
+              "value": "{global.color.grey.80}",
+              "type": "color"
             },
             "attributes": {
               "category": "semantic",
@@ -729,20 +749,10 @@
           },
           "secondary": {
             "value": "#ffffff",
-            "inverse": {
-              "value": "transparent",
-              "filePath": "tokens/bloomandwild/semantic/color.json",
-              "isSource": true
-            },
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{global.color.white}",
-              "inverse": {
-                "value": "{semantic.color.transparent}",
-                "filePath": "tokens/bloomandwild/semantic/color.json",
-                "isSource": true
-              }
+              "value": "{global.color.white}"
             },
             "attributes": {
               "category": "semantic",
@@ -758,11 +768,11 @@
             }
           },
           "tertiary": {
-            "value": "transparent",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "value": "#fdf888",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{semantic.color.transparent}"
+              "value": "{global.color.yellow.50}"
             },
             "attributes": {
               "category": "semantic",
@@ -780,10 +790,12 @@
         },
         "background": {
           "value": "#ffffff",
-          "filePath": "tokens/bloomandwild/semantic/color.json",
+          "type": "color",
+          "filePath": "./style-dictionary/tokens/bloomon/semantic/color.json",
           "isSource": true,
           "original": {
-            "value": "{global.color.white}"
+            "value": "{global.color.white}",
+            "type": "color"
           },
           "attributes": {
             "category": "semantic",
@@ -798,11 +810,11 @@
         },
         "text": {
           "body": {
-            "value": "#262626",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "value": "#464646",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{global.color.grey.90}"
+              "value": "{global.color.grey.80}"
             },
             "attributes": {
               "category": "semantic",
@@ -819,7 +831,7 @@
           },
           "body-on-dark": {
             "value": "#ffffff",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
               "value": "{global.color.white}"
@@ -840,7 +852,7 @@
         },
         "transparent": {
           "value": "transparent",
-          "filePath": "tokens/bloomandwild/semantic/color.json",
+          "filePath": "./style-dictionary/tokens/bloomon/semantic/color.json",
           "isSource": true,
           "original": {
             "value": "transparent"
@@ -859,7 +871,7 @@
         "tone": {
           "success": {
             "value": "#fdf888",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
               "value": "{global.color.yellow.50}"
@@ -879,7 +891,7 @@
           },
           "warning": {
             "value": "#ff9f80",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
               "value": "{global.color.blush.blush}"
@@ -898,11 +910,11 @@
             }
           },
           "error": {
-            "value": "#C84116",
-            "filePath": "tokens/bloomandwild/semantic/color.json",
+            "value": "#DB4141",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{global.color.red.60}"
+              "value": "{global.color.red.50}"
             },
             "attributes": {
               "category": "semantic",
@@ -922,11 +934,11 @@
       "font": {
         "family": {
           "headline": {
-            "value": "'TiemposHeadline', Georgia, serif",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+            "value": "'Patron', Arial, Helvetica, sans-serif",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
-              "value": "'TiemposHeadline', Georgia, serif"
+              "value": "'Patron', Arial, Helvetica, sans-serif"
             },
             "attributes": {
               "category": "semantic",
@@ -941,32 +953,32 @@
               "3": "headline"
             }
           },
-          "headline-secondary": {
-            "value": "'NeueHaasUnica', Arial, Helvetica, sans-serif",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+          "headline-second": {
+            "value": "'Patron', Arial, Helvetica, sans-serif",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
-              "value": "{semantic.font.family.body}"
+              "value": "{semantic.font.family.headline}"
             },
             "attributes": {
               "category": "semantic",
               "type": "font",
               "item": "family",
-              "subitem": "headline-secondary"
+              "subitem": "headline-second"
             },
             "path": {
               "0": "semantic",
               "1": "font",
               "2": "family",
-              "3": "headline-secondary"
+              "3": "headline-second"
             }
           },
           "body": {
-            "value": "'NeueHaasUnica', Arial, Helvetica, sans-serif",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+            "value": "'Patron', Arial, Helvetica, sans-serif",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
-              "value": "'NeueHaasUnica', Arial, Helvetica, sans-serif"
+              "value": "{semantic.font.family.headline}"
             },
             "attributes": {
               "category": "semantic",
@@ -984,11 +996,11 @@
         },
         "weight": {
           "normal": {
-            "value": "normal",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+            "value": "100",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
-              "value": "normal"
+              "value": "100"
             },
             "attributes": {
               "category": "semantic",
@@ -1004,11 +1016,11 @@
             }
           },
           "medium": {
-            "value": "500",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+            "value": "normal",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
-              "value": "500"
+              "value": "normal"
             },
             "attributes": {
               "category": "semantic",
@@ -1024,8 +1036,8 @@
             }
           },
           "bold": {
-            "value": "500",
-            "filePath": "tokens/bloomandwild/semantic/font.json",
+            "value": "normal",
+            "filePath": "./style-dictionary/tokens/bloomon/semantic/font.json",
             "isSource": true,
             "original": {
               "value": "{semantic.font.weight.medium}"
@@ -1049,7 +1061,7 @@
         "default": {
           "value": "1px",
           "type": "borderWidth",
-          "filePath": "tokens/bloomandwild/semantic/spacing.json",
+          "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.1}",
@@ -1069,7 +1081,7 @@
         "emphasis": {
           "value": "2px",
           "type": "borderWidth",
-          "filePath": "tokens/bloomandwild/semantic/spacing.json",
+          "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.2}",
@@ -1089,7 +1101,7 @@
         "focus": {
           "value": "8px",
           "type": "borderWidth",
-          "filePath": "tokens/bloomandwild/semantic/spacing.json",
+          "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.4}",
@@ -1111,7 +1123,7 @@
         "none": {
           "value": "0px",
           "type": "borderRadius",
-          "filePath": "tokens/bloomandwild/semantic/spacing.json",
+          "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.0}",
@@ -1131,7 +1143,7 @@
         "soften-ui": {
           "value": "2px",
           "type": "borderRadius",
-          "filePath": "tokens/bloomandwild/semantic/spacing.json",
+          "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.2}",
@@ -1151,7 +1163,7 @@
         "round": {
           "value": "24px",
           "type": "borderRadius",
-          "filePath": "tokens/bloomandwild/semantic/spacing.json",
+          "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
             "value": "{global.size.unit.7}",

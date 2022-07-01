@@ -11,7 +11,8 @@
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook",
-    "chromatic": "npx chromatic --project-token=06dabfe86a6d"
+    "chromatic": "npx chromatic --project-token=06dabfe86a6d",
+    "generate-tokens": "node ./style-dictionary/build.js && node ./style-dictionary/merge-tokens.js"
   },
   "private": true,
   "dependencies": {
@@ -60,6 +61,7 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^13.0.0",
     "storybook-addon-themes": "^6.1.0",
-    "typescript": "~4.5.2"
+    "typescript": "~4.5.2",
+    "style-dictionary": "^3.7.1"
   }
 }
