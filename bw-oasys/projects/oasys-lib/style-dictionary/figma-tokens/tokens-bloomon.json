@@ -5,12 +5,12 @@
         "button": {
           "primary": {
             "background": {
-              "value": "pink",
+              "value": "#464646",
               "type": "color",
               "filePath": "tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "pink",
+                "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
               "attributes": {
@@ -806,26 +806,6 @@
             "0": "semantic",
             "1": "color",
             "2": "background"
-          }
-        },
-        "test-background": {
-          "value": "pink",
-          "type": "color",
-          "filePath": "tokens/bloomon/semantic/color.json",
-          "isSource": true,
-          "original": {
-            "value": "pink",
-            "type": "color"
-          },
-          "attributes": {
-            "category": "semantic",
-            "type": "color",
-            "item": "test-background"
-          },
-          "path": {
-            "0": "semantic",
-            "1": "color",
-            "2": "test-background"
           }
         },
         "text": {

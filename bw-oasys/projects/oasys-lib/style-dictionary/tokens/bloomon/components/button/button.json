@@ -3,7 +3,7 @@
     "color": {
       "button": {
         "primary": {
-          "background": { "value": "pink", "type": "color"},
+          "background": { "value": "{semantic.color.action.primary.value}", "type": "color"},
           "border": { "value": "{semantic.color.action.primary.value}", "type": "color"},
           "text": { "value": "{semantic.color.text.body-on-dark.value}", "type": "color" }
         },
