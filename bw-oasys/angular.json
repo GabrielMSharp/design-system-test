@@ -41,7 +41,11 @@
           "builder": "@storybook/angular:start-storybook",
           "options": {
             "browserTarget": "oasys-lib:build",
-            "port": 4400
+            "port": 4400,
+            "styles": [
+              "projects/oasys-lib/src/assets/bloomon/variables.css",
+              "projects/oasys-lib/src/assets/bloomandwild/variables.css"
+            ]
           }
         },
         "build-storybook": {
@@ -61,7 +65,10 @@
         "build": {
           "options": {
             "tsConfig": "tsconfig.json",
-            "styles": [],
+            "styles": [
+              "projects/oasys-lib/src/assets/bloomon/variables.css",
+              "projects/oasys-lib/src/assets/bloomandwild/variables.css"
+            ],
             "scripts": []
           }
         }

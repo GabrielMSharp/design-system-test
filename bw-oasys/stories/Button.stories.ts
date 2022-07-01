@@ -23,7 +23,6 @@ const actionsData = {
 
 
 const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
-  // props: args
   props: {
     ...args,
     buttonClick: actionsData.buttonClick

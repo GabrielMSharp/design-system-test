@@ -3,7 +3,7 @@
     "color": {
       "button": {
         "primary": {
-          "color": {
+          "background": {
             "value": "{semantic.color.action.primary.value}",
             "type": "color"
           },
@@ -17,7 +17,7 @@
           }
         },
         "secondary": {
-          "color": {
+          "background": {
             "value": "{semantic.color.action.tertiary.value}",
             "type": "color"
           },
@@ -31,7 +31,7 @@
           }
         },
         "tertiary": {
-          "color": {
+          "background": {
             "value": "{semantic.color.transparent.value}",
             "type": "color"
           },
@@ -45,7 +45,7 @@
           }
         },
         "primary-inverse": {
-          "color": {
+          "background": {
             "value": "{semantic.color.transparent.value}",
             "type": "color"
           },
@@ -59,7 +59,7 @@
           }
         },
         "secondary-inverse": {
-          "color": {
+          "background": {
             "value": "{semantic.color.transparent.value}",
             "type": "color"
           },
@@ -73,7 +73,7 @@
           }
         },
         "tertiary-inverse": {
-          "color": {
+          "background": {
             "value": "{semantic.color.transparent.value}",
             "type": "color"
           },

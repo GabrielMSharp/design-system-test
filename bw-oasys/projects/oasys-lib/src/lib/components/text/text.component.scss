@@ -1,14 +1,14 @@
-@import '../../../assets/bloomon/variables.css';
+
 .ui-text {
     font-size: var(--size-font-base);
     font-family: var(--font-family-body);
-    
+
     font-weight: var(--font-weight-normal);
-    
+
     &.ui-text--weight-medium {
         font-weight: var(--font-weight-medium);
     }
-    
+
     &.ui-text--weight-bold {
         font-weight: var(--font-weight-bold);
     }
@@ -20,7 +20,7 @@
 
 
 // Modifiers
-.ui-text { 
+.ui-text {
     &.ui-text--align-left {
         text-align: left;
     }

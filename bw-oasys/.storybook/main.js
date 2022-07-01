@@ -15,6 +15,7 @@ module.exports = {
     "builder": "@storybook/builder-webpack5"
   },
   "staticDirs": [
-    { from: '../projects/oasys-lib/src/assets/bloomon/icons', to: '/assets/icons/' }
+    { from: '../projects/oasys-lib/src/assets/bloomon/icons', to: '/assets/icons/' },
+    // { from: '../projects/oasys-lib/src/assets/bloomandwild/icons', to: '/assets/icons/' },
   ],
 }
