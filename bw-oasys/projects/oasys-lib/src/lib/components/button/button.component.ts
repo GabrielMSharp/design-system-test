@@ -25,7 +25,7 @@ export class ButtonComponent implements OnInit, OnChanges, AfterViewInit {
   @Input() href: string = '';
   @Output() buttonClick: EventEmitter<void> = new EventEmitter();
 
-  buttonDisplayClasses: string[] = [''];
+  buttonDisplayClasses: string[];
   iconContext: IconContext = 'none';
   textTransform!: TextTransform;
 
@@ -65,7 +65,7 @@ export class ButtonComponent implements OnInit, OnChanges, AfterViewInit {
   }
 
   ngOnChanges(): void {
-    this.ngOnInit();
+    this.setupClasses();
   }
 
 }

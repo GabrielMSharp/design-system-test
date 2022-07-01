@@ -14,12 +14,7 @@ export default {
     moduleMetadata({
       imports: [RouterTestingModule, OasysComponentsModule]
     })
-  ],
-  // parameters: {
-  //   docs : {
-  //     page: ButtonDocumentation
-  //   }
-  // }
+  ]
 } as Meta;
 
 const actionsData = {
@@ -31,10 +26,11 @@ const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
   // props: args
   props: {
     ...args,
-    buttonClick: actionsData.buttonClick,
-    buttonClasses: 'hello' //args.buttonClasses
+    buttonClick: actionsData.buttonClick
   },
 });
+
+console.log('template', Template.args);
 
 export const Primary = Template.bind({});
 Primary.args = {
