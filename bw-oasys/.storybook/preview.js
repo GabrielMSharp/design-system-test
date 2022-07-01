@@ -20,8 +20,12 @@ export const parameters = {
     ],
   },
   backgrounds: {
-    default: 'light',
+    default: 'linen-20',
     values: [
+      {
+        name: 'linen-20',
+        value: '#F9ECD7',
+      },
       {
         name: 'light',
         value: '#f7f7f7',
@@ -29,6 +33,10 @@ export const parameters = {
       {
         name: 'dark',
         value: '#666',
+      },
+      {
+        name: 'blush-light',
+        value: '#F8D7BE',
       },
     ],
   },

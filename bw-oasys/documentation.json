@@ -399,7 +399,7 @@
         },
         {
             "name": "IconComponent",
-            "id": "component-IconComponent-fa69e12f92efd561cc3c77b128221df958e41126ccbb7b5f42cd76d486f96441eba2daca23cb83cad4fe9c26e5d53be942db50d5cdb2174fb481bed1caa6d28e",
+            "id": "component-IconComponent-c16159e2b18ff5d84513a9232692b15ac6f35327d049abf47430af8e5560f720527770c7039aed481d8f78ed6798eff382e2265676e7aecb274c1682cb18a566",
             "file": "projects/oasys-lib/src/lib/components/icon/icon.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -557,7 +557,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy, OnChanges, ElementRef } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { WindowService } from '../../services/window.service';\nimport { IconNames, IconContext } from './icon';\n@Component({\n  selector:'ui-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  encapsulation: ViewEncapsulation.None\n})\nexport class IconComponent implements OnInit, OnChanges {\n  @Input() iconSize: 'small'|'large' = 'large';\n  @Input() iconName!: IconNames;\n  @Input() iconContext: IconContext = 'none';\n\n  @Input() iconWidth?: number;\n  @Input() iconHeight?: number;\n  @Input() iconClass?: string;\n\n  size?: string;\n  iconPlacementClass?: string;\n  iconBrandPath?: string;\n\n  constructor(private tokenService: TokenService, private windowRef: WindowService, private elementRef: ElementRef) { }\n\n  convertRemToPixels(remString: string): number {\n    const remNumber = parseFloat(remString.replace('rem', ''));\n    return remNumber * parseFloat(getComputedStyle(this.windowRef.nativeWindow.document.documentElement).fontSize);\n  }\n\n  ngOnChanges(): void {\n    this.ngOnInit();\n  }\n\n  ngOnInit(): void {\n    this.iconBrandPath = `${this.tokenService.getBrandName(`--icon-component-brand`,this.elementRef.nativeElement)}`\n    this.size = this.tokenService.getTokenValue(`--global-size-icon-${this.iconSize}`, this.elementRef.nativeElement);\n    this.iconPlacementClass = `icon-context-${this.iconContext}`;\n    const sizeInPixels = this.convertRemToPixels(this.size);\n    this.iconWidth = sizeInPixels;\n    this.iconHeight = sizeInPixels;\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy, OnChanges, ElementRef } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { WindowService } from '../../services/window.service';\nimport { IconNames, IconContext } from './icon';\n@Component({\n  selector:'ui-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  encapsulation: ViewEncapsulation.None\n})\nexport class IconComponent implements OnInit, OnChanges {\n  @Input() iconSize: 'small'|'large' = 'large';\n  @Input() iconName!: IconNames;\n  @Input() iconContext: IconContext = 'none';\n\n  @Input() iconWidth?: number;\n  @Input() iconHeight?: number;\n  @Input() iconClass?: string;\n\n  size?: string;\n  iconPlacementClass?: string;\n  iconBrandPath?: string;\n\n  constructor(private tokenService: TokenService, private windowRef: WindowService, private elementRef: ElementRef) { }\n\n  convertRemToPixels(remString: string): number {\n    const remNumber = parseFloat(remString.replace('rem', ''));\n    return remNumber * parseFloat(getComputedStyle(this.windowRef.nativeWindow.document.documentElement).fontSize);\n  }\n\n  ngOnChanges(): void {\n    this.ngOnInit();\n  }\n\n  ngOnInit(): void {\n    this.iconBrandPath = `${this.tokenService.getBrandName(`--icon-component-brand`, this.elementRef.nativeElement)}`\n    this.size = this.tokenService.getTokenValue(`--global-size-icon-${this.iconSize}`);\n    this.iconPlacementClass = `icon-context-${this.iconContext}`;\n    const sizeInPixels = this.convertRemToPixels(this.size);\n    this.iconWidth = sizeInPixels;\n    this.iconHeight = sizeInPixels;\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -626,7 +626,7 @@
                 "OnInit",
                 "OnChanges"
             ],
-            "templateData": "<div class=\"ui-icon {{iconPlacementClass}}\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" attr.width=\"{{iconWidth}}px\" attr.height=\"{{iconHeight}}px\" attr.class=\"{{iconClass}}\">\n    <use attr.xlink:href=\"./{{iconBrandPath}}/assets/icons/icons.svg#icon-{{iconName}}-{{iconWidth}}\"></use>\n  </svg>\n</div>\n"
+            "templateData": "<div class=\"ui-icon {{iconPlacementClass}}\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" attr.width=\"{{iconWidth}}px\" attr.height=\"{{iconHeight}}px\" attr.class=\"{{iconClass}}\">\n    <use attr.xlink:href=\"./{{iconBrandPath}}/assets/icons/icons.svg#icon-{{iconName}}-24\"></use>\n  </svg>\n</div>\n"
         },
         {
             "name": "LayoutBoxComponent",

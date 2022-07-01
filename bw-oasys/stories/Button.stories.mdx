@@ -1,9 +1,7 @@
 import { Story, Canvas, ArgsTable, Template } from "@storybook/addon-docs";
 import { ButtonComponent } from 'projects/oasys-lib/src/public-api';
 
-<!-- ButtonDocumentation.mdx -->
-
-<Meta title="Documentation/Buttons" component={ButtonComponent} />
+<Meta title="Usage Guidelines/Buttons" component={ButtonComponent} />
 
 export const DocsTemplate = (args) => ({ props: args });
 
@@ -13,19 +11,20 @@ What's that, not excited? Well maybe you should sit down. Things bout to get cra
 
 It can be further expanded with your own code snippets and include specific information related to your stories.
 
-For example:
-
-* [Button Sizes](?path=/docs/components-button--primary#button-size)
-
-* [Options](?path=/docs/components-button--primary#arguments)
-
-
 ## Overview
 
 Buttons allow users to trigger an action or event with a single click. For example, you can use a button for allowing the functionality of submitting a form, opening a dialog, canceling an action, or performing a delete operation.
 
 <Canvas>
-  <Story id="components-button--primary" />
+  <Story id="design-system-components-actions-button--primary" />
+</Canvas>
+
+<Canvas>
+  <Story id="design-system-components-actions-button--primary-2" />
+</Canvas>
+
+<Canvas>
+  <Story id="design-system-components-actions-button--primary-3" />
 </Canvas>
 
 ## Button Size
@@ -34,28 +33,21 @@ If you included the title in the story's default export, use this approach.
 
 <Canvas>
   <Story
-      id="components-button--primary"
-      name="Name JHere"
+      id="design-system-components-actions-button--primary"
+      name="Name of this component here"
       args={{
         buttonSize: 'small'
       }}>
       {DocsTemplate.bind({})}
   </Story>
   <Story
-      id="components-button--primary"
-      name="Name JHere"
+      id="design-system-components-actions-button--primary-3"
+      name="Another name here"
       args={{
         buttonSize: 'large'
       }}>
       {DocsTemplate.bind({})}
   </Story>
 </Canvas>
-
-### Primary
-
-<Story id="components-button--primary" />
-
-
-# Arguments
 
 <ArgsTable of={ButtonComponent} />
