@@ -2,6 +2,8 @@ $buttonTypes: primary, secondary, tertiary, primary-inverse, secondary-inverse, 
 
 $buttonSizes: large, small;
 
+$buttonFontFamily: var(--semantic-font-family-body);
+
 
 @mixin buttonColors($buttonType) {
     background-color: var(--component-color-button-#{$buttonType}-background);
@@ -81,6 +83,7 @@ ui-button {
         align-items: center;
         border-style: solid;
 
+        font-family: $buttonFontFamily;
 
         // Button Colors
         @each $buttonType in $buttonTypes {

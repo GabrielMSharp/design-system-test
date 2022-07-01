@@ -18,6 +18,7 @@ export const parameters = {
       { name: 'bloomon', class: 'bloomon', color: '#FF9F80' },
       { name: 'Bloom & Wild', class: 'bloomandwild', color: '#F9ECD7' }
     ],
+    clearable: false
   },
   backgrounds: {
     default: 'linen-20',

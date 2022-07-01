@@ -44,8 +44,10 @@
             "port": 4400,
             "styles": [
               "projects/oasys-lib/src/assets/bloomon/variables.css",
-              "projects/oasys-lib/src/assets/global/variables.css",
-              "projects/oasys-lib/src/assets/bloomandwild/variables.css"
+              "projects/oasys-lib/src/assets/bloomon/styles.scss",
+              "projects/oasys-lib/src/assets/bloomandwild/variables.css",
+              "projects/oasys-lib/src/assets/bloomandwild/styles.scss",
+              "projects/oasys-lib/src/assets/global/variables.css"
             ]
           }
         },
