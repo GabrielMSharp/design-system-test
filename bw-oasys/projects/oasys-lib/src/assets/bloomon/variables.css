@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 01 Jul 2022 10:17:10 GMT
+ * Generated on Fri, 01 Jul 2022 12:32:50 GMT
  */
 
 :root .bloomon {
@@ -22,7 +22,7 @@
   --component-color-button-tertiary-inverse-background: transparent;
   --component-color-button-tertiary-inverse-border: #464646;
   --component-color-button-tertiary-inverse-text: #464646;
-  --component-size-button-large-padding-x: 1.6rem;
+  --component-size-button-large-padding-x: 2.4rem;
   --component-size-button-large-height: 4.8rem;
   --component-size-button-large-line-height: 1.6rem;
   --component-size-button-large-inline-spacing: 0.8rem;

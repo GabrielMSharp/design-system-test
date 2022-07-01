@@ -4,7 +4,7 @@
     "size": {
       "icon": {
         "small": { "value": "{global.size.unit.6.value}"},
-        "large": { "value": "{global.size.unit.default.value}"}
+        "large": { "value": "{global.size.unit.7.value}"}
       }
     }
   }

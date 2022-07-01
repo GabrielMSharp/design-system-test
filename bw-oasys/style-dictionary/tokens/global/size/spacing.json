@@ -63,7 +63,7 @@
           "type": "sizing"
         },
         "default": {
-          "value": "{global.size.unit.6}",
+          "value": "{global.size.unit.7.value}",
           "attributes": { "category": "size" },
           "type": "sizing"
         }

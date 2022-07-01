@@ -453,7 +453,7 @@
         "button": {
           "large": {
             "padding-x": {
-              "value": "16px",
+              "value": "24px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,

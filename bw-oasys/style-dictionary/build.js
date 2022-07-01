@@ -52,7 +52,7 @@ function getStyleDictionaryConfig(brand) {
         `./style-dictionary/tokens/${brand}/**/**/*.json`
     ],
     platforms: {
-      css: {
+      brandTokensCss: {
         transformGroup: "css",
         files: [
           {
@@ -65,6 +65,22 @@ function getStyleDictionaryConfig(brand) {
             },
             filter: (token) => {
               return token.name.indexOf('global') === -1;
+            }
+          },
+        ],
+      },
+      globalTokensCss: {
+        transformGroup: "css",
+        files: [
+          {
+            destination: `./projects/oasys-lib/src/assets/global/variables.css`,
+            format: "css/variables",
+            options: {
+              showFileHeader: true,
+              outputReferences: false
+            },
+            filter: (token) => {
+              return token.name.indexOf('global') !== -1;
             }
           },
         ],
@@ -101,8 +117,6 @@ function getStyleDictionaryConfig(brand) {
               brand: brand
             },
             filter: (token) => {
-              // BRAND SEMANTIC AND COMPONENT TOKENS ONLY
-              // BRAND SEMANTIC AND COMPONENT TOKENS ONLY
               // BRAND SEMANTIC AND COMPONENT TOKENS ONLY
               return token.name.indexOf('global') === -1;
             }

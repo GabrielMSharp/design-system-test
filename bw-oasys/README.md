@@ -29,9 +29,19 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Running Storybook
 
-To run storybook use the command `ng run oasys-lib:storybook` make sure you are running it from the `bw-oasys` folder (`cd bw-oasys`)
+Use the command `ng run oasys-lib:storybook`
 
-## Running Style dictionary
+## Generate design tokens into CSS variables And Figma Token Plugin formats
 
 Run style dictionary to take all token json files from the /style-dictionary/tokens folder and package them for relevant platforms (ie. css + figma tokens)
-To run style dictionary use the command `npm run build-style-dictionary` make sure you are running it from the `oasys-lib` folder (`cd bw-oasys/projects/oasys-lib`)
+Use the command `npm run update-tokens`
+
+## Minify SVG icons and convert into sprite for both brands
+
+Takes icons from the svgo/{brand}/ folder, minifies them into the /min folder and then generates an SVG sprite, which is added to the angular library project folders
+Use the command `npm run update-icons`
+
+## Publish Storybook via Chromatic
+
+Publish storybook to a publically accessible URL
+Use the command `npm run chromatic`
