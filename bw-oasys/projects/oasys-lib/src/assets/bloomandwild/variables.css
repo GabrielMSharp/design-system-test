@@ -1,35 +1,35 @@
 /**
  * Do not edit directly
- * Generated on Thu, 30 Jun 2022 15:16:10 GMT
+ * Generated on Fri, 01 Jul 2022 09:47:21 GMT
  */
 
 :root .bloomandwild {
-  --component-color-button-primary-color: #262626;
+  --component-color-button-primary-background: #262626;
   --component-color-button-primary-border: #262626;
   --component-color-button-primary-text: #ffffff;
-  --component-color-button-secondary-color: transparent;
+  --component-color-button-secondary-background: transparent;
   --component-color-button-secondary-border: transparent;
   --component-color-button-secondary-text: #ffffff;
-  --component-color-button-tertiary-color: transparent;
+  --component-color-button-tertiary-background: transparent;
   --component-color-button-tertiary-border: transparent;
   --component-color-button-tertiary-text: #262626;
-  --component-color-button-primary-inverse-color: transparent;
+  --component-color-button-primary-inverse-background: transparent;
   --component-color-button-primary-inverse-border: #262626;
   --component-color-button-primary-inverse-text: #262626;
-  --component-color-button-secondary-inverse-color: transparent;
+  --component-color-button-secondary-inverse-background: transparent;
   --component-color-button-secondary-inverse-border: transparent;
   --component-color-button-secondary-inverse-text: transparent;
-  --component-color-button-tertiary-inverse-color: transparent;
+  --component-color-button-tertiary-inverse-background: transparent;
   --component-color-button-tertiary-inverse-border: transparent;
   --component-color-button-tertiary-inverse-text: #ffffff;
-  --component-color-size-button-large-padding-x: 1.6rem;
-  --component-color-size-button-large-height: 4.8rem;
-  --component-color-size-button-large-line-height: 1.6rem;
-  --component-color-size-button-large-inline-spacing: 0.8rem;
-  --component-color-size-button-small-padding-x: 1.6rem;
-  --component-color-size-button-small-height: 3.2rem;
-  --component-color-size-button-small-line-height: 1.6rem;
-  --component-color-size-button-small-inline-spacing: 0.4rem;
+  --component-size-button-large-padding-x: 1.6rem;
+  --component-size-button-large-height: 4.8rem;
+  --component-size-button-large-line-height: 1.6rem;
+  --component-size-button-large-inline-spacing: 0.8rem;
+  --component-size-button-small-padding-x: 1.6rem;
+  --component-size-button-small-height: 3.2rem;
+  --component-size-button-small-line-height: 1.6rem;
+  --component-size-button-small-inline-spacing: 0.4rem;
   --component-border-width-button: 0.1rem;
   --component-border-radius-button: 0.2rem;
   --semantic-color-action-primary: #262626;

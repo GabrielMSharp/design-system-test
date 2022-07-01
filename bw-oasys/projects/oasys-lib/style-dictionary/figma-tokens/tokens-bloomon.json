@@ -649,34 +649,6 @@
           }
         }
       },
-      "style": {
-        "button": {
-          "large": {
-            "text-transform": {
-              "value": "uppercase",
-              "filePath": "tokens/bloomon/components/button/button.json",
-              "isSource": true,
-              "original": {
-                "value": "uppercase"
-              },
-              "attributes": {
-                "category": "component",
-                "type": "style",
-                "item": "button",
-                "subitem": "large",
-                "state": "text-transform"
-              },
-              "path": {
-                "0": "component",
-                "1": "style",
-                "2": "button",
-                "3": "large",
-                "4": "text-transform"
-              }
-            }
-          }
-        }
-      },
       "border-width": {
         "button": {
           "value": "1px",
@@ -718,6 +690,34 @@
             "0": "component",
             "1": "border-radius",
             "2": "button"
+          }
+        }
+      },
+      "style": {
+        "button": {
+          "large": {
+            "text-transform": {
+              "value": "uppercase",
+              "filePath": "tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "uppercase"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "style",
+                "item": "button",
+                "subitem": "large",
+                "state": "text-transform"
+              },
+              "path": {
+                "0": "component",
+                "1": "style",
+                "2": "button",
+                "3": "large",
+                "4": "text-transform"
+              }
+            }
           }
         }
       }

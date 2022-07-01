@@ -51,18 +51,18 @@
         }
       }
     },
+    "border-width" : {
+      "button": {"value": "{semantic.border-width.default.value}", "type": "borderWidth"}
+    },
+    "border-radius": {
+      "button": {"value": "{semantic.border-radius.round.value}", "type": "borderRadius"}
+    },
     "style": {
       "button": {
         "large": {
           "text-transform": { "value": "uppercase" }
         }
       }
-    },
-    "border-width" : {
-      "button": {"value": "{semantic.border-width.default.value}", "type": "borderWidth"}
-    },
-    "border-radius": {
-      "button": {"value": "{semantic.border-radius.round.value}", "type": "borderRadius"}
     }
   }
 }

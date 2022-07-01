@@ -15,8 +15,8 @@ export const parameters = {
   themes: {
     default: 'bloomon',
     list: [
-      { name: 'bloomon', class: 'bloomon', color: '#00aced' },
-      { name: 'Bloom & Wild', class: 'bloomandwild', color: '#3b5998' }
+      { name: 'bloomon', class: 'bloomon', color: '#FF9F80' },
+      { name: 'Bloom & Wild', class: 'bloomandwild', color: '#F9ECD7' }
     ],
   }
 }
