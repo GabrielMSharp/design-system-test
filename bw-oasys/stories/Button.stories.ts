@@ -28,12 +28,12 @@ const actionsData = {
 
 
 const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
-  props: args
-  // props: {
-  //   ...args,
-    // buttonClick: actionsData.buttonClick,
-    // buttonClasses: 'hello' //args.buttonClasses
-  // },
+  // props: args
+  props: {
+    ...args,
+    buttonClick: actionsData.buttonClick,
+    buttonClasses: 'hello' //args.buttonClasses
+  },
 });
 
 export const Primary = Template.bind({});

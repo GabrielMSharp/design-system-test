@@ -314,7 +314,7 @@
                 "OnInit",
                 "OnChanges"
             ],
-            "templateData": "<button (click)=\"clickButton()\"\n        [routerLink]=\"href || null\"\n        [ngClass]=\"buttonClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText && buttonIconPlacement !== 'iconOnly'\" [textTransform]=\"textTransform\">\n            {{buttonText}}\n        </ui-text>\n    </div>\n</button>\n"
+            "templateData": "<button (click)=\"clickButton()\"\n        [routerLink]=\"href || null\"\n        ngClass=\"{{buttonClasses}}\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText && buttonIconPlacement !== 'iconOnly'\" [textTransform]=\"textTransform\">\n            {{buttonText}}\n        </ui-text>\n    </div>\n</button>\n"
         },
         {
             "name": "IconComponent",

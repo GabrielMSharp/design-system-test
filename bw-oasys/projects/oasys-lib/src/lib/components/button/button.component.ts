@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges } from '@angular/core';
+import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit } from '@angular/core';
 import { TokenService } from '../../services/token.service';
 import { IconNames, IconContext } from '../icon/icon';
 import { TextTransform } from '../text/text';
@@ -8,9 +8,9 @@ import { TextTransform } from '../text/text';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   encapsulation: ViewEncapsulation.None,
-  // changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.Default
 })
-export class ButtonComponent implements OnInit, OnChanges {
+export class ButtonComponent implements OnInit, OnChanges, AfterViewInit {
 
   // // Button Content
   @Input() buttonText: string;
@@ -25,7 +25,7 @@ export class ButtonComponent implements OnInit, OnChanges {
   @Input() href: string = '';
   @Output() buttonClick: EventEmitter<void> = new EventEmitter();
 
-  buttonClasses: string = '';
+  buttonDisplayClasses: string[] = [''];
   iconContext: IconContext = 'none';
   textTransform!: TextTransform;
 
@@ -36,16 +36,16 @@ export class ButtonComponent implements OnInit, OnChanges {
     this.buttonClick.emit();
   }
 
-  ngOnInit(): void {
-    this.buttonClasses = [
+  setupClasses(): void {
+    this.buttonDisplayClasses = [
       `type-${this.buttonType}`,
       `size-${this.buttonSize}`,
       `${this.buttonIcon ? 'button--has-icon': ''}`,
       `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
       `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
-    ].join(' ');
+    ].filter((d) => !!d);
 
-    console.log('buttonClasses: ', this.buttonClasses);
+    console.log('buttonClasses: ', this.buttonDisplayClasses);
 
     if(this.buttonIcon) {
       this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';
@@ -54,7 +54,14 @@ export class ButtonComponent implements OnInit, OnChanges {
     this.textTransform = this.tokenService.getTokenValue(
       `--style-button-${this.buttonSize}-text-transform`
     ) as TextTransform;
+  }
 
+  ngOnInit(): void {
+    this.setupClasses();
+  }
+
+  ngAfterViewInit(): void {
+    this.setupClasses();
   }
 
   ngOnChanges(): void {
