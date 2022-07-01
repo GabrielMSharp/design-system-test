@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "svg": "svgo -f ./projects/oasys-lib/svgo/bloomandwild -o ./projects/oasys-lib/svgo/bloomandwild/min && svgo -f ./projects/oasys-lib/svgo/bloomon -o ./projects/oasys-lib/svgo/bloomon/min && grunt --brand=bloomandwild && grunt --brand=bloomon",
+    "svg": "svgo -f ./svgo/bloomandwild -o ./svgo/bloomandwild/min && svgo -f ./svgo/bloomon -o ./svgo/bloomon/min && grunt --brand=bloomandwild && grunt --brand=bloomon",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook",

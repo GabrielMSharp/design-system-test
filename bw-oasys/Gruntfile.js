@@ -3,17 +3,17 @@
 module.exports = function(grunt) {
 
     const svgoBrandDirectories = {
-      'bloomandwild': './projects/oasys-lib/svgo/bloomandwild/min',
-      'bloomon': './projects/oasys-lib/svgo/bloomon/min',
+      'bloomandwild': './svgo/bloomandwild/min',
+      'bloomon': './svgo/bloomon/min',
     }
-    
+
     const outputBrandDirectories = {
       'bloomandwild': './projects/oasys-lib/src/assets/bloomandwild/',
       'bloomon': './projects/oasys-lib/src/assets/bloomon/',
     }
-    
+
     const brand = grunt.option('brand') || 'bloomandwild';
-    
+
     console.log('Generating SVG sprite for ', brand)
 
     const baseDir  = svgoBrandDirectories[brand];
