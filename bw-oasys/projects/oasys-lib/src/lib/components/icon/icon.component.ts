@@ -35,7 +35,6 @@ export class IconComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
     this.iconBrandPath = `${this.tokenService.getBrandName(`--icon-component-brand`, this.elementRef.nativeElement)}`
-    console.log('this.iconBrandPath:', this.iconBrandPath);
     this.size = this.tokenService.getTokenValue(`--global-size-icon-${this.iconSize}`);
     this.iconPlacementClass = `icon-context-${this.iconContext}`;
     const sizeInPixels = this.convertRemToPixels(this.size);
