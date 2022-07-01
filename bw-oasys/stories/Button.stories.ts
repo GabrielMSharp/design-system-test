@@ -46,5 +46,5 @@ Primary2.args = {
 export const Primary3 = Template.bind({});
 Primary3.args = {
   buttonType: 'tertiary',
-  buttonText: 'Primary-3 CTA',
+  buttonText: 'Primary-3 Yeah',
 };

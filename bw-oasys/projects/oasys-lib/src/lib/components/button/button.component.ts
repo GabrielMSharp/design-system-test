@@ -52,7 +52,7 @@ export class ButtonComponent implements OnInit, OnChanges, AfterViewInit {
     }
 
     this.textTransform = this.tokenService.getTokenValue(
-      `--style-button-${this.buttonSize}-text-transform`
+      `--component-style-button-${this.buttonSize}-text-transform`
     ) as TextTransform;
   }
 
