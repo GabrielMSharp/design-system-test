@@ -1,5 +1,6 @@
 {
   "semantic": {
+    "brand-name": {"value": "bloomon"},
     "border-width": {
       "default": { "value": "{global.size.unit.1.value}", "type": "borderWidth" },
       "emphasis": { "value": "{global.size.unit.2.value}", "type": "borderWidth" },

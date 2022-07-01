@@ -25,16 +25,22 @@
         },
         {
             "name": "TokenService",
-            "id": "injectable-TokenService-61fc30ecad96d2c4963b0ff7f566cff532ebbf14304ed1e5201a847c544f1fa2abb4cdcb8bc575498adaf951693706ea1eb18fc5a51e694d1f41408e865b5943",
+            "id": "injectable-TokenService-8ab152a034cf53b073013c0a64bae008621a4acbc48c399dfbe0d472e3d99028e3267a3923f6677bfe702bf58962c5c8ef55f351196e6f3fd996f8610921593b",
             "file": "projects/oasys-lib/src/lib/services/token.service.ts",
             "properties": [],
             "methods": [
                 {
-                    "name": "getTokenValue",
+                    "name": "getBrandName",
                     "args": [
                         {
                             "name": "tokenName",
                             "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "element",
+                            "type": "Element",
                             "deprecated": false,
                             "deprecationMessage": ""
                         }
@@ -42,7 +48,7 @@
                     "optional": false,
                     "returnType": "string",
                     "typeParameters": [],
-                    "line": 11,
+                    "line": 21,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -54,6 +60,60 @@
                             "tagName": {
                                 "text": "param"
                             }
+                        },
+                        {
+                            "name": "element",
+                            "type": "Element",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getTokenValue",
+                    "args": [
+                        {
+                            "name": "tokenName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "element",
+                            "type": "Element",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "optional": true
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "tokenName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "element",
+                            "type": "Element",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "optional": true,
+                            "tagName": {
+                                "text": "param"
+                            }
                         }
                     ]
                 }
@@ -62,7 +122,7 @@
             "deprecationMessage": "",
             "description": "",
             "rawdescription": "\n",
-            "sourceCode": "import { Injectable } from '@angular/core';\nimport { WindowService } from './window.service';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class TokenService {\n\n  constructor(private windowRef: WindowService){}\n  \n  getTokenValue(tokenName: string): string {\n    return this.windowRef.nativeWindow.getComputedStyle(\n      this.windowRef.nativeWindow.document.documentElement\n    ).getPropertyValue(tokenName).trim() || '';\n  }\n  \n}",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { WindowService } from './window.service';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class TokenService {\n\n  constructor(private windowRef: WindowService){}\n\n  /*\n  Get the brand name for the currently enable custom property set (ie. /bloomon/variables.css)\n  Because variables are scoped via a selector (ie: ':root .bloomon {}')\n  we cannot get brand-specific custom properties programatically\n\n  Important: Ensure that the component requiring the brand name has locally scoped the custom property:\n  |  ui-icon {\n  |    --icon-component-brand: var(--utility-brand-name);\n  |  }\n  */\n  getBrandName(tokenName: string, element: Element): string {\n    return this.getTokenValue(tokenName, element);\n  }\n\n  getTokenValue(tokenName: string, element?: Element): string {\n    const rootElement = element || this.windowRef.nativeWindow.document.documentElement;\n    return this.windowRef.nativeWindow.getComputedStyle(rootElement)\n      .getPropertyValue(tokenName)\n      .trim() || '';\n  }\n\n}",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
@@ -123,9 +183,9 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-d2d90ccbae06d2690c4dc0bf719c64bef5d195faccc98db9b9c42c5147703aeaa77cc64c04fd6f7591aa851aefc1ae68bc202f397d4f36f8719c35f98db6d539",
+            "id": "component-ButtonComponent-0b3b00544f83e7542fb970afac9499be567251b43f7c4f2ec69cc176d8fe7ce0d5b8c53b91e9fb97c2d6095be6b3547384dbf95fd49833799d492d6c2faca402",
             "file": "projects/oasys-lib/src/lib/components/button/button.component.ts",
-            "changeDetection": "ChangeDetectionStrategy.Default",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
                 "ViewEncapsulation.None"
             ],
@@ -295,7 +355,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.Default\n})\nexport class ButtonComponent implements OnInit, OnChanges, AfterViewInit {\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: 'small'|'large' = 'large';\n  @Input() buttonType: 'primary'|'secondary'|'tertiary'|'primary-inverse'|'secondary-inverse'|'teriary-inverse' = 'primary';\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  buttonDisplayClasses: string[];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  setupClasses(): void {\n    this.buttonDisplayClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ].filter((d) => !!d);\n\n    console.log('buttonClasses: ', this.buttonDisplayClasses);\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n  }\n\n  ngOnInit(): void {\n    this.setupClasses();\n  }\n\n  ngAfterViewInit(): void {\n    this.setupClasses();\n  }\n\n  ngOnChanges(): void {\n    this.setupClasses();\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit, OnChanges, AfterViewInit {\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: 'small'|'large' = 'large';\n  @Input() buttonType: 'primary'|'secondary'|'tertiary'|'primary-inverse'|'secondary-inverse'|'teriary-inverse' = 'primary';\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  buttonDisplayClasses: string[];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  setupClasses(): void {\n    this.buttonDisplayClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ].filter((d) => !!d);\n\n    console.log('buttonClasses: ', this.buttonDisplayClasses);\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--component-style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n  }\n\n  ngOnInit(): void {\n    this.setupClasses();\n  }\n\n  ngAfterViewInit(): void {\n    this.setupClasses();\n  }\n\n  ngOnChanges(): void {\n    this.setupClasses();\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -335,11 +395,11 @@
                 "OnChanges",
                 "AfterViewInit"
             ],
-            "templateData": "<button (click)=\"clickButton()\"\n        [routerLink]=\"href || null\"\n        [ngClass]=\"buttonDisplayClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <ui-text *ngIf=\"buttonText && buttonIconPlacement !== 'iconOnly'\" [textTransform]=\"textTransform\">\n            {{buttonText}}\n        </ui-text>\n    </div>\n</button>\n"
+            "templateData": "<button (click)=\"clickButton()\"\n        [routerLink]=\"href || null\"\n        [ngClass]=\"buttonDisplayClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <span\n            class=\"ui-text\"\n            *ngIf=\"buttonText && buttonIconPlacement !== 'iconOnly'\">\n            {{buttonText}}\n        </span>\n    </div>\n</button>\n"
         },
         {
             "name": "IconComponent",
-            "id": "component-IconComponent-58efc39220381814d8ebf509b0ad013820f36f6b887f7a03ac240e78698b95beb73c08fa069f399025c3b6525bb93878cee3fde506de411e2ce31710d03c667e",
+            "id": "component-IconComponent-fa69e12f92efd561cc3c77b128221df958e41126ccbb7b5f42cd76d486f96441eba2daca23cb83cad4fe9c26e5d53be942db50d5cdb2174fb481bed1caa6d28e",
             "file": "projects/oasys-lib/src/lib/components/icon/icon.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -413,6 +473,15 @@
             "outputsClass": [],
             "propertiesClass": [
                 {
+                    "name": "iconBrandPath",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 23
+                },
+                {
                     "name": "iconPlacementClass",
                     "deprecated": false,
                     "deprecationMessage": "",
@@ -445,7 +514,7 @@
                     "optional": false,
                     "returnType": "number",
                     "typeParameters": [],
-                    "line": 26,
+                    "line": 27,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -466,7 +535,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 31,
+                    "line": 32,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -476,7 +545,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 35,
+                    "line": 36,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -488,11 +557,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy, OnChanges } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { WindowService } from '../../services/window.service';\nimport { IconNames, IconContext } from './icon';\n@Component({\n  selector:'ui-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  encapsulation: ViewEncapsulation.None\n})\nexport class IconComponent implements OnInit, OnChanges {\n  @Input() iconSize: 'small'|'large' = 'large';\n  @Input() iconName!: IconNames;\n  @Input() iconContext: IconContext = 'none';\n\n  @Input() iconWidth?: number;\n  @Input() iconHeight?: number;\n  @Input() iconClass?: string;\n\n  size?: string;\n  iconPlacementClass?: string;\n\n  constructor(private tokenService: TokenService, private windowRef: WindowService) { }\n\n  convertRemToPixels(remString: string): number {\n    const remNumber = parseFloat(remString.replace('rem', ''));\n    return remNumber * parseFloat(getComputedStyle(this.windowRef.nativeWindow.document.documentElement).fontSize);\n  }\n\n  ngOnChanges(): void {\n    this.ngOnInit();\n  }\n\n  ngOnInit(): void {\n    this.size = this.tokenService.getTokenValue(`--global-size-icon-${this.iconSize}`);;\n    this.iconPlacementClass = `icon-context-${this.iconContext}`;\n    const sizeInPixels = this.convertRemToPixels(this.size);\n    this.iconWidth = sizeInPixels;\n    this.iconHeight = sizeInPixels;\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy, OnChanges, ElementRef } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { WindowService } from '../../services/window.service';\nimport { IconNames, IconContext } from './icon';\n@Component({\n  selector:'ui-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  encapsulation: ViewEncapsulation.None\n})\nexport class IconComponent implements OnInit, OnChanges {\n  @Input() iconSize: 'small'|'large' = 'large';\n  @Input() iconName!: IconNames;\n  @Input() iconContext: IconContext = 'none';\n\n  @Input() iconWidth?: number;\n  @Input() iconHeight?: number;\n  @Input() iconClass?: string;\n\n  size?: string;\n  iconPlacementClass?: string;\n  iconBrandPath?: string;\n\n  constructor(private tokenService: TokenService, private windowRef: WindowService, private elementRef: ElementRef) { }\n\n  convertRemToPixels(remString: string): number {\n    const remNumber = parseFloat(remString.replace('rem', ''));\n    return remNumber * parseFloat(getComputedStyle(this.windowRef.nativeWindow.document.documentElement).fontSize);\n  }\n\n  ngOnChanges(): void {\n    this.ngOnInit();\n  }\n\n  ngOnInit(): void {\n    this.iconBrandPath = `${this.tokenService.getBrandName(`--icon-component-brand`,this.elementRef.nativeElement)}`\n    this.size = this.tokenService.getTokenValue(`--global-size-icon-${this.iconSize}`, this.elementRef.nativeElement);\n    this.iconPlacementClass = `icon-context-${this.iconContext}`;\n    const sizeInPixels = this.convertRemToPixels(this.size);\n    this.iconWidth = sizeInPixels;\n    this.iconHeight = sizeInPixels;\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "$iconContexts: leading, trailing, iconOnly;\n$iconSizes: large, small;\n\n\n@mixin iconSize($iconSize){\n  $iconPositionAdjustment: var(--icon-position-modifier-#{$iconSize});\n\n  &.icon-context-leading {\n    margin-left: #{$iconPositionAdjustment};\n  }\n\n  &.icon-context-trailing {\n    margin-right: #{$iconPositionAdjustment};\n  }\n  \n  &.icon-context-iconOnly {\n    margin-left: #{$iconPositionAdjustment};\n    margin-right: #{$iconPositionAdjustment};\n  }\n\n}\n\n.lib-icon {\n  display: inline-flex;\n\n  // Icon Contexts\n  @each $iconSize in $iconSizes {\n    @include iconSize(($iconSize));\n  }\n}",
+                    "data": "$iconContexts: leading, trailing, iconOnly;\n$iconSizes: large, small;\n\nui-icon {\n  --icon-component-brand: var(--utility-brand-name);\n}\n\n\n@mixin iconSize($iconSize){\n  $iconPositionAdjustment: var(--icon-position-modifier-#{$iconSize});\n\n  &.icon-context-leading {\n    margin-left: #{$iconPositionAdjustment};\n  }\n\n  &.icon-context-trailing {\n    margin-right: #{$iconPositionAdjustment};\n  }\n\n  &.icon-context-iconOnly {\n    margin-left: #{$iconPositionAdjustment};\n    margin-right: #{$iconPositionAdjustment};\n  }\n\n}\n\n.lib-icon {\n  display: inline-flex;\n\n  // Icon Contexts\n  @each $iconSize in $iconSizes {\n    @include iconSize(($iconSize));\n  }\n}",
                     "styleUrl": "./icon.component.scss"
                 }
             ],
@@ -514,9 +583,15 @@
                         "type": "WindowService",
                         "deprecated": false,
                         "deprecationMessage": ""
+                    },
+                    {
+                        "name": "elementRef",
+                        "type": "ElementRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
                     }
                 ],
-                "line": 22,
+                "line": 23,
                 "jsdoctags": [
                     {
                         "name": "tokenService",
@@ -535,6 +610,15 @@
                         "tagName": {
                             "text": "param"
                         }
+                    },
+                    {
+                        "name": "elementRef",
+                        "type": "ElementRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
                     }
                 ]
             },
@@ -542,7 +626,7 @@
                 "OnInit",
                 "OnChanges"
             ],
-            "templateData": "<div class=\"ui-icon {{iconPlacementClass}}\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" attr.width=\"{{iconWidth}}px\" attr.height=\"{{iconHeight}}px\" attr.class=\"{{iconClass}}\">\n    <use attr.xlink:href=\"./assets/icons/icons.svg#icon-{{iconName}}-{{iconWidth}}\"></use>\n  </svg>\n</div>\n"
+            "templateData": "<div class=\"ui-icon {{iconPlacementClass}}\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" attr.width=\"{{iconWidth}}px\" attr.height=\"{{iconHeight}}px\" attr.class=\"{{iconClass}}\">\n    <use attr.xlink:href=\"./{{iconBrandPath}}/assets/icons/icons.svg#icon-{{iconName}}-{{iconWidth}}\"></use>\n  </svg>\n</div>\n"
         },
         {
             "name": "LayoutBoxComponent",
@@ -1281,7 +1365,7 @@
                 "linktype": "component",
                 "name": "IconComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/13",
+                "coverageCount": "0/14",
                 "status": "low"
             },
             {
@@ -1326,7 +1410,7 @@
                 "linktype": "injectable",
                 "name": "TokenService",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {

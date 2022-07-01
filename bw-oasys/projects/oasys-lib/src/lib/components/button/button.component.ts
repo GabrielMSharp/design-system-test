@@ -8,7 +8,7 @@ import { TextTransform } from '../text/text';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.Default
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ButtonComponent implements OnInit, OnChanges, AfterViewInit {
 

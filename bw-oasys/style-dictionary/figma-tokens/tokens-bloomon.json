@@ -1057,6 +1057,22 @@
           }
         }
       },
+      "brand-name": {
+        "value": "bloomon",
+        "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
+        "isSource": true,
+        "original": {
+          "value": "bloomon"
+        },
+        "attributes": {
+          "category": "semantic",
+          "type": "brand-name"
+        },
+        "path": {
+          "0": "semantic",
+          "1": "brand-name"
+        }
+      },
       "border-width": {
         "default": {
           "value": "1px",
@@ -1179,6 +1195,24 @@
             "1": "border-radius",
             "2": "round"
           }
+        }
+      }
+    },
+    "utility": {
+      "brand-name": {
+        "value": "bloomon",
+        "filePath": "./style-dictionary/tokens/bloomon/semantic/utility.json",
+        "isSource": true,
+        "original": {
+          "value": "bloomon"
+        },
+        "attributes": {
+          "category": "utility",
+          "type": "brand-name"
+        },
+        "path": {
+          "0": "utility",
+          "1": "brand-name"
         }
       }
     }

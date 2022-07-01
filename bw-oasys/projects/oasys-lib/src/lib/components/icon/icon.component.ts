@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy, OnChanges } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation, ChangeDetectionStrategy, OnChanges, ElementRef } from '@angular/core';
 import { TokenService } from '../../services/token.service';
 import { WindowService } from '../../services/window.service';
 import { IconNames, IconContext } from './icon';
@@ -20,8 +20,9 @@ export class IconComponent implements OnInit, OnChanges {
 
   size?: string;
   iconPlacementClass?: string;
+  iconBrandPath?: string;
 
-  constructor(private tokenService: TokenService, private windowRef: WindowService) { }
+  constructor(private tokenService: TokenService, private windowRef: WindowService, private elementRef: ElementRef) { }
 
   convertRemToPixels(remString: string): number {
     const remNumber = parseFloat(remString.replace('rem', ''));
@@ -33,7 +34,9 @@ export class IconComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
-    this.size = this.tokenService.getTokenValue(`--global-size-icon-${this.iconSize}`);;
+    this.iconBrandPath = `${this.tokenService.getBrandName(`--icon-component-brand`, this.elementRef.nativeElement)}`
+    console.log('this.iconBrandPath:', this.iconBrandPath);
+    this.size = this.tokenService.getTokenValue(`--global-size-icon-${this.iconSize}`);
     this.iconPlacementClass = `icon-context-${this.iconContext}`;
     const sizeInPixels = this.convertRemToPixels(this.size);
     this.iconWidth = sizeInPixels;

@@ -1,6 +1,10 @@
 $iconContexts: leading, trailing, iconOnly;
 $iconSizes: large, small;
 
+ui-icon {
+  --icon-component-brand: var(--utility-brand-name);
+}
+
 
 @mixin iconSize($iconSize){
   $iconPositionAdjustment: var(--icon-position-modifier-#{$iconSize});
@@ -12,7 +16,7 @@ $iconSizes: large, small;
   &.icon-context-trailing {
     margin-right: #{$iconPositionAdjustment};
   }
-  
+
   &.icon-context-iconOnly {
     margin-left: #{$iconPositionAdjustment};
     margin-right: #{$iconPositionAdjustment};

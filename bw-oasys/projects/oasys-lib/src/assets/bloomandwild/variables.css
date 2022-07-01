@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 01 Jul 2022 12:32:50 GMT
+ * Generated on Fri, 01 Jul 2022 13:49:05 GMT
  */
 
 :root .bloomandwild {
@@ -48,10 +48,12 @@
   --semantic-font-weight-normal: normal;
   --semantic-font-weight-medium: 500;
   --semantic-font-weight-bold: 500;
+  --semantic-brand-name: bloomandwild;
   --semantic-border-width-default: 0.1rem;
   --semantic-border-width-emphasis: 0.2rem;
   --semantic-border-width-focus: 0.8rem;
   --semantic-border-radius-none: 0rem;
   --semantic-border-radius-soften-ui: 0.2rem;
   --semantic-border-radius-round: 2.4rem;
+  --utility-brand-name: bloomandwild;
 }
