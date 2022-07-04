@@ -37,7 +37,9 @@ export class IconComponent implements OnInit, OnChanges {
     this.iconBrandPath = `${this.tokenService.getBrandName(`--icon-component-brand`, this.elementRef.nativeElement)}`
     this.size = this.tokenService.getTokenValue(`--global-size-icon-${this.iconSize}`);
     this.iconPlacementClass = `icon-context-${this.iconContext}`;
+    console.log('convert icon size:', this.size);
     const sizeInPixels = this.convertRemToPixels(this.size);
+    console.log('in pixels icon size:', sizeInPixels);
     this.iconWidth = sizeInPixels;
     this.iconHeight = sizeInPixels;
   }
