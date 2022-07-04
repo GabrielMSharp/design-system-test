@@ -45,3 +45,4 @@ Use the command `npm run update-icons`
 
 Publish storybook to a publically accessible URL
 Use the command `npm run chromatic`
+Hint: Make sure your changes are commited first
