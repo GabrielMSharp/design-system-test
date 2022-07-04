@@ -40,6 +40,7 @@
     "@angular/compiler-cli": "~13.2.0",
     "@babel/core": "^7.18.2",
     "@compodoc/compodoc": "^1.1.19",
+    "@ljcl/storybook-addon-cssprops": "^2.3.5",
     "@storybook/addon-actions": "^6.5.7",
     "@storybook/addon-essentials": "^6.5.7",
     "@storybook/addon-interactions": "^6.5.7",
@@ -61,7 +62,7 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^13.0.0",
     "storybook-addon-themes": "^6.1.0",
-    "typescript": "~4.5.2",
-    "style-dictionary": "^3.7.1"
+    "style-dictionary": "^3.7.1",
+    "typescript": "~4.5.2"
   }
 }

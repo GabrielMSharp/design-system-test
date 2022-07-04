@@ -14,7 +14,15 @@ export default {
     moduleMetadata({
       imports: [RouterTestingModule, OasysComponentsModule]
     })
-  ]
+  ],
+  parameters: {
+    cssprops: {
+      "component-color-button-primary-background": {
+        value: "#464646",
+        description: "This value is hard coded but if changed the component does update",
+      },
+    }
+  }
 } as Meta;
 
 const actionsData = {

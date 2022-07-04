@@ -8,7 +8,8 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    'storybook-addon-themes'
+    'storybook-addon-themes',
+    '@ljcl/storybook-addon-cssprops'
   ],
   "framework": "@storybook/angular",
   "core": {
