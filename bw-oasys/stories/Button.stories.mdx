@@ -1,5 +1,7 @@
-import { Story, Canvas, ArgsTable, Template } from "@storybook/addon-docs";
+import { Story, Canvas, ArgsTable, Template, Source } from "@storybook/addon-docs";
 import { ButtonComponent } from 'projects/oasys-lib/src/public-api';
+
+import dedent from 'ts-dedent';
 
 <Meta title="Usage Guidelines/Buttons" component={ButtonComponent} />
 
@@ -51,3 +53,32 @@ If you included the title in the story's default export, use this approach.
 </Canvas>
 
 <ArgsTable of={ButtonComponent} />
+
+<Source
+  language='css'
+  dark
+  format={false}
+  code={dedent`
+     .container {
+       display: grid | inline-grid;
+     }
+  `}
+/>
+
+<Source
+  language='pug'
+  dark
+  format={true}
+  code={dedent`
+     ui-button(buttonType="primary" buttonText="Click Me")
+  `}
+/>
+
+<Source
+  language='pug'
+  dark
+  format={false}
+  code={`
+     ui-button(buttonType="primary" buttonText="Click Me")
+  `}
+/>
