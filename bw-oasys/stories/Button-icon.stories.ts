@@ -8,7 +8,7 @@ import { OasysComponentsModule } from './_OasysComponents.module';
 // import ButtonDocumentation from './Button.stories.mdx';
 
 export default {
-  title: 'Design System/Components/Actions/Icon Button',
+  title: 'Components/Actions/Icon Button',
   component: ButtonComponent,
   decorators: [
     moduleMetadata({

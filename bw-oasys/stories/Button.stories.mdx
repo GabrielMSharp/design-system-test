@@ -1,7 +1,7 @@
 import { Story, Canvas, ArgsTable, Template, Source } from "@storybook/addon-docs";
 import { ButtonComponent } from 'projects/oasys-lib/src/public-api';
 import { CssPropsBlock } from "@ljcl/storybook-addon-cssprops";
-
+import cssprops from "./assets/tokens/tokens";
 import dedent from 'ts-dedent';
 
 <Meta title="Usage Guidelines/Buttons" component={ButtonComponent} />
@@ -13,6 +13,7 @@ export const DocsTemplate = (args) => ({ props: args });
 What's that, not excited? Well maybe you should sit down. Things bout to get craayze
 
 It can be further expanded with your own code snippets and include specific information related to your stories.
+
 
 ## Overview
 
@@ -71,15 +72,6 @@ If you included the title in the story's default export, use this approach.
   dark
   format={true}
   code={dedent`
-     ui-button(buttonType="primary" buttonText="Click Me")
-  `}
-/>
-
-<Source
-  language='pug'
-  dark
-  format={false}
-  code={`
      ui-button(buttonType="primary" buttonText="Click Me")
   `}
 />

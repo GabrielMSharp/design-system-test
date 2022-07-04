@@ -45,6 +45,17 @@ StyleDictionaryPackage.registerFormat({
   },
 });
 
+StyleDictionaryPackage.registerFormat({
+  name: 'json/storybook',
+  formatter: ({ dictionary, platform, options }) => {
+    return '{\n' + dictionary.allTokens.map(function(token) {
+      return `  "${token.name}": {
+        "value": ${JSON.stringify(token.value)}
+      }`;
+    }).join(',\n') + '\n}';
+  },
+});
+
 function getStyleDictionaryConfig(brand) {
   return {
     source: [
@@ -120,6 +131,19 @@ function getStyleDictionaryConfig(brand) {
               // BRAND SEMANTIC AND COMPONENT TOKENS ONLY
               return token.name.indexOf('global') === -1;
             }
+          },
+        ],
+      },
+      storybookOutput: {
+        transformGroup: "css",
+        files: [
+          {
+            destination: `./stories/assets/tokens/tokens.json`,
+            format: "json/storybook",
+            options: {
+              showFileHeader: true,
+              outputReferences: false
+            },
           },
         ],
       },
