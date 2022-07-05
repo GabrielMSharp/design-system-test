@@ -994,14 +994,12 @@
             },
             "font-size": {
               "value": "18px",
-              "type": "sizing",
-              "category": "size",
+              "type": "fontSize",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.font.body-2}",
-                "type": "sizing",
-                "category": "size"
+                "type": "fontSize"
               },
               "attributes": {
                 "category": "component",
@@ -1119,13 +1117,11 @@
             "font-size": {
               "value": "16px",
               "type": "fontSize",
-              "category": "size",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.font.body-3}",
-                "type": "fontSize",
-                "category": "size"
+                "type": "fontSize"
               },
               "attributes": {
                 "category": "component",

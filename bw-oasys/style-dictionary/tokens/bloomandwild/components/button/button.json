@@ -194,8 +194,7 @@
           },
           "font-size": {
             "value": "{global.size.font.body-2.value}",
-            "type": "sizing",
-            "category": "size"
+            "type": "fontSize"
           }
         },
         "small": {
@@ -217,8 +216,8 @@
           },
           "font-size": {
             "value": "{global.size.font.body-3.value}",
-            "type": "fontSize",
-            "category": "size"
+            "type": "fontSize"
+
           }
         }
       }

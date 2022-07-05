@@ -994,12 +994,12 @@
             },
             "font-size": {
               "value": "14px",
-              "type": "spacing",
+              "type": "fontSize",
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.font.body-4}",
-                "type": "spacing"
+                "type": "fontSize"
               },
               "attributes": {
                 "category": "component",
@@ -1116,12 +1116,12 @@
             },
             "font-size": {
               "value": "12px",
-              "type": "spacing",
+              "type": "fontSize",
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
                 "value": "{global.size.font.body-5}",
-                "type": "spacing"
+                "type": "fontSize"
               },
               "attributes": {
                 "category": "component",
