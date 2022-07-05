@@ -8,7 +8,7 @@
             "type": "color"
           },
           "border": {
-            "value": "{semantic.color.action.primary.value}",
+            "value": "{component.color.button.primary.background.value}",
             "type": "color"
           },
           "text": {
@@ -36,7 +36,7 @@
             "type": "color"
           },
           "border": {
-            "value": "{semantic.color.transparent.value}",
+            "value": "{component.color.button.tertiary.background.value}",
             "type": "color"
           },
           "text": {
@@ -50,7 +50,7 @@
             "type": "color"
           },
           "border": {
-            "value": "{semantic.color.action.primary-inverse.value}",
+            "value": "{component.color.button.primary-inverse.background.value}",
             "type": "color"
           },
           "text": {
@@ -78,7 +78,7 @@
             "type": "color"
           },
           "border": {
-            "value": "{semantic.color.transparent.value}",
+            "value": "{component.color.button.tertiary-inverse.background.value}",
             "type": "color"
           },
           "text": {
@@ -86,13 +86,14 @@
             "type": "color"
           }
         },
+
         "expressive": {
           "background": {
             "value": "{semantic.color.action.expressive.value}",
             "type": "color"
           },
           "border": {
-            "value": "{semantic.color.action.expressive.value}",
+            "value": "{component.color.button.expressive.background.value}",
             "type": "color"
           },
           "text": {
@@ -106,7 +107,7 @@
             "type": "color"
           },
           "border": {
-            "value": "{semantic.color.action.danger.value}",
+            "value": "{component.color.button.danger.background.value}",
             "type": "color"
           },
           "text": {
@@ -120,7 +121,7 @@
             "type": "color"
           },
           "border": {
-            "value": "{global.color.partners.facebook.value}",
+            "value": "{component.color.button.facebook.background.value}",
             "type": "color"
           },
           "text": {
@@ -134,7 +135,7 @@
             "type": "color"
           },
           "border": {
-            "value": "{global.color.partners.paypal.value}",
+            "value": "{component.color.button.paypal.background.value}",
             "type": "color"
           },
           "text": {
@@ -148,7 +149,7 @@
             "type": "color"
           },
           "border": {
-            "value": "{global.color.partners.trustpilot.value}",
+            "value": "{component.color.button.trustpilot.background.value}",
             "type": "color"
           },
           "text": {
