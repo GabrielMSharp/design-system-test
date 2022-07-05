@@ -87,3 +87,21 @@ Danger.args = {
   buttonText: 'Danger CTA',
 };
 
+export const Facebook = Template.bind({});
+Facebook.args = {
+  buttonType: 'facebook',
+  buttonText: 'Facebook CTA',
+};
+
+export const Paypal = Template.bind({});
+Paypal.args = {
+  buttonType: 'paypal',
+  buttonText: 'Paypal CTA',
+};
+
+export const Trustpilot = Template.bind({});
+Trustpilot.args = {
+  buttonType: 'trustpilot',
+  buttonText: 'Trustpilot CTA',
+};
+
