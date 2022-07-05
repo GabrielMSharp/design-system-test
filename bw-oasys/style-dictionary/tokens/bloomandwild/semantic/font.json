@@ -16,6 +16,13 @@
         "normal": {"value": "normal"},
         "medium": {"value": "500"},
         "bold": {"value": "{semantic.font.weight.medium}"}
+      },
+      "letter-spacing": {
+        "action": {
+          "primary": {
+            "value": "{global.size.unit.100.value}"
+          }
+        }
       }
     }
   }
