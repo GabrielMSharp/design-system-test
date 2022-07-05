@@ -170,6 +170,22 @@
             "value": "{semantic.color.text.body-disabled.value}",
             "type": "color"
           }
+        },
+        "overlay": {
+          "hover": {
+            "value": "#666",
+            "modify": [{
+              "type": "alpha",
+              "amount": "0.1"
+            }]
+          },
+          "focus": {
+            "value": "#666",
+            "modify": [{
+              "type": "alpha",
+              "amount": "0.5"
+            }]
+          }
         }
       }
     },

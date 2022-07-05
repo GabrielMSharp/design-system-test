@@ -288,7 +288,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-7e336531352d311f73cae7278a1bbe5f29ec08c3bd82416802131a1c6b244ecedaec1be0d162cd1b1387c76670e63f440fde7562eb99c008fb4deb58c71cad1c",
+            "id": "component-ButtonComponent-965322503377dec94380a7c27e5dc6cc63c45a74d36fc645eb8e8dab829fdd1f4740232226b1b4d02420bb0ff358207c855277d33f1d1f28da1917ebb01815bc",
             "file": "projects/oasys-lib/src/lib/components/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -310,10 +310,11 @@
             "inputsClass": [
                 {
                     "name": "buttonDisabled",
+                    "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 35,
-                    "type": "UIButtonBoolean",
+                    "type": "boolean",
                     "decorators": []
                 },
                 {
@@ -452,7 +453,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 89,
+                    "line": 90,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -473,7 +474,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 96,
+                    "line": 99,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -495,11 +496,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit, SimpleChanges } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\nimport {\n  UIButton,\n  UIButtonBoolean,\n  UIButtonSize,\n  UIButtonType\n} from './button';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit, OnChanges {\n\n  button: UIButton;\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: UIButtonSize = 'large';\n  @Input() buttonType: UIButtonType = 'primary';\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n  @Input() buttonDisabled: UIButtonBoolean;\n\n  buttonDisplayClasses: string[];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService, private changes: ChangeDetectorRef) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  setupClasses(): void {\n    this.buttonDisplayClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ].filter((d) => !!d);\n\n    console.log('buttonClasses: ', this.buttonDisplayClasses);\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--component-style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n  }\n\n  createButton(): UIButton {\n    return <UIButton>{\n      buttonText: this.buttonText,\n      buttonIcon: this.buttonIcon,\n      buttonIconPlacement: this.buttonIconPlacement,\n      buttonType: this.buttonType,\n      buttonSize: this.buttonSize,\n      buttonClick: this.buttonClick,\n      href: this.href,\n      target: '',\n      buttonDisplayClasses: [\n        `type-${this.buttonType}`,\n        `size-${this.buttonSize}`,\n        `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n      ]\n        .filter((d) => !!d)\n    };\n  }\n\n  ngOnChanges(changes: SimpleChanges): void {\n    if (changes['buttonType']) {\n      this.button = this.createButton();\n      this.changes.markForCheck();\n    }\n  }\n\n  ngOnInit(): void {\n    this.button = this.createButton();\n  }\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit, SimpleChanges } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\nimport {\n  UIButton,\n  UIButtonBoolean,\n  UIButtonSize,\n  UIButtonType\n} from './button';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit, OnChanges {\n\n  button: UIButton;\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: UIButtonSize = 'large';\n  @Input() buttonType: UIButtonType = 'primary';\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n  @Input() buttonDisabled: boolean = false;\n\n  buttonDisplayClasses: string[];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService, private changes: ChangeDetectorRef) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  setupClasses(): void {\n    this.buttonDisplayClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ].filter((d) => !!d);\n\n    console.log('buttonClasses: ', this.buttonDisplayClasses);\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--component-style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n  }\n\n  createButton(): UIButton {\n    return <UIButton>{\n      buttonClick: this.buttonClick,\n      buttonText: this.buttonText,\n      buttonIcon: this.buttonIcon,\n      buttonIconPlacement: this.buttonIconPlacement,\n      buttonType: this.buttonType,\n      buttonSize: this.buttonSize,\n      buttonDisabled: this.buttonDisabled,\n      href: this.href,\n      target: '',\n      buttonDisplayClasses: [\n        `type-${this.buttonType}`,\n        `size-${this.buttonSize}`,\n        `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n      ]\n        .filter((d) => !!d)\n    };\n  }\n\n  ngOnChanges(changes: SimpleChanges): void {\n    if (changes['buttonType'] || changes['buttonDisabled']) {\n      console.log('changes', changes['buttonDisabled']);\n      this.button = this.createButton();\n      console.log(this.button);\n      this.changes.markForCheck();\n    }\n  }\n\n  ngOnInit(): void {\n    this.button = this.createButton();\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "$buttonTypes:\n    primary,\n    secondary,\n    tertiary,\n    primary-inverse,\n    secondary-inverse,\n    tertiary-inverse,\n    expressive,\n    danger,\n    facebook,\n    paypal,\n    trustpilot;\n\n$buttonSizes: large, small;\n\n$buttonFontFamily: var(--semantic-font-family-body);\n\n\n@mixin buttonColors($buttonType) {\n    background-color: var(--component-color-button-#{$buttonType}-background);\n    border-color: var(--component-color-button-#{$buttonType}-border);\n    color: var(--component-color-button-#{$buttonType}-text);\n\n    .buttonIcon {\n        fill: currentColor;\n    }\n}\n\n@mixin buttonSize($buttonSize) {\n    $borderWidth: var(--component-border-width-button);\n    $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);\n    $buttonMinimumHeight: var(--component-size-button-#{$buttonSize}-height);\n\n\n    $_calculatedHeight: calc($buttonMinimumHeight / 2);\n    $_calculatedLineHeight: calc($lineHeight / 2);\n\n\n    $paddingX: var(--component-size-button-#{$buttonSize}-padding-x);\n    $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);\n\n    $paddingX--with-icon: calc($paddingX * 2);\n\n    min-height: $buttonMinimumHeight;\n    min-width: $buttonMinimumHeight;\n    padding-top: $paddingY;\n    padding-right: $paddingX;\n    padding-bottom: $paddingY;\n    padding-left: $paddingX;\n\n    border-width: $borderWidth;\n\n    .button-content {\n        display: flex;\n        align-items: center;\n        gap: var(--component-size-button-#{$buttonSize}-inline-spacing);\n\n        .ui-icon {\n            max-height: $lineHeight;\n            display: flex;\n            align-items: center;\n        }\n\n        .ui-text {\n            line-height: $lineHeight;\n        }\n    }\n\n\n\n    &.button--has-icon {\n        &.button--icon--trailing {\n            .button-content {\n                flex-direction: row-reverse;\n            }\n        }\n\n        &.button--icon--only {\n            max-width: calc($buttonMinimumHeight - $borderWidth);\n        }\n\n    }\n}\n\n\nui-button {\n    button {\n        /* Reset */\n        border: 0;\n        -webkit-appearance: none;\n        padding: 0;\n        display: inline-flex;\n        text-align: center;\n        justify-content: center;\n        align-items: center;\n        border-style: solid;\n\n        font-family: $buttonFontFamily;\n\n        // Button Colors\n        @each $buttonType in $buttonTypes {\n            &.type-#{$buttonType} {\n                @include buttonColors(($buttonType));\n            }\n        }\n\n        // Button Sizes\n        @each $buttonSize in $buttonSizes {\n            &.size-#{$buttonSize} {\n                @include buttonSize(($buttonSize));\n            }\n        }\n\n    }\n}",
+                    "data": "$buttonTypes:\n    primary,\n    secondary,\n    tertiary,\n    primary-inverse,\n    secondary-inverse,\n    tertiary-inverse,\n    expressive,\n    danger,\n    facebook,\n    paypal,\n    trustpilot;\n\n$buttonSizes: large, small;\n\n$buttonFontFamily: var(--semantic-font-family-body);\n\n\n@mixin buttonColors($buttonType) {\n    background-color: var(--component-color-button-#{$buttonType}-background);\n    border-color: var(--component-color-button-#{$buttonType}-border);\n    color: var(--component-color-button-#{$buttonType}-text);\n}\n\n@mixin buttonSize($buttonSize) {\n    $borderWidth: var(--component-border-width-button);\n    $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);\n    $buttonMinimumHeight: var(--component-size-button-#{$buttonSize}-height);\n\n\n    $_calculatedHeight: calc($buttonMinimumHeight / 2);\n    $_calculatedLineHeight: calc($lineHeight / 2);\n\n\n    $paddingX: var(--component-size-button-#{$buttonSize}-padding-x);\n    $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);\n\n    $paddingX--with-icon: calc($paddingX * 2);\n\n    min-height: $buttonMinimumHeight;\n    min-width: $buttonMinimumHeight;\n    padding-top: $paddingY;\n    padding-right: $paddingX;\n    padding-bottom: $paddingY;\n    padding-left: $paddingX;\n\n    border-width: $borderWidth;\n\n    .button-content {\n        display: flex;\n        align-items: center;\n        gap: var(--component-size-button-#{$buttonSize}-inline-spacing);\n\n        .ui-icon {\n            max-height: $lineHeight;\n            display: flex;\n            align-items: center;\n        }\n\n        .ui-text {\n            line-height: $lineHeight;\n        }\n    }\n\n\n\n    &.button--has-icon {\n        &.button--icon--trailing {\n            .button-content {\n                flex-direction: row-reverse;\n            }\n        }\n\n        &.button--icon--only {\n            max-width: calc($buttonMinimumHeight - $borderWidth);\n        }\n\n    }\n}\n\n\nui-button {\n    button {\n        /* Reset */\n        border: 0;\n        -webkit-appearance: none;\n        padding: 0;\n        display: inline-flex;\n        text-align: center;\n        justify-content: center;\n        align-items: center;\n        border-style: solid;\n        cursor: pointer;\n\n        font-family: $buttonFontFamily;\n\n        // Button Colors\n        @each $buttonType in $buttonTypes {\n            &.type-#{$buttonType} {\n                @include buttonColors(($buttonType));\n            }\n        }\n\n        // Button Sizes\n        @each $buttonSize in $buttonSizes {\n            &.size-#{$buttonSize} {\n                @include buttonSize(($buttonSize));\n            }\n        }\n\n        // Disabled button\n        &[disabled]{\n            background-color: var(--component-color-button-disabled-background);\n            border-color: var(--component-color-button-disabled-border);\n            color: var(--component-color-button-disabled-text);\n            cursor: default;\n        }\n\n        // Icon colour matching text color\n        .buttonIcon {\n            fill: currentColor;\n        }\n\n    }\n}",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -549,7 +550,7 @@
                 "OnInit",
                 "OnChanges"
             ],
-            "templateData": "<button (click)=\"button.clickButton()\"\n        [routerLink]=\"button.href || null\"\n        [ngClass]=\"button.buttonDisplayClasses\"\n        [attr.disabled]=\"button.buttonDisabled\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"button.buttonIcon\" [iconName]=\"button.buttonIcon\" [iconSize]=\"button.buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"button.iconContext\"></ui-icon>\n        <span\n            class=\"ui-text\"\n            *ngIf=\"button.buttonText && button.buttonIconPlacement !== 'iconOnly'\">\n            {{button.buttonText}}\n        </span>\n    </div>\n</button>\n"
+            "templateData": "<button (click)=\"button.clickButton()\"\n        [routerLink]=\"button.href || null\"\n        [ngClass]=\"button.buttonDisplayClasses\"\n        [attr.disabled]=\"button.buttonDisabled === true || null\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"button.buttonIcon\" [iconName]=\"button.buttonIcon\" [iconSize]=\"button.buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"button.iconContext\"></ui-icon>\n        <span\n            class=\"ui-text\"\n            *ngIf=\"button.buttonText && button.buttonIconPlacement !== 'iconOnly'\">\n            {{button.buttonText}}\n        </span>\n    </div>\n</button>\n"
         },
         {
             "name": "IconComponent",
@@ -1165,16 +1166,6 @@
                 "name": "actionsData",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  buttonClick: action('buttonClick'),\n}"
-            },
-            {
-                "name": "actionsData",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "stories/Button-icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1324,11 +1315,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Button.stories.ts",
+                "file": "stories/Button-icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ButtonComponent>",
                 "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    ...args,\n    buttonClick: actionsData.buttonClick\n  },\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    ...args,\n  },\n})"
             },
             {
                 "name": "Template",
@@ -1339,16 +1340,6 @@
                 "deprecationMessage": "",
                 "type": "Story<TextComponent>",
                 "defaultValue": "(args: TextComponent) => ({\n  props: args,\n  template: `<ui-text>{{ ngContent }}</ui-text>`\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/Button-icon.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    ...args,\n    buttonClick: actionsData.buttonClick\n  },\n})"
             },
             {
                 "name": "Tertiary",
@@ -1495,17 +1486,92 @@
         ],
         "enumerations": [],
         "groupedVariables": {
-            "stories/Button.stories.ts": [
+            "stories/Button-icon.stories.ts": [
                 {
                     "name": "actionsData",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/Button.stories.ts",
+                    "file": "stories/Button-icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  buttonClick: action('buttonClick'),\n}"
                 },
+                {
+                    "name": "Bloomandwild",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Bloomon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button-icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    ...args,\n    buttonClick: actionsData.buttonClick\n  },\n})"
+                }
+            ],
+            "projects/oasys-lib/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/oasys-lib/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/oasys-lib/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "stories/assets/tokens/tokens.ts": [
+                {
+                    "name": "cssprops",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/assets/tokens/tokens.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  tokens\n}"
+                },
+                {
+                    "name": "tokens",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/assets/tokens/tokens.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require('./tokens.json')"
+                }
+            ],
+            "stories/Button.stories.ts": [
                 {
                     "name": "Danger",
                     "ctype": "miscellaneous",
@@ -1594,7 +1660,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    ...args,\n    buttonClick: actionsData.buttonClick\n  },\n})"
+                    "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    ...args,\n  },\n})"
                 },
                 {
                     "name": "Tertiary",
@@ -1625,91 +1691,6 @@
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
-                }
-            ],
-            "stories/Button-icon.stories.ts": [
-                {
-                    "name": "actionsData",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Button-icon.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  buttonClick: action('buttonClick'),\n}"
-                },
-                {
-                    "name": "Bloomandwild",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Button-icon.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Bloomon",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Button-icon.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Button-icon.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    ...args,\n    buttonClick: actionsData.buttonClick\n  },\n})"
-                }
-            ],
-            "projects/oasys-lib/src/test.ts": [
-                {
-                    "name": "context",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/oasys-lib/src/test.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-                },
-                {
-                    "name": "require",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/oasys-lib/src/test.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "literal type"
-                }
-            ],
-            "stories/assets/tokens/tokens.ts": [
-                {
-                    "name": "cssprops",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/assets/tokens/tokens.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  tokens\n}"
-                },
-                {
-                    "name": "tokens",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/assets/tokens/tokens.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "require('./tokens.json')"
                 }
             ],
             "stories/_OasysComponents.module.ts": [
@@ -2003,16 +1984,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "actionsData",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

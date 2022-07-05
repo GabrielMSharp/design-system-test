@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Jul 2022 12:49:27 GMT
+ * Generated on Tue, 05 Jul 2022 13:37:48 GMT
  */
 
 :root .bloomandwild {
@@ -40,16 +40,18 @@
   --component-color-button-disabled-background: #f4f3f2;
   --component-color-button-disabled-border: #f4f3f2;
   --component-color-button-disabled-text: #898989;
-  --component-size-button-large-padding-x: 2.4rem;
-  --component-size-button-large-height: 4.8rem;
-  --component-size-button-large-line-height: 1.6rem;
-  --component-size-button-large-inline-spacing: 0.8rem;
-  --component-size-button-small-padding-x: 1.6rem;
-  --component-size-button-small-height: 3.2rem;
-  --component-size-button-small-line-height: 1.6rem;
-  --component-size-button-small-inline-spacing: 0.4rem;
-  --component-border-width-button: 0.1rem;
-  --component-border-radius-button: 0.2rem;
+  --component-color-button-overlay-hover: #898989;
+  --component-color-button-overlay-focus: #898989;
+  --component-size-button-large-padding-x: 2.4;
+  --component-size-button-large-height: 4.8;
+  --component-size-button-large-line-height: 1.6;
+  --component-size-button-large-inline-spacing: 0.8;
+  --component-size-button-small-padding-x: 1.6;
+  --component-size-button-small-height: 3.2;
+  --component-size-button-small-line-height: 1.6;
+  --component-size-button-small-inline-spacing: 0.4;
+  --component-border-width-button: 0.1;
+  --component-border-radius-button: 0.2;
   --semantic-color-action-primary: #262626;
   --semantic-color-action-primary-inverse: #ffffff;
   --semantic-color-action-expressive: #fff799;
@@ -70,11 +72,11 @@
   --semantic-font-weight-medium: 500;
   --semantic-font-weight-bold: 500;
   --semantic-brand-name: bloomandwild;
-  --semantic-border-width-default: 0.1rem;
-  --semantic-border-width-emphasis: 0.2rem;
-  --semantic-border-width-focus: 0.8rem;
-  --semantic-border-radius-none: 0rem;
-  --semantic-border-radius-soften-ui: 0.2rem;
-  --semantic-border-radius-round: 2.4rem;
+  --semantic-border-width-default: 0.1;
+  --semantic-border-width-emphasis: 0.2;
+  --semantic-border-width-focus: 0.8;
+  --semantic-border-radius-none: 0;
+  --semantic-border-radius-soften-ui: 0.2;
+  --semantic-border-radius-round: 2.4;
   --utility-brand-name: bloomandwild;
 }

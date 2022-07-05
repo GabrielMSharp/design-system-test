@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Jul 2022 12:49:28 GMT
+ * Generated on Tue, 05 Jul 2022 13:37:48 GMT
  */
 
 :root {
@@ -50,19 +50,19 @@
   --global-size-font-body-4: 1.4;
   --global-size-font-body-5: 1.2;
   --global-size-font-base: 1.6;
-  --global-size-icon-small: 1.6rem;
-  --global-size-icon-large: 2.4rem;
-  --global-size-unit-0: 0rem;
-  --global-size-unit-1: 0.1rem;
-  --global-size-unit-2: 0.2rem;
-  --global-size-unit-3: 0.4rem;
-  --global-size-unit-4: 0.8rem;
-  --global-size-unit-5: 1.2rem;
-  --global-size-unit-6: 1.6rem;
-  --global-size-unit-7: 2.4rem;
-  --global-size-unit-8: 3.2rem;
-  --global-size-unit-9: 4rem;
-  --global-size-unit-10: 4.8rem;
-  --global-size-unit-11: 5.6rem;
-  --global-size-unit-default: 2.4rem;
+  --global-size-icon-small: 1.6;
+  --global-size-icon-large: 2.4;
+  --global-size-unit-0: 0;
+  --global-size-unit-1: 0.1;
+  --global-size-unit-2: 0.2;
+  --global-size-unit-3: 0.4;
+  --global-size-unit-4: 0.8;
+  --global-size-unit-5: 1.2;
+  --global-size-unit-6: 1.6;
+  --global-size-unit-7: 2.4;
+  --global-size-unit-8: 3.2;
+  --global-size-unit-9: 4.0;
+  --global-size-unit-10: 4.8;
+  --global-size-unit-11: 5.6;
+  --global-size-unit-default: 2.4;
 }
