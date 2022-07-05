@@ -60,19 +60,33 @@ Tertiary.args = {
 export const PrimaryInverse = Template.bind({});
 PrimaryInverse.args = {
   buttonType: 'primary-inverse',
-  buttonText: 'PrimaryInverse CTA',
+  buttonText: 'Primary CTA',
 };
 
 export const SecondaryInverse = Template.bind({});
 SecondaryInverse.args = {
   buttonType: 'secondary-inverse',
-  buttonText: 'SecondaryInverse CTA',
+  buttonText: 'Seconary CTA',
+};
+SecondaryInverse.story = {
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+    },
+  },
 };
 
 export const TertiaryInverse = Template.bind({});
 TertiaryInverse.args = {
   buttonType: 'tertiary-inverse',
-  buttonText: 'TertiaryInverse CTA',
+  buttonText: 'Tertiary CTA',
+};
+TertiaryInverse.story = {
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+    },
+  },
 };
 
 export const expressive = Template.bind({});

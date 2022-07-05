@@ -26,6 +26,7 @@
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
     "@divriots/style-dictionary-to-figma": "^0.2.0",
+    "@storybook/addon-a11y": "^6.5.9",
     "grunt": "^1.4.1",
     "grunt-svg-sprite": "^1.5.0",
     "rxjs": "~7.5.0",

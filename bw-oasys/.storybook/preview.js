@@ -37,7 +37,7 @@ export const parameters = {
       },
       {
         name: 'dark',
-        value: '#666',
+        value: '#262626',
       },
       {
         name: 'blush-light',

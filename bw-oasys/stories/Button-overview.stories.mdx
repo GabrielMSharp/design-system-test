@@ -12,32 +12,27 @@ export const DocsTemplate = (args) => ({ props: args });
 
 Showing all button color types in one place. Don't forget you can change brand at any time in the top toolbar ('image' icon on the right)
 
-## Primary
+## Primary, Secondary, Tertiary – On Light
 
-<Canvas style={{ background: '#f1f1f1' }}>
+<Canvas style={{ background: '#fff' }}>
   <Story id="components-actions-button--primary">
       {DocsTemplate.bind({})}
   </Story>
-  <Story id="components-actions-button--primary-inverse">
-      {DocsTemplate.bind({})}
-  </Story>
-</Canvas>
-
-## Secondary
-
-<Canvas style={{ background: '#f1f1f1' }}>
   <Story id="components-actions-button--secondary">
       {DocsTemplate.bind({})}
   </Story>
-  <Story id="components-actions-button--secondary-inverse">
+  <Story id="components-actions-button--tertiary">
       {DocsTemplate.bind({})}
   </Story>
 </Canvas>
 
-## Tertiary
+## Primary, Secondary, Tertiary – On Dark
 
-<Canvas style={{ background: '#f1f1f1' }}>
-  <Story id="components-actions-button--tertiary">
+<Canvas style={{ background: '#262626' }}>
+  <Story id="components-actions-button--primary-inverse">
+      {DocsTemplate.bind({})}
+  </Story>
+  <Story id="components-actions-button--secondary-inverse">
       {DocsTemplate.bind({})}
   </Story>
   <Story id="components-actions-button--tertiary-inverse">
@@ -47,7 +42,7 @@ Showing all button color types in one place. Don't forget you can change brand a
 
 ## Expressive and Danger
 
-<Canvas style={{ background: '#f1f1f1' }}>
+<Canvas style={{ background: '#f7f7f7' }}>
   <Story id="components-actions-button--expressive">
       {DocsTemplate.bind({})}
   </Story>
@@ -58,7 +53,7 @@ Showing all button color types in one place. Don't forget you can change brand a
 
 ## Partners
 
-<Canvas style={{ background: '#f1f1f1' }}>
+<Canvas style={{ background: '#f7f7f7' }}>
   <Story id="components-actions-button--facebook">
       {DocsTemplate.bind({})}
   </Story>
