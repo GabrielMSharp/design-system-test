@@ -117,43 +117,43 @@
         },
         "facebook": {
           "background": {
-            "value": "{semantic.color.transparent.value}",
+            "value": "{global.color.partners.facebook.value}",
             "type": "color"
           },
           "border": {
-            "value": "{semantic.color.action.primary.value}",
+            "value": "{global.color.partners.facebook.value}",
             "type": "color"
           },
           "text": {
-            "value": "{semantic.color.action.primary.value}",
+            "value": "{semantic.color.text.body-on-dark.value}",
             "type": "color"
           }
         },
         "paypal": {
           "background": {
-            "value": "{semantic.color.transparent.value}",
+            "value": "{global.color.partners.paypal.value}",
             "type": "color"
           },
           "border": {
-            "value": "{semantic.color.action.primary.value}",
+            "value": "{global.color.partners.paypal.value}",
             "type": "color"
           },
           "text": {
-            "value": "{semantic.color.action.primary.value}",
+            "value": "{semantic.color.text.body.value}",
             "type": "color"
           }
         },
         "trustpilot": {
           "background": {
-            "value": "{semantic.color.transparent.value}",
+            "value": "{global.color.partners.trustpilot.value}",
             "type": "color"
           },
           "border": {
-            "value": "{semantic.color.action.primary.value}",
+            "value": "{global.color.partners.trustpilot.value}",
             "type": "color"
           },
           "text": {
-            "value": "{semantic.color.action.primary.value}",
+            "value": "{semantic.color.text.body.value}",
             "type": "color"
           }
         }

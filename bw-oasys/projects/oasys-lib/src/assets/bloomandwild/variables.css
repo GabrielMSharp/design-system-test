@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Jul 2022 09:41:03 GMT
+ * Generated on Tue, 05 Jul 2022 09:59:23 GMT
  */
 
 :root .bloomandwild {
@@ -28,14 +28,14 @@
   --component-color-button-danger-background: #DB4141;
   --component-color-button-danger-border: #DB4141;
   --component-color-button-danger-text: #ffffff;
-  --component-color-button-facebook-background: transparent;
-  --component-color-button-facebook-border: #262626;
-  --component-color-button-facebook-text: #262626;
-  --component-color-button-paypal-background: transparent;
-  --component-color-button-paypal-border: #262626;
+  --component-color-button-facebook-background: #485b94;
+  --component-color-button-facebook-border: #485b94;
+  --component-color-button-facebook-text: #ffffff;
+  --component-color-button-paypal-background: #ffc43a;
+  --component-color-button-paypal-border: #ffc43a;
   --component-color-button-paypal-text: #262626;
-  --component-color-button-trustpilot-background: transparent;
-  --component-color-button-trustpilot-border: #262626;
+  --component-color-button-trustpilot-background: #29b47c;
+  --component-color-button-trustpilot-border: #29b47c;
   --component-color-button-trustpilot-text: #262626;
   --component-size-button-large-padding-x: 2.4rem;
   --component-size-button-large-height: 4.8rem;

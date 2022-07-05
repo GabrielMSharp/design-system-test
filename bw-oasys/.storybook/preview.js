@@ -21,8 +21,12 @@ export const parameters = {
     clearable: false
   },
   backgrounds: {
-    default: 'linen-20',
+    default: 'Neutral',
     values: [
+      {
+        name: 'Neutral',
+        value: '#ddd',
+      },
       {
         name: 'linen-20',
         value: '#F9ECD7',
