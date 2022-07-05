@@ -105,6 +105,11 @@ ui-button {
                 outline: 4px solid var(--component-color-button-expressive-background);
             }
         }
+        @supports not selector(:focus-visible) {
+            &:focus {
+                outline: 4px solid var(--component-color-button-expressive-background);
+            }
+        }
 
         font-family: $buttonFontFamily;
 
