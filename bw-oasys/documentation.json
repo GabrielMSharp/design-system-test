@@ -1225,6 +1225,16 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Facebook",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "OasysComponents",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1233,6 +1243,16 @@
                 "deprecationMessage": "",
                 "type": "[]",
                 "defaultValue": "[\n  ButtonComponent,\n  TextComponent,\n  IconComponent\n]"
+            },
+            {
+                "name": "Paypal",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Primary",
@@ -1352,6 +1372,16 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "require('./tokens.json')"
+            },
+            {
+                "name": "Trustpilot",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             }
         ],
         "functions": [
@@ -1522,6 +1552,26 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
+                    "name": "Facebook",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Paypal",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -1583,6 +1633,16 @@
                 },
                 {
                     "name": "TertiaryInverse",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Trustpilot",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "stories/Button.stories.ts",
@@ -1965,6 +2025,26 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
+                "name": "Facebook",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Paypal",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
                 "name": "Primary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
@@ -2026,6 +2106,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "TertiaryInverse",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Trustpilot",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

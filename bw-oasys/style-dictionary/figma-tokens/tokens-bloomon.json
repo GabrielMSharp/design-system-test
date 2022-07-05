@@ -34,7 +34,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.primary}",
+                "value": "{component.color.button.primary.background}",
                 "type": "color"
               },
               "attributes": {
@@ -182,7 +182,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.transparent}",
+                "value": "{component.color.button.tertiary.background}",
                 "type": "color"
               },
               "attributes": {
@@ -256,7 +256,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.primary-inverse}",
+                "value": "{component.color.button.primary-inverse.background}",
                 "type": "color"
               },
               "attributes": {
@@ -404,7 +404,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.transparent}",
+                "value": "{component.color.button.tertiary-inverse.background}",
                 "type": "color"
               },
               "attributes": {
@@ -478,7 +478,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.expressive}",
+                "value": "{component.color.button.expressive.background}",
                 "type": "color"
               },
               "attributes": {
@@ -552,7 +552,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.danger}",
+                "value": "{component.color.button.danger.background}",
                 "type": "color"
               },
               "attributes": {
@@ -626,7 +626,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.color.partners.facebook}",
+                "value": "{component.color.button.facebook.background}",
                 "type": "color"
               },
               "attributes": {
@@ -700,7 +700,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.color.partners.paypal}",
+                "value": "{component.color.button.paypal.background}",
                 "type": "color"
               },
               "attributes": {
@@ -774,7 +774,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.color.partners.trustpilot}",
+                "value": "{component.color.button.trustpilot.background}",
                 "type": "color"
               },
               "attributes": {
