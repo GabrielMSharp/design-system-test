@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 04 Jul 2022 14:14:09 GMT
+ * Generated on Tue, 05 Jul 2022 09:41:03 GMT
  */
 
 :root .bloomandwild {
@@ -8,20 +8,35 @@
   --component-color-button-primary-border: #262626;
   --component-color-button-primary-text: #ffffff;
   --component-color-button-secondary-background: transparent;
-  --component-color-button-secondary-border: transparent;
-  --component-color-button-secondary-text: #ffffff;
+  --component-color-button-secondary-border: #262626;
+  --component-color-button-secondary-text: #262626;
   --component-color-button-tertiary-background: transparent;
   --component-color-button-tertiary-border: transparent;
   --component-color-button-tertiary-text: #262626;
-  --component-color-button-primary-inverse-background: transparent;
-  --component-color-button-primary-inverse-border: #262626;
+  --component-color-button-primary-inverse-background: #ffffff;
+  --component-color-button-primary-inverse-border: #ffffff;
   --component-color-button-primary-inverse-text: #262626;
   --component-color-button-secondary-inverse-background: transparent;
-  --component-color-button-secondary-inverse-border: transparent;
-  --component-color-button-secondary-inverse-text: transparent;
+  --component-color-button-secondary-inverse-border: #ffffff;
+  --component-color-button-secondary-inverse-text: #ffffff;
   --component-color-button-tertiary-inverse-background: transparent;
   --component-color-button-tertiary-inverse-border: transparent;
   --component-color-button-tertiary-inverse-text: #ffffff;
+  --component-color-button-expressive-background: #fff799;
+  --component-color-button-expressive-border: #fff799;
+  --component-color-button-expressive-text: #262626;
+  --component-color-button-danger-background: #DB4141;
+  --component-color-button-danger-border: #DB4141;
+  --component-color-button-danger-text: #ffffff;
+  --component-color-button-facebook-background: transparent;
+  --component-color-button-facebook-border: #262626;
+  --component-color-button-facebook-text: #262626;
+  --component-color-button-paypal-background: transparent;
+  --component-color-button-paypal-border: #262626;
+  --component-color-button-paypal-text: #262626;
+  --component-color-button-trustpilot-background: transparent;
+  --component-color-button-trustpilot-border: #262626;
+  --component-color-button-trustpilot-text: #262626;
   --component-size-button-large-padding-x: 2.4rem;
   --component-size-button-large-height: 4.8rem;
   --component-size-button-large-line-height: 1.6rem;
@@ -33,8 +48,9 @@
   --component-border-width-button: 0.1rem;
   --component-border-radius-button: 0.2rem;
   --semantic-color-action-primary: #262626;
-  --semantic-color-action-secondary: #ffffff;
-  --semantic-color-action-tertiary: transparent;
+  --semantic-color-action-primary-inverse: #ffffff;
+  --semantic-color-action-expressive: #fff799;
+  --semantic-color-action-danger: #DB4141;
   --semantic-color-background: #ffffff;
   --semantic-color-text-body: #262626;
   --semantic-color-text-body-on-dark: #ffffff;

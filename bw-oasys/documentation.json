@@ -279,7 +279,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-78b4b802afac5bdf35a738b679ab7112480c8f0c1769a608230c09d7a82c975a1fa18244721e2a8a377a28f6fe13fc72ed3dca96d0dbd516113df6fa31465826",
+            "id": "component-ButtonComponent-0b6a517455f45396d69b15da4e5cb3311f3c2d752f5345d597ed912e0042885de8dc133077761564f2360e39e4b6c5f764bc424b8e3cc5e873651f672cadfa47",
             "file": "projects/oasys-lib/src/lib/components/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -423,24 +423,32 @@
                     "deprecationMessage": ""
                 },
                 {
-                    "name": "ngAfterViewInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 92,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
                     "name": "ngOnChanges",
-                    "args": [],
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 96,
+                    "line": 88,
                     "deprecated": false,
-                    "deprecationMessage": ""
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
                 },
                 {
                     "name": "ngOnInit",
@@ -448,7 +456,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 88,
+                    "line": 95,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -470,7 +478,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\nimport {\n  UIButton,\n  UIButtonBoolean,\n  UIButtonSize,\n  UIButtonType\n} from './button';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit, OnChanges, AfterViewInit {\n\n  button: UIButton;\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: UIButtonSize = 'large';\n  @Input() buttonType: UIButtonType = 'primary';\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  buttonDisplayClasses: string[];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  setupClasses(): void {\n    this.buttonDisplayClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ].filter((d) => !!d);\n\n    console.log('buttonClasses: ', this.buttonDisplayClasses);\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--component-style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n  }\n\n  createButton(): UIButton {\n    return <UIButton>{\n      buttonText: this.buttonText,\n      buttonIcon: this.buttonIcon,\n      buttonIconPlacement: this.buttonIconPlacement,\n      buttonType: this.buttonType,\n      buttonSize: this.buttonSize,\n      buttonClick: this.buttonClick,\n      href: this.href,\n      target: '',\n      buttonDisplayClasses: [\n        `type-${this.buttonType}`,\n        `size-${this.buttonSize}`,\n        `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n      ]\n        .filter((d) => !!d)\n    };\n  }\n\n  ngOnInit(): void {\n    this.button = this.createButton();\n  }\n\n  ngAfterViewInit(): void {\n    this.button = this.createButton();\n  }\n\n  ngOnChanges(): void {\n    this.button = this.createButton();\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit, SimpleChanges } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\nimport {\n  UIButton,\n  UIButtonBoolean,\n  UIButtonSize,\n  UIButtonType\n} from './button';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit, OnChanges {\n\n  button: UIButton;\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: UIButtonSize = 'large';\n  @Input() buttonType: UIButtonType = 'primary';\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  buttonDisplayClasses: string[];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService, private changes: ChangeDetectorRef) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  setupClasses(): void {\n    this.buttonDisplayClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ].filter((d) => !!d);\n\n    console.log('buttonClasses: ', this.buttonDisplayClasses);\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--component-style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n  }\n\n  createButton(): UIButton {\n    return <UIButton>{\n      buttonText: this.buttonText,\n      buttonIcon: this.buttonIcon,\n      buttonIconPlacement: this.buttonIconPlacement,\n      buttonType: this.buttonType,\n      buttonSize: this.buttonSize,\n      buttonClick: this.buttonClick,\n      href: this.href,\n      target: '',\n      buttonDisplayClasses: [\n        `type-${this.buttonType}`,\n        `size-${this.buttonSize}`,\n        `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n      ]\n        .filter((d) => !!d)\n    };\n  }\n\n  ngOnChanges(changes: SimpleChanges): void {\n    if (changes['buttonType']) {\n      this.button = this.createButton();\n      this.changes.markForCheck();\n    }\n  }\n\n  ngOnInit(): void {\n    this.button = this.createButton();\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -490,6 +498,12 @@
                         "type": "TokenService",
                         "deprecated": false,
                         "deprecationMessage": ""
+                    },
+                    {
+                        "name": "changes",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
                     }
                 ],
                 "line": 38,
@@ -502,13 +516,21 @@
                         "tagName": {
                             "text": "param"
                         }
+                    },
+                    {
+                        "name": "changes",
+                        "type": "ChangeDetectorRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
                     }
                 ]
             },
             "implements": [
                 "OnInit",
-                "OnChanges",
-                "AfterViewInit"
+                "OnChanges"
             ],
             "templateData": "<button (click)=\"button.clickButton()\"\n        [routerLink]=\"button.href || null\"\n        [ngClass]=\"button.buttonDisplayClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"button.buttonIcon\" [iconName]=\"button.buttonIcon\" [iconSize]=\"button.buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"button.iconContext\"></ui-icon>\n        <span\n            class=\"ui-text\"\n            *ngIf=\"button.buttonText && button.buttonIconPlacement !== 'iconOnly'\">\n            {{button.buttonText}}\n        </span>\n    </div>\n</button>\n"
         },
@@ -1183,6 +1205,26 @@
                 "defaultValue": "{\n  tokens\n}"
             },
             {
+                "name": "Danger",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "expressive",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "OasysComponents",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1203,17 +1245,7 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Primary2",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Primary3",
+                "name": "PrimaryInverse",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "stories/Button.stories.ts",
@@ -1230,6 +1262,26 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "SecondaryInverse",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Template",
@@ -1260,6 +1312,26 @@
                 "deprecationMessage": "",
                 "type": "Story<TextComponent>",
                 "defaultValue": "(args: TextComponent) => ({\n  props: args,\n  template: `<ui-text>{{ ngContent }}</ui-text>`\n})"
+            },
+            {
+                "name": "Tertiary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "TertiaryInverse",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Text",
@@ -1430,6 +1502,26 @@
                     "defaultValue": "{\n  buttonClick: action('buttonClick'),\n}"
                 },
                 {
+                    "name": "Danger",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "expressive",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -1440,7 +1532,7 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "Primary2",
+                    "name": "PrimaryInverse",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "stories/Button.stories.ts",
@@ -1450,7 +1542,17 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "Primary3",
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "SecondaryInverse",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "stories/Button.stories.ts",
@@ -1468,6 +1570,26 @@
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
                     "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    ...args,\n    buttonClick: actionsData.buttonClick\n  },\n})"
+                },
+                {
+                    "name": "Tertiary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "TertiaryInverse",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
                 }
             ],
             "projects/oasys-lib/src/test.ts": [
@@ -1663,7 +1785,7 @@
                 "linktype": "component",
                 "name": "ButtonComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/19",
+                "coverageCount": "0/18",
                 "status": "low"
             },
             {
@@ -1823,6 +1945,26 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
+                "name": "Danger",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "expressive",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
                 "name": "Primary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
@@ -1833,7 +1975,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Primary2",
+                "name": "PrimaryInverse",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1843,7 +1985,17 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Primary3",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SecondaryInverse",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1854,6 +2006,26 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Tertiary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TertiaryInverse",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

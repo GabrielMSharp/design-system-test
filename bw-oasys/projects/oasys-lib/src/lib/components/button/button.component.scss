@@ -1,4 +1,15 @@
-$buttonTypes: primary, secondary, tertiary, primary-inverse, secondary-inverse, tertiary-inverse;
+$buttonTypes:
+    primary,
+    secondary,
+    tertiary,
+    primary-inverse,
+    secondary-inverse,
+    tertiary-inverse,
+    expressive,
+    danger,
+    facebook,
+    paypal,
+    trustpilot;
 
 $buttonSizes: large, small;
 
@@ -63,6 +74,7 @@ $buttonFontFamily: var(--semantic-font-family-body);
                 flex-direction: row-reverse;
             }
         }
+
         &.button--icon--only {
             max-width: calc($buttonMinimumHeight - $borderWidth);
         }
@@ -101,4 +113,3 @@ ui-button {
 
     }
 }
-

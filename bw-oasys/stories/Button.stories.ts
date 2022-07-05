@@ -83,7 +83,7 @@ expressive.args = {
 
 export const Danger = Template.bind({});
 Danger.args = {
-  buttonType: 'Danger',
+  buttonType: 'danger',
   buttonText: 'Danger CTA',
 };
 

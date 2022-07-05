@@ -29,6 +29,7 @@
     "grunt": "^1.4.1",
     "grunt-svg-sprite": "^1.5.0",
     "rxjs": "~7.5.0",
+    "storybook-addon-variants": "^0.0.5",
     "svg-sprite": "^1.5.4",
     "svgo": "^2.8.0",
     "token-transformer": "^0.0.23",

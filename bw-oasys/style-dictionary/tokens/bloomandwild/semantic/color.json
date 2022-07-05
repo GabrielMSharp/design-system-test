@@ -1,24 +1,32 @@
-
 {
   "semantic": {
     "color": {
       "action": {
         "primary": {
           "value": "{global.color.grey.90.value}",
-          "inverse": { "value": "{global.color.white.value}" }
+          "type": "color"
         },
-        "secondary": {
+        "primary-inverse": {
           "value": "{global.color.white.value}",
-          "inverse": { "value": "{semantic.color.transparent.value}" }
+          "type": "color"
         },
-        "tertiary": {
-          "value": "{semantic.color.transparent.value}"
+        "expressive": {
+          "value": "{global.color.yellow.60.value}",
+          "type": "color"
+        },
+        "danger": {
+          "value": "{global.color.red.50.value}",
+          "type": "color"
         }
       },
-      "background": { "value": "{global.color.white.value}" },
+      "background": {
+        "value": "{global.color.white.value}",
+        "type": "color"
+      },
       "text": {
         "body": {
-          "value": "{global.color.grey.90.value}"
+          "value": "{global.color.grey.90.value}",
+          "type": "color"
         },
         "body-on-dark": { "value": "{global.color.white.value}" }
       },

@@ -84,7 +84,7 @@
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}",
+                "value": "{semantic.color.transparent}",
                 "type": "color"
               },
               "attributes": {
@@ -103,12 +103,12 @@
               }
             },
             "border": {
-              "value": "transparent",
+              "value": "#262626",
               "type": "color",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}",
+                "value": "{semantic.color.action.primary}",
                 "type": "color"
               },
               "attributes": {
@@ -127,12 +127,12 @@
               }
             },
             "text": {
-              "value": "#ffffff",
+              "value": "#262626",
               "type": "color",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.text.body-on-dark}",
+                "value": "{semantic.color.text.body}",
                 "type": "color"
               },
               "attributes": {
@@ -227,12 +227,12 @@
           },
           "primary-inverse": {
             "background": {
-              "value": "transparent",
+              "value": "#ffffff",
               "type": "color",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.transparent}",
+                "value": "{semantic.color.action.primary-inverse}",
                 "type": "color"
               },
               "attributes": {
@@ -251,12 +251,12 @@
               }
             },
             "border": {
-              "value": "#262626",
+              "value": "#ffffff",
               "type": "color",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.primary}",
+                "value": "{semantic.color.action.primary-inverse}",
                 "type": "color"
               },
               "attributes": {
@@ -280,7 +280,7 @@
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.primary}",
+                "value": "{semantic.color.text.body}",
                 "type": "color"
               },
               "attributes": {
@@ -325,12 +325,12 @@
               }
             },
             "border": {
-              "value": "transparent",
+              "value": "#ffffff",
               "type": "color",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}",
+                "value": "{semantic.color.action.primary-inverse}",
                 "type": "color"
               },
               "attributes": {
@@ -349,12 +349,12 @@
               }
             },
             "text": {
-              "value": "transparent",
+              "value": "#ffffff",
               "type": "color",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.action.tertiary}",
+                "value": "{semantic.color.text.body-on-dark}",
                 "type": "color"
               },
               "attributes": {
@@ -443,6 +443,376 @@
                 "1": "color",
                 "2": "button",
                 "3": "tertiary-inverse",
+                "4": "text"
+              }
+            }
+          },
+          "expressive": {
+            "background": {
+              "value": "#fff799",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.expressive}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "expressive",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "expressive",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#fff799",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.expressive}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "expressive",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "expressive",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#262626",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.text.body}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "expressive",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "expressive",
+                "4": "text"
+              }
+            }
+          },
+          "danger": {
+            "background": {
+              "value": "#DB4141",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.danger}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "danger",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "danger",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#DB4141",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.danger}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "danger",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "danger",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#ffffff",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.text.body-on-dark}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "danger",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "danger",
+                "4": "text"
+              }
+            }
+          },
+          "facebook": {
+            "background": {
+              "value": "transparent",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.transparent}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "facebook",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "facebook",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#262626",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "facebook",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "facebook",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#262626",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "facebook",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "facebook",
+                "4": "text"
+              }
+            }
+          },
+          "paypal": {
+            "background": {
+              "value": "transparent",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.transparent}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "paypal",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "paypal",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#262626",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "paypal",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "paypal",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#262626",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "paypal",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "paypal",
+                "4": "text"
+              }
+            }
+          },
+          "trustpilot": {
+            "background": {
+              "value": "transparent",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.transparent}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "trustpilot",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "trustpilot",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#262626",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "trustpilot",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "trustpilot",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#262626",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.primary}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "trustpilot",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "trustpilot",
                 "4": "text"
               }
             }
@@ -699,20 +1069,12 @@
         "action": {
           "primary": {
             "value": "#262626",
-            "inverse": {
-              "value": "#ffffff",
-              "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
-              "isSource": true
-            },
+            "type": "color",
             "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
             "isSource": true,
             "original": {
               "value": "{global.color.grey.90}",
-              "inverse": {
-                "value": "{global.color.white}",
-                "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
-                "isSource": true
-              }
+              "type": "color"
             },
             "attributes": {
               "category": "semantic",
@@ -727,63 +1089,81 @@
               "3": "primary"
             }
           },
-          "secondary": {
+          "primary-inverse": {
             "value": "#ffffff",
-            "inverse": {
-              "value": "transparent",
-              "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
-              "isSource": true
-            },
+            "type": "color",
             "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
             "isSource": true,
             "original": {
               "value": "{global.color.white}",
-              "inverse": {
-                "value": "{semantic.color.transparent}",
-                "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
-                "isSource": true
-              }
+              "type": "color"
             },
             "attributes": {
               "category": "semantic",
               "type": "color",
               "item": "action",
-              "subitem": "secondary"
+              "subitem": "primary-inverse"
             },
             "path": {
               "0": "semantic",
               "1": "color",
               "2": "action",
-              "3": "secondary"
+              "3": "primary-inverse"
             }
           },
-          "tertiary": {
-            "value": "transparent",
+          "expressive": {
+            "value": "#fff799",
+            "type": "color",
             "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{semantic.color.transparent}"
+              "value": "{global.color.yellow.60}",
+              "type": "color"
             },
             "attributes": {
               "category": "semantic",
               "type": "color",
               "item": "action",
-              "subitem": "tertiary"
+              "subitem": "expressive"
             },
             "path": {
               "0": "semantic",
               "1": "color",
               "2": "action",
-              "3": "tertiary"
+              "3": "expressive"
+            }
+          },
+          "danger": {
+            "value": "#DB4141",
+            "type": "color",
+            "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.color.red.50}",
+              "type": "color"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "action",
+              "subitem": "danger"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "color",
+              "2": "action",
+              "3": "danger"
             }
           }
         },
         "background": {
           "value": "#ffffff",
+          "type": "color",
           "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
           "isSource": true,
           "original": {
-            "value": "{global.color.white}"
+            "value": "{global.color.white}",
+            "type": "color"
           },
           "attributes": {
             "category": "semantic",
@@ -799,10 +1179,12 @@
         "text": {
           "body": {
             "value": "#262626",
+            "type": "color",
             "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{global.color.grey.90}"
+              "value": "{global.color.grey.90}",
+              "type": "color"
             },
             "attributes": {
               "category": "semantic",

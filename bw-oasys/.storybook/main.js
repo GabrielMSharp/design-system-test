@@ -9,7 +9,8 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     'storybook-addon-themes',
-    '@ljcl/storybook-addon-cssprops'
+    '@ljcl/storybook-addon-cssprops',
+    // 'storybook-addon-variants/preset.js'
   ],
   "framework": "@storybook/angular",
   "core": {

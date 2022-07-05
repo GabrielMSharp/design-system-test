@@ -3,34 +3,159 @@
     "color": {
       "button": {
         "primary": {
-          "background": { "value": "{semantic.color.action.primary.value}", "type": "color"},
-          "border": { "value": "{semantic.color.action.primary.value}", "type": "color"},
-          "text": { "value": "{semantic.color.text.body-on-dark.value}", "type": "color" }
+          "background": {
+            "value": "{semantic.color.action.primary.value}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{semantic.color.action.primary.value}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{semantic.color.text.body-on-dark.value}",
+            "type": "color"
+          }
         },
         "secondary": {
-          "background": { "value": "{semantic.color.action.primary.value}", "type": "color"},
-          "border": { "value": "{semantic.color.action.primary.value}", "type": "color"},
-          "text": { "value": "{semantic.color.text.body-on-dark.value}", "type": "color" }
+          "background": {
+            "value": "{semantic.color.transparent.value}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{semantic.color.action.primary.value}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{semantic.color.text.body.value}",
+            "type": "color"
+          }
         },
         "tertiary": {
-          "background": { "value": "{semantic.color.action.tertiary.value}", "type": "color"},
-          "border": { "value": "{semantic.color.action.tertiary.value}", "type": "color"},
-          "text": { "value": "{semantic.color.text.body.value}", "type": "color" }
+          "background": {
+            "value": "{semantic.color.transparent.value}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{semantic.color.transparent.value}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{semantic.color.text.body.value}",
+            "type": "color"
+          }
         },
         "primary-inverse": {
-          "background": { "value": "{semantic.color.transparent.value}", "type": "color"},
-          "border": { "value": "{semantic.color.action.primary.value}", "type": "color"},
-          "text": { "value": "{semantic.color.action.primary.value}", "type": "color" }
+          "background": {
+            "value": "{semantic.color.action.primary-inverse.value}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{semantic.color.action.primary-inverse.value}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{semantic.color.text.body.value}",
+            "type": "color"
+          }
         },
         "secondary-inverse": {
-          "background": { "value": "{semantic.color.transparent.value}", "type": "color"},
-          "border": { "value": "{semantic.color.action.primary.value}", "type": "color"},
-          "text": { "value": "{semantic.color.action.primary.value}", "type": "color" }
+          "background": {
+            "value": "{semantic.color.transparent.value}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{semantic.color.action.primary-inverse.value}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{semantic.color.text.body-on-dark.value}",
+            "type": "color"
+          }
         },
         "tertiary-inverse": {
-          "background": { "value": "{semantic.color.transparent.value}", "type": "color"},
-          "border": { "value": "{semantic.color.action.primary.value}", "type": "color"},
-          "text": { "value": "{semantic.color.action.primary.value}", "type": "color" }
+          "background": {
+            "value": "{semantic.color.transparent.value}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{semantic.color.transparent.value}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{semantic.color.text.body-on-dark.value}",
+            "type": "color"
+          }
+        },
+
+        "expressive": {
+          "background": {
+            "value": "{semantic.color.action.expressive.value}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{semantic.color.action.expressive.value}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{semantic.color.text.body.value}",
+            "type": "color"
+          }
+        },
+        "danger": {
+          "background": {
+            "value": "{semantic.color.action.danger.value}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{semantic.color.action.danger.value}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{semantic.color.text.body-on-dark.value}",
+            "type": "color"
+          }
+        },
+        "facebook": {
+          "background": {
+            "value": "{semantic.color.transparent.value}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{semantic.color.action.primary.value}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{semantic.color.action.primary.value}",
+            "type": "color"
+          }
+        },
+        "paypal": {
+          "background": {
+            "value": "{semantic.color.transparent.value}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{semantic.color.action.primary.value}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{semantic.color.action.primary.value}",
+            "type": "color"
+          }
+        },
+        "trustpilot": {
+          "background": {
+            "value": "{semantic.color.transparent.value}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{semantic.color.action.primary.value}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{semantic.color.action.primary.value}",
+            "type": "color"
+          }
         }
       }
     },
