@@ -214,6 +214,11 @@
           "value": "{semantic.font.letter-spacing.action.primary.value}"
       }
     },
+    "font-weight": {
+      "button": {
+          "value": "{semantic.font.weight.medium.value}"
+      }
+    },
     "opacity": {
       "overlay": {
         "hover": {

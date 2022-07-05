@@ -1225,6 +1225,26 @@
           }
         }
       },
+      "font-weight": {
+        "button": {
+          "value": "normal",
+          "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
+          "isSource": true,
+          "original": {
+            "value": "{semantic.font.weight.medium}"
+          },
+          "attributes": {
+            "category": "component",
+            "type": "font-weight",
+            "item": "button"
+          },
+          "path": {
+            "0": "component",
+            "1": "font-weight",
+            "2": "button"
+          }
+        }
+      },
       "opacity": {
         "overlay": {
           "hover": {

@@ -239,6 +239,16 @@
           "value": "normal"
       }
     },
+    "letter-spacing": {
+      "button": {
+          "value": "{semantic.font.letter-spacing.action.primary.value}"
+      }
+    },
+    "font-weight": {
+      "button": {
+          "value": "{semantic.font.weight.normal.value}"
+      }
+    },
     "opacity": {
       "overlay": {
         "hover": {

@@ -1205,6 +1205,46 @@
           }
         }
       },
+      "letter-spacing": {
+        "button": {
+          "value": "1px",
+          "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+          "isSource": true,
+          "original": {
+            "value": "{semantic.font.letter-spacing.action.primary}"
+          },
+          "attributes": {
+            "category": "component",
+            "type": "letter-spacing",
+            "item": "button"
+          },
+          "path": {
+            "0": "component",
+            "1": "letter-spacing",
+            "2": "button"
+          }
+        }
+      },
+      "font-weight": {
+        "button": {
+          "value": "normal",
+          "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+          "isSource": true,
+          "original": {
+            "value": "{semantic.font.weight.normal}"
+          },
+          "attributes": {
+            "category": "component",
+            "type": "font-weight",
+            "item": "button"
+          },
+          "path": {
+            "0": "component",
+            "1": "font-weight",
+            "2": "button"
+          }
+        }
+      },
       "opacity": {
         "overlay": {
           "hover": {

@@ -53,36 +53,19 @@ $buttonFontFamily: var(--semantic-font-family-body);
     border-width: $borderWidth;
 
     .button-content {
-        display: flex;
-        align-items: center;
         gap: var(--component-size-button-#{$buttonSize}-inline-spacing);
+    }
 
-        .ui-icon {
-            max-height: $lineHeight;
-            display: flex;
-            align-items: center;
-        }
-
-        .ui-text {
-            line-height: $lineHeight;
-            text-transform: var(--component-text-transform-button);
-            letter-spacing: var(--component-letter-spacing-button);
-        }
+    .ui-icon {
+        max-height: $lineHeight;
     }
 
 
 
     &.button--has-icon {
-        &.button--icon--trailing {
-            .button-content {
-                flex-direction: row-reverse;
-            }
-        }
-
         &.button--icon--only {
             max-width: calc($buttonMinimumHeight - $borderWidth);
         }
-
     }
 }
 
@@ -171,6 +154,32 @@ ui-button {
         &:focus {
             .button-overlay {
                 opacity: var(--component-opacity-overlay-focus);
+            }
+        }
+
+        &.button--has-icon {
+            &.button--icon--trailing {
+                .button-content {
+                    flex-direction: row-reverse;
+                }
+            }
+
+        }
+
+        .button-content {
+            display: flex;
+            align-items: center;
+
+
+            .ui-icon {
+                display: flex;
+                align-items: center;
+            }
+
+            .ui-text {
+                text-transform: var(--component-text-transform-button);
+                letter-spacing: var(--component-letter-spacing-button);
+                font-weight: var(--component-font-weight-button);
             }
         }
 
