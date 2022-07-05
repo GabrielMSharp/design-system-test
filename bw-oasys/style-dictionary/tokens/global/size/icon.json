@@ -3,8 +3,8 @@
   "global": {
     "size": {
       "icon": {
-        "small": { "value": "{global.size.unit.6.value}"},
-        "large": { "value": "{global.size.unit.7.value}"}
+        "small": { "value": "{global.size.unit.600.value}"},
+        "large": { "value": "{global.size.unit.700.value}"}
       }
     }
   }

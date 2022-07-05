@@ -2,68 +2,73 @@
   "global": {
     "size": {
       "unit": {
-        "0": {
+        "000": {
           "value": "0",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
-        "1": {
+        "100": {
           "value": "0.1",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
-        "2": {
+        "150": {
+          "value": "0.15",
+          "attributes": { "category": "size" },
+          "type": "sizing"
+        },
+        "200": {
           "value": "0.2",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
-        "3": {
+        "300": {
           "value": "0.4",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
-        "4": {
+        "400": {
           "value": "0.8",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
-        "5": {
+        "500": {
           "value": "1.2",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
-        "6": {
+        "600": {
           "value": "1.6",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
-        "7": {
+        "700": {
           "value": "2.4",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
-        "8": {
+        "800": {
           "value": "3.2",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
-        "9": {
+        "900": {
           "value": "4.0",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
-        "10": {
+        "1000": {
           "value": "4.8",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
-        "11": {
+        "1100": {
           "value": "5.6",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
         "default": {
-          "value": "{global.size.unit.7.value}",
+          "value": "{global.size.unit.700.value}",
           "attributes": { "category": "size" },
           "type": "sizing"
         }

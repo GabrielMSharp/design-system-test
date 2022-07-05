@@ -2,14 +2,14 @@
   "semantic": {
     "brand-name": {"value": "bloomon"},
     "border-width": {
-      "default": { "value": "{global.size.unit.1.value}", "type": "borderWidth" },
-      "emphasis": { "value": "{global.size.unit.2.value}", "type": "borderWidth" },
-      "focus": { "value": "{global.size.unit.3.value}", "type": "borderWidth" }
+      "default": { "value": "{global.size.unit.100.value}", "type": "borderWidth" },
+      "emphasis": { "value": "{global.size.unit.200.value}", "type": "borderWidth" },
+      "focus": { "value": "{global.size.unit.300.value}", "type": "borderWidth" }
     },
     "border-radius": {
-      "none": { "value": "{global.size.unit.0.value}", "type": "borderRadius"  },
-      "soften-ui": { "value": "{global.size.unit.2.value}", "type": "borderRadius"  },
-      "round": { "value": "{global.size.unit.7.value}", "type": "borderRadius"  }
+      "none": { "value": "{global.size.unit.000.value}", "type": "borderRadius"  },
+      "soften-ui": { "value": "{global.size.unit.200.value}", "type": "borderRadius"  },
+      "round": { "value": "{global.size.unit.700.value}", "type": "borderRadius"  }
     }
   }
 }

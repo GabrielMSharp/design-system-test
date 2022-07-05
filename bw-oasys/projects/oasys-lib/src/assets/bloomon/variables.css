@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Jul 2022 15:37:04 GMT
+ * Generated on Tue, 05 Jul 2022 15:49:13 GMT
  */
 
 :root .bloomon {
@@ -53,6 +53,7 @@
   --component-border-width-button: 0.1rem;
   --component-border-radius-button: 2.4rem;
   --component-text-transform-button: uppercase;
+  --component-letter-spacing-button: 0.15rem;
   --component-opacity-overlay-hover: 0.08;
   --component-opacity-overlay-focus: 0.16;
   --semantic-color-action-primary: #464646;
@@ -74,6 +75,7 @@
   --semantic-font-weight-normal: 100;
   --semantic-font-weight-medium: normal;
   --semantic-font-weight-bold: normal;
+  --semantic-font-letter-spacing-action-primary: 0.15rem;
   --semantic-brand-name: bloomon;
   --semantic-border-width-default: 0.1rem;
   --semantic-border-width-emphasis: 0.2rem;

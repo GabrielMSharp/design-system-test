@@ -926,7 +926,7 @@
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.10}",
+                "value": "{global.size.unit.1000}",
                 "type": "sizing"
               },
               "attributes": {
@@ -950,7 +950,7 @@
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.6}",
+                "value": "{global.size.unit.600}",
                 "type": "typography"
               },
               "attributes": {
@@ -974,7 +974,7 @@
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.4}",
+                "value": "{global.size.unit.400}",
                 "type": "spacing"
               },
               "attributes": {
@@ -1024,7 +1024,7 @@
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.6}",
+                "value": "{global.size.unit.600}",
                 "type": "spacing"
               },
               "attributes": {
@@ -1048,7 +1048,7 @@
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.8}",
+                "value": "{global.size.unit.800}",
                 "type": "sizing"
               },
               "attributes": {
@@ -1072,7 +1072,7 @@
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.6}",
+                "value": "{global.size.unit.600}",
                 "type": "typography"
               },
               "attributes": {
@@ -1096,7 +1096,7 @@
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.3}",
+                "value": "{global.size.unit.300}",
                 "type": "spacing"
               },
               "attributes": {
@@ -1686,7 +1686,7 @@
           "filePath": "./style-dictionary/tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.1}",
+            "value": "{global.size.unit.100}",
             "type": "borderWidth"
           },
           "attributes": {
@@ -1706,7 +1706,7 @@
           "filePath": "./style-dictionary/tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.2}",
+            "value": "{global.size.unit.200}",
             "type": "borderWidth"
           },
           "attributes": {
@@ -1726,7 +1726,7 @@
           "filePath": "./style-dictionary/tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.3}",
+            "value": "{global.size.unit.300}",
             "type": "borderWidth"
           },
           "attributes": {
@@ -1748,7 +1748,7 @@
           "filePath": "./style-dictionary/tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.0}",
+            "value": "{global.size.unit.000}",
             "type": "borderRadius"
           },
           "attributes": {
@@ -1768,7 +1768,7 @@
           "filePath": "./style-dictionary/tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.2}",
+            "value": "{global.size.unit.200}",
             "type": "borderRadius"
           },
           "attributes": {
@@ -1788,7 +1788,7 @@
           "filePath": "./style-dictionary/tokens/bloomandwild/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.7}",
+            "value": "{global.size.unit.700}",
             "type": "borderRadius"
           },
           "attributes": {
