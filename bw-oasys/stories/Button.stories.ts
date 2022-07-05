@@ -15,6 +15,14 @@ export default {
       imports: [RouterTestingModule, OasysComponentsModule]
     })
   ],
+  argTypes: {
+    buttonDisabled: { control: 'boolean' },
+    buttonType: { control: 'radio' },
+    buttonIcon: { control: 'select' },
+  },
+  args: {
+    buttonDisabled: false,
+  },
   parameters: {
     cssprops: {
       "component-color-button-primary-background": {
@@ -25,15 +33,10 @@ export default {
   }
 } as Meta;
 
-const actionsData = {
-  buttonClick: action('buttonClick'),
-};
-
 
 const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
   props: {
     ...args,
-    buttonClick: actionsData.buttonClick
   },
 });
 

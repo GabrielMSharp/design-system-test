@@ -17,6 +17,10 @@
         "danger": {
           "value": "{global.color.red.60.value}",
           "type": "color"
+        },
+        "disabled": {
+          "value": "{global.color.grey.10.value}",
+          "type": "color"
         }
       },
       "background": {
@@ -28,7 +32,8 @@
           "value": "{global.color.grey.80.value}",
           "type": "color"
         },
-        "body-on-dark": { "value": "{global.color.white.value}" }
+        "body-on-dark": { "value": "{global.color.white.value}", "type": "color"},
+        "body-disabled": { "value": "{global.color.grey.50.value}", "type": "color"}
       },
       "transparent": { "value": "transparent" },
       "tone": {

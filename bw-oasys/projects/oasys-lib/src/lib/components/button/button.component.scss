@@ -20,10 +20,6 @@ $buttonFontFamily: var(--semantic-font-family-body);
     background-color: var(--component-color-button-#{$buttonType}-background);
     border-color: var(--component-color-button-#{$buttonType}-border);
     color: var(--component-color-button-#{$buttonType}-text);
-
-    .buttonIcon {
-        fill: currentColor;
-    }
 }
 
 @mixin buttonSize($buttonSize) {
@@ -94,6 +90,7 @@ ui-button {
         justify-content: center;
         align-items: center;
         border-style: solid;
+        cursor: pointer;
 
         font-family: $buttonFontFamily;
 
@@ -109,6 +106,19 @@ ui-button {
             &.size-#{$buttonSize} {
                 @include buttonSize(($buttonSize));
             }
+        }
+
+        // Disabled button
+        &[disabled]{
+            background-color: var(--component-color-button-disabled-background);
+            border-color: var(--component-color-button-disabled-border);
+            color: var(--component-color-button-disabled-text);
+            cursor: default;
+        }
+
+        // Icon colour matching text color
+        .buttonIcon {
+            fill: currentColor;
         }
 
     }

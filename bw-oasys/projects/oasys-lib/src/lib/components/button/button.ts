@@ -41,6 +41,7 @@ export interface UIButton {
   // For links, expects relative or absolute url
   href: string;
   target: string;
+  buttonDisabled: UIButtonBoolean;
 
   buttonDisplayClasses: string[];
 }

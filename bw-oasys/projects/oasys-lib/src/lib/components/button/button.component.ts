@@ -32,6 +32,7 @@ export class ButtonComponent implements OnInit, OnChanges {
   // Button Actions
   @Input() href: string = '';
   @Output() buttonClick: EventEmitter<void> = new EventEmitter();
+  @Input() buttonDisabled: boolean = false;
 
   buttonDisplayClasses: string[];
   iconContext: IconContext = 'none';
@@ -66,12 +67,13 @@ export class ButtonComponent implements OnInit, OnChanges {
 
   createButton(): UIButton {
     return <UIButton>{
+      buttonClick: this.buttonClick,
       buttonText: this.buttonText,
       buttonIcon: this.buttonIcon,
       buttonIconPlacement: this.buttonIconPlacement,
       buttonType: this.buttonType,
       buttonSize: this.buttonSize,
-      buttonClick: this.buttonClick,
+      buttonDisabled: this.buttonDisabled,
       href: this.href,
       target: '',
       buttonDisplayClasses: [
@@ -86,8 +88,10 @@ export class ButtonComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['buttonType']) {
+    if (changes['buttonType'] || changes['buttonDisabled']) {
+      console.log('changes', changes['buttonDisabled']);
       this.button = this.createButton();
+      console.log(this.button);
       this.changes.markForCheck();
     }
   }

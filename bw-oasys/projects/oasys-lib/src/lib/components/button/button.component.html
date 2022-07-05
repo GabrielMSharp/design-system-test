@@ -1,6 +1,7 @@
 <button (click)="button.clickButton()"
         [routerLink]="button.href || null"
-        [ngClass]="button.buttonDisplayClasses">
+        [ngClass]="button.buttonDisplayClasses"
+        [attr.disabled]="button.buttonDisabled === true || null">
     <div class="button-content">
         <ui-icon *ngIf="button.buttonIcon" [iconName]="button.buttonIcon" [iconSize]="button.buttonSize" [iconClass]="'buttonIcon'" [iconContext]="button.iconContext"></ui-icon>
         <span

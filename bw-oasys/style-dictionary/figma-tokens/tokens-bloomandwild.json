@@ -793,12 +793,12 @@
               }
             },
             "text": {
-              "value": "#262626",
+              "value": "#ffffff",
               "type": "color",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{semantic.color.text.body}",
+                "value": "{semantic.color.text.body-on-dark}",
                 "type": "color"
               },
               "attributes": {
@@ -813,6 +813,80 @@
                 "1": "color",
                 "2": "button",
                 "3": "trustpilot",
+                "4": "text"
+              }
+            }
+          },
+          "disabled": {
+            "background": {
+              "value": "#f4f3f2",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.action.disabled}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "disabled",
+                "state": "background"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "disabled",
+                "4": "background"
+              }
+            },
+            "border": {
+              "value": "#f4f3f2",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{component.color.button.disabled.background}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "disabled",
+                "state": "border"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "disabled",
+                "4": "border"
+              }
+            },
+            "text": {
+              "value": "#898989",
+              "type": "color",
+              "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{semantic.color.text.body-disabled}",
+                "type": "color"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "color",
+                "item": "button",
+                "subitem": "disabled",
+                "state": "text"
+              },
+              "path": {
+                "0": "component",
+                "1": "color",
+                "2": "button",
+                "3": "disabled",
                 "4": "text"
               }
             }
@@ -1154,6 +1228,28 @@
               "2": "action",
               "3": "danger"
             }
+          },
+          "disabled": {
+            "value": "#f4f3f2",
+            "type": "color",
+            "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.color.linen-grey.10}",
+              "type": "color"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "action",
+              "subitem": "disabled"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "color",
+              "2": "action",
+              "3": "disabled"
+            }
           }
         },
         "background": {
@@ -1201,10 +1297,12 @@
           },
           "body-on-dark": {
             "value": "#ffffff",
+            "type": "color",
             "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
             "isSource": true,
             "original": {
-              "value": "{global.color.white}"
+              "value": "{global.color.white}",
+              "type": "color"
             },
             "attributes": {
               "category": "semantic",
@@ -1217,6 +1315,28 @@
               "1": "color",
               "2": "text",
               "3": "body-on-dark"
+            }
+          },
+          "body-disabled": {
+            "value": "#898989",
+            "type": "color",
+            "filePath": "./style-dictionary/tokens/bloomandwild/semantic/color.json",
+            "isSource": true,
+            "original": {
+              "value": "{global.color.grey.50}",
+              "type": "color"
+            },
+            "attributes": {
+              "category": "semantic",
+              "type": "color",
+              "item": "text",
+              "subitem": "body-disabled"
+            },
+            "path": {
+              "0": "semantic",
+              "1": "color",
+              "2": "text",
+              "3": "body-disabled"
             }
           }
         },
