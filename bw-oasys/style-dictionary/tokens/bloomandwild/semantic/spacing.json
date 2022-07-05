@@ -4,7 +4,7 @@
     "border-width": {
       "default": { "value": "{global.size.unit.1.value}","type": "borderWidth"  },
       "emphasis": { "value": "{global.size.unit.2.value}" ,"type": "borderWidth"  },
-      "focus": { "value": "{global.size.unit.4.value}" ,"type": "borderWidth"  }
+      "focus": { "value": "{global.size.unit.3.value}" ,"type": "borderWidth"  }
     },
     "border-radius": {
       "none": { "value": "{global.size.unit.0.value}","type": "borderRadius"  },

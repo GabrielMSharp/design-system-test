@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Jul 2022 13:49:25 GMT
+ * Generated on Tue, 05 Jul 2022 14:32:23 GMT
  */
 
 :root .bloomon {
@@ -75,7 +75,7 @@
   --semantic-brand-name: bloomon;
   --semantic-border-width-default: 0.1rem;
   --semantic-border-width-emphasis: 0.2rem;
-  --semantic-border-width-focus: 0.8rem;
+  --semantic-border-width-focus: 0.4rem;
   --semantic-border-radius-none: 0rem;
   --semantic-border-radius-soften-ui: 0.2rem;
   --semantic-border-radius-round: 2.4rem;
