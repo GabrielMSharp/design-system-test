@@ -1185,31 +1185,23 @@
           }
         }
       },
-      "style": {
+      "text-transform": {
         "button": {
-          "large": {
-            "text-transform": {
-              "value": "uppercase",
-              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
-              "isSource": true,
-              "original": {
-                "value": "uppercase"
-              },
-              "attributes": {
-                "category": "component",
-                "type": "style",
-                "item": "button",
-                "subitem": "large",
-                "state": "text-transform"
-              },
-              "path": {
-                "0": "component",
-                "1": "style",
-                "2": "button",
-                "3": "large",
-                "4": "text-transform"
-              }
-            }
+          "value": "uppercase",
+          "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
+          "isSource": true,
+          "original": {
+            "value": "uppercase"
+          },
+          "attributes": {
+            "category": "component",
+            "type": "text-transform",
+            "item": "button"
+          },
+          "path": {
+            "0": "component",
+            "1": "text-transform",
+            "2": "button"
           }
         }
       },

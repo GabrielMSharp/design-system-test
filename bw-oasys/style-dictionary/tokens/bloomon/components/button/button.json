@@ -204,11 +204,9 @@
     "border-radius": {
       "button": {"value": "{semantic.border-radius.round.value}", "type": "borderRadius"}
     },
-    "style": {
+    "text-transform": {
       "button": {
-        "large": {
-          "text-transform": { "value": "uppercase" }
-        }
+          "value": "uppercase"
       }
     },
     "opacity": {

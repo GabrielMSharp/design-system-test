@@ -1185,6 +1185,26 @@
           }
         }
       },
+      "text-transform": {
+        "button": {
+          "value": "normal",
+          "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+          "isSource": true,
+          "original": {
+            "value": "normal"
+          },
+          "attributes": {
+            "category": "component",
+            "type": "text-transform",
+            "item": "button"
+          },
+          "path": {
+            "0": "component",
+            "1": "text-transform",
+            "2": "button"
+          }
+        }
+      },
       "opacity": {
         "overlay": {
           "hover": {

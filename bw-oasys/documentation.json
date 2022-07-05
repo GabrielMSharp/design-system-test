@@ -500,7 +500,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "$buttonTypes:\n    primary,\n    secondary,\n    tertiary,\n    primary-inverse,\n    secondary-inverse,\n    tertiary-inverse,\n    expressive,\n    danger,\n    facebook,\n    paypal,\n    trustpilot;\n\n$buttonSizes: large, small;\n\n$buttonFontFamily: var(--semantic-font-family-body);\n\n\n@mixin buttonColors($buttonType) {\n    background-color: var(--component-color-button-#{$buttonType}-background);\n    border-color: var(--component-color-button-#{$buttonType}-border);\n    color: var(--component-color-button-#{$buttonType}-text);\n\n    .button-overlay {\n        background-color: var(--component-color-button-#{$buttonType}-text);\n    }\n}\n\n@mixin buttonSize($buttonSize) {\n    $borderWidth: var(--component-border-width-button);\n    $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);\n    $buttonMinimumHeight: var(--component-size-button-#{$buttonSize}-height);\n\n\n    $_calculatedHeight: calc($buttonMinimumHeight / 2);\n    $_calculatedLineHeight: calc($lineHeight / 2);\n\n\n    $paddingX: var(--component-size-button-#{$buttonSize}-padding-x);\n    $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);\n\n    $paddingX--with-icon: calc($paddingX * 2);\n\n    min-height: $buttonMinimumHeight;\n    min-width: $buttonMinimumHeight;\n    padding-top: $paddingY;\n    padding-right: $paddingX;\n    padding-bottom: $paddingY;\n    padding-left: $paddingX;\n\n    border-width: $borderWidth;\n\n    .button-content {\n        display: flex;\n        align-items: center;\n        gap: var(--component-size-button-#{$buttonSize}-inline-spacing);\n\n        .ui-icon {\n            max-height: $lineHeight;\n            display: flex;\n            align-items: center;\n        }\n\n        .ui-text {\n            line-height: $lineHeight;\n        }\n    }\n\n\n\n    &.button--has-icon {\n        &.button--icon--trailing {\n            .button-content {\n                flex-direction: row-reverse;\n            }\n        }\n\n        &.button--icon--only {\n            max-width: calc($buttonMinimumHeight - $borderWidth);\n        }\n\n    }\n}\n\nui-button {\n    button {\n        /* Reset */\n        border: 0;\n        -webkit-appearance: none;\n        padding: 0;\n        position: relative;\n        display: inline-flex;\n        text-align: center;\n        justify-content: center;\n        align-items: center;\n        border-style: solid;\n        cursor: pointer;\n\n        // If browser supports focus-visible we can\n        // use this selector to show focus style\n        // only if focused via keyboard\n        // Where it is more important focus be high contrast\n        @supports selector(:focus-visible) {\n            &:focus-visible {\n                outline: none;\n                box-shadow: 0 0 0 var(--semantic-border-width-focus) var(--component-color-button-expressive-background);\n            }\n        }\n        @supports not selector(:focus-visible) {\n            &:focus {\n                outline: none;\n                box-shadow: 0 0 0 var(--semantic-border-width-focus) var(--component-color-button-expressive-background);\n            }\n        }\n\n        font-family: $buttonFontFamily;\n\n        // Button Colors\n        @each $buttonType in $buttonTypes {\n            &.type-#{$buttonType} {\n                @include buttonColors(($buttonType));\n            }\n        }\n\n        // Button Sizes\n        @each $buttonSize in $buttonSizes {\n            &.size-#{$buttonSize} {\n                @include buttonSize(($buttonSize));\n            }\n        }\n\n        // Border Radius\n        border-radius: var(--component-border-radius-button);\n\n        // Disabled button\n        &[disabled]{\n            background-color: var(--component-color-button-disabled-background);\n            border-color: var(--component-color-button-disabled-border);\n            color: var(--component-color-button-disabled-text);\n            cursor: default;\n        }\n\n        // Icon colour matching text color\n        .buttonIcon {\n            fill: currentColor;\n        }\n\n        // Hover and Focus states overlay\n        .button-overlay {\n            position: absolute;\n            top: 0;\n            right: 0;\n            bottom: 0;\n            left: 0;\n            touch-action: none;\n            pointer-events: none;\n            opacity: 0;\n            border-radius: var(--component-border-radius-button);\n        }\n\n        &:hover {\n            .button-overlay {\n                opacity: var(--component-opacity-overlay-hover);\n            }\n        }\n\n        &:focus {\n            .button-overlay {\n                opacity: var(--component-opacity-overlay-focus);\n            }\n        }\n\n    }\n\n}",
+                    "data": "$buttonTypes:\n    primary,\n    secondary,\n    tertiary,\n    primary-inverse,\n    secondary-inverse,\n    tertiary-inverse,\n    expressive,\n    danger,\n    facebook,\n    paypal,\n    trustpilot;\n\n$buttonSizes: large, small;\n\n$buttonFontFamily: var(--semantic-font-family-body);\n\n\n@mixin buttonColors($buttonType) {\n    background-color: var(--component-color-button-#{$buttonType}-background);\n    border-color: var(--component-color-button-#{$buttonType}-border);\n    color: var(--component-color-button-#{$buttonType}-text);\n\n    .button-overlay {\n        background-color: var(--component-color-button-#{$buttonType}-text);\n    }\n}\n\n@mixin buttonSize($buttonSize) {\n    $borderWidth: var(--component-border-width-button);\n    $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);\n    $buttonMinimumHeight: var(--component-size-button-#{$buttonSize}-height);\n\n\n    $_calculatedHeight: calc($buttonMinimumHeight / 2);\n    $_calculatedLineHeight: calc($lineHeight / 2);\n\n\n    $paddingX: var(--component-size-button-#{$buttonSize}-padding-x);\n    $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);\n\n    $paddingX--with-icon: calc($paddingX * 2);\n\n    font-size: var(--component-size-button-#{$buttonSize}-font-size);\n\n    min-height: $buttonMinimumHeight;\n    min-width: $buttonMinimumHeight;\n    padding-top: $paddingY;\n    padding-right: $paddingX;\n    padding-bottom: $paddingY;\n    padding-left: $paddingX;\n\n    border-width: $borderWidth;\n\n    .button-content {\n        display: flex;\n        align-items: center;\n        gap: var(--component-size-button-#{$buttonSize}-inline-spacing);\n\n        .ui-icon {\n            max-height: $lineHeight;\n            display: flex;\n            align-items: center;\n        }\n\n        .ui-text {\n            line-height: $lineHeight;\n        }\n    }\n\n\n\n    &.button--has-icon {\n        &.button--icon--trailing {\n            .button-content {\n                flex-direction: row-reverse;\n            }\n        }\n\n        &.button--icon--only {\n            max-width: calc($buttonMinimumHeight - $borderWidth);\n        }\n\n    }\n}\n\nui-button {\n    button {\n        /* Reset */\n        border: 0;\n        -webkit-appearance: none;\n        padding: 0;\n        position: relative;\n        display: inline-flex;\n        text-align: center;\n        justify-content: center;\n        align-items: center;\n        border-style: solid;\n        cursor: pointer;\n\n        // If browser supports focus-visible we can\n        // use this selector to show focus style\n        // only if focused via keyboard\n        // Where it is more important focus be high contrast\n        @supports selector(:focus-visible) {\n            &:focus-visible {\n                outline: none;\n                box-shadow: 0 0 0 var(--semantic-border-width-focus) var(--component-color-button-expressive-background);\n            }\n        }\n        @supports not selector(:focus-visible) {\n            &:focus {\n                outline: none;\n                box-shadow: 0 0 0 var(--semantic-border-width-focus) var(--component-color-button-expressive-background);\n            }\n        }\n\n        font-family: $buttonFontFamily;\n\n        // Button Colors\n        @each $buttonType in $buttonTypes {\n            &.type-#{$buttonType} {\n                @include buttonColors(($buttonType));\n            }\n        }\n\n        // Button Sizes\n        @each $buttonSize in $buttonSizes {\n            &.size-#{$buttonSize} {\n                @include buttonSize(($buttonSize));\n            }\n        }\n\n        // Border Radius\n        border-radius: var(--component-border-radius-button);\n\n        // Disabled button\n        &[disabled]{\n            background-color: var(--component-color-button-disabled-background);\n            border-color: var(--component-color-button-disabled-border);\n            color: var(--component-color-button-disabled-text);\n            cursor: default;\n        }\n\n        // Icon colour matching text color\n        .buttonIcon {\n            fill: currentColor;\n        }\n\n        // Hover and Focus states overlay\n        .button-overlay {\n            position: absolute;\n            top: 0;\n            right: 0;\n            bottom: 0;\n            left: 0;\n            touch-action: none;\n            pointer-events: none;\n            opacity: 0;\n            border-radius: var(--component-border-radius-button);\n        }\n\n        &:hover {\n            .button-overlay {\n                opacity: var(--component-opacity-overlay-hover);\n            }\n        }\n\n        &:focus {\n            .button-overlay {\n                opacity: var(--component-opacity-overlay-focus);\n            }\n        }\n\n    }\n\n}",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -1039,13 +1039,13 @@
     "modules": [
         {
             "name": "OasysComponentsModule",
-            "id": "module-OasysComponentsModule-17dff6812c1cbe3473ba07600dd899f580b1573f7b6275b7b1570d8aacea909d7fec9457037af54b8b2d719471f4859e26c84cd81c955a0a0f0be060d2a92f2d",
+            "id": "module-OasysComponentsModule-69c9dcb3639b582e36b69fc2fdd824f801b0467b239775292f7484d39aae8a648439d34195edcc4dc1e14cc79d76457e4f2c956b2299f522a2b98fc3beb40572",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "stories/_OasysComponents.module.ts",
             "methods": [],
-            "sourceCode": "\nimport { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { ButtonComponent, TextComponent, IconComponent } from 'projects/oasys-lib/src/public-api';\n\n\nconst OasysComponents = [\n  ButtonComponent,\n  TextComponent,\n  IconComponent\n];\n\n\n@NgModule({\n  imports: [\n    CommonModule\n  ],\n  declarations: OasysComponents,\n  exports: OasysComponents\n})\nexport class OasysComponentsModule { }\n",
+            "sourceCode": "\nimport { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { ButtonComponent, IconComponent } from 'projects/oasys-lib/src/public-api';\n\n\nconst OasysComponents = [\n  ButtonComponent,\n  IconComponent\n];\n\n\n@NgModule({\n  imports: [\n    CommonModule\n  ],\n  declarations: OasysComponents,\n  exports: OasysComponents\n})\nexport class OasysComponentsModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1059,9 +1059,6 @@
                         },
                         {
                             "name": "IconComponent"
-                        },
-                        {
-                            "name": "TextComponent"
                         }
                     ]
                 },
@@ -1077,9 +1074,6 @@
                         },
                         {
                             "name": "IconComponent"
-                        },
-                        {
-                            "name": "TextComponent"
                         }
                     ]
                 },
@@ -1095,13 +1089,13 @@
         },
         {
             "name": "OasysLibModule",
-            "id": "module-OasysLibModule-f92948ab59c09a4ac8864ffc634598f8736357dca27ea5dfe93e1591c81a1378aba4d991e87270ba06cda1b4da01677e586a7c9c5185df093e693105fdf0219e",
+            "id": "module-OasysLibModule-ac1426de58643d7c202dff5987f28386adc9801c5dbf898e3fa231c85da7c314c655a516725170b0c8b507892abc0b40f8550bfcf004717e215a65b1c9a8bb24",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/oasys-lib/src/lib/oasys-lib.module.ts",
             "methods": [],
-            "sourceCode": "import { APP_BASE_HREF, CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport { ButtonComponent } from './components/button/button.component';\nimport { LayoutInlineComponent } from './components/layout/inline/inline.component';\nimport { TextComponent } from './components/text/text.component';\nimport { IconComponent } from './components/icon/icon.component';\nimport { LayoutBoxComponent } from './components/layout/box/box.component';\nimport { WindowService } from './services/window.service';\n\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    LayoutInlineComponent,\n    TextComponent,\n    IconComponent,\n    LayoutBoxComponent\n  ],\n  imports: [\n    CommonModule,\n    RouterModule.forRoot([])\n  ],\n  exports: [\n    ButtonComponent,\n    TextComponent,\n    LayoutBoxComponent\n  ],\n  providers: [\n    WindowService,\n    {provide: APP_BASE_HREF, useValue: '/'}\n  ]\n})\nexport class OasysLibModule { }\n",
+            "sourceCode": "import { APP_BASE_HREF, CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport { ButtonComponent } from './components/button/button.component';\nimport { LayoutInlineComponent } from './components/layout/inline/inline.component';\nimport { IconComponent } from './components/icon/icon.component';\nimport { LayoutBoxComponent } from './components/layout/box/box.component';\nimport { WindowService } from './services/window.service';\n\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent,\n    LayoutInlineComponent,\n    IconComponent,\n    LayoutBoxComponent\n  ],\n  imports: [\n    CommonModule,\n    RouterModule.forRoot([])\n  ],\n  exports: [\n    ButtonComponent,\n    LayoutBoxComponent\n  ],\n  providers: [\n    WindowService,\n    {provide: APP_BASE_HREF, useValue: '/'}\n  ]\n})\nexport class OasysLibModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1125,9 +1119,6 @@
                         },
                         {
                             "name": "LayoutInlineComponent"
-                        },
-                        {
-                            "name": "TextComponent"
                         }
                     ]
                 },
@@ -1143,9 +1134,6 @@
                         },
                         {
                             "name": "LayoutBoxComponent"
-                        },
-                        {
-                            "name": "TextComponent"
                         }
                     ]
                 },
@@ -1250,7 +1238,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\n  ButtonComponent,\n  TextComponent,\n  IconComponent\n]"
+                "defaultValue": "[\n  ButtonComponent,\n  IconComponent\n]"
             },
             {
                 "name": "Paypal",
@@ -1332,16 +1320,6 @@
                 "defaultValue": "(args: ButtonComponent) => ({\n  props: {\n    ...args,\n  },\n})"
             },
             {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/Text.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<TextComponent>",
-                "defaultValue": "(args: TextComponent) => ({\n  props: args,\n  template: `<ui-text>{{ ngContent }}</ui-text>`\n})"
-            },
-            {
                 "name": "Tertiary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1356,16 +1334,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Text",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/Text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1702,29 +1670,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\n  ButtonComponent,\n  TextComponent,\n  IconComponent\n]"
-                }
-            ],
-            "stories/Text.stories.ts": [
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<TextComponent>",
-                    "defaultValue": "(args: TextComponent) => ({\n  props: args,\n  template: `<ui-text>{{ ngContent }}</ui-text>`\n})"
-                },
-                {
-                    "name": "Text",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Text.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
+                    "defaultValue": "[\n  ButtonComponent,\n  IconComponent\n]"
                 }
             ]
         },
@@ -2104,26 +2050,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Trustpilot",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/Text.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/Text.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Text",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

@@ -234,6 +234,11 @@
         "type": "borderRadius"
       }
     },
+    "text-transform": {
+      "button": {
+          "value": "normal"
+      }
+    },
     "opacity": {
       "overlay": {
         "hover": {
