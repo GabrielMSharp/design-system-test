@@ -1,6 +1,102 @@
 {
     "pipes": [],
-    "interfaces": [],
+    "interfaces": [
+        {
+            "name": "UIButton",
+            "id": "interface-UIButton-f6647e68057fe4ad8ca61dcdfd155ed9215d7d2700a99aaa07d90df5f20d464c6b34d4a97a4074804c80d8c9a261d14c131146449f417b3291901a3b80ab84cb",
+            "file": "projects/oasys-lib/src/lib/components/button/button.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { EventEmitter } from '@angular/core';\nimport { IconNames, IconContext } from 'oasys-lib';\n\n\nexport type UIButtonBoolean = true | 'true' | false | 'false';\n\nexport type UIButtonSize = 'small' | 'large';\n\nexport type UIButtonType =\n  | 'primary'\n  | 'secondary'\n  | 'tertiary'\n  | 'primary-inverse'\n  | 'secondary-inverse'\n  | 'tertiary-inverse'\n  | 'expressive'\n  | 'danger'\n  | 'facebook'\n  | 'paypal'\n  | 'trustpilot';\n\nexport interface UIButton {\n\n  //_______________\n  // Button Content\n  buttonText: string;\n  buttonIcon: IconNames;\n\n  // color/styling of button\n  buttonType: UIButtonType;\n\n  // positioning for icon\n  buttonIconPlacement: IconContext\n\n  // button size\n  buttonSize: UIButtonSize;\n\n  // click function\n  buttonClick: EventEmitter<any>;\n\n  // For links, expects relative or absolute url\n  href: string;\n  target: string;\n\n  buttonDisplayClasses: string[];\n}\n",
+            "properties": [
+                {
+                    "name": "buttonClick",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "EventEmitter<any>",
+                    "optional": false,
+                    "description": "",
+                    "line": 39
+                },
+                {
+                    "name": "buttonDisplayClasses",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 45
+                },
+                {
+                    "name": "buttonIcon",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "IconNames",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "buttonIconPlacement",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "IconContext",
+                    "optional": false,
+                    "description": "",
+                    "line": 33
+                },
+                {
+                    "name": "buttonSize",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "UIButtonSize",
+                    "optional": false,
+                    "description": "",
+                    "line": 36
+                },
+                {
+                    "name": "buttonText",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                },
+                {
+                    "name": "buttonType",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "UIButtonType",
+                    "optional": false,
+                    "description": "",
+                    "line": 30
+                },
+                {
+                    "name": "href",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 42
+                },
+                {
+                    "name": "target",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 43
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        }
+    ],
     "injectables": [
         {
             "name": "OasysLibService",
@@ -183,7 +279,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-0b3b00544f83e7542fb970afac9499be567251b43f7c4f2ec69cc176d8fe7ce0d5b8c53b91e9fb97c2d6095be6b3547384dbf95fd49833799d492d6c2faca402",
+            "id": "component-ButtonComponent-78b4b802afac5bdf35a738b679ab7112480c8f0c1769a608230c09d7a82c975a1fa18244721e2a8a377a28f6fe13fc72ed3dca96d0dbd516113df6fa31465826",
             "file": "projects/oasys-lib/src/lib/components/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -207,7 +303,7 @@
                     "name": "buttonIcon",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 17,
+                    "line": 25,
                     "type": "IconNames",
                     "decorators": []
                 },
@@ -216,7 +312,7 @@
                     "defaultValue": "'leading'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 18,
+                    "line": 26,
                     "type": "IconContext",
                     "decorators": []
                 },
@@ -225,15 +321,15 @@
                     "defaultValue": "'large'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 21,
-                    "type": "\"small\" | \"large\"",
+                    "line": 29,
+                    "type": "UIButtonSize",
                     "decorators": []
                 },
                 {
                     "name": "buttonText",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 16,
+                    "line": 24,
                     "type": "string",
                     "decorators": []
                 },
@@ -242,8 +338,8 @@
                     "defaultValue": "'primary'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 22,
-                    "type": "\"primary\" | \"secondary\" | \"tertiary\" | \"primary-inverse\" | \"secondary-inverse\" | \"teriary-inverse\"",
+                    "line": 30,
+                    "type": "UIButtonType",
                     "decorators": []
                 },
                 {
@@ -251,7 +347,7 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 25,
+                    "line": 33,
                     "type": "string",
                     "decorators": []
                 }
@@ -262,11 +358,20 @@
                     "defaultValue": "new EventEmitter()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 26,
+                    "line": 34,
                     "type": "EventEmitter<void>"
                 }
             ],
             "propertiesClass": [
+                {
+                    "name": "button",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "UIButton",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
                 {
                     "name": "buttonDisplayClasses",
                     "deprecated": false,
@@ -274,7 +379,7 @@
                     "type": "string[]",
                     "optional": false,
                     "description": "",
-                    "line": 28
+                    "line": 36
                 },
                 {
                     "name": "iconContext",
@@ -284,7 +389,7 @@
                     "type": "IconContext",
                     "optional": false,
                     "description": "",
-                    "line": 29
+                    "line": 37
                 },
                 {
                     "name": "textTransform",
@@ -293,7 +398,7 @@
                     "type": "TextTransform",
                     "optional": false,
                     "description": "",
-                    "line": 30
+                    "line": 38
                 }
             ],
             "methodsClass": [
@@ -303,7 +408,17 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 34,
+                    "line": 42,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "createButton",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "UIButton",
+                    "typeParameters": [],
+                    "line": 67,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -313,7 +428,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 63,
+                    "line": 92,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -323,7 +438,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 67,
+                    "line": 96,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -333,7 +448,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 59,
+                    "line": 88,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -343,7 +458,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 39,
+                    "line": 47,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -355,7 +470,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit, OnChanges, AfterViewInit {\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: 'small'|'large' = 'large';\n  @Input() buttonType: 'primary'|'secondary'|'tertiary'|'primary-inverse'|'secondary-inverse'|'teriary-inverse' = 'primary';\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  buttonDisplayClasses: string[];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  setupClasses(): void {\n    this.buttonDisplayClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ].filter((d) => !!d);\n\n    console.log('buttonClasses: ', this.buttonDisplayClasses);\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--component-style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n  }\n\n  ngOnInit(): void {\n    this.setupClasses();\n  }\n\n  ngAfterViewInit(): void {\n    this.setupClasses();\n  }\n\n  ngOnChanges(): void {\n    this.setupClasses();\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit } from '@angular/core';\nimport { TokenService } from '../../services/token.service';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\nimport {\n  UIButton,\n  UIButtonBoolean,\n  UIButtonSize,\n  UIButtonType\n} from './button';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class ButtonComponent implements OnInit, OnChanges, AfterViewInit {\n\n  button: UIButton;\n\n  // // Button Content\n  @Input() buttonText: string;\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // Button Stylings\n  @Input() buttonSize: UIButtonSize = 'large';\n  @Input() buttonType: UIButtonType = 'primary';\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() buttonClick: EventEmitter<void> = new EventEmitter();\n\n  buttonDisplayClasses: string[];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private tokenService: TokenService) { }\n\n  clickButton(): void {\n    console.log('button was clicked');\n    this.buttonClick.emit();\n  }\n\n  setupClasses(): void {\n    this.buttonDisplayClasses = [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n    ].filter((d) => !!d);\n\n    console.log('buttonClasses: ', this.buttonDisplayClasses);\n\n    if(this.buttonIcon) {\n      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';\n    }\n\n    this.textTransform = this.tokenService.getTokenValue(\n      `--component-style-button-${this.buttonSize}-text-transform`\n    ) as TextTransform;\n  }\n\n  createButton(): UIButton {\n    return <UIButton>{\n      buttonText: this.buttonText,\n      buttonIcon: this.buttonIcon,\n      buttonIconPlacement: this.buttonIconPlacement,\n      buttonType: this.buttonType,\n      buttonSize: this.buttonSize,\n      buttonClick: this.buttonClick,\n      href: this.href,\n      target: '',\n      buttonDisplayClasses: [\n        `type-${this.buttonType}`,\n        `size-${this.buttonSize}`,\n        `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n      ]\n        .filter((d) => !!d)\n    };\n  }\n\n  ngOnInit(): void {\n    this.button = this.createButton();\n  }\n\n  ngAfterViewInit(): void {\n    this.button = this.createButton();\n  }\n\n  ngOnChanges(): void {\n    this.button = this.createButton();\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -377,7 +492,7 @@
                         "deprecationMessage": ""
                     }
                 ],
-                "line": 30,
+                "line": 38,
                 "jsdoctags": [
                     {
                         "name": "tokenService",
@@ -395,7 +510,7 @@
                 "OnChanges",
                 "AfterViewInit"
             ],
-            "templateData": "<button (click)=\"clickButton()\"\n        [routerLink]=\"href || null\"\n        [ngClass]=\"buttonDisplayClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"buttonIcon\" [iconName]=\"buttonIcon\" [iconSize]=\"buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"iconContext\"></ui-icon>\n        <span\n            class=\"ui-text\"\n            *ngIf=\"buttonText && buttonIconPlacement !== 'iconOnly'\">\n            {{buttonText}}\n        </span>\n    </div>\n</button>\n"
+            "templateData": "<button (click)=\"button.clickButton()\"\n        [routerLink]=\"button.href || null\"\n        [ngClass]=\"button.buttonDisplayClasses\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"button.buttonIcon\" [iconName]=\"button.buttonIcon\" [iconSize]=\"button.buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"button.iconContext\"></ui-icon>\n        <span\n            class=\"ui-text\"\n            *ngIf=\"button.buttonText && button.buttonIconPlacement !== 'iconOnly'\">\n            {{button.buttonText}}\n        </span>\n    </div>\n</button>\n"
         },
         {
             "name": "IconComponent",
@@ -1058,6 +1173,16 @@
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
             },
             {
+                "name": "cssprops",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/assets/tokens/tokens.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  tokens\n}"
+            },
+            {
                 "name": "OasysComponents",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1145,6 +1270,16 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "tokens",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/assets/tokens/tokens.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require('./tokens.json')"
             }
         ],
         "functions": [
@@ -1200,6 +1335,39 @@
                 "subtype": "typealias",
                 "rawtype": "\"none\" | \"uppercase\" | \"lowercase\" | \"capitalize\"",
                 "file": "projects/oasys-lib/src/lib/components/text/text.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 186
+            },
+            {
+                "name": "UIButtonBoolean",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": " | \"true\" |  | \"false\"",
+                "file": "projects/oasys-lib/src/lib/components/button/button.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 186
+            },
+            {
+                "name": "UIButtonSize",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "\"small\" | \"large\"",
+                "file": "projects/oasys-lib/src/lib/components/button/button.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 186
+            },
+            {
+                "name": "UIButtonType",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "\"primary\" | \"secondary\" | \"tertiary\" | \"primary-inverse\" | \"secondary-inverse\" | \"tertiary-inverse\" | \"expressive\" | \"danger\" | \"facebook\" | \"paypal\" | \"trustpilot\"",
+                "file": "projects/oasys-lib/src/lib/components/button/button.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1323,6 +1491,28 @@
                     "type": "literal type"
                 }
             ],
+            "stories/assets/tokens/tokens.ts": [
+                {
+                    "name": "cssprops",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/assets/tokens/tokens.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  tokens\n}"
+                },
+                {
+                    "name": "tokens",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/assets/tokens/tokens.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require('./tokens.json')"
+                }
+            ],
             "stories/_OasysComponents.module.ts": [
                 {
                     "name": "OasysComponents",
@@ -1424,6 +1614,41 @@
                     "description": "",
                     "kind": 186
                 }
+            ],
+            "projects/oasys-lib/src/lib/components/button/button.ts": [
+                {
+                    "name": "UIButtonBoolean",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": " | \"true\" |  | \"false\"",
+                    "file": "projects/oasys-lib/src/lib/components/button/button.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 186
+                },
+                {
+                    "name": "UIButtonSize",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "\"small\" | \"large\"",
+                    "file": "projects/oasys-lib/src/lib/components/button/button.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 186
+                },
+                {
+                    "name": "UIButtonType",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "\"primary\" | \"secondary\" | \"tertiary\" | \"primary-inverse\" | \"secondary-inverse\" | \"tertiary-inverse\" | \"expressive\" | \"danger\" | \"facebook\" | \"paypal\" | \"trustpilot\"",
+                    "file": "projects/oasys-lib/src/lib/components/button/button.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 186
+                }
             ]
         }
     },
@@ -1438,7 +1663,16 @@
                 "linktype": "component",
                 "name": "ButtonComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/17",
+                "coverageCount": "0/19",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/oasys-lib/src/lib/components/button/button.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "UIButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
                 "status": "low"
             },
             {
@@ -1650,6 +1884,26 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "OasysComponents",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/assets/tokens/tokens.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "cssprops",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/assets/tokens/tokens.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "tokens",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

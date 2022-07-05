@@ -1,7 +1,13 @@
-import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit } from '@angular/core';
+import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit, SimpleChanges } from '@angular/core';
 import { TokenService } from '../../services/token.service';
 import { IconNames, IconContext } from '../icon/icon';
 import { TextTransform } from '../text/text';
+import {
+  UIButton,
+  UIButtonBoolean,
+  UIButtonSize,
+  UIButtonType
+} from './button';
 
 @Component({
   selector:'ui-button',
@@ -10,7 +16,9 @@ import { TextTransform } from '../text/text';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ButtonComponent implements OnInit, OnChanges, AfterViewInit {
+export class ButtonComponent implements OnInit, OnChanges {
+
+  button: UIButton;
 
   // // Button Content
   @Input() buttonText: string;
@@ -18,8 +26,8 @@ export class ButtonComponent implements OnInit, OnChanges, AfterViewInit {
   @Input() buttonIconPlacement: IconContext = 'leading';
 
   // Button Stylings
-  @Input() buttonSize: 'small'|'large' = 'large';
-  @Input() buttonType: 'primary'|'secondary'|'tertiary'|'primary-inverse'|'secondary-inverse'|'teriary-inverse' = 'primary';
+  @Input() buttonSize: UIButtonSize = 'large';
+  @Input() buttonType: UIButtonType = 'primary';
 
   // Button Actions
   @Input() href: string = '';
@@ -29,7 +37,7 @@ export class ButtonComponent implements OnInit, OnChanges, AfterViewInit {
   iconContext: IconContext = 'none';
   textTransform!: TextTransform;
 
-  constructor(private tokenService: TokenService) { }
+  constructor(private tokenService: TokenService, private changes: ChangeDetectorRef) { }
 
   clickButton(): void {
     console.log('button was clicked');
@@ -56,16 +64,35 @@ export class ButtonComponent implements OnInit, OnChanges, AfterViewInit {
     ) as TextTransform;
   }
 
+  createButton(): UIButton {
+    return <UIButton>{
+      buttonText: this.buttonText,
+      buttonIcon: this.buttonIcon,
+      buttonIconPlacement: this.buttonIconPlacement,
+      buttonType: this.buttonType,
+      buttonSize: this.buttonSize,
+      buttonClick: this.buttonClick,
+      href: this.href,
+      target: '',
+      buttonDisplayClasses: [
+        `type-${this.buttonType}`,
+        `size-${this.buttonSize}`,
+        `${this.buttonIcon ? 'button--has-icon': ''}`,
+      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
+      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
+      ]
+        .filter((d) => !!d)
+    };
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['buttonType']) {
+      this.button = this.createButton();
+      this.changes.markForCheck();
+    }
+  }
+
   ngOnInit(): void {
-    this.setupClasses();
+    this.button = this.createButton();
   }
-
-  ngAfterViewInit(): void {
-    this.setupClasses();
-  }
-
-  ngOnChanges(): void {
-    this.setupClasses();
-  }
-
 }

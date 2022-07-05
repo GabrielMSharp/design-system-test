@@ -45,14 +45,45 @@ Primary.args = {
   buttonText: 'Primary CTA',
 };
 
-export const Primary2 = Template.bind({});
-Primary2.args = {
+export const Secondary = Template.bind({});
+Secondary.args = {
   buttonType: 'secondary',
-  buttonText: 'Primary-2 CTA',
+  buttonText: 'Secondary CTA',
 };
 
-export const Primary3 = Template.bind({});
-Primary3.args = {
+export const Tertiary = Template.bind({});
+Tertiary.args = {
   buttonType: 'tertiary',
-  buttonText: 'Primary-3 Yeah',
+  buttonText: 'Tertiary CTA',
 };
+
+export const PrimaryInverse = Template.bind({});
+PrimaryInverse.args = {
+  buttonType: 'primary-inverse',
+  buttonText: 'PrimaryInverse CTA',
+};
+
+export const SecondaryInverse = Template.bind({});
+SecondaryInverse.args = {
+  buttonType: 'secondary-inverse',
+  buttonText: 'SecondaryInverse CTA',
+};
+
+export const TertiaryInverse = Template.bind({});
+TertiaryInverse.args = {
+  buttonType: 'tertiary-inverse',
+  buttonText: 'TertiaryInverse CTA',
+};
+
+export const expressive = Template.bind({});
+expressive.args = {
+  buttonType: 'expressive',
+  buttonText: 'expressive CTA',
+};
+
+export const Danger = Template.bind({});
+Danger.args = {
+  buttonType: 'Danger',
+  buttonText: 'Danger CTA',
+};
+

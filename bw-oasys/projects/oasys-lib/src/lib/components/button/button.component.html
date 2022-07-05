@@ -1,12 +1,12 @@
-<button (click)="clickButton()"
-        [routerLink]="href || null"
-        [ngClass]="buttonDisplayClasses">
+<button (click)="button.clickButton()"
+        [routerLink]="button.href || null"
+        [ngClass]="button.buttonDisplayClasses">
     <div class="button-content">
-        <ui-icon *ngIf="buttonIcon" [iconName]="buttonIcon" [iconSize]="buttonSize" [iconClass]="'buttonIcon'" [iconContext]="iconContext"></ui-icon>
+        <ui-icon *ngIf="button.buttonIcon" [iconName]="button.buttonIcon" [iconSize]="button.buttonSize" [iconClass]="'buttonIcon'" [iconContext]="button.iconContext"></ui-icon>
         <span
             class="ui-text"
-            *ngIf="buttonText && buttonIconPlacement !== 'iconOnly'">
-            {{buttonText}}
+            *ngIf="button.buttonText && button.buttonIconPlacement !== 'iconOnly'">
+            {{button.buttonText}}
         </span>
     </div>
 </button>
