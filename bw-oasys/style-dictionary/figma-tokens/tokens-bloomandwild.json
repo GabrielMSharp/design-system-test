@@ -1136,6 +1136,54 @@
             "2": "button"
           }
         }
+      },
+      "opacity": {
+        "overlay": {
+          "hover": {
+            "value": "0.08",
+            "type": "opacity",
+            "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+            "isSource": true,
+            "original": {
+              "value": "0.08",
+              "type": "opacity"
+            },
+            "attributes": {
+              "category": "component",
+              "type": "opacity",
+              "item": "overlay",
+              "subitem": "hover"
+            },
+            "path": {
+              "0": "component",
+              "1": "opacity",
+              "2": "overlay",
+              "3": "hover"
+            }
+          },
+          "focus": {
+            "value": "0.16",
+            "type": "opacity",
+            "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
+            "isSource": true,
+            "original": {
+              "value": "0.16",
+              "type": "opacity"
+            },
+            "attributes": {
+              "category": "component",
+              "type": "opacity",
+              "item": "overlay",
+              "subitem": "focus"
+            },
+            "path": {
+              "0": "component",
+              "1": "opacity",
+              "2": "overlay",
+              "3": "focus"
+            }
+          }
+        }
       }
     },
     "semantic": {

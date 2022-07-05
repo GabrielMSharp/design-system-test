@@ -224,6 +224,18 @@
         "value": "{semantic.border-radius.soften-ui.value}",
         "type": "borderRadius"
       }
+    },
+    "opacity": {
+      "overlay": {
+        "hover": {
+          "value": "0.08",
+          "type": "opacity"
+        },
+        "focus": {
+          "value": "0.16",
+          "type": "opacity"
+        }
+      }
     }
   }
 }

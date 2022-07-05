@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Jul 2022 12:49:28 GMT
+ * Generated on Tue, 05 Jul 2022 13:49:25 GMT
  */
 
 :root .bloomon {
@@ -51,6 +51,8 @@
   --component-border-width-button: 0.1rem;
   --component-border-radius-button: 2.4rem;
   --component-style-button-large-text-transform: uppercase;
+  --component-opacity-overlay-hover: 0.08;
+  --component-opacity-overlay-focus: 0.16;
   --semantic-color-action-primary: #464646;
   --semantic-color-action-primary-inverse: #ffffff;
   --semantic-color-action-expressive: #fdf888;

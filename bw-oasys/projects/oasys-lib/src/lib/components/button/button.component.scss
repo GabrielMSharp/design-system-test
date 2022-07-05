@@ -20,6 +20,10 @@ $buttonFontFamily: var(--semantic-font-family-body);
     background-color: var(--component-color-button-#{$buttonType}-background);
     border-color: var(--component-color-button-#{$buttonType}-border);
     color: var(--component-color-button-#{$buttonType}-text);
+
+    .button-overlay {
+        background-color: var(--component-color-button-#{$buttonType}-text);
+    }
 }
 
 @mixin buttonSize($buttonSize) {
@@ -78,19 +82,29 @@ $buttonFontFamily: var(--semantic-font-family-body);
     }
 }
 
-
 ui-button {
     button {
         /* Reset */
         border: 0;
         -webkit-appearance: none;
         padding: 0;
+        position: relative;
         display: inline-flex;
         text-align: center;
         justify-content: center;
         align-items: center;
         border-style: solid;
         cursor: pointer;
+
+        // If browser supports focus-visible we can
+        // use this selector to show focus style
+        // only if focused via keyboard
+        // Where it is more important focus be high contrast
+        @supports selector(:focus-visible) {
+            &:focus-visible {
+                outline: 4px solid var(--component-color-button-expressive-background);
+            }
+        }
 
         font-family: $buttonFontFamily;
 
@@ -121,5 +135,30 @@ ui-button {
             fill: currentColor;
         }
 
+        // Hover and Focus states overlay
+        .button-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            touch-action: none;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        &:hover {
+            .button-overlay {
+                opacity: var(--component-opacity-overlay-hover);
+            }
+        }
+
+        &:focus {
+            .button-overlay {
+                opacity: var(--component-opacity-overlay-focus);
+            }
+        }
+
     }
+
 }
