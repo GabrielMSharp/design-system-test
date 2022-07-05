@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ButtonComponent } from './components/button/button.component';
 import { LayoutInlineComponent } from './components/layout/inline/inline.component';
-import { TextComponent } from './components/text/text.component';
 import { IconComponent } from './components/icon/icon.component';
 import { LayoutBoxComponent } from './components/layout/box/box.component';
 import { WindowService } from './services/window.service';
@@ -14,7 +13,6 @@ import { WindowService } from './services/window.service';
   declarations: [
     ButtonComponent,
     LayoutInlineComponent,
-    TextComponent,
     IconComponent,
     LayoutBoxComponent
   ],
@@ -24,7 +22,6 @@ import { WindowService } from './services/window.service';
   ],
   exports: [
     ButtonComponent,
-    TextComponent,
     LayoutBoxComponent
   ],
   providers: [

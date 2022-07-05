@@ -41,6 +41,8 @@ $buttonFontFamily: var(--semantic-font-family-body);
 
     $paddingX--with-icon: calc($paddingX * 2);
 
+    font-size: var(--component-size-button-#{$buttonSize}-font-size);
+
     min-height: $buttonMinimumHeight;
     min-width: $buttonMinimumHeight;
     padding-top: $paddingY;

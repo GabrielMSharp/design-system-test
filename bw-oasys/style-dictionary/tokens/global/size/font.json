@@ -4,27 +4,33 @@
       "font": {
         "body-1" : {
           "value": "2.0",
-          "type": "font-size"
+          "type": "fontSize",
+          "attributes": { "category": "size" }
         },
         "body-2": {
           "value": "1.8",
-          "type": "font-size"
+          "type": "spacing",
+          "attributes": { "category": "size" }
         },
         "body-3" : {
           "value": "1.6",
-          "type": "font-size"
+          "type": "fontSize",
+          "attributes": { "category": "size" }
         },
         "body-4"  : {
           "value": "1.4",
-          "type": "font-size"
+          "type": "fontSize",
+          "attributes": { "category": "size" }
         },
         "body-5"  : {
           "value": "1.2",
-          "type": "font-size"
+          "type": "fontSize",
+          "attributes": { "category": "size" }
         },
         "base"  : {
           "value": "{global.size.font.body-3.value}",
-          "type": "font-size"
+          "type": "fontSize",
+          "attributes": { "category": "size" }
         }
       }
     }

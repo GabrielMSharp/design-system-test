@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Jul 2022 14:32:23 GMT
+ * Generated on Tue, 05 Jul 2022 14:54:34 GMT
  */
 
 :root {
@@ -44,12 +44,12 @@
   --global-color-partners-facebook: #485b94;
   --global-color-partners-paypal: #ffc43a;
   --global-color-partners-trustpilot: #29b47c;
-  --global-size-font-body-1: 2.0;
-  --global-size-font-body-2: 1.8;
-  --global-size-font-body-3: 1.6;
-  --global-size-font-body-4: 1.4;
-  --global-size-font-body-5: 1.2;
-  --global-size-font-base: 1.6;
+  --global-size-font-body-1: 2rem;
+  --global-size-font-body-2: 1.8rem;
+  --global-size-font-body-3: 1.6rem;
+  --global-size-font-body-4: 1.4rem;
+  --global-size-font-body-5: 1.2rem;
+  --global-size-font-base: 1.6rem;
   --global-size-icon-small: 1.6rem;
   --global-size-icon-large: 2.4rem;
   --global-size-unit-0: 0rem;

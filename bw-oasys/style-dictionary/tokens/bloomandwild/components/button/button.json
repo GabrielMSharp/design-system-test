@@ -191,6 +191,11 @@
           "inline-spacing": {
             "value": "{global.size.unit.4.value}",
             "type": "spacing"
+          },
+          "font-size": {
+            "value": "{global.size.font.body-2.value}",
+            "type": "sizing",
+            "category": "size"
           }
         },
         "small": {
@@ -209,6 +214,11 @@
           "inline-spacing": {
             "value": "{global.size.unit.3.value}",
             "type": "spacing"
+          },
+          "font-size": {
+            "value": "{global.size.font.body-3.value}",
+            "type": "fontSize",
+            "category": "size"
           }
         }
       }
