@@ -42,6 +42,11 @@
           "attributes": { "category": "size" },
           "type": "sizing"
         },
+        "450": {
+          "value": "1.0",
+          "attributes": { "category": "size" },
+          "type": "sizing"
+        },
         "475": {
           "value": "1.1",
           "attributes": { "category": "size" },

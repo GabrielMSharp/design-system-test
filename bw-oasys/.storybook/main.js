@@ -20,5 +20,5 @@ module.exports = {
   "staticDirs": [
     { from: '../projects/oasys-lib/src/assets/bloomon/icons', to: '/bloomon/assets/icons/' },
     { from: '../projects/oasys-lib/src/assets/bloomandwild/icons', to: '/bloomandwild/assets/icons/' }
-  ],
+  ]
 }

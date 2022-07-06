@@ -7,28 +7,32 @@ ui-icon {
 
 
 @mixin iconSize($iconSize){
-  $iconPositionAdjustment: var(--icon-position-modifier-#{$iconSize});
+
+  $iconOffsetLeading: calc(var(--component-size-button-#{$iconSize}-icon-offset-leading) * -1);
+  $iconOffsetTrailing: calc(var(--component-size-button-#{$iconSize}-icon-offset-trailing) * -1);
 
   &.icon-context-leading {
-    margin-left: #{$iconPositionAdjustment};
+    margin-left: #{$iconOffsetLeading};
   }
 
   &.icon-context-trailing {
-    margin-right: #{$iconPositionAdjustment};
+    margin-right: #{$iconOffsetTrailing}
   }
 
   &.icon-context-iconOnly {
-    margin-left: #{$iconPositionAdjustment};
-    margin-right: #{$iconPositionAdjustment};
+    margin-left: #{$iconOffsetLeading};
+    margin-right: #{$iconOffsetTrailing}
   }
 
 }
 
-.lib-icon {
+.ui-icon {
   display: inline-flex;
 
   // Icon Contexts
   @each $iconSize in $iconSizes {
-    @include iconSize(($iconSize));
+    &.icon-size-#{$iconSize} {
+      @include iconSize(($iconSize));
+    }
   }
 }

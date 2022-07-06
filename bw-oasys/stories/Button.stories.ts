@@ -27,9 +27,9 @@ export default {
         value: "#464646",
         description: "This value is hard coded but if changed the component does update",
       },
-    }
-  },
-  legacyAngularRenderer: true
+    },
+    angularLegacyRendering: true,
+  }
 } as Meta;
 
 

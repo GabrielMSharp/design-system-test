@@ -19,8 +19,8 @@ export class IconComponent implements OnInit, OnChanges {
   @Input() iconClass?: string;
 
   size?: string;
-  iconPlacementClass?: string;
   iconBrandPath?: string;
+  iconDisplayClasses: string[];
 
   constructor(private tokenService: TokenService, private windowRef: WindowService, private elementRef: ElementRef) { }
 
@@ -36,10 +36,13 @@ export class IconComponent implements OnInit, OnChanges {
   ngOnInit(): void {
     this.iconBrandPath = `${this.tokenService.getBrandName(`--icon-component-brand`, this.elementRef.nativeElement)}`
     this.size = this.tokenService.getTokenValue(`--global-size-icon-${this.iconSize}`);
-    this.iconPlacementClass = `icon-context-${this.iconContext}`;
-    console.log('convert icon size:', this.size);
+
+    this.iconDisplayClasses = [
+      `icon-context-${this.iconContext}`,
+      `icon-size-${this.iconSize}`
+    ];
+
     const sizeInPixels = this.convertRemToPixels(this.size);
-    console.log('in pixels icon size:', sizeInPixels);
     this.iconWidth = sizeInPixels;
     this.iconHeight = sizeInPixels;
   }

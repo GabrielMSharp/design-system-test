@@ -944,6 +944,54 @@
                 "4": "padding-y"
               }
             },
+            "icon-offset-leading": {
+              "value": "12px",
+              "type": "spacing",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.500}",
+                "type": "spacing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "large",
+                "state": "icon-offset-leading"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "large",
+                "4": "icon-offset-leading"
+              }
+            },
+            "icon-offset-trailing": {
+              "value": "12px",
+              "type": "spacing",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.500}",
+                "type": "spacing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "large",
+                "state": "icon-offset-trailing"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "large",
+                "4": "icon-offset-trailing"
+              }
+            },
             "line-height": {
               "value": "16px",
               "type": "typography",
@@ -1064,6 +1112,54 @@
                 "2": "button",
                 "3": "small",
                 "4": "padding-y"
+              }
+            },
+            "icon-offset-leading": {
+              "value": "8px",
+              "type": "spacing",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.400}",
+                "type": "spacing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "small",
+                "state": "icon-offset-leading"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "small",
+                "4": "icon-offset-leading"
+              }
+            },
+            "icon-offset-trailing": {
+              "value": "8px",
+              "type": "spacing",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.400}",
+                "type": "spacing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "small",
+                "state": "icon-offset-trailing"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "small",
+                "4": "icon-offset-trailing"
               }
             },
             "line-height": {

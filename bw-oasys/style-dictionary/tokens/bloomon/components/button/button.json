@@ -177,20 +177,60 @@
     "size": {
       "button": {
         "large": {
-          "padding-x": { "value": "{global.size.unit.675.value}", "type": "spacing"},
-          "padding-y": { "value": "{global.size.unit.525.value}", "type": "spacing"},
-          "line-height": { "value": "{global.size.unit.600.value}","type": "typography"},
-          "inline-spacing": { "value": "{global.size.unit.400.value}","type": "spacing"},
+          "padding-x": {
+            "value": "{global.size.unit.675.value}",
+            "type": "spacing"
+          },
+          "padding-y": {
+            "value": "{global.size.unit.525.value}",
+            "type": "spacing"
+          },
+          "icon-offset-leading": {
+            "value": "{global.size.unit.500.value}",
+            "type": "spacing"
+          },
+          "icon-offset-trailing": {
+            "value": "{global.size.unit.500.value}",
+            "type": "spacing"
+          },
+          "line-height": {
+            "value": "{global.size.unit.600.value}",
+            "type": "typography"
+          },
+          "inline-spacing": {
+            "value": "{global.size.unit.400.value}",
+            "type": "spacing"
+          },
           "font-size": {
             "value": "{global.size.font.body-4.value}",
             "type": "fontSize"
           }
         },
         "small": {
-          "padding-x": { "value": "{global.size.unit.525.value}", "type": "spacing"},
-          "padding-y": { "value": "{global.size.unit.350.value}","type": "sizing"},
-          "line-height": { "value": "{global.size.unit.600.value}","type": "typography"},
-          "inline-spacing": { "value": "{global.size.unit.300.value}","type": "spacing"},
+          "padding-x": {
+            "value": "{global.size.unit.525.value}",
+            "type": "spacing"
+          },
+          "padding-y": {
+            "value": "{global.size.unit.350.value}",
+            "type": "sizing"
+          },
+          "icon-offset-leading": {
+            "value": "{global.size.unit.400.value}",
+            "type": "spacing"
+          },
+          "icon-offset-trailing": {
+            "value": "{global.size.unit.400.value}",
+            "type": "spacing"
+          },
+          "line-height": {
+            "value": "{global.size.unit.600.value}",
+            "type": "typography"
+          },
+          "inline-spacing": {
+            "value": "{global.size.unit.300.value}",
+            "type": "spacing"
+          },
           "font-size": {
             "value": "{global.size.font.body-5.value}",
             "type": "fontSize"

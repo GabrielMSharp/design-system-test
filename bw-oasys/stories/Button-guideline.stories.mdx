@@ -20,39 +20,21 @@ It can be further expanded with your own code snippets and include specific info
 Buttons allow users to trigger an action or event with a single click. For example, you can use a button for allowing the functionality of submitting a form, opening a dialog, canceling an action, or performing a delete operation.
 
 <Canvas>
-  <Story id="design-system-components-actions-button--primary" />
+  <Story id="components-button--primary" />
 </Canvas>
 
 <Canvas>
-  <Story id="design-system-components-actions-button--primary-2" />
+  <Story id="components-button--secondary" />
 </Canvas>
 
 <Canvas>
-  <Story id="design-system-components-actions-button--primary-3" />
+  <Story id="components-button--tertiary" />
 </Canvas>
 
 ## Button Size
 
 If you included the title in the story's default export, use this approach.
 
-<Canvas>
-  <Story
-      id="design-system-components-actions-button--primary"
-      name="Name of this component here"
-      args={{
-        buttonSize: 'small'
-      }}>
-      {DocsTemplate.bind({})}
-  </Story>
-  <Story
-      id="design-system-components-actions-button--primary-3"
-      name="Another name here"
-      args={{
-        buttonSize: 'large'
-      }}>
-      {DocsTemplate.bind({})}
-  </Story>
-</Canvas>
 
 <ArgsTable of={ButtonComponent} />
 

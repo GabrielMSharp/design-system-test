@@ -184,6 +184,14 @@
             "value": "{global.size.unit.525.value}",
             "type": "sizing"
           },
+          "icon-offset-leading": {
+            "value": "{global.size.unit.400.value}",
+            "type": "spacing"
+          },
+          "icon-offset-trailing": {
+            "value": "{global.size.unit.400.value}",
+            "type": "spacing"
+          },
           "line-height": {
             "value": "{global.size.unit.600.value}",
             "type": "typography"
@@ -205,6 +213,14 @@
           "padding-y": {
             "value": "{global.size.unit.350.value}",
             "type": "sizing"
+          },
+          "icon-offset-leading": {
+            "value": "{global.size.unit.400.value}",
+            "type": "spacing"
+          },
+          "icon-offset-trailing": {
+            "value": "{global.size.unit.400.value}",
+            "type": "spacing"
           },
           "line-height": {
             "value": "{global.size.unit.600.value}",

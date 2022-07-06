@@ -27,22 +27,7 @@ $buttonFontFamily: var(--semantic-font-family-body);
 }
 
 @mixin buttonSize($buttonSize) {
-    $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);
-    // $buttonMinimumHeight: var(--component-size-button-#{$buttonSize}-height);
-
-
-    // $_calculatedHeight: calc($buttonMinimumHeight / 2);
-    // $_calculatedLineHeight: calc($lineHeight / 2);
-
-
-    // $paddingX: var(--component-size-button-#{$buttonSize}-padding-x);
-    // $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);
-
-    // $paddingX--with-icon: calc($paddingX * 2);
-
-
     padding: var(--component-size-button-#{$buttonSize}-padding-y) var(--component-size-button-#{$buttonSize}-padding-x);
-
     font-size: var(--component-size-button-#{$buttonSize}-font-size);
 
     .button-content {
@@ -50,14 +35,9 @@ $buttonFontFamily: var(--semantic-font-family-body);
     }
 
     .ui-icon, .ui-text {
+        $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);
         max-height: $lineHeight;
         line-height: $lineHeight;
-    }
-
-    &.button--has-icon {
-        &.button--icon--only {
-            // max-width: calc($buttonMinimumHeight - $borderWidth);
-        }
     }
 }
 
