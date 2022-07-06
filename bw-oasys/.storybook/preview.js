@@ -2,6 +2,23 @@ import { setCompodocJson } from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
 setCompodocJson(docJson);
 
+const customViewports = {
+  iPhone: {
+    name: 'iPhone',
+    styles: {
+      width: '375px',
+      height: '667px',
+    },
+  },
+  iPad: {
+    name: 'iPad',
+    styles: {
+      width: '1180px',
+      height: '820px',
+    },
+  },
+};
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -44,4 +61,5 @@ export const parameters = {
       },
     ],
   },
+  viewport: { viewports: customViewports }
 }
