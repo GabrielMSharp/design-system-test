@@ -73,7 +73,6 @@ ui-button {
     button {
         /* Reset */
         border: 0;
-        -webkit-appearance: none;
         padding: 0;
         position: relative;
         display: inline-flex;
@@ -82,6 +81,10 @@ ui-button {
         align-items: center;
         border-style: solid;
         cursor: pointer;
+        user-select: none;
+        -webkit-appearance: none;
+        -webkit-font-smoothing: antialiased;
+
 
         // If browser supports focus-visible we can
         // use this selector to show focus style

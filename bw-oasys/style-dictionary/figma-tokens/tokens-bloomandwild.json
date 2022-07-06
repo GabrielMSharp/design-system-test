@@ -1227,11 +1227,11 @@
       },
       "font-weight": {
         "button": {
-          "value": "normal",
+          "value": "500",
           "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
           "isSource": true,
           "original": {
-            "value": "{semantic.font.weight.normal}"
+            "value": "{semantic.font.weight.medium}"
           },
           "attributes": {
             "category": "component",

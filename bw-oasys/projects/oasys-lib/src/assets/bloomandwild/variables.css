@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Jul 2022 16:00:27 GMT
+ * Generated on Wed, 06 Jul 2022 08:48:40 GMT
  */
 
 :root .bloomandwild {
@@ -54,7 +54,7 @@
   --component-border-radius-button: 0.2rem;
   --component-text-transform-button: normal;
   --component-letter-spacing-button: 0rem;
-  --component-font-weight-button: normal;
+  --component-font-weight-button: 500;
   --component-opacity-overlay-hover: 0.08;
   --component-opacity-overlay-focus: 0.16;
   --semantic-color-action-primary: #262626;
