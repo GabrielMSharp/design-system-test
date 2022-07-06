@@ -4,8 +4,6 @@ import { ButtonComponent } from 'projects/oasys-lib/src/public-api';
 import { RouterTestingModule } from '@angular/router/testing';
 import { OasysComponentsModule } from './_OasysComponents.module';
 
-// import ButtonDocumentation from './Button.stories.mdx';
-
 export default {
   title: 'Components/Button',
   component: ButtonComponent,
@@ -30,7 +28,8 @@ export default {
         description: "This value is hard coded but if changed the component does update",
       },
     }
-  }
+  },
+  legacyAngularRenderer: true
 } as Meta;
 
 
