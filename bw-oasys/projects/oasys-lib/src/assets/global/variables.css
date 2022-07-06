@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 06 Jul 2022 08:48:40 GMT
+ * Generated on Wed, 06 Jul 2022 09:29:15 GMT
  */
 
 :root {
@@ -56,9 +56,15 @@
   --global-size-unit-150: 0.15rem;
   --global-size-unit-200: 0.2rem;
   --global-size-unit-300: 0.4rem;
+  --global-size-unit-325: 0.5rem;
+  --global-size-unit-350: 0.7rem;
   --global-size-unit-400: 0.8rem;
+  --global-size-unit-475: 1.1rem;
   --global-size-unit-500: 1.2rem;
+  --global-size-unit-525: 1.5rem; /* Test description */
   --global-size-unit-600: 1.6rem;
+  --global-size-unit-650: 1.9rem;
+  --global-size-unit-675: 2.3rem;
   --global-size-unit-700: 2.4rem;
   --global-size-unit-800: 3.2rem;
   --global-size-unit-900: 4rem;

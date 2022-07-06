@@ -27,6 +27,7 @@ export class ButtonComponent implements OnInit, OnChanges {
 
   // Button Stylings
   @Input() buttonSize: UIButtonSize = 'large';
+  @Input() buttonFullWidth: UIButtonBoolean = false;
   @Input() buttonType: UIButtonType = 'primary';
 
   // Button Actions
@@ -45,25 +46,26 @@ export class ButtonComponent implements OnInit, OnChanges {
     this.buttonClick.emit();
   }
 
-  setupClasses(): void {
-    this.buttonDisplayClasses = [
-      `type-${this.buttonType}`,
-      `size-${this.buttonSize}`,
-      `${this.buttonIcon ? 'button--has-icon': ''}`,
-      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
-      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
-    ].filter((d) => !!d);
+  // setupClasses(): void {
+  //   this.buttonDisplayClasses = [
+  //     `type-${this.buttonType}`,
+  //     `size-${this.buttonSize}`,
+  //     `${this.buttonFullWidth === true ? 'button--full-width': ''}`,
+  //     `${this.buttonIcon ? 'button--has-icon': ''}`,
+  //     `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
+  //     `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
+  //   ].filter((d) => !!d);
 
-    console.log('buttonClasses: ', this.buttonDisplayClasses);
+  //   console.log('buttonClasses: ', this.buttonDisplayClasses);
 
-    if(this.buttonIcon) {
-      this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';
-    }
+  //   if(this.buttonIcon) {
+  //     this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';
+  //   }
 
-    this.textTransform = this.tokenService.getTokenValue(
-      `--component-style-button-${this.buttonSize}-text-transform`
-    ) as TextTransform;
-  }
+  //   this.textTransform = this.tokenService.getTokenValue(
+  //     `--component-style-button-${this.buttonSize}-text-transform`
+  //   ) as TextTransform;
+  // }
 
   createButton(): UIButton {
     return <UIButton>{
@@ -80,6 +82,7 @@ export class ButtonComponent implements OnInit, OnChanges {
         `type-${this.buttonType}`,
         `size-${this.buttonSize}`,
         `${this.buttonIcon ? 'button--has-icon': ''}`,
+        `${this.buttonFullWidth ? 'button--full-width': ''}`,
       `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
       `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
       ]
@@ -87,13 +90,10 @@ export class ButtonComponent implements OnInit, OnChanges {
     };
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['buttonType'] || changes['buttonDisabled']) {
-      console.log('changes', changes['buttonDisabled']);
+  ngOnChanges(): void {
       this.button = this.createButton();
       console.log(this.button);
       this.changes.markForCheck();
-    }
   }
 
   ngOnInit(): void {

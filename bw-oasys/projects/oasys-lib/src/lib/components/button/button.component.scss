@@ -27,44 +27,36 @@ $buttonFontFamily: var(--semantic-font-family-body);
 }
 
 @mixin buttonSize($buttonSize) {
-    $borderWidth: var(--component-border-width-button);
     $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);
-    $buttonMinimumHeight: var(--component-size-button-#{$buttonSize}-height);
+    // $buttonMinimumHeight: var(--component-size-button-#{$buttonSize}-height);
 
 
-    $_calculatedHeight: calc($buttonMinimumHeight / 2);
-    $_calculatedLineHeight: calc($lineHeight / 2);
+    // $_calculatedHeight: calc($buttonMinimumHeight / 2);
+    // $_calculatedLineHeight: calc($lineHeight / 2);
 
 
-    $paddingX: var(--component-size-button-#{$buttonSize}-padding-x);
-    $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);
+    // $paddingX: var(--component-size-button-#{$buttonSize}-padding-x);
+    // $paddingY: calc($_calculatedHeight - $_calculatedLineHeight - $borderWidth);
 
-    $paddingX--with-icon: calc($paddingX * 2);
+    // $paddingX--with-icon: calc($paddingX * 2);
+
+
+    padding: var(--component-size-button-#{$buttonSize}-padding-y) var(--component-size-button-#{$buttonSize}-padding-x);
 
     font-size: var(--component-size-button-#{$buttonSize}-font-size);
-
-    min-height: $buttonMinimumHeight;
-    min-width: $buttonMinimumHeight;
-    padding-top: $paddingY;
-    padding-right: $paddingX;
-    padding-bottom: $paddingY;
-    padding-left: $paddingX;
-
-    border-width: $borderWidth;
 
     .button-content {
         gap: var(--component-size-button-#{$buttonSize}-inline-spacing);
     }
 
-    .ui-icon {
+    .ui-icon, .ui-text {
         max-height: $lineHeight;
+        line-height: $lineHeight;
     }
-
-
 
     &.button--has-icon {
         &.button--icon--only {
-            max-width: calc($buttonMinimumHeight - $borderWidth);
+            // max-width: calc($buttonMinimumHeight - $borderWidth);
         }
     }
 }
@@ -85,6 +77,8 @@ ui-button {
         -webkit-appearance: none;
         -webkit-font-smoothing: antialiased;
 
+        border-width: var(--component-border-width-button);
+        font-family: $buttonFontFamily;
 
         // If browser supports focus-visible we can
         // use this selector to show focus style
@@ -102,8 +96,6 @@ ui-button {
                 box-shadow: 0 0 0 var(--semantic-border-width-focus) var(--component-color-button-expressive-background);
             }
         }
-
-        font-family: $buttonFontFamily;
 
         // Button Colors
         @each $buttonType in $buttonTypes {
@@ -188,4 +180,11 @@ ui-button {
 
     }
 
+}
+
+ui-button button {
+    &.button--full-width {
+        display: flex;
+        width: 100%;
+    }
 }

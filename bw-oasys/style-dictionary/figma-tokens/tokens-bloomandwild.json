@@ -897,12 +897,12 @@
         "button": {
           "large": {
             "padding-x": {
-              "value": "24px",
+              "value": "19px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.default}",
+                "value": "{global.size.unit.650}",
                 "type": "spacing"
               },
               "attributes": {
@@ -920,13 +920,13 @@
                 "4": "padding-x"
               }
             },
-            "height": {
-              "value": "48px",
+            "padding-y": {
+              "value": "15px",
               "type": "sizing",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.1000}",
+                "value": "{global.size.unit.525}",
                 "type": "sizing"
               },
               "attributes": {
@@ -934,14 +934,14 @@
                 "type": "size",
                 "item": "button",
                 "subitem": "large",
-                "state": "height"
+                "state": "padding-y"
               },
               "path": {
                 "0": "component",
                 "1": "size",
                 "2": "button",
                 "3": "large",
-                "4": "height"
+                "4": "padding-y"
               }
             },
             "line-height": {
@@ -1019,12 +1019,12 @@
           },
           "small": {
             "padding-x": {
-              "value": "16px",
+              "value": "15px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.600}",
+                "value": "{global.size.unit.525}",
                 "type": "spacing"
               },
               "attributes": {
@@ -1042,13 +1042,13 @@
                 "4": "padding-x"
               }
             },
-            "height": {
-              "value": "32px",
+            "padding-y": {
+              "value": "7px",
               "type": "sizing",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.800}",
+                "value": "{global.size.unit.350}",
                 "type": "sizing"
               },
               "attributes": {
@@ -1056,14 +1056,14 @@
                 "type": "size",
                 "item": "button",
                 "subitem": "small",
-                "state": "height"
+                "state": "padding-y"
               },
               "path": {
                 "0": "component",
                 "1": "size",
                 "2": "button",
                 "3": "small",
-                "4": "height"
+                "4": "padding-y"
               }
             },
             "line-height": {

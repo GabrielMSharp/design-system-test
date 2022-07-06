@@ -35,6 +35,9 @@ export interface UIButton {
   // button size
   buttonSize: UIButtonSize;
 
+  // Full width
+  buttonFullWidth: UIButtonBoolean;
+
   // click function
   buttonClick: EventEmitter<any>;
 

@@ -177,8 +177,8 @@
     "size": {
       "button": {
         "large": {
-          "padding-x": { "value": "{global.size.unit.default.value}", "type": "spacing"},
-          "height": { "value": "{global.size.unit.1000.value}","type": "sizing"},
+          "padding-x": { "value": "{global.size.unit.675.value}", "type": "spacing"},
+          "padding-y": { "value": "{global.size.unit.525.value}", "type": "spacing"},
           "line-height": { "value": "{global.size.unit.600.value}","type": "typography"},
           "inline-spacing": { "value": "{global.size.unit.400.value}","type": "spacing"},
           "font-size": {
@@ -187,8 +187,8 @@
           }
         },
         "small": {
-          "padding-x": { "value": "{global.size.unit.600.value}", "type": "spacing"},
-          "height": { "value": "{global.size.unit.800.value}","type": "sizing"},
+          "padding-x": { "value": "{global.size.unit.525.value}", "type": "spacing"},
+          "padding-y": { "value": "{global.size.unit.350.value}","type": "sizing"},
           "line-height": { "value": "{global.size.unit.600.value}","type": "typography"},
           "inline-spacing": { "value": "{global.size.unit.300.value}","type": "spacing"},
           "font-size": {

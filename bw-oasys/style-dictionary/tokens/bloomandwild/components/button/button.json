@@ -177,11 +177,11 @@
       "button": {
         "large": {
           "padding-x": {
-            "value": "{global.size.unit.default.value}",
+            "value": "{global.size.unit.650.value}",
             "type": "spacing"
           },
-          "height": {
-            "value": "{global.size.unit.1000.value}",
+          "padding-y": {
+            "value": "{global.size.unit.525.value}",
             "type": "sizing"
           },
           "line-height": {
@@ -199,11 +199,11 @@
         },
         "small": {
           "padding-x": {
-            "value": "{global.size.unit.600.value}",
+            "value": "{global.size.unit.525.value}",
             "type": "spacing"
           },
-          "height": {
-            "value": "{global.size.unit.800.value}",
+          "padding-y": {
+            "value": "{global.size.unit.350.value}",
             "type": "sizing"
           },
           "line-height": {

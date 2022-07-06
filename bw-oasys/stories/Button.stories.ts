@@ -1,5 +1,4 @@
 import { Story, Meta, moduleMetadata } from '@storybook/angular';
-import { action } from '@storybook/addon-actions';
 
 import { ButtonComponent } from 'projects/oasys-lib/src/public-api';
 import { RouterTestingModule } from '@angular/router/testing';
@@ -8,7 +7,7 @@ import { OasysComponentsModule } from './_OasysComponents.module';
 // import ButtonDocumentation from './Button.stories.mdx';
 
 export default {
-  title: 'Components/Actions/Button',
+  title: 'Components/Button',
   component: ButtonComponent,
   decorators: [
     moduleMetadata({
@@ -17,6 +16,7 @@ export default {
   ],
   argTypes: {
     buttonDisabled: { control: 'boolean' },
+    buttonFullWidth: { control: 'boolean' },
     buttonType: { control: 'radio' },
     buttonIcon: { control: 'select' },
   },

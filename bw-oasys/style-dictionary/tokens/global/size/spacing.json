@@ -27,8 +27,23 @@
           "attributes": { "category": "size" },
           "type": "sizing"
         },
+        "325": {
+          "value": "0.5",
+          "attributes": { "category": "size" },
+          "type": "sizing"
+        },
+        "350": {
+          "value": "0.7",
+          "attributes": { "category": "size" },
+          "type": "sizing"
+        },
         "400": {
           "value": "0.8",
+          "attributes": { "category": "size" },
+          "type": "sizing"
+        },
+        "475": {
+          "value": "1.1",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
@@ -37,8 +52,24 @@
           "attributes": { "category": "size" },
           "type": "sizing"
         },
+        "525": {
+          "value": "1.5",
+          "attributes": { "category": "size" },
+          "type": "sizing",
+          "comment": "Test description"
+        },
         "600": {
           "value": "1.6",
+          "attributes": { "category": "size" },
+          "type": "sizing"
+        },
+        "650": {
+          "value": "1.9",
+          "attributes": { "category": "size" },
+          "type": "sizing"
+        },
+        "675": {
+          "value": "2.3",
           "attributes": { "category": "size" },
           "type": "sizing"
         },
