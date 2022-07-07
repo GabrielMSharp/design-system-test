@@ -1091,12 +1091,12 @@
           },
           "small": {
             "padding-x": {
-              "value": "15px",
+              "value": "20px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.15}",
+                "value": "{global.size.unit.20}",
                 "type": "spacing"
               },
               "attributes": {
