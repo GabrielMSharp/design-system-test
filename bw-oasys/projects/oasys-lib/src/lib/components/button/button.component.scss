@@ -34,9 +34,13 @@ $buttonFontFamily: var(--semantic-font-family-body);
         gap: var(--component-size-button-#{$buttonSize}-inline-spacing);
     }
 
-    .ui-icon, .ui-text {
-        $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);
+    $lineHeight: var(--component-size-button-#{$buttonSize}-line-height);
+
+    .ui-icon {
         max-height: $lineHeight;
+    }
+
+    .ui-text {
         line-height: $lineHeight;
     }
 }

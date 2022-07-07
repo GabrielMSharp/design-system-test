@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 06 Jul 2022 15:42:21 GMT
+ * Generated on Thu, 07 Jul 2022 09:30:42 GMT
  */
 
 :root .bloomon {
@@ -42,22 +42,24 @@
   --component-color-button-disabled-text: #898989;
   --component-size-button-large-padding-x: 2.3rem;
   --component-size-button-large-padding-y: 1.5rem;
-  --component-size-button-large-icon-offset-leading: 1.2rem;
-  --component-size-button-large-icon-offset-trailing: 1.2rem;
+  --component-size-button-large-icon-offset-leading: 0.6rem;
+  --component-size-button-large-icon-offset-trailing: 0.6rem;
+  --component-size-button-large-icon-offset-icon-only: 1rem;
   --component-size-button-large-line-height: 1.6rem;
   --component-size-button-large-inline-spacing: 0.8rem;
   --component-size-button-large-font-size: 1.4rem;
   --component-size-button-small-padding-x: 1.5rem;
   --component-size-button-small-padding-y: 0.7rem;
-  --component-size-button-small-icon-offset-leading: 0.8rem;
-  --component-size-button-small-icon-offset-trailing: 0.8rem;
+  --component-size-button-small-icon-offset-leading: 0.4rem;
+  --component-size-button-small-icon-offset-trailing: 0.4rem;
+  --component-size-button-small-icon-offset-icon-only: 1rem;
   --component-size-button-small-line-height: 1.6rem;
   --component-size-button-small-inline-spacing: 0.4rem;
   --component-size-button-small-font-size: 1.2rem;
   --component-border-width-button: 0.1rem;
   --component-border-radius-button: 2.4rem;
   --component-text-transform-button: uppercase;
-  --component-letter-spacing-button: 0.15rem;
+  --component-letter-spacing-button: 0.2rem;
   --component-font-weight-button: normal;
   --component-opacity-overlay-hover: 0.08;
   --component-opacity-overlay-focus: 0.16;
@@ -80,7 +82,7 @@
   --semantic-font-weight-normal: 100;
   --semantic-font-weight-medium: normal;
   --semantic-font-weight-bold: normal;
-  --semantic-font-letter-spacing-action-primary: 0.15rem;
+  --semantic-font-letter-spacing-action-primary: 0.2rem;
   --semantic-brand-name: bloomon;
   --semantic-border-width-default: 0.1rem;
   --semantic-border-width-emphasis: 0.2rem;

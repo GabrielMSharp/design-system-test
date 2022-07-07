@@ -10,6 +10,7 @@ ui-icon {
 
   $iconOffsetLeading: calc(var(--component-size-button-#{$iconSize}-icon-offset-leading) * -1);
   $iconOffsetTrailing: calc(var(--component-size-button-#{$iconSize}-icon-offset-trailing) * -1);
+  $iconOffsetIconOnly: calc(var(--component-size-button-#{$iconSize}-icon-offset-icon-only) * -1);
 
   &.icon-context-leading {
     margin-left: #{$iconOffsetLeading};
@@ -20,8 +21,8 @@ ui-icon {
   }
 
   &.icon-context-iconOnly {
-    margin-left: #{$iconOffsetLeading};
-    margin-right: #{$iconOffsetTrailing}
+    margin-left: #{$iconOffsetIconOnly};
+    margin-right: #{$iconOffsetIconOnly}
   }
 
 }

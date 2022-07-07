@@ -21,7 +21,7 @@
       "letter-spacing": {
         "action": {
           "primary": {
-            "value": "{global.size.unit.150.value}"
+            "value": "{global.size.unit.02.value}"
           }
         }
       }

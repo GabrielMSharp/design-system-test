@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 06 Jul 2022 15:42:21 GMT
+ * Generated on Thu, 07 Jul 2022 09:30:42 GMT
  */
 
 :root {
@@ -50,27 +50,28 @@
   --global-size-font-body-4: 1.4rem;
   --global-size-font-body-5: 1.2rem;
   --global-size-font-base: 1.6rem;
-  --global-size-icon-small: 1.6rem;
-  --global-size-icon-large: 2.4rem;
-  --global-size-unit-100: 0.1rem;
-  --global-size-unit-150: 0.15rem;
-  --global-size-unit-200: 0.2rem;
-  --global-size-unit-300: 0.4rem;
-  --global-size-unit-325: 0.5rem;
-  --global-size-unit-350: 0.7rem;
-  --global-size-unit-400: 0.8rem;
-  --global-size-unit-450: 1rem;
-  --global-size-unit-475: 1.1rem;
-  --global-size-unit-500: 1.2rem;
-  --global-size-unit-525: 1.5rem; /* Test description */
-  --global-size-unit-600: 1.6rem;
-  --global-size-unit-650: 1.9rem;
-  --global-size-unit-675: 2.3rem;
-  --global-size-unit-700: 2.4rem;
-  --global-size-unit-800: 3.2rem;
-  --global-size-unit-900: 4rem;
-  --global-size-unit-1000: 4.8rem;
-  --global-size-unit-1100: 5.6rem;
-  --global-size-unit-000: 0rem;
+  --global-size-icon-small: 2rem;
+  --global-size-icon-large: 2rem;
+  --global-size-unit-0: 0rem;
+  --global-size-unit-10: 1rem;
+  --global-size-unit-11: 1.1rem;
+  --global-size-unit-12: 1.2rem;
+  --global-size-unit-15: 1.5rem; /* Test description */
+  --global-size-unit-16: 1.6rem;
+  --global-size-unit-19: 1.9rem;
+  --global-size-unit-20: 2rem;
+  --global-size-unit-23: 2.3rem;
+  --global-size-unit-24: 2.4rem;
+  --global-size-unit-32: 3.2rem;
+  --global-size-unit-40: 4rem;
+  --global-size-unit-48: 4.8rem;
+  --global-size-unit-56: 5.6rem;
+  --global-size-unit-01: 0.1rem;
+  --global-size-unit-02: 0.2rem;
+  --global-size-unit-04: 0.4rem;
+  --global-size-unit-05: 0.5rem;
+  --global-size-unit-06: 0.6rem;
+  --global-size-unit-07: 0.7rem;
+  --global-size-unit-08: 0.8rem;
   --global-size-unit-default: 2.4rem;
 }

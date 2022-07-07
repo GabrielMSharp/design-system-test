@@ -902,7 +902,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.675}",
+                "value": "{global.size.unit.23}",
                 "type": "spacing"
               },
               "attributes": {
@@ -926,7 +926,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.525}",
+                "value": "{global.size.unit.15}",
                 "type": "spacing"
               },
               "attributes": {
@@ -945,12 +945,12 @@
               }
             },
             "icon-offset-leading": {
-              "value": "12px",
+              "value": "6px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.500}",
+                "value": "{global.size.unit.06}",
                 "type": "spacing"
               },
               "attributes": {
@@ -969,12 +969,12 @@
               }
             },
             "icon-offset-trailing": {
-              "value": "12px",
+              "value": "6px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.500}",
+                "value": "{global.size.unit.06}",
                 "type": "spacing"
               },
               "attributes": {
@@ -992,13 +992,37 @@
                 "4": "icon-offset-trailing"
               }
             },
+            "icon-offset-icon-only": {
+              "value": "10px",
+              "type": "spacing",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.10}",
+                "type": "spacing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "large",
+                "state": "icon-offset-icon-only"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "large",
+                "4": "icon-offset-icon-only"
+              }
+            },
             "line-height": {
               "value": "16px",
               "type": "typography",
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.600}",
+                "value": "{global.size.unit.16}",
                 "type": "typography"
               },
               "attributes": {
@@ -1022,7 +1046,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.400}",
+                "value": "{global.size.unit.08}",
                 "type": "spacing"
               },
               "attributes": {
@@ -1072,7 +1096,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.525}",
+                "value": "{global.size.unit.15}",
                 "type": "spacing"
               },
               "attributes": {
@@ -1096,7 +1120,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.350}",
+                "value": "{global.size.unit.07}",
                 "type": "sizing"
               },
               "attributes": {
@@ -1115,12 +1139,12 @@
               }
             },
             "icon-offset-leading": {
-              "value": "8px",
+              "value": "4px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.400}",
+                "value": "{global.size.unit.04}",
                 "type": "spacing"
               },
               "attributes": {
@@ -1139,12 +1163,12 @@
               }
             },
             "icon-offset-trailing": {
-              "value": "8px",
+              "value": "4px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.400}",
+                "value": "{global.size.unit.04}",
                 "type": "spacing"
               },
               "attributes": {
@@ -1162,13 +1186,37 @@
                 "4": "icon-offset-trailing"
               }
             },
+            "icon-offset-icon-only": {
+              "value": "10px",
+              "type": "spacing",
+              "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
+              "isSource": true,
+              "original": {
+                "value": "{global.size.unit.10}",
+                "type": "spacing"
+              },
+              "attributes": {
+                "category": "component",
+                "type": "size",
+                "item": "button",
+                "subitem": "small",
+                "state": "icon-offset-icon-only"
+              },
+              "path": {
+                "0": "component",
+                "1": "size",
+                "2": "button",
+                "3": "small",
+                "4": "icon-offset-icon-only"
+              }
+            },
             "line-height": {
               "value": "16px",
               "type": "typography",
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.600}",
+                "value": "{global.size.unit.16}",
                 "type": "typography"
               },
               "attributes": {
@@ -1192,7 +1240,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.300}",
+                "value": "{global.size.unit.04}",
                 "type": "spacing"
               },
               "attributes": {
@@ -1805,7 +1853,7 @@
               "filePath": "./style-dictionary/tokens/bloomon/semantic/font.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.150}"
+                "value": "{global.size.unit.02}"
               },
               "attributes": {
                 "category": "semantic",
@@ -1848,7 +1896,7 @@
           "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.100}",
+            "value": "{global.size.unit.01}",
             "type": "borderWidth"
           },
           "attributes": {
@@ -1868,7 +1916,7 @@
           "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.200}",
+            "value": "{global.size.unit.02}",
             "type": "borderWidth"
           },
           "attributes": {
@@ -1888,7 +1936,7 @@
           "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.300}",
+            "value": "{global.size.unit.04}",
             "type": "borderWidth"
           },
           "attributes": {
@@ -1910,7 +1958,7 @@
           "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.000}",
+            "value": "{global.size.unit.0}",
             "type": "borderRadius"
           },
           "attributes": {
@@ -1930,7 +1978,7 @@
           "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.200}",
+            "value": "{global.size.unit.02}",
             "type": "borderRadius"
           },
           "attributes": {
@@ -1950,7 +1998,7 @@
           "filePath": "./style-dictionary/tokens/bloomon/semantic/spacing.json",
           "isSource": true,
           "original": {
-            "value": "{global.size.unit.700}",
+            "value": "{global.size.unit.24}",
             "type": "borderRadius"
           },
           "attributes": {
