@@ -212,7 +212,7 @@
         },
         "small": {
           "padding-x": {
-            "value": "{global.size.unit.15.value}",
+            "value": "{global.size.unit.20.value}",
             "type": "spacing"
           },
           "padding-y": {
