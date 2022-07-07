@@ -1,6 +1,19 @@
 import { setCompodocJson } from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
+import isChromatic from 'chromatic/isChromatic';
 setCompodocJson(docJson);
+
+import { componentWrapperDecorator } from '@storybook/angular';
+
+export const decorators = [
+  componentWrapperDecorator((story) => isChromatic() ? `
+
+  <div class="bloomon" style="margin: 3em" title="bloomon">${story}</div>
+  <div title="bloomandwild" class="bloomandwild" style="margin: 3em">${story}</div>
+
+
+  `: `${story}`),
+];
 
 const customViewports = {
   iPhone: {
