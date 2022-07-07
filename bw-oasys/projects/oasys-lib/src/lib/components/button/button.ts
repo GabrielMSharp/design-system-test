@@ -21,30 +21,30 @@ export type UIButtonType =
 
 export interface UIButton {
 
-  //_______________
-  // Button Content
-  buttonText: string;
-  buttonIcon: IconNames;
+  // Inputs
 
+  // Display text - Required even if icon only
+  buttonText: string;
+  // icon name
+  buttonIcon: IconNames;
   // color/styling of button
   buttonType: UIButtonType;
-
   // positioning for icon
   buttonIconPlacement: IconContext
-
   // button size
   buttonSize: UIButtonSize;
-
   // Full width
   buttonFullWidth: UIButtonBoolean;
-
-  // click function
-  buttonClick: EventEmitter<any>;
-
   // For links, expects relative or absolute url
   href: string;
   target: string;
   buttonDisabled: UIButtonBoolean;
 
+  // Private properties
   buttonDisplayClasses: string[];
+
+  // Outputs
+
+  // Click event, used when no href input
+  buttonDidClick: EventEmitter<any>;
 }

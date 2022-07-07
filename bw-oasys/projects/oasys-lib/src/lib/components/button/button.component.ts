@@ -1,5 +1,4 @@
 import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit, SimpleChanges } from '@angular/core';
-import { TokenService } from '../../services/token.service';
 import { IconNames, IconContext } from '../icon/icon';
 import { TextTransform } from '../text/text';
 import {
@@ -29,47 +28,26 @@ export class ButtonComponent implements OnInit, OnChanges {
   @Input() buttonSize: UIButtonSize = 'large';
   @Input() buttonFullWidth: UIButtonBoolean = false;
   @Input() buttonType: UIButtonType = 'primary';
+  @Input() buttonDisabled: boolean = false;
+
 
   // Button Actions
   @Input() href: string = '';
-  @Output() buttonClick: EventEmitter<void> = new EventEmitter();
-  @Input() buttonDisabled: boolean = false;
+  @Output() click: EventEmitter<void> = new EventEmitter();
 
   buttonDisplayClasses: string[];
   iconContext: IconContext = 'none';
   textTransform!: TextTransform;
 
-  constructor(private tokenService: TokenService, private changes: ChangeDetectorRef) { }
+  constructor(private changes: ChangeDetectorRef) { }
 
-  clickButton(): void {
+  onClick(): void {
     console.log('button was clicked');
-    this.buttonClick.emit();
+    this.click.emit();
   }
-
-  // setupClasses(): void {
-  //   this.buttonDisplayClasses = [
-  //     `type-${this.buttonType}`,
-  //     `size-${this.buttonSize}`,
-  //     `${this.buttonFullWidth === true ? 'button--full-width': ''}`,
-  //     `${this.buttonIcon ? 'button--has-icon': ''}`,
-  //     `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
-  //     `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
-  //   ].filter((d) => !!d);
-
-  //   console.log('buttonClasses: ', this.buttonDisplayClasses);
-
-  //   if(this.buttonIcon) {
-  //     this.iconContext = this.buttonText ? this.buttonIconPlacement : 'iconOnly';
-  //   }
-
-  //   this.textTransform = this.tokenService.getTokenValue(
-  //     `--component-style-button-${this.buttonSize}-text-transform`
-  //   ) as TextTransform;
-  // }
 
   createButton(): UIButton {
     return <UIButton>{
-      buttonClick: this.buttonClick,
       buttonText: this.buttonText,
       buttonIcon: this.buttonIcon,
       buttonIconPlacement: this.buttonIconPlacement,
@@ -79,14 +57,13 @@ export class ButtonComponent implements OnInit, OnChanges {
       href: this.href,
       target: '',
       buttonDisplayClasses: [
-        `type-${this.buttonType}`,
-        `size-${this.buttonSize}`,
-        `${this.buttonIcon ? 'button--has-icon': ''}`,
-        `${this.buttonFullWidth ? 'button--full-width': ''}`,
+      `type-${this.buttonType}`,
+      `size-${this.buttonSize}`,
+      `${this.buttonIcon ? 'button--has-icon': ''}`,
+      `${this.buttonFullWidth ? 'button--full-width': ''}`,
       `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
       `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
-      ]
-        .filter((d) => !!d)
+      ].filter((d) => !!d)
     };
   }
 

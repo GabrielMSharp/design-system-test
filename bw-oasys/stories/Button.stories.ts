@@ -3,6 +3,7 @@ import { Story, Meta, moduleMetadata } from '@storybook/angular';
 import { ButtonComponent } from 'projects/oasys-lib/src/public-api';
 import { RouterTestingModule } from '@angular/router/testing';
 import { OasysComponentsModule } from './_OasysComponents.module';
+import { action } from '@storybook/addon-actions';
 
 export default {
   title: 'Components/Button',
@@ -16,7 +17,7 @@ export default {
     buttonDisabled: { control: 'boolean' },
     buttonFullWidth: { control: 'boolean' },
     buttonType: { control: 'radio' },
-    buttonIcon: { control: 'select' },
+    buttonIcon: { control: 'select' }
   },
   args: {
     buttonDisabled: false,
@@ -32,10 +33,14 @@ export default {
   }
 } as Meta;
 
+const actionsData = {
+  click: action('onClick'),
+};
 
 const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
   props: {
     ...args,
+    click: actionsData.click
   },
 });
 
@@ -119,5 +124,12 @@ export const Trustpilot = Template.bind({});
 Trustpilot.args = {
   buttonType: 'trustpilot',
   buttonText: 'Trustpilot CTA',
+};
+
+export const LongString = Template.bind({});
+LongString.args = {
+  buttonType: 'secondary-inverse',
+  buttonText: 'Continue without buying a vase and do not save £5',
+  buttonIcon: 'pin'
 };
 
