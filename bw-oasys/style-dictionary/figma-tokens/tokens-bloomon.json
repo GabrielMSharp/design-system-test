@@ -897,12 +897,12 @@
         "button": {
           "large": {
             "padding-x": {
-              "value": "23px",
+              "value": "40px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.23}",
+                "value": "{global.size.unit.40}",
                 "type": "spacing"
               },
               "attributes": {
@@ -1091,12 +1091,12 @@
           },
           "small": {
             "padding-x": {
-              "value": "20px",
+              "value": "15px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomon/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.20}",
+                "value": "{global.size.unit.15}",
                 "type": "spacing"
               },
               "attributes": {

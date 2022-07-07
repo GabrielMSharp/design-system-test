@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 07 Jul 2022 10:43:07 GMT
+ * Generated on Thu, 07 Jul 2022 10:45:01 GMT
  */
 
 :root .bloomon {
@@ -40,7 +40,7 @@
   --component-color-button-disabled-background: #f7f7f7;
   --component-color-button-disabled-border: #f7f7f7;
   --component-color-button-disabled-text: #898989;
-  --component-size-button-large-padding-x: 2.3rem;
+  --component-size-button-large-padding-x: 4rem;
   --component-size-button-large-padding-y: 1.5rem;
   --component-size-button-large-icon-offset-leading: 0.6rem;
   --component-size-button-large-icon-offset-trailing: 0.6rem;
@@ -48,7 +48,7 @@
   --component-size-button-large-line-height: 1.6rem;
   --component-size-button-large-inline-spacing: 0.8rem;
   --component-size-button-large-font-size: 1.4rem;
-  --component-size-button-small-padding-x: 2rem;
+  --component-size-button-small-padding-x: 1.5rem;
   --component-size-button-small-padding-y: 0.7rem;
   --component-size-button-small-icon-offset-leading: 0.4rem;
   --component-size-button-small-icon-offset-trailing: 0.4rem;

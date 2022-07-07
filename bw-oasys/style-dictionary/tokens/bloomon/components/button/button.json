@@ -178,7 +178,7 @@
       "button": {
         "large": {
           "padding-x": {
-            "value": "{global.size.unit.23.value}",
+            "value": "{global.size.unit.40.value}",
             "type": "spacing"
           },
           "padding-y": {
@@ -212,7 +212,7 @@
         },
         "small": {
           "padding-x": {
-            "value": "{global.size.unit.20.value}",
+            "value": "{global.size.unit.15.value}",
             "type": "spacing"
           },
           "padding-y": {
