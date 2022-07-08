@@ -42,6 +42,7 @@
     "@babel/core": "^7.18.2",
     "@compodoc/compodoc": "^1.1.19",
     "@ljcl/storybook-addon-cssprops": "^2.3.5",
+    "@mdx-js/react": "^1.6.22",
     "@storybook/addon-actions": "6.5.9",
     "@storybook/addon-essentials": "6.5.9",
     "@storybook/addon-links": "6.5.9",
@@ -61,14 +62,8 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^12.2.0",
-    "react-dom": "^18.2.0",
     "storybook-addon-themes": "^6.1.0",
     "style-dictionary": "^3.7.1",
     "typescript": "~4.2"
-  },
-  "overrides": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-refresh": "0.13.0"
   }
 }
