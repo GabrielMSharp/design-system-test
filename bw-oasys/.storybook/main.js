@@ -7,10 +7,10 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
+    // "@storybook/addon-interactions",
     'storybook-addon-themes',
     '@ljcl/storybook-addon-cssprops',
-    '@storybook/addon-a11y'
+    // '@storybook/addon-a11y'
     // 'storybook-addon-variants/preset.js'
   ],
   "framework": "@storybook/angular",
