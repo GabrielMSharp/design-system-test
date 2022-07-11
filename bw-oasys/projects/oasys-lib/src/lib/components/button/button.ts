@@ -1,5 +1,5 @@
 import { EventEmitter } from '@angular/core';
-import { IconNames, IconContext } from 'oasys-lib';
+import { IconNames, IconContext } from './../icon/icon'
 
 
 export type UIButtonBoolean = true | 'true' | false | 'false';
