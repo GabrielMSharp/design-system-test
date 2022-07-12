@@ -1,31 +1,33 @@
 import { APP_BASE_HREF, CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ButtonComponent } from './components/button/button.component';
+import { OasysButtonComponent } from './components/button/button.component';
 import { LayoutInlineComponent } from './components/layout/inline/inline.component';
 import { IconComponent } from './components/icon/icon.component';
 import { LayoutBoxComponent } from './components/layout/box/box.component';
 import { WindowService } from './services/window.service';
+import { TokenService } from './services/token.service';
 
 
 
 @NgModule({
   declarations: [
-    ButtonComponent,
+    OasysButtonComponent,
     LayoutInlineComponent,
     IconComponent,
     LayoutBoxComponent
   ],
   imports: [
     CommonModule,
-    RouterModule.forRoot([])
+    RouterModule.forChild([])
   ],
   exports: [
-    ButtonComponent,
+    OasysButtonComponent,
     LayoutBoxComponent
   ],
   providers: [
     WindowService,
+    TokenService,
     {provide: APP_BASE_HREF, useValue: '/'}
   ]
 })

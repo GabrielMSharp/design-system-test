@@ -1,13 +1,13 @@
 import { Story, Meta, moduleMetadata } from '@storybook/angular';
 
-import { ButtonComponent } from 'projects/oasys-lib/src/public-api';
+import { OasysButtonComponent } from 'projects/oasys-lib/src/public-api';
 import { RouterTestingModule } from '@angular/router/testing';
 import { OasysComponentsModule } from './_OasysComponents.module';
 import { action } from '@storybook/addon-actions';
 
 export default {
   title: 'Components/Button',
-  component: ButtonComponent,
+  component: OasysButtonComponent,
   decorators: [
     moduleMetadata({
       imports: [RouterTestingModule, OasysComponentsModule]
@@ -36,7 +36,7 @@ const actionsData = {
   click: action('onClick'),
 };
 
-const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
+const Template: Story<OasysButtonComponent> = (args: OasysButtonComponent) => ({
   props: {
     ...args,
     click: actionsData.click
