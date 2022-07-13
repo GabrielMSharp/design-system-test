@@ -26,7 +26,7 @@ StyleDictionaryPackage.registerFormat({
   formatter: function({dictionary, file, options}) {
     const { outputReferences, brand } = options;
     return fileHeader({file}) +
-      `:root .${brand} {\n` +
+      `:root .brand-tokens-${brand} {\n` +
       formattedVariables({format: 'css', dictionary, outputReferences}) +
       '\n}\n';
   }

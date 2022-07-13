@@ -34,7 +34,7 @@ export class OasysButtonComponent implements OnInit, OnChanges, AfterViewInit {
 
   // Button Actions
   @Input() href: string = '';
-  @Output() click: EventEmitter<void> = new EventEmitter();
+  @Output() clicked: EventEmitter<void> = new EventEmitter();
 
   buttonDisplayClasses: string[];
   iconContext: IconContext = 'none';
@@ -44,8 +44,7 @@ export class OasysButtonComponent implements OnInit, OnChanges, AfterViewInit {
   constructor(private changes: ChangeDetectorRef) { }
 
   onClick(): void {
-    console.log('button was clicked');
-    this.click.emit();
+    this.clicked.emit();
   }
 
   createButton(): UIButton {
@@ -72,12 +71,17 @@ export class OasysButtonComponent implements OnInit, OnChanges, AfterViewInit {
     if(this.buttonText?.nativeElement?.innerText) {
       this.accessibleButtonContent = this.buttonText.nativeElement.innerText;
     } else {
-      throw new Error('Button has no inner text. All buttons should have text passed via ng-content to enable accessibility for screen readers, this includes icon-only buttons')
+      throw new Error(`
+      No inner text found. All buttons should have text passed via ng-content to enable accessibility for screen readers, this includes icon-only buttons.
+
+      Pass content using the template variable #buttonText eg:
+      ui-button()
+        span(#buttonText) Buy All The Things
+      `)
     }
   }
 
   ngOnChanges(): void {
-    console.log(this.button);
       this.button = this.createButton();
       this.changes.markForCheck();
   }

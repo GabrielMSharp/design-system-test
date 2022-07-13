@@ -185,15 +185,15 @@
             "type": "sizing"
           },
           "icon-offset-leading": {
-            "value": "{global.size.unit.08.value}",
+            "value": "{global.size.unit.04.value}",
             "type": "spacing"
           },
           "icon-offset-trailing": {
-            "value": "{global.size.unit.08.value}",
+            "value": "{global.size.unit.04.value}",
             "type": "spacing"
           },
           "icon-offset-icon-only": {
-            "value": "{global.size.unit.10.value}",
+            "value": "{global.size.unit.06.value}",
             "type": "spacing"
           },
           "line-height": {

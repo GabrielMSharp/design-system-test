@@ -36,13 +36,13 @@ export default {
 } as Meta;
 
 const actionsData = {
-  click: action('onClick'),
+  clicked: action('onClick'),
 };
 
 const Template: Story<OasysButtonComponent> = (args: OasysButtonComponent) => ({
   props: {
     ...args,
-    click: actionsData.click
+    clicked: actionsData.clicked
   },
   template: `
   <ui-button
@@ -52,7 +52,7 @@ const Template: Story<OasysButtonComponent> = (args: OasysButtonComponent) => ({
   [buttonDisabled]="buttonDisabled"
   [buttonIcon]="buttonIcon"
   [buttonIconPlacement]="buttonIconPlacement"
-  (click)="click($event)">
+  (clicked)="click($event)">
     <span #buttonText>{{buttonTextContent}}</span>
   </ui-button>
 

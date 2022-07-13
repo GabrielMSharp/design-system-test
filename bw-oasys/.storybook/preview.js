@@ -53,8 +53,8 @@ export const parameters = {
   themes: {
     default: 'bloomon',
     list: [
-      { name: 'bloomon', class: 'bloomon', color: '#FF9F80' },
-      { name: 'Bloom & Wild', class: 'bloomandwild', color: '#F9ECD7' }
+      { name: 'bloomon', class: 'brand-tokens-bloomon', color: '#FF9F80' },
+      { name: 'Bloom & Wild', class: 'brand-tokens-bloomandwild', color: '#F9ECD7' }
     ],
     clearable: false
   },
