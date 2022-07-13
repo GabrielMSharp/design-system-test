@@ -3,12 +3,12 @@
     "interfaces": [
         {
             "name": "UIButton",
-            "id": "interface-UIButton-8d4ae4db21198b62316fa05dfedc15917d000028903250ceb1de4a54a75b28693cc095c6a2610a6abde28385e65681e26df38c7451300b04fad091a81420c43b",
+            "id": "interface-UIButton-dd600cbe7875d0096e212ef5acff956c854a709360d5f639daddd48d0440aaee0ac15db907a783660a8f1897fc190880a80c6d26a07ace33003566edfdebf25a",
             "file": "projects/oasys-lib/src/lib/components/button/button.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "import { EventEmitter } from '@angular/core';\nimport { IconNames, IconContext } from '../icon/icon';\n\n\nexport type UIButtonBoolean = true | 'true' | false | 'false';\n\nexport type UIButtonSize = 'small' | 'large';\n\nexport type UIButtonType =\n  | 'primary'\n  | 'secondary'\n  | 'tertiary'\n  | 'primary-inverse'\n  | 'secondary-inverse'\n  | 'tertiary-inverse'\n  | 'expressive'\n  | 'danger'\n  | 'facebook'\n  | 'paypal'\n  | 'trustpilot';\n\nexport interface UIButton {\n\n  // Inputs\n\n  // Display text - Required even if icon only\n  buttonText: string;\n  // icon name\n  buttonIcon: IconNames;\n  // color/styling of button\n  buttonType: UIButtonType;\n  // positioning for icon\n  buttonIconPlacement: IconContext\n  // button size\n  buttonSize: UIButtonSize;\n  // Full width\n  buttonFullWidth: UIButtonBoolean;\n  // For links, expects relative or absolute url\n  href: string;\n  target: string;\n  buttonDisabled: UIButtonBoolean;\n\n  // Private properties\n  buttonDisplayClasses: string[];\n\n  // Outputs\n\n  // Click event, used when no href input\n  buttonDidClick: EventEmitter<any>;\n}\n",
+            "sourceCode": "import { EventEmitter } from '@angular/core';\nimport { IconNames, IconContext } from '../icon/icon';\n\n\nexport type UIButtonBoolean = true | 'true' | false | 'false';\n\nexport type UIButtonSize = 'small' | 'large';\n\nexport type UIButtonType =\n  | 'primary'\n  | 'secondary'\n  | 'tertiary'\n  | 'primary-inverse'\n  | 'secondary-inverse'\n  | 'tertiary-inverse'\n  | 'expressive'\n  | 'danger'\n  | 'facebook'\n  | 'paypal'\n  | 'trustpilot';\n\nexport interface UIButton {\n\n  // Inputs\n\n  // Display text - Required even if icon only\n  // buttonText: string;\n  // icon name\n  buttonIcon: IconNames;\n  // color/styling of button\n  buttonType: UIButtonType;\n  // positioning for icon\n  buttonIconPlacement: IconContext\n  // button size\n  buttonSize: UIButtonSize;\n  // Full width\n  buttonFullWidth: UIButtonBoolean;\n  // For links, expects relative or absolute url\n  href: string;\n  target: string;\n  buttonDisabled: UIButtonBoolean;\n\n  // Private properties\n  buttonDisplayClasses: string[];\n\n  // Outputs\n\n  // Click event, used when no href input\n  buttonDidClick: EventEmitter<any>;\n}\n",
             "properties": [
                 {
                     "name": "buttonDidClick",
@@ -72,15 +72,6 @@
                     "optional": false,
                     "description": "",
                     "line": 35
-                },
-                {
-                    "name": "buttonText",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string",
-                    "optional": false,
-                    "description": "",
-                    "line": 27
                 },
                 {
                     "name": "buttonType",
@@ -677,7 +668,7 @@
         },
         {
             "name": "OasysButtonComponent",
-            "id": "component-OasysButtonComponent-3f68cce047e06a9162a0e98b51b45b63077ac3bf6c36ac9462f651236e457d0abc063f0d44b294f5a5bb51c6ed1bb0f18989f9f00952ff268f1686f014bca521",
+            "id": "component-OasysButtonComponent-30b6a468c909aa2adcbc52598d141dc6774681dde44e8ff24534cf349c1aff1b2eb701848e03446ff36a031a3304f5d5b7a2e9bb9a7e8f726f165b08bce7c981",
             "file": "projects/oasys-lib/src/lib/components/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -762,7 +753,7 @@
             ],
             "outputsClass": [
                 {
-                    "name": "click",
+                    "name": "clicked",
                     "defaultValue": "new EventEmitter()",
                     "deprecated": false,
                     "deprecationMessage": "",
@@ -771,6 +762,15 @@
                 }
             ],
             "propertiesClass": [
+                {
+                    "name": "accessibleButtonContent",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 42
+                },
                 {
                     "name": "button",
                     "deprecated": false,
@@ -788,6 +788,21 @@
                     "optional": false,
                     "description": "",
                     "line": 39
+                },
+                {
+                    "name": "buttonText",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ElementRef",
+                    "optional": false,
+                    "description": "",
+                    "line": 27,
+                    "decorators": [
+                        {
+                            "name": "ContentChild",
+                            "stringifiedArguments": "'buttonText'"
+                        }
+                    ]
                 },
                 {
                     "name": "iconContext",
@@ -821,7 +836,7 @@
                     "deprecationMessage": ""
                 },
                 {
-                    "name": "ngOnChanges",
+                    "name": "ngAfterViewInit",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
@@ -831,12 +846,22 @@
                     "deprecationMessage": ""
                 },
                 {
+                    "name": "ngOnChanges",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 84,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
                     "name": "ngOnInit",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 76,
+                    "line": 89,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -846,7 +871,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 45,
+                    "line": 46,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -858,7 +883,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, ContentChild, ElementRef } from '@angular/core';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\nimport {\n  UIButton,\n  UIButtonBoolean,\n  UIButtonSize,\n  UIButtonType\n} from './button';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class OasysButtonComponent implements OnInit, OnChanges {\n\n  button: UIButton;\n\n  // // Button Content\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // @Input() buttonText: string;\n  // @ContentChild('buttonText') buttonText: ElementRef;\n\n  // Button Stylings\n  @Input() buttonSize: UIButtonSize = 'large';\n  @Input() buttonFullWidth: UIButtonBoolean = false;\n  @Input() buttonType: UIButtonType = 'primary';\n  @Input() buttonDisabled: boolean = false;\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() click: EventEmitter<void> = new EventEmitter();\n\n  buttonDisplayClasses: string[];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n\n  constructor(private changes: ChangeDetectorRef) { }\n\n  onClick(): void {\n    console.log('button was clicked');\n    this.click.emit();\n  }\n\n  createButton(): UIButton {\n    return <UIButton>{\n      buttonIcon: this.buttonIcon,\n      buttonIconPlacement: this.buttonIconPlacement,\n      buttonType: this.buttonType,\n      buttonSize: this.buttonSize,\n      buttonDisabled: this.buttonDisabled,\n      href: this.href,\n      target: '',\n      buttonDisplayClasses: [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonFullWidth ? 'button--full-width': ''}`,\n      `${this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,\n      // `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`\n      ].filter((d) => !!d)\n    };\n  }\n\n  ngOnChanges(): void {\n      this.button = this.createButton();\n      console.log(this.button);\n      this.changes.markForCheck();\n  }\n\n  ngOnInit(): void {\n    this.button = this.createButton();\n  }\n}\n",
+            "sourceCode": "import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, ContentChild, ElementRef, AfterViewInit } from '@angular/core';\nimport { IconNames, IconContext } from '../icon/icon';\nimport { TextTransform } from '../text/text';\nimport {\n  UIButton,\n  UIButtonBoolean,\n  UIButtonSize,\n  UIButtonType\n} from './button';\n\n@Component({\n  selector:'ui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class OasysButtonComponent implements OnInit, OnChanges, AfterViewInit {\n\n  button: UIButton;\n\n  // // Button Content\n  @Input() buttonIcon?: IconNames;\n  @Input() buttonIconPlacement: IconContext = 'leading';\n\n  // @Input() buttonText: string;\n  @ContentChild('buttonText') buttonText: ElementRef;\n\n  // Button Stylings\n  @Input() buttonSize: UIButtonSize = 'large';\n  @Input() buttonFullWidth: UIButtonBoolean = false;\n  @Input() buttonType: UIButtonType = 'primary';\n  @Input() buttonDisabled: boolean = false;\n\n  // Button Actions\n  @Input() href: string = '';\n  @Output() clicked: EventEmitter<void> = new EventEmitter();\n\n  buttonDisplayClasses: string[];\n  iconContext: IconContext = 'none';\n  textTransform!: TextTransform;\n  accessibleButtonContent: string;\n\n  constructor(private changes: ChangeDetectorRef) { }\n\n  onClick(): void {\n    this.clicked.emit();\n  }\n\n  createButton(): UIButton {\n\n    return <UIButton>{\n      buttonIcon: this.buttonIcon,\n      buttonIconPlacement: this.buttonIconPlacement,\n      buttonType: this.buttonType,\n      buttonSize: this.buttonSize,\n      buttonDisabled: this.buttonDisabled,\n      href: this.href,\n      target: '',\n      buttonDisplayClasses: [\n      `type-${this.buttonType}`,\n      `size-${this.buttonSize}`,\n      `${this.buttonIcon ? 'button--has-icon': ''}`,\n      `${this.buttonFullWidth ? 'button--full-width': ''}`,\n      `${this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`\n      ].filter((d) => !!d)\n    };\n  }\n\n  ngAfterViewInit(): void {\n    if(this.buttonText?.nativeElement?.innerText) {\n      this.accessibleButtonContent = this.buttonText.nativeElement.innerText;\n    } else {\n      throw new Error(`\n      No inner text found. All buttons should have text passed via ng-content to enable accessibility for screen readers, this includes icon-only buttons.\n\n      Pass content using the template variable #buttonText eg:\n      ui-button()\n        span(#buttonText) Buy All The Things\n      `)\n    }\n  }\n\n  ngOnChanges(): void {\n      this.button = this.createButton();\n      this.changes.markForCheck();\n  }\n\n  ngOnInit(): void {\n    this.button = this.createButton();\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -880,7 +905,7 @@
                         "deprecationMessage": ""
                     }
                 ],
-                "line": 41,
+                "line": 42,
                 "jsdoctags": [
                     {
                         "name": "changes",
@@ -895,9 +920,10 @@
             },
             "implements": [
                 "OnInit",
-                "OnChanges"
+                "OnChanges",
+                "AfterViewInit"
             ],
-            "templateData": "<button (click)=\"onClick()\"\n        [routerLink]=\"button.href || null\"\n        [ngClass]=\"button.buttonDisplayClasses\"\n        [attr.disabled]=\"button.buttonDisabled === true || null\"\n        role=\"button\"\n        [attr.aria-label]=\"button.buttonText\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"button.buttonIcon && button.buttonIconPlacement !== 'none'\" [iconName]=\"button.buttonIcon\" [iconSize]=\"button.buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"button.buttonIconPlacement\"></ui-icon>\n        <span\n            class=\"ui-text\"\n            *ngIf=\"button.buttonText && button.buttonIconPlacement !== 'iconOnly'\">\n            <!-- {{button.buttonText}} -->\n            <!-- <ng-content select=\"buttonText\"></ng-content> -->\n            <ng-content></ng-content>\n        </span>\n    </div>\n    <div class=\"button-overlay\"></div>\n</button>\n"
+            "templateData": "<button (click)=\"onClick()\"\n        [routerLink]=\"button.href || null\"\n        [ngClass]=\"button.buttonDisplayClasses\"\n        [attr.disabled]=\"button.buttonDisabled === true || null\"\n        [attr.aria-label]=\"accessibleButtonContent\"\n        role=\"button\">\n    <div class=\"button-content\">\n        <ui-icon *ngIf=\"button.buttonIcon && button.buttonIconPlacement !== 'none'\" [iconName]=\"button.buttonIcon\" [iconSize]=\"button.buttonSize\" [iconClass]=\"'buttonIcon'\" [iconContext]=\"button.buttonIconPlacement\"></ui-icon>\n        <span class=\"ui-text\" *ngIf=\"button.buttonIconPlacement !== 'iconOnly'\">\n            <ng-content></ng-content>\n        </span>\n    </div>\n    <div class=\"button-overlay\"></div>\n</button>\n"
         },
         {
             "name": "TextComponent",
@@ -1128,37 +1154,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
-                "defaultValue": "{\n  click: action('onClick'),\n}"
-            },
-            {
-                "name": "actionsData",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/_buttoniconstories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  buttonClick: action('buttonClick'),\n}"
-            },
-            {
-                "name": "Bloomandwild",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/_buttoniconstories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Bloomon",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/_buttoniconstories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "defaultValue": "{\n  clicked: action('onClick'),\n}"
             },
             {
                 "name": "context",
@@ -1297,17 +1293,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<OasysButtonComponent>",
-                "defaultValue": "(args: OasysButtonComponent) => ({\n  props: {\n    ...args,\n    click: actionsData.click\n  },\n  template: `<ui-button>{{ buttonTextContent }}</ui-button>`\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/_buttoniconstories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<OasysButtonComponent>",
-                "defaultValue": "(args: OasysButtonComponent) => ({\n  props: {\n    ...args,\n    buttonClick: actionsData.buttonClick\n  },\n})"
+                "defaultValue": "(args: OasysButtonComponent) => ({\n  props: {\n    ...args,\n    clicked: actionsData.clicked\n  },\n  template: `\n  <ui-button\n  [buttonSize]=\"buttonSize\"\n  [buttonFullWidth]=\"buttonFullWidth\"\n  [buttonType]=\"buttonType\"\n  [buttonDisabled]=\"buttonDisabled\"\n  [buttonIcon]=\"buttonIcon\"\n  [buttonIconPlacement]=\"buttonIconPlacement\"\n  (clicked)=\"click($event)\">\n    <span #buttonText>{{buttonTextContent}}</span>\n  </ui-button>\n\n  `\n})"
             },
             {
                 "name": "Tertiary",
@@ -1453,7 +1439,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "object",
-                    "defaultValue": "{\n  click: action('onClick'),\n}"
+                    "defaultValue": "{\n  clicked: action('onClick'),\n}"
                 },
                 {
                     "name": "Danger",
@@ -1553,7 +1539,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<OasysButtonComponent>",
-                    "defaultValue": "(args: OasysButtonComponent) => ({\n  props: {\n    ...args,\n    click: actionsData.click\n  },\n  template: `<ui-button>{{ buttonTextContent }}</ui-button>`\n})"
+                    "defaultValue": "(args: OasysButtonComponent) => ({\n  props: {\n    ...args,\n    clicked: actionsData.clicked\n  },\n  template: `\n  <ui-button\n  [buttonSize]=\"buttonSize\"\n  [buttonFullWidth]=\"buttonFullWidth\"\n  [buttonType]=\"buttonType\"\n  [buttonDisabled]=\"buttonDisabled\"\n  [buttonIcon]=\"buttonIcon\"\n  [buttonIconPlacement]=\"buttonIconPlacement\"\n  (clicked)=\"click($event)\">\n    <span #buttonText>{{buttonTextContent}}</span>\n  </ui-button>\n\n  `\n})"
                 },
                 {
                     "name": "Tertiary",
@@ -1584,48 +1570,6 @@
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
-                }
-            ],
-            "stories/_buttoniconstories.ts": [
-                {
-                    "name": "actionsData",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/_buttoniconstories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  buttonClick: action('buttonClick'),\n}"
-                },
-                {
-                    "name": "Bloomandwild",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/_buttoniconstories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Bloomon",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/_buttoniconstories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/_buttoniconstories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<OasysButtonComponent>",
-                    "defaultValue": "(args: OasysButtonComponent) => ({\n  props: {\n    ...args,\n    buttonClick: actionsData.buttonClick\n  },\n})"
                 }
             ],
             "projects/oasys-lib/src/test.ts": [
@@ -1799,7 +1743,7 @@
                 "linktype": "component",
                 "name": "OasysButtonComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/18",
+                "coverageCount": "0/21",
                 "status": "low"
             },
             {
@@ -1808,7 +1752,7 @@
                 "linktype": "interface",
                 "name": "UIButton",
                 "coveragePercent": 0,
-                "coverageCount": "0/12",
+                "coverageCount": "0/11",
                 "status": "low"
             },
             {
@@ -2050,46 +1994,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "OasysComponents",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/_buttoniconstories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "actionsData",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/_buttoniconstories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Bloomandwild",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/_buttoniconstories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Bloomon",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/_buttoniconstories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

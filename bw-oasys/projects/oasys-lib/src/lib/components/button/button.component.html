@@ -3,8 +3,7 @@
         [ngClass]="button.buttonDisplayClasses"
         [attr.disabled]="button.buttonDisabled === true || null"
         [attr.aria-label]="accessibleButtonContent"
-        role="button"
-        >
+        role="button">
     <div class="button-content">
         <ui-icon *ngIf="button.buttonIcon && button.buttonIconPlacement !== 'none'" [iconName]="button.buttonIcon" [iconSize]="button.buttonSize" [iconClass]="'buttonIcon'" [iconContext]="button.buttonIconPlacement"></ui-icon>
         <span class="ui-text" *ngIf="button.buttonIconPlacement !== 'iconOnly'">
