@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges } from '@angular/core';
+import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, ContentChild, ElementRef, AfterViewInit } from '@angular/core';
 import { IconNames, IconContext } from '../icon/icon';
 import { TextTransform } from '../text/text';
 import {
@@ -15,7 +15,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class OasysButtonComponent implements OnInit, OnChanges {
+export class OasysButtonComponent implements OnInit, OnChanges, AfterViewInit {
 
   button: UIButton;
 
@@ -24,7 +24,7 @@ export class OasysButtonComponent implements OnInit, OnChanges {
   @Input() buttonIconPlacement: IconContext = 'leading';
 
   // @Input() buttonText: string;
-  // @ContentChild('buttonTextContent') buttonText: ElementRef;
+  @ContentChild('buttonText') buttonText: ElementRef;
 
   // Button Stylings
   @Input() buttonSize: UIButtonSize = 'large';
@@ -39,6 +39,7 @@ export class OasysButtonComponent implements OnInit, OnChanges {
   buttonDisplayClasses: string[];
   iconContext: IconContext = 'none';
   textTransform!: TextTransform;
+  accessibleButtonContent: string;
 
   constructor(private changes: ChangeDetectorRef) { }
 
@@ -65,6 +66,14 @@ export class OasysButtonComponent implements OnInit, OnChanges {
       `${this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`
       ].filter((d) => !!d)
     };
+  }
+
+  ngAfterViewInit(): void {
+    if(this.buttonText?.nativeElement?.innerText) {
+      this.accessibleButtonContent = this.buttonText.nativeElement.innerText;
+    } else {
+      throw new Error('Button has no inner text. All buttons should have text passed via ng-content to enable accessibility for screen readers, this includes icon-only buttons')
+    }
   }
 
   ngOnChanges(): void {

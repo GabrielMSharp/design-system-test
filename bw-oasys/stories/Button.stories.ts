@@ -53,7 +53,7 @@ const Template: Story<OasysButtonComponent> = (args: OasysButtonComponent) => ({
   [buttonIcon]="buttonIcon"
   [buttonIconPlacement]="buttonIconPlacement"
   (click)="click($event)">
-    {{buttonTextContent}}
+    <span #buttonText>{{buttonTextContent}}</span>
   </ui-button>
 
   `
