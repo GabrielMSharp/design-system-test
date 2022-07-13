@@ -34,7 +34,6 @@
     "emitDecoratorMetadata": true,
     "optimization": false,
     "compilationMode": "partial"
-    // "enableIvy": false
 
   }
 }
