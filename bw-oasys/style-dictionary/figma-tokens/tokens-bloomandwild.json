@@ -945,12 +945,12 @@
               }
             },
             "icon-offset-leading": {
-              "value": "8px",
+              "value": "4px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.08}",
+                "value": "{global.size.unit.04}",
                 "type": "spacing"
               },
               "attributes": {
@@ -969,12 +969,12 @@
               }
             },
             "icon-offset-trailing": {
-              "value": "8px",
+              "value": "4px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.08}",
+                "value": "{global.size.unit.04}",
                 "type": "spacing"
               },
               "attributes": {
@@ -993,12 +993,12 @@
               }
             },
             "icon-offset-icon-only": {
-              "value": "10px",
+              "value": "6px",
               "type": "spacing",
               "filePath": "./style-dictionary/tokens/bloomandwild/components/button/button.json",
               "isSource": true,
               "original": {
-                "value": "{global.size.unit.10}",
+                "value": "{global.size.unit.06}",
                 "type": "spacing"
               },
               "attributes": {

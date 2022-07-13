@@ -2,14 +2,12 @@
         [routerLink]="button.href || null"
         [ngClass]="button.buttonDisplayClasses"
         [attr.disabled]="button.buttonDisabled === true || null"
-        role="button"
-        [attr.aria-label]="button.buttonText">
+        [attr.aria-label]="accessibleButtonContent"
+        role="button">
     <div class="button-content">
         <ui-icon *ngIf="button.buttonIcon && button.buttonIconPlacement !== 'none'" [iconName]="button.buttonIcon" [iconSize]="button.buttonSize" [iconClass]="'buttonIcon'" [iconContext]="button.buttonIconPlacement"></ui-icon>
-        <span
-            class="ui-text"
-            *ngIf="button.buttonText && button.buttonIconPlacement !== 'iconOnly'">
-            {{button.buttonText}}
+        <span class="ui-text" *ngIf="button.buttonIconPlacement !== 'iconOnly'">
+            <ng-content></ng-content>
         </span>
     </div>
     <div class="button-overlay"></div>

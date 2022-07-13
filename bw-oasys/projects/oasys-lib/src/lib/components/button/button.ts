@@ -1,5 +1,5 @@
 import { EventEmitter } from '@angular/core';
-import { IconNames, IconContext } from './../icon/icon'
+import { IconNames, IconContext } from '../icon/icon';
 
 
 export type UIButtonBoolean = true | 'true' | false | 'false';
@@ -24,7 +24,7 @@ export interface UIButton {
   // Inputs
 
   // Display text - Required even if icon only
-  buttonText: string;
+  // buttonText: string;
   // icon name
   buttonIcon: IconNames;
   // color/styling of button

@@ -68,17 +68,12 @@ ui-button {
         // use this selector to show focus style
         // only if focused via keyboard
         // Where it is more important focus be high contrast
-        @supports selector(:focus-visible) {
-            &:focus-visible {
-                outline: none;
-                box-shadow: 0 0 0 var(--semantic-border-width-focus) var(--component-color-button-expressive-background);
-            }
+        &:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 var(--semantic-border-width-focus) var(--component-color-button-expressive-background);
         }
-        @supports not selector(:focus-visible) {
-            &:focus {
-                outline: none;
-                box-shadow: 0 0 0 var(--semantic-border-width-focus) var(--component-color-button-expressive-background);
-            }
+        &:focus {
+            outline: none;
         }
 
         // Button Colors

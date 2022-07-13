@@ -6,7 +6,6 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": false,
-    "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -27,9 +26,6 @@
       "oasys-lib": [
         "dist/oasys-lib/oasys-lib",
         "dist/oasys-lib"
-      ],
-      "oasys/components": [
-        "projects/oasys-lib/src/lib/components"
       ]
     }
   },

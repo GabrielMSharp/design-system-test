@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, AfterViewInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnInit, Output, ViewEncapsulation, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnChanges, ContentChild, ElementRef, AfterViewInit } from '@angular/core';
 import { IconNames, IconContext } from '../icon/icon';
 import { TextTransform } from '../text/text';
 import {
@@ -15,14 +15,16 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ButtonComponent implements OnInit, OnChanges {
+export class OasysButtonComponent implements OnInit, OnChanges, AfterViewInit {
 
   button: UIButton;
 
   // // Button Content
-  @Input() buttonText: string;
   @Input() buttonIcon?: IconNames;
   @Input() buttonIconPlacement: IconContext = 'leading';
+
+  // @Input() buttonText: string;
+  @ContentChild('buttonText') buttonText: ElementRef;
 
   // Button Stylings
   @Input() buttonSize: UIButtonSize = 'large';
@@ -30,25 +32,24 @@ export class ButtonComponent implements OnInit, OnChanges {
   @Input() buttonType: UIButtonType = 'primary';
   @Input() buttonDisabled: boolean = false;
 
-
   // Button Actions
   @Input() href: string = '';
-  @Output() click: EventEmitter<void> = new EventEmitter();
+  @Output() clicked: EventEmitter<void> = new EventEmitter();
 
   buttonDisplayClasses: string[];
   iconContext: IconContext = 'none';
   textTransform!: TextTransform;
+  accessibleButtonContent: string;
 
   constructor(private changes: ChangeDetectorRef) { }
 
   onClick(): void {
-    console.log('button was clicked');
-    this.click.emit();
+    this.clicked.emit();
   }
 
   createButton(): UIButton {
+
     return <UIButton>{
-      buttonText: this.buttonText,
       buttonIcon: this.buttonIcon,
       buttonIconPlacement: this.buttonIconPlacement,
       buttonType: this.buttonType,
@@ -61,15 +62,27 @@ export class ButtonComponent implements OnInit, OnChanges {
       `size-${this.buttonSize}`,
       `${this.buttonIcon ? 'button--has-icon': ''}`,
       `${this.buttonFullWidth ? 'button--full-width': ''}`,
-      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
-      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
+      `${this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`
       ].filter((d) => !!d)
     };
   }
 
+  ngAfterViewInit(): void {
+    if(this.buttonText?.nativeElement?.innerText) {
+      this.accessibleButtonContent = this.buttonText.nativeElement.innerText;
+    } else {
+      throw new Error(`
+      No inner text found. All buttons should have text passed via ng-content to enable accessibility for screen readers, this includes icon-only buttons.
+
+      Pass content using the template variable #buttonText eg:
+      ui-button()
+        span(#buttonText) Buy All The Things
+      `)
+    }
+  }
+
   ngOnChanges(): void {
       this.button = this.createButton();
-      console.log(this.button);
       this.changes.markForCheck();
   }
 

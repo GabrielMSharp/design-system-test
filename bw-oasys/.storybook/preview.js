@@ -15,6 +15,15 @@ export const decorators = [
   `: `${story}`),
 ];
 
+// export const contentDecorator = (storyFn, context) => {
+//   const story = componentWrapperDecorator(context.component as any, ({ args }) => args)(storyFn, context);
+//   const template = story.template.replace(/></g, `>${story.props.ngContent}<`);
+//   return {
+//       ...story,
+//       template
+//   };
+// };
+
 const customViewports = {
   iPhone: {
     name: 'iPhone',
@@ -44,8 +53,8 @@ export const parameters = {
   themes: {
     default: 'bloomon',
     list: [
-      { name: 'bloomon', class: 'bloomon', color: '#FF9F80' },
-      { name: 'Bloom & Wild', class: 'bloomandwild', color: '#F9ECD7' }
+      { name: 'bloomon', class: 'brand-tokens-bloomon', color: '#FF9F80' },
+      { name: 'Bloom & Wild', class: 'brand-tokens-bloomandwild', color: '#F9ECD7' }
     ],
     clearable: false
   },
