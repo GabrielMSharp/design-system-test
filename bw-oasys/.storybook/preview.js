@@ -15,6 +15,15 @@ export const decorators = [
   `: `${story}`),
 ];
 
+// export const contentDecorator = (storyFn, context) => {
+//   const story = componentWrapperDecorator(context.component as any, ({ args }) => args)(storyFn, context);
+//   const template = story.template.replace(/></g, `>${story.props.ngContent}<`);
+//   return {
+//       ...story,
+//       template
+//   };
+// };
+
 const customViewports = {
   iPhone: {
     name: 'iPhone',

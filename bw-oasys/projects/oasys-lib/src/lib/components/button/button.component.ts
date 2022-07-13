@@ -20,16 +20,17 @@ export class OasysButtonComponent implements OnInit, OnChanges {
   button: UIButton;
 
   // // Button Content
-  @Input() buttonText: string;
   @Input() buttonIcon?: IconNames;
   @Input() buttonIconPlacement: IconContext = 'leading';
+
+  // @Input() buttonText: string;
+  // @ContentChild('buttonTextContent') buttonText: ElementRef;
 
   // Button Stylings
   @Input() buttonSize: UIButtonSize = 'large';
   @Input() buttonFullWidth: UIButtonBoolean = false;
   @Input() buttonType: UIButtonType = 'primary';
   @Input() buttonDisabled: boolean = false;
-
 
   // Button Actions
   @Input() href: string = '';
@@ -47,8 +48,8 @@ export class OasysButtonComponent implements OnInit, OnChanges {
   }
 
   createButton(): UIButton {
+
     return <UIButton>{
-      buttonText: this.buttonText,
       buttonIcon: this.buttonIcon,
       buttonIconPlacement: this.buttonIconPlacement,
       buttonType: this.buttonType,
@@ -61,15 +62,14 @@ export class OasysButtonComponent implements OnInit, OnChanges {
       `size-${this.buttonSize}`,
       `${this.buttonIcon ? 'button--has-icon': ''}`,
       `${this.buttonFullWidth ? 'button--full-width': ''}`,
-      `${this.buttonText && this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`,
-      `${!this.buttonText && this.buttonIcon ? 'button--icon--only' : ''}`
+      `${this.buttonIcon ? 'button--icon--'+this.buttonIconPlacement : ''}`
       ].filter((d) => !!d)
     };
   }
 
   ngOnChanges(): void {
+    console.log(this.button);
       this.button = this.createButton();
-      console.log(this.button);
       this.changes.markForCheck();
   }
 

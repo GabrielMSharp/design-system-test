@@ -24,7 +24,7 @@ export interface UIButton {
   // Inputs
 
   // Display text - Required even if icon only
-  buttonText: string;
+  // buttonText: string;
   // icon name
   buttonIcon: IconNames;
   // color/styling of button

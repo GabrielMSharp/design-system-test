@@ -1,4 +1,4 @@
-import { Story, Meta, moduleMetadata } from '@storybook/angular';
+import { Story, Meta, moduleMetadata, componentWrapperDecorator } from '@storybook/angular';
 
 import { OasysButtonComponent } from 'projects/oasys-lib/src/public-api';
 import { RouterTestingModule } from '@angular/router/testing';
@@ -11,7 +11,10 @@ export default {
   decorators: [
     moduleMetadata({
       imports: [RouterTestingModule, OasysComponentsModule]
-    })
+    }),
+    componentWrapperDecorator(
+      (story) => `<div>{{buttonTextcontent}} ${story}</div>`
+    )
   ],
   argTypes: {
     buttonDisabled: { control: 'boolean' },
@@ -41,6 +44,19 @@ const Template: Story<OasysButtonComponent> = (args: OasysButtonComponent) => ({
     ...args,
     click: actionsData.click
   },
+  template: `
+  <ui-button
+  [buttonSize]="buttonSize"
+  [buttonFullWidth]="buttonFullWidth"
+  [buttonType]="buttonType"
+  [buttonDisabled]="buttonDisabled"
+  [buttonIcon]="buttonIcon"
+  [buttonIconPlacement]="buttonIconPlacement"
+  (click)="click($event)">
+    {{buttonTextContent}}
+  </ui-button>
+
+  `
 });
 
 console.log('template', Template.args);
@@ -48,31 +64,31 @@ console.log('template', Template.args);
 export const Primary = Template.bind({});
 Primary.args = {
   buttonType: 'primary',
-  buttonText: 'Primary CTA',
+  buttonTextContent: 'Primary CTA',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   buttonType: 'secondary',
-  buttonText: 'Secondary CTA',
+  buttonTextContent: 'Secondary CTA',
 };
 
 export const Tertiary = Template.bind({});
 Tertiary.args = {
   buttonType: 'tertiary',
-  buttonText: 'Tertiary CTA',
+  buttonTextContent: 'Tertiary CTA',
 };
 
 export const PrimaryInverse = Template.bind({});
 PrimaryInverse.args = {
   buttonType: 'primary-inverse',
-  buttonText: 'Primary CTA',
+  buttonTextContent: 'Primary CTA',
 };
 
 export const SecondaryInverse = Template.bind({});
 SecondaryInverse.args = {
   buttonType: 'secondary-inverse',
-  buttonText: 'Seconary CTA',
+  buttonTextContent: 'Seconary CTA',
 };
 SecondaryInverse.story = {
   parameters: {
@@ -85,7 +101,7 @@ SecondaryInverse.story = {
 export const TertiaryInverse = Template.bind({});
 TertiaryInverse.args = {
   buttonType: 'tertiary-inverse',
-  buttonText: 'Tertiary CTA',
+  buttonTextContent: 'Tertiary CTA',
 };
 TertiaryInverse.story = {
   parameters: {
@@ -98,37 +114,37 @@ TertiaryInverse.story = {
 export const expressive = Template.bind({});
 expressive.args = {
   buttonType: 'expressive',
-  buttonText: 'expressive CTA',
+  buttonTextContent: 'expressive CTA',
 };
 
 export const Danger = Template.bind({});
 Danger.args = {
   buttonType: 'danger',
-  buttonText: 'Danger CTA',
+  buttonTextContent: 'Danger CTA',
 };
 
 export const Facebook = Template.bind({});
 Facebook.args = {
   buttonType: 'facebook',
-  buttonText: 'Facebook CTA',
+  buttonTextContent: 'Facebook CTA',
 };
 
 export const Paypal = Template.bind({});
 Paypal.args = {
   buttonType: 'paypal',
-  buttonText: 'Paypal CTA',
+  buttonTextContent: 'Paypal CTA',
 };
 
 export const Trustpilot = Template.bind({});
 Trustpilot.args = {
   buttonType: 'trustpilot',
-  buttonText: 'Trustpilot CTA',
+  buttonTextContent: 'Trustpilot CTA',
 };
 
 export const LongString = Template.bind({});
 LongString.args = {
   buttonType: 'secondary-inverse',
-  buttonText: 'Continue without buying a vase and do not save £5',
+  buttonTextContent: 'Continue without buying a vase and do not save £5',
   buttonIcon: 'pin'
 };
 
